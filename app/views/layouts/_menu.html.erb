@@ -1,0 +1,169 @@
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onmousemove="playGoBack()";">&times;</a>
+  <div href="javascript:void(0)" class="mutebtn">
+    Speech
+    <label class="switch" onmousemove="playMute()";">
+      <input id="mutebtn" type="checkbox" checked onclick="muteSpeech()">
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="overlay-content">
+  	<a href="/home/home" onmouseover="playGoHome()">Home</a>
+    <a href="#" onmouseover="playGoArrival()">Arrival to Venice</a>
+    <a href="#" onmouseover="playGoTraveling()">Traveling in Venice</a>
+    <a href="#" onmouseover="playGoNight()">Staying the Night</a>
+    <a href="#" onmouseover="playGoDining()">Dining Out</a>
+    <a href="#" onmouseover="playGoApp()">Helpful Applications</a>
+    <a href="#" onmouseover="playGoOrg()">Assistive Organizations</a>
+    <a href="/home" onmouseover="playGoMap()">Map</a>
+  </div>
+</div>
+
+<script>
+  let muteVar;
+  if (typeof(Storage) !== "undefined") {
+    // Store
+    if(localStorage.getItem("mute") !== "true" && localStorage.getItem("mute") !== "false"){
+      localStorage.setItem("mute", "true");
+    }
+
+    if(localStorage.getItem("mute") === "true"){
+      muteVar = true;
+    }
+    else{
+      muteVar = false;
+    }
+
+    console.log("muteVar Storage: " + muteVar);
+  } 
+  else {
+    alert("Sorry, your browser does not support Web Storage.");
+  }
+
+  setUpMuteButton();
+
+  /* ----------- Menu Display Functions --------- */
+
+	function openNav() {
+    var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to other pages such as the Home, Arrival to Venice, Traveling in Venice, Staying the Night, Dining Out, Helpful Applications, Assistive Organizations, and Map pages.To close the page, a close button is located at the top-right hand side of the screen. To mute all speech, a mute button is located at the top-left hand side of the page."
+    play(welcomeMenuText);
+
+	  document.getElementById("myNav").style.width = "100%";
+	}
+
+	function closeNav() {
+	  document.getElementById("myNav").style.width = "0%";
+	}
+
+
+  /* ------------ Speech Contol -------------- */
+
+  document.body.addEventListener('keypress', function(e) {
+    if(e.key == "Escape"){
+      responsiveVoice.cancel();
+    }
+  });
+
+  function play(textToPlay){
+    if(muteVar){
+      responsiveVoice.speak(textToPlay,"UK English Male");
+    }
+    else{
+      responsiveVoice.cancel();
+    }
+  }
+
+  function playSlow(textToPlay){
+    if(muteVar){
+      responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
+    }
+    else{
+      responsiveVoice.cancel();
+    }
+  }
+
+
+  function muteSpeech() {
+    if(muteVar){
+      localStorage.setItem("mute", "false");
+      responsiveVoice.cancel();
+
+      console.log("false");
+      muteVar = false;
+      mutebtn.checked = false;
+    }
+    else{
+      localStorage.setItem("mute", "true");
+      
+      console.log("true");
+      muteVar = true;
+      mutebtn.checked = true;
+      responsiveVoice.speak("Speech On","UK English Male");
+    }
+  }
+
+  function setUpMuteButton() {
+    var mutebtn = document.getElementById("mutebtn");
+    if(muteVar){
+      mutebtn.checked = true;
+    }
+    else{
+      mutebtn.checked = false;
+    }
+  }
+
+  /* ------------ End Speech Contol -------------- */
+
+  /* ------------ Speach Functions -------------- */
+
+  function playGoHome(){
+    var goHomeText = "Home Button to the Home Page."
+    play(goHomeText);
+  }
+
+  function playGoArrival(){
+    var goArrivalText = "Arrival Button to the Arrival to Venice page."
+    play(goArrivalText);
+  }
+
+  function playGoTraveling(){
+    var goTravelText = "Traveling Button to the Traveling in Venice page."
+    play(goTravelText);
+  }
+
+  function playGoNight(){
+    var goNightText = "Staying the Night Button to the Staying the Night page."
+    play(goNightText);
+  }
+
+  function playGoDining(){
+    var goDiningText = "Dining Out Button to the Dining Out page."
+    play(goDiningText);
+  }
+
+  function playGoApp(){
+    var goAppText = "Applications Button to the Helpful Applications page."
+    play(goAppText);
+  }
+
+  function playGoOrg(){
+    var goOrgText = "Organizations Button to the Assistive Organizations page."
+    play(goOrgText);
+  }
+
+  function playGoMap(){
+    var goMapText = "Map Button to the Map page."
+    play(goMapText);
+  }
+
+  function playGoBack(){
+    var goBackText = "Close Button to close the menu screen and return to the page you were on."
+    play(goBackText);
+  }
+
+  function playMute(){
+    var muteText = "Mute Button to mute all speech.";
+    play(muteText);
+  }
+</script>

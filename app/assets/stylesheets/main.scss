@@ -1,0 +1,551 @@
+/* -------------- OverLay Menu CSS -------------- */
+body {
+    font-weight: 300;
+    /*letter-spacing: 1.5px;*/
+    font-family: 'Padauk';
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    overflow: hidden;
+    /*transition: 0.5s;*/
+}
+
+.overlay-content {
+    position: relative;
+    top: 18%;
+    width: 100%;
+    text-align: center;
+
+    font-family: 'Istok Web';
+}
+
+.overlay a {
+    padding: 2px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #959595;
+    display: block;
+    transition: 0.2s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+	top: 25px;
+	right: 30px;
+	font-size: 50px;
+
+	padding: 5px 40px 5px 40px;
+}
+
+.mutebtn {
+	text-decoration: none;
+	text-align: left;
+	vertical-align: middle;
+	color: #959595;
+    display: block;
+    transition: 0.3s;
+
+    position: absolute;
+	top: 27px;
+	left: 15px;
+	font-size: 35px;
+
+	padding: 5px 40px 5px 40px;
+	margin: 10px;
+	font-family: 'Istok Web';
+}
+.mutebtn:hover {
+	color: #f1f1f1;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  vertical-align: middle;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/* -------------- End OverLay Menu CSS -------------- */
+
+/* -------------- Header Menu CSS -------------- */
+.header {
+    position: fixed;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    z-index: 1;
+
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.77);
+    box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+}
+
+.headerBtn {
+    height: 100%;
+
+    cursor: pointer;
+    padding: 11px 25px 10px 25px;
+    font-size: 21px;
+    color: white;
+    font-family: 'Nunito Sans';
+
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.headerBtn:hover {
+    border-bottom: 3px white solid;
+    background-color: #1b1b1b;
+}
+
+.headerLeft {
+    float: left;
+}
+
+.headerRight {
+    float: right;
+}
+
+.headerLabel {
+    height: 100%;
+
+    cursor: pointer;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 10px 0px 10px;
+    font-size: 20px;
+    color: white;
+
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hamDivContainer {
+	cursor: pointer;
+
+	padding: 9px 25px 8px 25px;
+}
+
+.hamDivContainer:hover{
+	background-color: #1b1b1b;
+}
+
+.hamDiv {
+	width: 30px;
+    height: 3px;
+
+    background-color: white;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+
+    margin: 6px 0;
+
+    transition:all .3s ease;
+}
+
+/* -------------- End Header Menu CSS -------------- */
+
+/* -------------- Footer CSS -------------- */
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 400px;
+
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.77);
+    color: white;
+    text-align: center;
+
+	box-sizing: border-box !important;
+}
+
+.footerContainer {
+	width: 100%;
+	height: 100%;
+
+	padding: 10px 100px 10px 100px;
+
+	box-sizing: border-box !important;
+}
+
+/* -------------- End Footer CSS -------------- */
+
+/* -------------- Map CSS ----------------- */
+#mapid {
+    /* Fix height adjustment for later */
+    min-height: 79vh;
+    height: 100%;
+    z-index: 0;
+
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 5px 10px;
+
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: darkgrey;
+
+    transition:all .3s ease;
+}
+
+#mic {
+    font-size: 26px;
+    float: right;
+
+    margin-top: 7px;
+    margin-right: 10px;
+
+    color: blue;
+
+    transition:all .1s ease;
+}
+
+#mic:hover{
+    cursor: pointer;
+
+    color: dodgerblue;
+    font-size: 27px;
+
+    margin-top: 5px
+}
+
+.searchBarContainer {
+    width: calc(100% - 20px);
+    height: 40px;
+
+    font-size: 18px;
+    background-size: 20px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    margin: 10px 10px 0px 10px;
+    padding: 0px 10px 0px 10px;
+
+    border: 1px solid #ddd;
+    border-radius: 20px;
+}
+
+.searchBar {
+    font-size: 18px;
+    height: 100%;
+    width: calc(100% - 60px);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: none;
+    outline: none;
+}
+
+.filterBox {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+
+    background-color: #3b3b3b;;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+
+    width: 200px;
+    height: 100%;
+
+    padding: 10px 0px 0px 10px;
+    border-top: gray 1px solid;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    z-index: 2;
+}
+
+.filterBoxItem {
+    cursor: pointer;
+
+    text-align: left;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+
+    margin: 4px 10px 4px 5px;
+}
+
+.filterBoxItemHeader {
+    cursor: pointer;
+
+	width: 100%;
+	height: 25px;
+
+	font-family: 'Nunito Sans';
+	color: white;
+	font-size: 20px;
+
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+.filterBoxItemClick {
+    width: calc(100% - 10px);
+
+    text-align: left;
+    float: left;
+    color: white;
+    font-size: 18px;
+    font-family: 'Nunito Sans';
+
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+
+    padding: 10px 10px 5px 10px;
+    margin-top: 10px;
+}
+
+.filterCheck {
+    z-index: 1;
+}
+
+.filterCheck:hover {
+    cursor: pointer;
+}
+
+.info {
+    padding: 6px 8px;
+    font: 14px/16px Arial, Helvetica, sans-serif;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    text-align: left;
+}
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+    text-align: center;
+}
+
+.mapTable {
+    width: calc(100% - 210px);
+    margin: 5px 0px 0px 215px
+}
+
+.mapDescTable {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.descBox {
+    background: black;
+    width: 300px;
+    min-height: 79vh;
+
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #ddd;
+    border-width: 1px;
+    padding: 10px 10px 10px 10px;
+    margin: 9px 9px 5px 9px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 1px rgba(0, 0, 0, 0.1);
+
+    display: none;
+    float: right;
+}
+
+.closeBtn {
+    color: lightgray;
+    background-color: black;
+    float: right;
+    border: none;
+    font-size: 20px
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.descBoxItemMain {
+    width: 90%;
+    float: left;
+
+    text-align: left;
+
+    color: lightgray;
+    font-size: 20px;
+    font-family: 'Nunito Sans';
+
+    margin: 10px 10px 3px 10px;
+
+    border-bottom: 1px lightgray solid;
+}
+
+.descBoxItem {
+    box-sizing: border-box;
+
+    width: 100%;
+
+    text-align: left;
+    color: lightgray;
+    font-size: 17px;
+    margin: 3px 10px 3px 10px;
+
+    float: left;
+}
+
+/* -------------- End Map CSS -------------- */
+
+/* -------------- Home CSS -------------- */
+.homeHeaderBtn {
+    height: 100%;
+
+    cursor: pointer;
+    padding: 11px 10px 10px 10px;
+    margin: 0px 10px 10px 20px;
+    font-size: 21px;
+    color: white;
+
+    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.homeContainer {
+	width: 100%;
+	height: 100%;
+
+	top: 0px;
+
+	box-sizing: border-box !important;
+
+	position: fixed;
+}
+
+.homeImg {
+	min-height: 500px;
+	height: auto;
+
+	background-size: 100% 500px;
+	background-repeat: no-repeat;
+
+	padding-top: 175px;
+	padding-left: 100px;
+	padding-right: 100px;
+	left: 0;
+	right: 0;
+
+	color: rgba(255,255,255,.9);
+}
+
+.homeImgTextMain {
+	font-size: 80px;
+	color: white;
+
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+}
+
+.homeImgTextMinor {
+	font-size: 30px;
+	color: white; 
+
+	text-align: center;
+	vertical-align: middle;
+	text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+}
+
+#homeFirstImgText {
+	border: black 3px solid;
+	padding: 10px;
+
+	background-color: #742a2acc;
+	box-shadow: 1px 1px 5px rgb(0, 0, 0);  
+	border-radius: 20px; 
+}
