@@ -4413,10 +4413,10 @@ function bridgeDisplay(){
 	museumBtn.style.borderBottom = "";
 
     bridgeBtn.style.backgroundColor = "#1b1b1b";
-    hotelBtn.style.borderBottom = "";
-    restBtn.style.borderBottom = "";
-    churchBtn.style.borderBottom = "";
-    museumBtn.style.borderBottom = "";
+    hotelBtn.style.backgroundColor = "";
+    restBtn.style.backgroundColor = "";
+    churchBtn.style.backgroundColor = "";
+    museumBtn.style.backgroundColor = "";
 
 	filterContainer.innerHTML = "";
 }
