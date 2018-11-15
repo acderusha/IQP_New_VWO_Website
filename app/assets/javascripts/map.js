@@ -5205,10 +5205,9 @@ function playMapIntro(){
     play(cancelSpeech);
 
     var mapExplenation = "This page consists of an interactive map of Venice. Interactive elements of the map include bridges, hotels, restaurants, churchs, and museums. Selecting an element brings up a box that provides accessibility information on the selected element." +
-    "The map is in the center of the page. At the top-center and top-right of the page, there are layer selection tabs for bridges, hotels, restaurants, churchs, and museums. All elements are grouped into their respective layer each with their own set of properties that can be used to filter the selected layer." + 
-    "Each layer can be filtered based on element properties listed on the left hand side of the page; filtering an element removes it from the map. " + 
-    "For example, bridges can be filtered by whether or not they have a permanent ramp. When the permanent ramp filter is selected, all bridges with permanted ramps will be removed from the map. " + 
-    "The menu button at the very top-right of  the page will take you to the menu page where you can go to other pages.";
+    "The map is in the center of the page. At the top-center and top-right of the page, there are layer selection tabs for bridges, hotels, restaurants, churchs, and museums. Each layer each has their own set of properties that can be used to filter the selected layer." + 
+    "Each layer can be filtered based on properties listed on the left hand side of the page; filtering an element removes it from the map. " + 
+    "The menu button at the very top-right of the page will take you to the menu page where you can travel to other pages.";
     playSlow(mapExplenation);
 }
 
