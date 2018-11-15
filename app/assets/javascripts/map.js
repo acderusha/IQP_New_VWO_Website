@@ -5212,3 +5212,12 @@ function playMapIntro(){
     playSlow(mapExplenation);
 }
 
+function playFilter(){
+    var filterLabel = document.getElementById("filterName").innerHTML;
+    var filterText = "Currently filtering " + filterLabel;
+
+    play(filterText);
+}
+
+
+

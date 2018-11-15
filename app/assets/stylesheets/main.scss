@@ -181,6 +181,10 @@ input:checked + .slider:before {
     float: left;
 }
 
+.headerCenter {
+    float: center;
+}
+
 .headerRight {
     float: right;
 }
@@ -368,6 +372,10 @@ input:checked + .slider:before {
 
 	margin-top: 2px;
 	margin-left: 10px;
+}
+
+.filterBoxItemHeader:hover {
+	cursor: pointer;
 }
 
 .filterBoxItemClick {
