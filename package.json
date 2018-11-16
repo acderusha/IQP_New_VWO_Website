@@ -1,5 +1,7 @@
 {
   "name": "IQP_New_Website",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "leaflet-search": "^2.9.7"
+  }
 }

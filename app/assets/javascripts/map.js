@@ -4566,9 +4566,9 @@ function describeFeature(e) {
 
     var container = document.getElementById("descBoxContainer");
     var description = document.getElementById("descBox");
-    container.style.display = "";
-    container.width = "300px";
-    description.style.display = "block";
+    container.style.width = "300px";
+    description.style.width = "300px";
+    description.style.padding = "10px";
 
     addDescription(layer.feature.properties);
 
@@ -4661,6 +4661,27 @@ function getBridges() {
 
 /* -------------- End GET Layer Data Functions ----------------- */
 
+
+function expandFilter(){
+    var filterBox = document.getElementById("filterBox");
+    var filterBoxItemHeader = document.getElementById("filterBoxItemHeader");
+    var arrow = document.getElementById("arrow");
+    var map = document.getElementById("mapid");
+     if(filterBox.style.height === "50px"){
+        arrow.innerHTML = "&#x25BE;";
+        filterBox.style.height = "100%";
+        filterBox.style.overflowY = "auto";
+
+        map.style.marginLeft = "210px";
+     }
+     else{
+        arrow.innerHTML = "&#x25B8;";
+        filterBox.style.height = "50px";
+        filterBox.style.overflowY = "hidden";
+
+        map.style.marginLeft = "0px";
+     }
+}
 
 function addDescription(props){
     var name;

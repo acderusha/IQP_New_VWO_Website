@@ -43,8 +43,9 @@
         </div>
     </div>
 
-    <div id="filterBox" class="filterBox" style="height: 50px;">
-        <div class="filterBoxItemHeader" onmouseover="playFilter()">
+    <div id="filterBox" class="filterBox" style="height: 50px; overflow-y: hidden;">
+        <div  id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseover="playFilter()" onclick="expandFilter()";>
+            <span id="arrow">&#x25B8;</span>
             Filter:
             <span id="filterName" style="cursor: pointer;">Bridges</span>
         </div>
@@ -249,39 +250,41 @@
                        <th width="100%" valign="top">
                            <div id="mapid"></div>
                        </th>
-                       <th id="descBoxContainer" valign="top">
-                           <div id="descBox" class="descBox" >
-                               <div style="width: 100%; height: 10px">
-                                   <button id="close" class="closeBtn">&times;</button>
-                               </div>
-                               <script>
-                                   var close = document.getElementById("close");
-                                   var container = document.getElementById("descBoxContainer");
-                                   close.addEventListener("click", function () {
-                                       container.style.display = "none";
-                                   });
-                               </script>
-                               <div class="descBoxHeader">
-                                   Bridge Description
-                               </div>
-                               <div class="descBoxItemMain">
-                                   <i style="font-size:15px" class="fa">&#xf05a;</i>
-                                   General Info
-                               </div>
-                               <div id="infoDiv" style="float: left"></div>
-                               <div class="descBoxItemMain" style="margin-top: 20px">
-                                   <i style="font-size:16px; color: lightgray" class="fab fa-accessible-icon"></i>
-                                   Accommodations
-                               </div>
-                               <div id="accomDiv" style="float: left"></div>
-                               <div class="descBoxItemMain" style="margin-top: 20px">
-                                   &#9888; Cautions
-                               </div>
-                               <div id="cautionDiv" style="float: left"></div>
-                               <script>
-                                   addDescription();
-                               </script>
-                           </div>
+                       <th id="descBoxContainer" class="descBoxContainer" valign="top">
+                          <div id="descBox" class="descBox" >
+                            <button id="close" class="closeBtn" onclick="closeDescBox()">
+                              <i class="fa fa-close"></i>
+                            </button>
+                              <script>
+                                    function closeDescBox() {
+                                      var container = document.getElementById("descBoxContainer");
+                                      var description = document.getElementById("descBox");
+                                      container.style.width = "0px";
+                                      description.style.width = "0px";
+                                      description.style.padding = "0px";
+                                    }
+                              </script>
+                              <div class="descBoxHeader">
+                                  Bridge Description
+                              </div>
+                              <div class="descBoxItemMain">
+                                  <i style="font-size:15px" class="fa">&#xf05a;</i>
+                                  General Info
+                              </div>
+                              <div id="infoDiv" style="float: left"></div>
+                              <div class="descBoxItemMain" style="margin-top: 20px">
+                                  <i style="font-size:16px; color: lightgray" class="fab fa-accessible-icon"></i>
+                                  Accommodations
+                              </div>
+                              <div id="accomDiv" style="float: left"></div>
+                              <div class="descBoxItemMain" style="margin-top: 20px">
+                                  &#9888; Cautions
+                              </div>
+                              <div id="cautionDiv" style="float: left"></div>
+                              <script>
+                                addDescription();
+                              </script>
+                          </div>
                        </th>
                    </tr>
                </table>
@@ -297,10 +300,10 @@
     </table>
     <script>
         /* --------------------------------- Map Initialization  ------------------------------------ */
-        var mymap = L.map('mapid').setView([45.437309, 12.335072], 14);
+        var mymap = L.map('mapid').setView([45.436309, 12.335072], 14);
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 18,
+            maxZoom: 19,
             subdomains: ['a','b','c','d'],
             id: 'mapbox.streets',
             accessToken: 'pk.eyJ1IjoidmVuaWNld2l0aG91dG9ic3RhY2xlcyIsImEiOiJjam55azU0MHgxNTR4M3BrYjh2NzV1d3lyIn0.6EVMzVUveIUc-0BJfMijJw'

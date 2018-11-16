@@ -233,7 +233,7 @@ input:checked + .slider:before {
 
     margin: 6px 0;
 
-    transition:all .3s ease;
+    transition: .3s ease;
 }
 
 /* -------------- End Header Menu CSS -------------- */
@@ -269,18 +269,22 @@ input:checked + .slider:before {
 /* -------------- Map CSS ----------------- */
 #mapid {
     /* Fix height adjustment for later */
-    height: 100vh;
+    height: 85.4vh;
     z-index: 0;
 
-    padding: 10px 10px 10px 10px;
     margin-top: 10px;
 
     border-style: solid;
     border-width: 1px;
     border-color: darkgrey;
+    transition: .3s ease;
 
-    transition:all .3s ease;
+    .open {
+
+    }
+
 }
+
 
 .mapTable {
     width: 100%;
@@ -293,6 +297,10 @@ input:checked + .slider:before {
     width: 100%;
     height: 100%;
     margin-right: 5px;
+
+    transition: .3s ease;
+
+    box-sizing: border-box;
 }
 
 #mic {
@@ -303,21 +311,16 @@ input:checked + .slider:before {
     margin-right: 10px;
 
     color: blue;
-
-    transition:all .1s ease;
 }
 
 #mic:hover{
     cursor: pointer;
 
     color: dodgerblue;
-    font-size: 27px;
-
-    margin-top: 5px
 }
 
 .searchBarContainer {
-    width: calc(100% - 20px);
+    width: calc(100% - 230px);
     height: 40px;
 
     font-size: 18px;
@@ -327,11 +330,11 @@ input:checked + .slider:before {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 
-    margin: 10px 10px 0px 10px;
+    margin: 10px 10px 0px 220px;
     padding: 4px 10px 0px 10px;
 
     border: 1px solid #ddd;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .searchBar {
@@ -353,16 +356,18 @@ input:checked + .slider:before {
     left: 0px;
 
     background-color: #3b3b3b;;
-    box-shadow: 4px 5px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
 
-    width: 200px;
+    width: 210px;
     height: 100%;
 
-    padding: 10px 0px 0px 10px;
+    padding: 10px 0px 0px 5px;
     border-top: gray 1px solid;
+    border-radius: 1px;
 
     overflow-y: auto;
     overflow-x: hidden;
+    transition: .3s ease;
 
     z-index: 2;
 }
@@ -390,8 +395,7 @@ input:checked + .slider:before {
 
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 
-	margin-top: 2px;
-	margin-left: 10px;
+	margin: 1px 0px 0px 10px;
 }
 
 .filterBoxItemClick {
@@ -432,42 +436,60 @@ input:checked + .slider:before {
     text-align: center;
 }
 
+.descBoxContainer {
+	height: 100%;
+	width: 0px;
+}
+
 .descBox {
     background: black;
-    width: 300px;
-    min-height: 82vh;
+    width: 0px;
+    height: 85.4vh;
 
-    border-radius: 10px;
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 1px;
-    padding: 10px 10px 10px 10px;
-    margin: 9px 9px 5px 9px;
+    margin: 10px 0px 5px 0px;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 5px rgba(0,0,0,.3);
 
-    display: none;
     float: right;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    transition:all .3s ease;
 }
 
 .closeBtn {
+	height: 20px;
+	width: 20px;
+
     color: lightgray;
     background-color: black;
     float: right;
     border: none;
-    font-size: 20px
+    font-size: 18px;
+
+    overflow:visible;
+    background:none !important;
+
+    transition:all .1s ease;
 }
 
 .closeBtn:hover{
     cursor: pointer;
     color: white;
+
+	height: 25px;
+	width: 25px;
+    font-size: 22px
 }
 
 .descBoxHeader {
 	font-family: 'Istok Web';
 	color: lightgray; 
-	font-size: 27px;
-	margin: 10px 0 0 20px;
+	font-size: 28px;
+	margin: 11px 0 0 10px;
+
+
+    box-sizing: border-box;
 }
 
 .descBoxItemMain {
