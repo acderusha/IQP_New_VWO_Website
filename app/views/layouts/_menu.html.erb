@@ -10,12 +10,12 @@
 
   <div class="overlay-content">
   	<a href="/home/home" onmouseover="playGoHome()">Home</a>
-    <a href="#" onmouseover="playGoArrival()">Arrival to Venice</a>
+    <a href="#" onmouseover="playGoArrival()">Arriving to Venice</a>
     <a href="#" onmouseover="playGoTraveling()">Traveling in Venice</a>
     <a href="#" onmouseover="playGoNight()">Staying the Night</a>
     <a href="#" onmouseover="playGoDining()">Dining Out</a>
-    <a href="#" onmouseover="playGoApp()">Helpful Applications</a>
-    <a href="#" onmouseover="playGoOrg()">Assistive Organizations</a>
+    <a href="#" onmouseover="playGoApp()">Applications</a>
+    <a href="#" onmouseover="playGoOrg()">Organizations</a>
     <a href="/home" onmouseover="playGoMap()">Map</a>
   </div>
 </div>
@@ -46,7 +46,7 @@
   /* ----------- Menu Display Functions --------- */
 
 	function openNav() {
-    var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to other pages such as the Home, Arrival to Venice, Traveling in Venice, Staying the Night, Dining Out, Helpful Applications, Assistive Organizations, and Map pages.To close the page, a close button is located at the top-right hand side of the screen. To mute all speech, a mute button is located at the top-left hand side of the page."
+    var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to the Home, Arriving to Venice, Traveling in Venice, Staying the Night, Dining Out, Applications, Organizations, and Map pages. A close button is located at the top-right hand side of the screen. To mute all speech, a mute button is located at the top-left hand side of the screen."
     play(welcomeMenuText);
 
 	  document.getElementById("myNav").style.width = "100%";
@@ -67,6 +67,7 @@
 
   function play(textToPlay){
     if(muteVar){
+      responsiveVoice.cancel();
       responsiveVoice.speak(textToPlay,"UK English Male");
     }
     else{
@@ -76,6 +77,7 @@
 
   function playSlow(textToPlay){
     if(muteVar){
+      responsiveVoice.cancel();
       responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
     }
     else{
@@ -118,47 +120,47 @@
   /* ------------ Speach Functions -------------- */
 
   function playGoHome(){
-    var goHomeText = "Home Button to the Home Page."
+    var goHomeText = "Home Button to go to the Home Page."
     play(goHomeText);
   }
 
   function playGoArrival(){
-    var goArrivalText = "Arrival Button to the Arrival to Venice page."
+    var goArrivalText = "Arrival Button to go to the Arriving in Venice page."
     play(goArrivalText);
   }
 
   function playGoTraveling(){
-    var goTravelText = "Traveling Button to the Traveling in Venice page."
+    var goTravelText = "Traveling Button to go to the Traveling in Venice page."
     play(goTravelText);
   }
 
   function playGoNight(){
-    var goNightText = "Staying the Night Button to the Staying the Night page."
+    var goNightText = "Staying the Night Button to go to the Staying the Night page."
     play(goNightText);
   }
 
   function playGoDining(){
-    var goDiningText = "Dining Out Button to the Dining Out page."
+    var goDiningText = "Dining Out Button to go to the Dining Out page."
     play(goDiningText);
   }
 
   function playGoApp(){
-    var goAppText = "Applications Button to the Helpful Applications page."
+    var goAppText = "Applications Button to go to the Applications page."
     play(goAppText);
   }
 
   function playGoOrg(){
-    var goOrgText = "Organizations Button to the Assistive Organizations page."
+    var goOrgText = "Organizations Button to go to the Organizations page."
     play(goOrgText);
   }
 
   function playGoMap(){
-    var goMapText = "Map Button to the Map page."
+    var goMapText = "Map Button to go to the Map page."
     play(goMapText);
   }
 
   function playGoBack(){
-    var goBackText = "Close Button to close the menu screen and return to the page you were on."
+    var goBackText = "Close Button to return to the page you were on."
     play(goBackText);
   }
 
