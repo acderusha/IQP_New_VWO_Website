@@ -2,7 +2,7 @@
   playMapIntro();
 </script>
 
-<div style="padding-top: 40px">
+<div style="padding-top: 50px">
     <div class="body">
         <div class="header" style="left: 0px">
             <div class="headerRight hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
@@ -46,7 +46,7 @@
     <div id="filterBox" class="filterBox">
         <div class="filterBoxItemHeader" onmouseover="playFilter()">
             Filter:
-            <label id="filterName">Bridges</label>
+            <span id="filterName" style="cursor: pointer;">Bridges</span>
         </div>
         <div id=filterContainer>
         	<div id="rampDiv" class="filterBoxItemClick" style="margin-top: 2px;">
@@ -261,7 +261,7 @@
                                        container.style.display = "none";
                                    });
                                </script>
-                               <div style="font-family: 'Istok Web'; color: lightgray; font-size: 28px; margin: 10px 0 0 20px">
+                               <div class="descBoxHeader">
                                    Bridge Description
                                </div>
                                <div class="descBoxItemMain">

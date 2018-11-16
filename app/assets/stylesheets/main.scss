@@ -271,7 +271,7 @@ input:checked + .slider:before {
 /* -------------- Map CSS ----------------- */
 #mapid {
     /* Fix height adjustment for later */
-    min-height: 79vh;
+    min-height: 82vh;
     height: 100%;
     z-index: 0;
 
@@ -286,11 +286,24 @@ input:checked + .slider:before {
     transition:all .3s ease;
 }
 
+.mapTable {
+    width: calc(100% - 240px);
+    margin: 5px 0px 0px 220px;
+
+    box-sizing: border-box;
+}
+
+.mapDescTable {
+    width: 100%;
+    height: 100%;
+    margin-right: 5px;
+}
+
 #mic {
     font-size: 26px;
     float: right;
 
-    margin-top: 7px;
+    margin-top: 2px;
     margin-right: 10px;
 
     color: blue;
@@ -319,7 +332,7 @@ input:checked + .slider:before {
     box-sizing: border-box;
 
     margin: 10px 10px 0px 10px;
-    padding: 0px 10px 0px 10px;
+    padding: 4px 10px 0px 10px;
 
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -366,7 +379,7 @@ input:checked + .slider:before {
     font-size: 15px;
     letter-spacing: 1px;
 
-    margin: 4px 10px 4px 5px;
+    margin: 4px 10px 4px 10px;
 }
 
 .filterBoxItemHeader {
@@ -383,10 +396,6 @@ input:checked + .slider:before {
 
 	margin-top: 2px;
 	margin-left: 10px;
-}
-
-.filterBoxItemHeader:hover {
-	cursor: pointer;
 }
 
 .filterBoxItemClick {
@@ -427,20 +436,10 @@ input:checked + .slider:before {
     text-align: center;
 }
 
-.mapTable {
-    width: calc(100% - 210px);
-    margin: 5px 0px 0px 215px
-}
-
-.mapDescTable {
-    width: 100%;
-    margin-right: 5px;
-}
-
 .descBox {
     background: black;
     width: 300px;
-    min-height: 79vh;
+    min-height: 82vh;
 
     border-radius: 10px;
     border-style: solid;
@@ -466,6 +465,13 @@ input:checked + .slider:before {
 .closeBtn:hover{
     cursor: pointer;
     color: white;
+}
+
+.descBoxHeader {
+	font-family: 'Istok Web';
+	color: lightgray; 
+	font-size: 27px;
+	margin: 10px 0 0 20px;
 }
 
 .descBoxItemMain {
