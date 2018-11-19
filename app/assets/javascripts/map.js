@@ -4662,30 +4662,6 @@ function getBridges() {
 /* -------------- End GET Layer Data Functions ----------------- */
 
 
-function expandFilter(){
-    var filterBox = document.getElementById("filterBox");
-    var filterContainer = document.getElementById("filterContainer");
-    var filterBoxItemHeader = document.getElementById("filterBoxItemHeader");
-    var arrow = document.getElementById("arrow");
-    var map = document.getElementById("mapid");
-     if(filterContainer.style.height === "0px"){
-        arrow.innerHTML = "&#x25BE;";
-        filterBox.style.height = "100%";
-        filterContainer.style.height = "100%";
-        filterContainer.style.overflowY = "auto";
-
-        map.style.marginLeft = "210px";
-     }
-     else{
-        arrow.innerHTML = "&#x25B8;";
-        filterBox.style.height = "50px";
-        filterContainer.style.height = "0px";
-        filterContainer.style.overflowY = "hidden";
-
-        map.style.marginLeft = "0px";
-     }
-}
-
 function addDescription(props){
     var name;
     var district1;
@@ -5230,7 +5206,7 @@ function playMapIntro(){
     var welcomeMap = "Welcome to the Map Page!"
     play(welcomeMap);
 
-    var cancelSpeech = "At anytime, you can hit the escape key to end all current speech.";
+    var cancelSpeech = "At anytime, you can hit the 0 key to end all current speech.";
     play(cancelSpeech);
 
     var mapExplenation = "This page consists of an interactive map of Venice. Interactive elements of the map include bridges, hotels, restaurants, churchs, and museums. Selecting an element brings up a box providing accessibility information on the selected element." +

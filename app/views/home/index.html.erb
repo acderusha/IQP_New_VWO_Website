@@ -42,15 +42,13 @@
             <div id="bridgeBtn" class="headerBtn headerRight" style="background-color: #1b1b1b; border-bottom: 3px white solid" onclick="bridgeDisplay()" onmouseover="play('Bridges Tab')">Bridges</div>
         </div>
     </div>
-
-    <div id="filterBox" class="filterBox" style="height: 50px; overflow-y: hidden;">
-        <div  id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseover="playFilter()" onclick="expandFilter()";>
-            <span id="arrow">&#x25B8;</span>
+    <div id="filterBox" class="filterBox">
+        <div  id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseover="playFilter()">
             Filter:
             <span id="filterName" style="cursor: pointer;">Bridges</span>
         </div>
         <div class="filterDivider"></div>
-        <div id=filterContainer class="filterBoxFilterContainer" style="height: 0px; overflow-y: hidden;">
+        <div id=filterContainer class="filterBoxFilterContainer">
         	<div id="rampDiv" class="filterBoxItemClick" style="margin-top: 2px;">
             	Ramps<br>
 	        </div>
@@ -86,7 +84,7 @@
 	        </div>
 	        <div id="installSlip" class="filterBoxItem">
 	            <input id="slipInstallCheck" type="checkbox" class="filterCheck" checked>
-	            Installed Edging
+	            Edging
 	        </div>
 	        <div id="noneSlip" class="filterBoxItem">
 	            <input id="slipNoneCheck" type="checkbox" class="filterCheck" checked>
@@ -112,7 +110,7 @@
 	        </div>
 	        <div id="installTact" class="filterBoxItem">
 	            <input id="tactInstallCheck" type="checkbox" class="filterCheck" checked>
-	            Installed Tactile
+	            Tactile
 	        </div>
 	        <div id="noneTact" class="filterBoxItem">
 	            <input id="tactNoneCheck" type="checkbox" class="filterCheck" checked>

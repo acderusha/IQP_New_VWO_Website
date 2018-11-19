@@ -49,21 +49,15 @@
     var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to the Home, Arriving to Venice, Moving Around, Staying the Night, Dining Out, Applications, Organizations, and Map pages. A close button is located at the top-right hand side of the screen. A mute button is located at the top-left hand side of the screen to turn off and on all speech."
     play(welcomeMenuText);
 
-	  document.getElementById("myNav").style.width = "100%";
+	  document.getElementById("myNav").style.height = "100%";
 	}
 
 	function closeNav() {
-	  document.getElementById("myNav").style.width = "0%";
+	  document.getElementById("myNav").style.height = "0%";
 	}
 
 
   /* ------------ Speech Contol -------------- */
-
-  document.body.addEventListener('keypress', function(e) {
-    if(e.key == "Escape"){
-      responsiveVoice.cancel();
-    }
-  });
 
   function play(textToPlay){
     if(muteVar){
@@ -94,6 +88,7 @@
       console.log("false");
       muteVar = false;
       mutebtn.checked = false;
+      responsiveVoice.speak("Speech Off","UK English Male");
     }
     else{
       localStorage.setItem("mute", "true");
@@ -160,12 +155,12 @@
   }
 
   function playGoBack(){
-    var goBackText = "Close Button to return to the page you were on."
+    var goBackText = "Close Button. Click to return to the page you were on."
     play(goBackText);
   }
 
   function playMute(){
-    var muteText = "Mute Button to mute all speech.";
+    var muteText = "Speech Button. Click to turn off all speech.";
     play(muteText);
   }
 </script>
