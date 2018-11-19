@@ -49,7 +49,8 @@
             Filter:
             <span id="filterName" style="cursor: pointer;">Bridges</span>
         </div>
-        <div id=filterContainer>
+        <div class="filterDivider"></div>
+        <div id=filterContainer class="filterBoxFilterContainer" style="height: 0px; overflow-y: hidden;">
         	<div id="rampDiv" class="filterBoxItemClick" style="margin-top: 2px;">
             	Ramps<br>
 	        </div>
@@ -128,6 +129,9 @@
 	            <input id="privCheck" type="checkbox" class="filterCheck" checked>
 	            Private
 	        </div>
+          <br>
+          <br>
+          <br>
           <br>
           <br>
           <br>
@@ -288,13 +292,6 @@
                        </th>
                    </tr>
                </table>
-               <script>
-                   var map = document.getElementById("mapid");
-                   var mapColumn = document.getElementById("mapSection");
-
-                   var width = mapColumn.getAttribute("width");
-                   map.style.width = width;
-               </script>
            </th>
        </tr>
     </table>

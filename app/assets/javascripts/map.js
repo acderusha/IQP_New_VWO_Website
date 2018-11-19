@@ -4664,20 +4664,23 @@ function getBridges() {
 
 function expandFilter(){
     var filterBox = document.getElementById("filterBox");
+    var filterContainer = document.getElementById("filterContainer");
     var filterBoxItemHeader = document.getElementById("filterBoxItemHeader");
     var arrow = document.getElementById("arrow");
     var map = document.getElementById("mapid");
-     if(filterBox.style.height === "50px"){
+     if(filterContainer.style.height === "0px"){
         arrow.innerHTML = "&#x25BE;";
         filterBox.style.height = "100%";
-        filterBox.style.overflowY = "auto";
+        filterContainer.style.height = "100%";
+        filterContainer.style.overflowY = "auto";
 
         map.style.marginLeft = "210px";
      }
      else{
         arrow.innerHTML = "&#x25B8;";
         filterBox.style.height = "50px";
-        filterBox.style.overflowY = "hidden";
+        filterContainer.style.height = "0px";
+        filterContainer.style.overflowY = "hidden";
 
         map.style.marginLeft = "0px";
      }
@@ -4859,6 +4862,11 @@ function filterLayer() {
 
     bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature,
             filter: function(feature, layer) {
+                /* Removes bridges that weren't done */
+                if(feature.properties.district1 === "nan"){
+                    return true;
+                }
+
                 if(!rampPerFilter || !rampTempFilter || !rampNoneFilter) {
                     if (!rampPerFilter) {
                         if (feature.properties.ramp === "permanent") {
