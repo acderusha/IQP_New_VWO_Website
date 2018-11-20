@@ -21,8 +21,7 @@ body {
     z-index: 4;
     top: 0;
     left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
+    background: linear-gradient(to bottom right, #fff 60%, #cee7ff);
     overflow-x: hidden;
     overflow: hidden;
     transition: 0.5s;
@@ -167,8 +166,15 @@ input:checked + .slider:before {
     z-index: 3;
 
     top: 0;
-    background-color: rgba(0, 0, 0, 0.77);
-    box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+    background: transparent;
+    //background-color: rgba(0, 0, 0, 0.77);
+    //box-shadow: 0px 4px 5px rgba(0,0,0,.3);
+
+    transition: 0.8s all;
+}
+
+.headerChangeColor {
+   	background: white;
 }
 
 .headerBtn {
@@ -227,15 +233,15 @@ input:checked + .slider:before {
 }
 
 .hamDivContainer:hover{
-	background-color: #1b1b1b;
+	//background-color: #1b1b1b;
 }
 
 .hamDiv {
 	width: 30px;
     height: 3px;
 
-    background-color: white;
-    box-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
+    background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
+    //box-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
 
     margin: 6px 0;
 
@@ -247,10 +253,12 @@ input:checked + .slider:before {
 /* -------------- Footer CSS -------------- */
 
 footer {
-	height: 400px;
+	height: 375px;
 
 	padding-top: 15px;
-    background: linear-gradient(to bottom right, #1e88e5 40.76%, #78bdff);
+	margin-top: 20px;
+
+    background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
 	color: #fff;
 	font-size: 18px;
 
@@ -284,7 +292,7 @@ footer {
 	transition: all .3s ease;
 
 	font-family: 'Raleway', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 
 	h3{
 		max-height: 30px;
@@ -305,6 +313,13 @@ footer {
 
 	a {
 		color: white;
+	}
+
+	.aFooter{
+		color: white;
+	}
+	.aFooter:hover, .aFooter:focus {
+		text-decoration: none;
 	}
 }
 
@@ -667,8 +682,43 @@ footer {
     height: 100vh;
 }
 
+.homeHeader {
+	height: 25vh;
+
+	position: relative;
+	padding-top: 35px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+	box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+
+	z-index: 1;
+}
+
+.logo{
+	text-align: right;
+
+	h1{
+		margin: 0;
+
+		font-family: 'Istok Web',sans-serif;
+		font-size: 60px;
+		font-weight: bold;
+
+		background: linear-gradient(to bottom right, #12437b 54%, #15a1cf);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h2{
+		color: #12437b;
+		margin: 0;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 35px;
+	}
+}
+
 .carosalContainer {
-	grid-area: left;
 	position: relative;
 
 	overflow: hidden;
@@ -677,13 +727,62 @@ footer {
 	z-index: 0;
 }
 
+.carousel-caption{
+	cursor: pointer;
+
+	width: 220px;
+	height: 60px;
+
+	padding: 10px;
+	padding-top: 8px;
+	border: 1px black solid;
+	margin: 0 auto;
+	margin-bottom: 20px;
+
+	text-align: center;
+	display: table;
+
+	background-color: white;
+	//background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
+	box-shadow: 4px 4px 8px rgba(0,0,0,.8);
+	border-radius: 6px;
+
+	color: #12437b;
+	text-shadow: none;
+
+	font-family: 'Raleway', sans-serif;
+	font-size: 35px;
+
+	transition: .3s ease;
+
+	h3{
+		margin-top: 8px;
+		margin-bottom: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.carousel-caption:hover{
+	width: 240px;
+
+	color: white;
+	background: linear-gradient(to bottom right, #12437b 0%, #64b3ff);
+}
+
 .carousel-fade {
-     max-width: 100%;
+     width: 100%;
+     height: 75vh;
      margin: auto;
 
     .carousel-inner {
         .item {
             transition-property: opacity;
+
+            img{
+            	min-height: 80vh;
+            	max-height: 80vh;
+            }
         }
         
         .item,
@@ -712,6 +811,31 @@ footer {
     }
 }
 
+.carousel-indicators li {
+	cursor: pointer;
+	display: inline-block;
+
+    width: 50px;
+    height: 5px;
+    margin: 1px;
+
+    text-indent: -999px;
+
+    background-color: #000\9;
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #fff;
+    border-radius: 1px;
+}
+
+.carousel-indicators .active {
+
+    width: 50px;
+    height: 5px;
+
+    margin: 0;
+    background-color: #fff;
+}
+
 .gradient {
 	grid-area: left;
 	background: #000;
@@ -721,13 +845,4 @@ footer {
 	width: 100%;
 	z-index: 1;
 	opacity: 0.2;
-}
-
-.infoContainer {
-	grid-area: right;
-
-	padding: 100px;
-
-	display: grid;
-	justify-items: start;
 }

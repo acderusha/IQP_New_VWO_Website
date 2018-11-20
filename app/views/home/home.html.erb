@@ -1,4 +1,4 @@
-<div class="header" style="left: 0px">
+<div id="headerBar" class="header" style="left: 0px">
     <div class="headerRight hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
     	<div id="hamDiv1" class=hamDiv></div>
     	<div id="hamDiv2" class=hamDiv></div>
@@ -6,6 +6,17 @@
     </div>
 
     <script type="text/javascript">
+    	$(function() {
+		   $(window).scroll(function () {
+		      if ($(this).scrollTop() > 120) {
+		         $(headerBar).addClass('headerChangeColor')
+		      }
+		      if ($(this).scrollTop() < 120) {
+		         $(headerBar).removeClass('headerChangeColor')
+		      }
+		   });
+		});
+
 		function hoverOnMenu(){
 	    	play("Menu Button to open Menu Screen.");
 
@@ -28,31 +39,47 @@
 			div3.style.width = "30px";
 		} 
 	</script>
+</div>
 
-   	<div id="logoBtn" class="homeHeaderBtn headerLeft" >Venice Without Obstacles</div>
+<div class="homeHeader">
+	<div class="logo">
+		<h1>Venice Without Obstacles</h1>
+		<h2>Experiencing Venice Together</h2>
+	</div>
 </div>
 
 <div>
-	<!--<div class="carosalContainer">
-	  <div id="myCarousel" class="slide carousel-fade" data-ride="carousel" data-interval="8000">
-	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel" data-slide-to="1"></li>
-	      <li data-target="#myCarousel" data-slide-to="2"></li>
-	    </ol>
+	<div class="carosalContainer">
+	  <div id="myCarousel" class="slide carousel-fade" data-ride="carousel" data-interval="14000" data-pause="false">
+
+	  	<div class="carousel-caption">
+          <h3>Start Exploring &#10095;</h3>
+        </div>
 
 	    <div class="carousel-inner" role="listbox">
 
 	      <div class="item active">
-        	<img src="https://images.unsplash.com/photo-1534363968923-0640a695eee6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=4812066e90dbd2eb5858b0a031c8baca&auto=format&fit=crop&w=1000&q=80" width="100%" style="min-height: 100vh; max-height: 100vh;">
-      	  </div>
-
-	      <div class="item">
-	        <img src="https://c1.staticflickr.com/6/5746/25328284179_1e7b0bddb3_b.jpg" width="100%" style="min-height: 100vh; max-height: 100vh;">
+	        <img src="https://images.pexels.com/photos/163776/venice-gondola-sunset-italian-163776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%">
 	      </div>
 
 	      <div class="item">
-        	<img src="https://images.unsplash.com/photo-1534113414509-0eec2bfb493f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=82758c4bf1f07e310fe4be1b7a201339&auto=format&fit=crop&w=934&q=80" width="100%" style="min-height: 100vh; max-height: 100vh;">
+        	<img src="../images/gondolas4all.jpg" width="100%">
+      	  </div>
+
+	      <div class="item">
+        	<img src="https://images.pexels.com/photos/460630/pexels-photo-460630.jpeg?cs=srgb&dl=attractions-boats-buildings-460630.jpg&fm=jpg" width="100%">
+      	  </div>
+
+      	  <div class="item">
+        	<img src="../images/accessBridge.jpg" width="100%">
+      	  </div>
+
+	      <div class="item">
+        	<img src="https://images.pexels.com/photos/158441/venice-italy-sunset-grand-canal-158441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%">
+      	  </div>
+
+      	  <div class="item">
+        	<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Accademia-vaporetto-stop-20050525-016.jpg" width="100%">
       	  </div>
 	  
 	    </div>
@@ -61,7 +88,7 @@
 	<div class="gradient"></div>
 	<div class="infoContainer">
 		
-	</div>-->
+	</div>
 </div>
 
 <!--<div class="body homeContainer" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
