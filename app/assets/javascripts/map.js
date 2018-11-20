@@ -5203,22 +5203,17 @@ function goHome(){
 
 /* ------------------- Voice Functions -------------- */
 function playMapIntro(){
-    var welcomeMap = "Welcome to the Map Page!"
-    play(welcomeMap);
 
-    var cancelSpeech = "At anytime, you can hit the 0 key to end all current speech.";
-    play(cancelSpeech);
-
-    var mapExplenation = "This page consists of an interactive map of Venice. Interactive elements of the map include bridges, hotels, restaurants, churchs, and museums. Selecting an element brings up a box providing accessibility information on the selected element." +
-    "The map is in the center of the page. At the top-center and top-right of the page, there are layer selection tabs. Each layer has their own set of properties that can be used to filter the selected layer." + 
-    "Each layer can be filtered based on properties listed on the left hand side of the page; filtering an element removes it from the map. " + 
-    "The menu button at the very top-right of the page will take you to the menu page where you can travel to other pages.";
-    playSlow(mapExplenation);
+    var welcomeMap = "Welcome to the Map Page! This page consists of an interactive map of Venice. Selecting an element brings up a box providing accessibility information on a selected element on the right had side of the page." +
+    "The map is in the center of the page. At the top-center and top-right of the page, there are layer selection tabs. Each layer has their own set of properties that can be used to filter groups of elements." + 
+    "Each group can be filtered based on it's properties listed on the left hand side of the page; filtering an element removes it from the map. " + 
+    "The menu button at the top-right of the page will take you to the menu page where you can travel to other pages.";
+    playSlow(welcomeMap);
 }
 
 function playFilter(){
     var filterLabel = document.getElementById("filterName").innerHTML;
-    var filterText = "Currently filtering " + filterLabel;
+    var filterText = "Currently filtering: " + filterLabel + ".";
 
     play(filterText);
 }

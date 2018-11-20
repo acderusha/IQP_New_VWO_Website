@@ -1,8 +1,8 @@
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onmousemove="playGoBack()";"><i class="fa fa-close"></i></a>
-  <div href="javascript:void(0)" class="mutebtn">
+<div id="myNav" alt="Open Menu Button" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" onmousemove="playGoBack()"><i class="fa fa-close"></i></a>
+  <div class="mutebtn">
     Speech
-    <label class="switch" onmousemove="playMute()";">
+    <label class="switch" onmousemove="playMute()">
       <input id="mutebtn" type="checkbox" checked onclick="muteSpeech()">
       <span class="slider round"></span>
     </label>
@@ -115,47 +115,47 @@
   /* ------------ Speach Functions -------------- */
 
   function playGoHome(){
-    var goHomeText = "Home Button to go to the Home Page."
+    var goHomeText = "Home Button. Click to go to the Home Page."
     play(goHomeText);
   }
 
   function playGoArrival(){
-    var goArrivalText = "Arrival Button to go to the Arriving in Venice page."
+    var goArrivalText = "Arrival Button. Click to go to the Arriving to Venice page."
     play(goArrivalText);
   }
 
   function playGoTraveling(){
-    var goTravelText = "Traveling Button to go to the Traveling in Venice page."
+    var goTravelText = "TMoving Button. Click to go to the Moving Around page."
     play(goTravelText);
   }
 
   function playGoNight(){
-    var goNightText = "Staying the Night Button to go to the Staying the Night page."
+    var goNightText = "Staying the Night Button. Click to go to the Staying the Night page."
     play(goNightText);
   }
 
   function playGoDining(){
-    var goDiningText = "Dining Out Button to go to the Dining Out page."
+    var goDiningText = "Dining Out Button. Click to go to the Dining Out page."
     play(goDiningText);
   }
 
   function playGoApp(){
-    var goAppText = "Applications Button to go to the Applications page."
+    var goAppText = "Applications Button. Click to go to the Applications page."
     play(goAppText);
   }
 
   function playGoOrg(){
-    var goOrgText = "Organizations Button to go to the Organizations page."
+    var goOrgText = "Organizations Button. Click to go to the Organizations page."
     play(goOrgText);
   }
 
   function playGoMap(){
-    var goMapText = "Map Button to go to the Map page."
+    var goMapText = "Map Button. Click to go to the Map page."
     play(goMapText);
   }
 
   function playGoBack(){
-    var goBackText = "Close Button. Click to return to the page you were on."
+    var goBackText = "Close Button. Click to return to previous page."
     play(goBackText);
   }
 

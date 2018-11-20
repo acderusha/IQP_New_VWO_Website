@@ -246,28 +246,59 @@ input:checked + .slider:before {
 
 /* -------------- Footer CSS -------------- */
 
-.footer {
-    position: fixed;
-    width: 100%;
-    height: 400px;
+footer {
+	height: 400px;
 
-    left: 0;
-    bottom: 0;
+	padding-top: 50px;
+    background-color: #377bb2;
+	color: #fff;
+	font-size: 18px;
 
-    background-color: rgba(0, 0, 0, 0.77);
-    color: white;
-    text-align: center;
-
-	box-sizing: border-box !important;
+    box-sizing: border-box;
 }
 
 .footerContainer {
 	width: 100%;
 	height: 100%;
 
-	padding: 10px 100px 10px 100px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 75px;
+	padding-right: 75px;
 
-	box-sizing: border-box !important;
+}
+
+.footerInfoContainer {
+	cursor: pointer;
+
+	width: 31%;
+	height: 100%;
+
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: 10px;
+	margin-right: 10px; 
+
+	display: inline-table;
+	transition: .3s ease;
+
+	h3{
+		max-height: 28px;
+		font-size: 28px;
+	}
+
+	ul{
+		padding-left: 15px;
+		font-size: 20px
+	}
+	li:hover{
+		font-size: 28px;
+		border-bottom: 1px white solid;
+	}
+
+	a {
+		color: white;
+	}
 }
 
 /* -------------- End Footer CSS -------------- */
@@ -378,20 +409,6 @@ input:checked + .slider:before {
     z-index: 2;
 }
 
-.filterBoxItem {
-    cursor: pointer;
-
-    text-align: left;
-    color: white;
-    font-size: 15px;
-    letter-spacing: 1px;
-
-    margin: 4px 10px 4px 10px;
-}
-.filterBoxItem:hover{
-    font-size: 22px;
-}
-
 .filterDivider {
 	position: fixed;
 	top: 99px;
@@ -412,7 +429,7 @@ input:checked + .slider:before {
 
 	font-family: 'Nunito Sans';
 	color: white;
-	font-size: 20px;
+	font-size: 21px;
 	background-color: #3b3b3b;
 
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
@@ -425,13 +442,27 @@ input:checked + .slider:before {
 	margin-top: 48px;
 }
 
+.filterBoxItem {
+    cursor: pointer;
+
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    margin: 4px 10px 4px 10px;
+}
+.filterBoxItem:hover{
+    font-size: 25px;
+}
+
 .filterBoxItemClick {
     width: calc(100% - 10px);
 
     text-align: left;
     float: left;
     color: white;
-    font-size: 18px;
+    font-size: 21px;
     font-family: 'Nunito Sans';
 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);

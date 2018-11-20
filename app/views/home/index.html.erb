@@ -39,7 +39,7 @@
             <div id="churchBtn" class="headerBtn headerRight" onclick="churchDisplay()" onmouseover="play('Churchs Tab')">Churches</div>
             <div id="restBtn" class="headerBtn headerRight" onclick="restDisplay()" onmouseover="play('Restaurants Tab')">Restaurants</div>
             <div id="hotelBtn" class="headerBtn headerRight" onclick="hotelDisplay()" onmouseover="play('Hotels Tab')">Hotels</div>
-            <div id="bridgeBtn" class="headerBtn headerRight" style="background-color: #1b1b1b; border-bottom: 3px white solid" onclick="bridgeDisplay()" onmouseover="play('Bridges Tab')">Bridges</div>
+            <div id="bridgeBtn" class="headerBtn headerRight" style="background-color: #1b1b1b; border-bottom: 3px white solid" onclick="bridgeDisplay()" onmouseover="playBridgesTab()">Bridges</div>
         </div>
     </div>
     <div id="filterBox" class="filterBox">
@@ -64,7 +64,7 @@
 	            <input id="rampNoneCheck" type="checkbox" class="filterCheck" checked>
 	            No Ramp
 	        </div>
-	        <div id="railDiv"class="filterBoxItemClick">
+	        <div id="railDiv" class="filterBoxItemClick">
 	            Railing<br>
 	        </div>
 	        <div id="both" class="filterBoxItem">
@@ -127,9 +127,6 @@
 	            <input id="privCheck" type="checkbox" class="filterCheck" checked>
 	            Private
 	        </div>
-          <br>
-          <br>
-          <br>
           <br>
           <br>
           <br>
