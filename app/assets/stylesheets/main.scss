@@ -249,7 +249,7 @@ input:checked + .slider:before {
 footer {
 	height: 400px;
 
-	padding-top: 20px;
+	padding-top: 15px;
     background: linear-gradient(to bottom right, #1e88e5 40.76%, #78bdff);
 	color: #fff;
 	font-size: 18px;
@@ -284,6 +284,7 @@ footer {
 	transition: all .3s ease;
 
 	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
 
 	h3{
 		max-height: 30px;
@@ -294,7 +295,7 @@ footer {
 
 	ul{
 		padding-left: 15px;
-		font-size: 20px
+		font-size: 22px
 	}
 
 	li:hover{
@@ -304,10 +305,6 @@ footer {
 
 	a {
 		color: white;
-	}
-
-	p{
-		font-size: 17px;
 	}
 }
 
