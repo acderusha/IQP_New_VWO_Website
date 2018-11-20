@@ -40,35 +40,47 @@ body {
     padding: 2px;
     text-decoration: none;
     font-size: 45px;
-    color: #959595;
+    color: #777;
     display: block;
     transition: 0.2s;
 }
 
 .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-    font-size: 52px;
+    font-size: 60px;
+    font-weight: 900;
+
+    background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .overlay .closebtn {
+	cursor: pointer;
+
     position: absolute;
 	top: 50px;
 	right: 30px;
 	font-size: 30px;
 
 	padding: 5px 40px 5px 40px;
-}
 
+	transition: .2s ease;
+
+	color: #777;
+}
 .closebtn:hover{
-	font-size: 40px;
-	transition: .3s ease;
+	font-size: 45px;
+
+	background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .mutebtn {
 	text-decoration: none;
 	text-align: left;
 	vertical-align: middle;
-	color: #959595;
+	color: #777;
     display: block;
     transition: 0.3s;
 
@@ -82,7 +94,9 @@ body {
 	font-family: 'Istok Web';
 }
 .mutebtn:hover {
-	color: #f1f1f1;
+	background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .switch {
@@ -170,7 +184,7 @@ input:checked + .slider:before {
     //background-color: rgba(0, 0, 0, 0.77);
     //box-shadow: 0px 4px 5px rgba(0,0,0,.3);
 
-    transition: 0.8s all;
+    transition: 0.6s all;
 }
 
 .headerChangeColor {
@@ -256,7 +270,6 @@ footer {
 	height: 375px;
 
 	padding-top: 15px;
-	margin-top: 20px;
 
     background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
 	color: #fff;
@@ -705,7 +718,7 @@ footer {
 		font-size: 60px;
 		font-weight: bold;
 
-		background: linear-gradient(to bottom right, #12437b 54%, #15a1cf);
+		background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
@@ -745,7 +758,7 @@ footer {
 	background-color: white;
 	//background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
 	box-shadow: 4px 4px 8px rgba(0,0,0,.8);
-	border-radius: 6px;
+	border-radius: 4px;
 
 	color: #12437b;
 	text-shadow: none;
@@ -753,7 +766,7 @@ footer {
 	font-family: 'Raleway', sans-serif;
 	font-size: 35px;
 
-	transition: .3s ease;
+	transition: .2s ease;
 
 	h3{
 		margin-top: 8px;

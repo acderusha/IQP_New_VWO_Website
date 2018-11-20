@@ -1,320 +1,112 @@
-<script type="text/javascript">
-  playMapIntro();
-</script>
-
-<div style="padding-top: 50px">
-    <div class="body">
-        <div class="header" style="left: 0px">
-            <div class="headerRight hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
-            	<div id="hamDiv1" class=hamDiv></div>
-            	<div id="hamDiv2" class=hamDiv></div>
-            	<div id="hamDiv3" class=hamDiv></div>
-            </div>
-
-            <script type="text/javascript">
-            	function hoverOnMenu(){
-                play("Menu Button to open Menu Screen.");
-
-      					var div1 = document.getElementById("hamDiv1");
-      					var div2 = document.getElementById("hamDiv2");
-      					var div3 = document.getElementById("hamDiv3");
-
-      					div1.style.width = "40px";
-      					div2.style.width = "35px";
-      					div3.style.width = "30px";
-				      }
-
-      				function hoverOffMenu(){
-      					var div1 = document.getElementById("hamDiv1");
-      					var div2 = document.getElementById("hamDiv2");
-      					var div3 = document.getElementById("hamDiv3");
-
-      					div1.style.width = "30px";
-      					div2.style.width = "30px";
-      					div3.style.width = "30px";
-      				} 
-            </script>
-
-            <div id="museumBtn" class="headerBtn headerRight" onclick="museumDisplay()" onmouseover="play('Museums Tab')">Museums</div>
-            <div id="churchBtn" class="headerBtn headerRight" onclick="churchDisplay()" onmouseover="play('Churchs Tab')">Churches</div>
-            <div id="restBtn" class="headerBtn headerRight" onclick="restDisplay()" onmouseover="play('Restaurants Tab')">Restaurants</div>
-            <div id="hotelBtn" class="headerBtn headerRight" onclick="hotelDisplay()" onmouseover="play('Hotels Tab')">Hotels</div>
-            <div id="bridgeBtn" class="headerBtn headerRight" style="background-color: #1b1b1b; border-bottom: 3px white solid" onclick="bridgeDisplay()" onmouseover="playBridgesTab()">Bridges</div>
-        </div>
-    </div>
-    <div id="filterBox" class="filterBox">
-        <div  id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseover="playFilter()">
-            Filter:
-            <span id="filterName" style="cursor: pointer;">Bridges</span>
-        </div>
-        <div class="filterDivider"></div>
-        <div id=filterContainer class="filterBoxFilterContainer">
-        	<div id="rampDiv" class="filterBoxItemClick" style="margin-top: 2px;">
-            	Ramps<br>
-	        </div>
-	        <div id="perm" class="filterBoxItem">
-	            <input id="rampPerCheck" type="checkbox" class="filterCheck" checked>
-	            Permanent
-	        </div>
-	        <div id="temp" class="filterBoxItem">
-	            <input id="rampTempCheck" type="checkbox" class="filterCheck" checked>
-	            Temporary
-	        </div>
-	        <div id="ramp_none" class="filterBoxItem">
-	            <input id="rampNoneCheck" type="checkbox" class="filterCheck" checked>
-	            No Ramp
-	        </div>
-	        <div id="railDiv" class="filterBoxItemClick">
-	            Railing<br>
-	        </div>
-	        <div id="both" class="filterBoxItem">
-	            <input id="railBothCheck" type="checkbox" class="filterCheck" checked>
-	            Both Sides
-	        </div>
-	        <div id="one" class="filterBoxItem">
-	            <input id="railOneCheck" type="checkbox" class="filterCheck" checked>
-	            One Side
-	        </div>
-	        <div id="rail_none" class="filterBoxItem">
-	            <input id="railNoneCheck" type="checkbox" class="filterCheck" checked>
-	            No Railings
-	        </div>
-	        <div id="slipDiv" class="filterBoxItemClick">
-	            Slip Stair Edging <br>
-	        </div>
-	        <div id="installSlip" class="filterBoxItem">
-	            <input id="slipInstallCheck" type="checkbox" class="filterCheck" checked>
-	            Edging
-	        </div>
-	        <div id="noneSlip" class="filterBoxItem">
-	            <input id="slipNoneCheck" type="checkbox" class="filterCheck" checked>
-	            No Edging
-	        </div>
-	        <div id="openDiv" class="filterBoxItemClick">
-	            Canal Opening<br>
-	        </div>
-	        <div id="openBoth" class="filterBoxItem">
-	            <input id="openBothCheck" type="checkbox" class="filterCheck" checked>
-	            Both Sides
-	        </div>
-	        <div id="openOne" class="filterBoxItem">
-	            <input id="openOneCheck" type="checkbox" class="filterCheck" checked>
-	            One Side
-	        </div>
-	        <div id="openNone" class="filterBoxItem">
-	            <input id="openNoneCheck" type="checkbox" class="filterCheck" checked>
-	            No Opening
-	        </div>
-	        <div id="tactDiv" class="filterBoxItemClick">
-	            Tactile Pavement<br>
-	        </div>
-	        <div id="installTact" class="filterBoxItem">
-	            <input id="tactInstallCheck" type="checkbox" class="filterCheck" checked>
-	            Tactile
-	        </div>
-	        <div id="noneTact" class="filterBoxItem">
-	            <input id="tactNoneCheck" type="checkbox" class="filterCheck" checked>
-	            No Tactile
-	        </div>
-	        <div id="propDiv" class="filterBoxItemClick">
-	            Property<br>
-	        </div>
-	        <div id="pub" class="filterBoxItem">
-	            <input id="pubCheck" type="checkbox" class="filterCheck" checked>
-	            Public
-	        </div>
-	        <div id="priv" class="filterBoxItem">
-	            <input id="privCheck" type="checkbox" class="filterCheck" checked>
-	            Private
-	        </div>
-          <br>
-          <br>
-          <br>
-        </div>
-
-        <script>
-            var rampPer = document.getElementById("perm");
-            var rampTemp = document.getElementById("temp");
-            var rampNone = document.getElementById("ramp_none");
-            var rampPerCheck = document.getElementById("rampPerCheck");
-            var rampTempCheck = document.getElementById("rampTempCheck");
-            var rampNoneCheck = document.getElementById("rampNoneCheck");
-
-            var railBoth = document.getElementById("both");
-            var railOne = document.getElementById("one");
-            var railNone = document.getElementById("rail_none");
-            var railBothCheck = document.getElementById("railBothCheck");
-            var railOneCheck = document.getElementById("railOneCheck");
-            var railNoneCheck = document.getElementById("railNoneCheck");
-
-            var slipInstall = document.getElementById("installSlip");
-            var slipNone = document.getElementById("noneSlip");
-            var slipInstallCheck = document.getElementById("slipInstallCheck");
-            var slipNoneCheck = document.getElementById("slipNoneCheck");
-
-            var openBoth = document.getElementById("openBoth");
-            var openOne = document.getElementById("openOne");
-            var openNone = document.getElementById("openNone");
-            var openBothCheck = document.getElementById("openBothCheck");
-            var openOneCheck = document.getElementById("openOneCheck");
-            var openNoneCheck = document.getElementById("openNoneCheck");
-
-            var tactInstall = document.getElementById("installTact");
-            var tactNone = document.getElementById("noneTact");
-            var tactInstallCheck = document.getElementById("tactInstallCheck");
-            var tactNoneCheck = document.getElementById("tactNoneCheck");
-
-            var pub = document.getElementById("pub");
-            var priv = document.getElementById("priv");
-            var pubCheck = document.getElementById("pubCheck");
-            var privCheck = document.getElementById("privCheck");
-
-
-            /* -------------------------- Filter Event Listeners ---------------------- */
-
-            var rampPerFilter = true;
-            var rampTempFilter = true;
-            var rampNoneFilter = true;
-            var railBothFilter = true;
-            var railOneFilter = true;
-            var railNoneFilter = true;
-            var slipInstallFilter = true;
-            var slipNoneFilter = true;
-            var openBothFilter = true;
-            var openOneFilter = true;
-            var openNoneFilter = true;
-            var tactInstallFilter = true;
-            var tactNoneFilter = true;
-            var publicFilter = true;
-            var privFilter = true;
-
-            rampPer.addEventListener("click", filterRampPer);
-            rampPerCheck.addEventListener("click", filterRampPer);
-
-            rampTemp.addEventListener("click", filterRampTemp);
-            rampTempCheck.addEventListener("click", filterRampTemp);
-
-            rampNone.addEventListener("click", filterRampNone);
-            rampNoneCheck.addEventListener("click", filterRampNone);
-
-            railBoth.addEventListener("click", filterRailBoth);
-            railBothCheck.addEventListener("click", filterRailBoth);
-
-            railOne.addEventListener("click", filterRailOne);
-            railOneCheck.addEventListener("click", filterRailOne);
-
-            railNone.addEventListener("click", filterRailNone);
-            railNoneCheck.addEventListener("click", filterRailNone);
-
-            slipInstall.addEventListener("click", filterSlipInstall);
-            slipInstallCheck.addEventListener("click", filterSlipInstall);
-
-            slipNone.addEventListener("click", filterSlipNone);
-            slipNoneCheck.addEventListener("click", filterSlipNone);
-
-            openBoth.addEventListener("click", filterOpenBoth);
-            openBothCheck.addEventListener("click", filterOpenBoth);
-
-            openOne.addEventListener("click", filterOpenOne);
-            openOneCheck.addEventListener("click", filterOpenOne);
-
-            openNone.addEventListener("click", filterOpenNone);
-            openNoneCheck.addEventListener("click", filterOpenNone);
-
-            tactInstall.addEventListener("click", filterTactInstall);
-            tactInstallCheck.addEventListener("click", filterTactInstall);
-
-            tactNone.addEventListener("click", filterTactNone);
-            tactNoneCheck.addEventListener("click", filterTactNone);
-
-            pub.addEventListener("click", filterPublic);
-            pubCheck.addEventListener("click", filterPublic);
-
-            priv.addEventListener("click", filterPrivate);
-            privCheck.addEventListener("click", filterPrivate);
-
-        </script>
+<div id="headerBar" class="header" style="left: 0px">
+    <div class="headerRight hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
+    	<div id="hamDiv1" class=hamDiv></div>
+    	<div id="hamDiv2" class=hamDiv></div>
+    	<div id="hamDiv3" class=hamDiv></div>
     </div>
 
-    <table id="table" class="mapTable">
-       <tr>
-           <th id="mapSection" valign="top">
-               <div align="left" class="searchBarContainer">
-               		<i class="fa fa-search"></i>
-                   	<input type="text"  class="searchBar" id="searchBar" placeholder="Search Bridge Name...">
-                   	<i id="mic" class="fa">&#xf130;</i>
-               </div>
-               <table id="mapDes" class="mapDescTable">
-                   <tr>
-                       <th width="100%" valign="top">
-                           <div id="mapid"></div>
-                       </th>
-                       <th id="descBoxContainer" class="descBoxContainer" valign="top">
-                          <div id="descBox" class="descBox" >
-                            <button id="close" class="closeBtn" onclick="closeDescBox()">
-                              <i class="fa fa-close"></i>
-                            </button>
-                              <script>
-                                    function closeDescBox() {
-                                      var container = document.getElementById("descBoxContainer");
-                                      var description = document.getElementById("descBox");
-                                      container.style.width = "0px";
-                                      description.style.width = "0px";
-                                      description.style.padding = "0px";
-                                    }
-                              </script>
-                              <div class="descBoxHeader">
-                                  Bridge Description
-                              </div>
-                              <div class="descBoxItemMain">
-                                  <i style="font-size:15px" class="fa">&#xf05a;</i>
-                                  General Info
-                              </div>
-                              <div id="infoDiv" style="float: left"></div>
-                              <div class="descBoxItemMain" style="margin-top: 20px">
-                                  <i style="font-size:16px; color: lightgray" class="fab fa-accessible-icon"></i>
-                                  Accommodations
-                              </div>
-                              <div id="accomDiv" style="float: left"></div>
-                              <div class="descBoxItemMain" style="margin-top: 20px">
-                                  &#9888; Cautions
-                              </div>
-                              <div id="cautionDiv" style="float: left"></div>
-                              <script>
-                                addDescription();
-                              </script>
-                          </div>
-                       </th>
-                   </tr>
-               </table>
-           </th>
-       </tr>
-    </table>
-    <script>
-        /* --------------------------------- Map Initialization  ------------------------------------ */
-        var mymap = L.map('mapid').setView([45.436309, 12.335072], 14);
-        L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-            maxZoom: 19,
-            subdomains: ['a','b','c','d'],
-            id: 'mapbox.streets',
-            accessToken: 'pk.eyJ1IjoidmVuaWNld2l0aG91dG9ic3RhY2xlcyIsImEiOiJjam55azU0MHgxNTR4M3BrYjh2NzV1d3lyIn0.6EVMzVUveIUc-0BJfMijJw'
-        }).addTo(mymap);
+    <script type="text/javascript">
+    	$(function() {
+		   $(window).scroll(function () {
+		      if ($(this).scrollTop() > 120) {
+		         $(headerBar).addClass('headerChangeColor')
+		      }
+		      if ($(this).scrollTop() < 120) {
+		         $(headerBar).removeClass('headerChangeColor')
+		      }
+		   });
+		});
 
-        mymap.doubleClickZoom.disable();
+		function hoverOnMenu(){
+	    	play("Menu Button to open Menu Screen.");
 
-        /*var popup = L.popup();
+			var div1 = document.getElementById("hamDiv1");
+			var div2 = document.getElementById("hamDiv2");
+			var div3 = document.getElementById("hamDiv3");
 
-        function onMapClick(e) {
-            popup
-                .setLatLng(e.latlng)
-                .setContent("You clicked the map at " + e.latlng.toString())
-                .openOn(mymap);
-        }
-        mymap.on('click', onMapClick);*/
+			div1.style.width = "40px";
+			div2.style.width = "35px";
+			div3.style.width = "30px";
+	     }
 
-        getLayers();
+		function hoverOffMenu(){
+			var div1 = document.getElementById("hamDiv1");
+			var div2 = document.getElementById("hamDiv2");
+			var div3 = document.getElementById("hamDiv3");
 
-        addMapElements();
-    </script>
+			div1.style.width = "30px";
+			div2.style.width = "30px";
+			div3.style.width = "30px";
+		} 
+	</script>
 </div>
+
+<div class="homeHeader">
+	<div class="logo">
+		<h1>Venice Without Obstacles</h1>
+		<h2>Experiencing Venice Together</h2>
+	</div>
+</div>
+
+<div>
+	<div class="carosalContainer">
+	  <div id="myCarousel" class="slide carousel-fade" data-ride="carousel" data-interval="14000" data-pause="false">
+
+	  	<div class="carousel-caption">
+          <h3>Start Exploring &#10095;</h3>
+        </div>
+
+	    <div class="carousel-inner" role="listbox">
+
+	      <div class="item active">
+	        <img src="https://images.pexels.com/photos/163776/venice-gondola-sunset-italian-163776.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%">
+	      </div>
+
+	      <div class="item">
+        	<img src="../images/gondolas4all.jpg" width="100%">
+      	  </div>
+
+	      <div class="item">
+        	<img src="https://images.pexels.com/photos/460630/pexels-photo-460630.jpeg?cs=srgb&dl=attractions-boats-buildings-460630.jpg&fm=jpg" width="100%">
+      	  </div>
+
+      	  <div class="item">
+        	<img src="../images/accessBridge.jpg" width="100%">
+      	  </div>
+
+	      <div class="item">
+        	<img src="https://images.pexels.com/photos/158441/venice-italy-sunset-grand-canal-158441.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" width="100%">
+      	  </div>
+
+      	  <div class="item">
+        	<img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Venezia_Santa_Lucia_Train_Station_R02.jpg" width="100%">
+      	  </div>
+
+      	  <div class="item">
+        	<img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Accademia-vaporetto-stop-20050525-016.jpg" width="100%">
+      	  </div>
+	  
+	    </div>
+	  </div>
+	</div>
+	<div class="gradient"></div>
+	<div class="infoContainer">
+		
+	</div>
+</div>
+
+<!--<div class="body homeContainer" style="top: 0px; left: 0px; right: 0px; bottom: 0px;">
+    <div class="homeImg" style="background-image: url('https://images.pexels.com/photos/460630/pexels-photo-460630.jpeg?cs=srgb&dl=attractions-boats-buildings-460630.jpg&fm=jpg');">
+    	<div id="homeFirstImgText">
+	    	<div class="homeImgTextMain">
+	    		<b>Experiencing Venice Together</b>
+	    	</div>
+	    	<div class="homeImgTextMinor">
+	    		<b>Accessible Guilde for Planning your Trip to Venice</b>
+	    	</div>
+    	</div>
+    </div>-->
+
+    <%= render :partial => "/layouts/footer" %>
+</div>
+
