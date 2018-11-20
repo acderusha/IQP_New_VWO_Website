@@ -249,8 +249,8 @@ input:checked + .slider:before {
 footer {
 	height: 400px;
 
-	padding-top: 50px;
-    background-color: #377bb2;
+	padding-top: 20px;
+    background: linear-gradient(to bottom right, #1e88e5 40.76%, #78bdff);
 	color: #fff;
 	font-size: 18px;
 
@@ -271,26 +271,32 @@ footer {
 .footerInfoContainer {
 	cursor: pointer;
 
-	width: 31%;
+	width: 31.5%;
 	height: 100%;
 
 	padding-left: 15px;
 	padding-right: 15px;
 	margin-left: 10px;
 	margin-right: 10px; 
+	float: left;
 
 	display: inline-table;
-	transition: .3s ease;
+	transition: all .3s ease;
+
+	font-family: 'Raleway', sans-serif;
 
 	h3{
-		max-height: 28px;
+		max-height: 30px;
 		font-size: 28px;
+		font-weight: 600;
+		font-family: 'Libre Franklin', sans-serif; 
 	}
 
 	ul{
 		padding-left: 15px;
 		font-size: 20px
 	}
+
 	li:hover{
 		font-size: 28px;
 		border-bottom: 1px white solid;
@@ -298,6 +304,10 @@ footer {
 
 	a {
 		color: white;
+	}
+
+	p{
+		font-size: 17px;
 	}
 }
 
