@@ -1,0 +1,106 @@
+body{
+	background-color: #eef5f6;
+}
+
+.orgHeader {
+	min-height: 190px;
+	height: 25vh;
+
+	position: relative;
+	padding-top: 35px;
+	padding-left: 200px;
+	padding-right: 200px;
+
+	background-color: white;
+	box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+
+	z-index: 1;
+}
+
+.orgLogo{
+	text-align: left;
+
+	h1{
+		margin: 0;
+
+		font-family: 'Istok Web',sans-serif;
+		font-size: 60px;
+		font-weight: bold;
+
+		background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	h2{
+		color: #12437b;
+		margin: 0;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 35px;
+	}
+}
+
+.orgPage{
+	width: 100%;
+	max-width: 100%;
+
+	padding-left: 200px;
+	padding-right: 200px;
+
+	position: relative;
+	display: grid;
+	grid-template-columns: auto auto auto;
+
+	.org{
+		cursor: pointer;
+		position: relative;
+		overflow: hidden;
+
+		height: 450px;
+		width: 320px;
+
+		margin-top: 40px;
+
+		border-radius: 5px;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+		background-color: white;
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		
+		transition: 1s cubic-bezier(0, 0.5, 0.2, 1);
+		text-decoration: none;
+
+		img{
+			width: 100%;
+			height: 310px;
+
+			transition: 0.5s cubic-bezier(0, 0.5, 0.2, 1);
+
+			object-fit: cover;
+			grid-area: 1 / 1 / 2 / 2;
+
+			z-index: 0;
+		}
+
+		.orgText{
+			height: 140px;
+			padding: 15px;
+
+			h3{
+				margin: 0;
+				margin-bottom: 5px;
+			}
+
+			p{
+				font-size: 18px;
+			}
+		}
+	}
+
+	.org:hover{
+		margin-top: 30px;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+	}
+}

@@ -18,5 +18,6 @@
 // my code down here
 //= require map
 //= require home
+//= require main
 
 

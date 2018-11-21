@@ -15,4 +15,10 @@
  */
 /*
 *= require main
+*= require footer
+*= require menu
+*= require map
+*= require home
+*= require index
+*= require organizations
  */
