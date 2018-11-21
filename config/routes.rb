@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :home do
     get :index, :on => :collection
-    get :home, :on => :collection
+    get :map, :on => :collection
 
   end
 end

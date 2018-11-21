@@ -743,12 +743,13 @@ footer {
 .carousel-caption{
 	cursor: pointer;
 
-	width: 220px;
-	height: 60px;
+	width: 210px;
+	height: 70px;
 
-	padding: 10px;
-	padding-top: 8px;
-	border: 1px black solid;
+	padding: 5px;
+	padding-top: 15px;
+	//border: 2px #12437b solid;
+	border-radius: 8px;
 	margin: 0 auto;
 	margin-bottom: 20px;
 
@@ -757,8 +758,7 @@ footer {
 
 	background-color: white;
 	//background: linear-gradient(to bottom right, #12437b 40.76%, #64b3ff);
-	box-shadow: 4px 4px 8px rgba(0,0,0,.8);
-	border-radius: 4px;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.8);
 
 	color: #12437b;
 	text-shadow: none;
@@ -766,7 +766,7 @@ footer {
 	font-family: 'Raleway', sans-serif;
 	font-size: 35px;
 
-	transition: .2s ease;
+	transition: all .4s ease;
 
 	h3{
 		margin-top: 8px;
@@ -777,10 +777,9 @@ footer {
 }
 
 .carousel-caption:hover{
-	width: 240px;
-
 	color: white;
 	background: linear-gradient(to bottom right, #12437b 0%, #64b3ff);
+	box-shadow: 3px 3px 8px rgba(0,0,0,1);
 }
 
 .carousel-fade {
