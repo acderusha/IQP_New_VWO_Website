@@ -19,5 +19,6 @@
 //= require map
 //= require home
 //= require main
+//= require orgIndividual
 
 

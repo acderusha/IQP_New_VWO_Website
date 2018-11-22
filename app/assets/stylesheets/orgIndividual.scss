@@ -1,5 +1,5 @@
 .breadCrumb{
-	margin-top: 7px;
+	margin-top: 4px;
 
 	font-size: 22px;
 	color: #12437b;
@@ -18,7 +18,7 @@
 	grid-template-columns: auto 1fr;
 	grid-template-rows: auto auto auto;
 	grid-template-areas: "side content end";
-	grid-gap: 70px;
+	grid-gap: 80px;
 
 	.sideContainterLeft{
 		width: 200px;
@@ -51,7 +51,7 @@
 		padding: 8px;
 		//border: 3px #12437b solid;
 		border-radius: 4px;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 
 		font-size: 25px;
 		text-align: center;
@@ -82,7 +82,7 @@
 
 		max-width: 500px;
 
-		//grid-area: content;
+		grid-area: content;
 
 		h1{
 			margin-bottom: 0;
@@ -112,28 +112,45 @@
 		}
 	}
 
-	.sideContainerRight{
+	.mapContainer{
 		width: 200px;
+		height: 200px;
 
-		grid-area: end;
+		border-radius: 4px;
+		margin-bottom: 20px;
 
-		.mapContainer{
-			width: 200px;
-			height: 200px;
+		background-color: white;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 
-			border-radius: 4px;
-			margin-bottom: 20px;
-
-			background-color: white;
-			box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
-
-			overflow: hidden;
-		}
-
-		h2{
-			margin: 0 auto;
-			margin-left: 8px;
-			background-color: white;
-		}
+		overflow: hidden;
 	}
+}
+
+.carousel-indicators .active{
+	margin: 1px;
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.carousel-indicators li{
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+.orgCarousel-inner{
+	position: relative;
+	width: 100%;
+
+	min-height: 315px;
+	max-height: 315px;
+
+	overflow: hidden;
 }
