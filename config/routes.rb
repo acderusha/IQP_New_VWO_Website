@@ -7,6 +7,7 @@ Rails.application.routes.draw do
     get :main, :on => :collection
     get :map, :on => :collection
     get :organizations, :on => :collection
+    get :gondolas4all, :on => :collection
 
   end
 end

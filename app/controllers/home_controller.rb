@@ -13,4 +13,7 @@ class HomeController < ApplicationController
     def organizations
     end
 
+    def gondolas4all
+    end
+
 end
