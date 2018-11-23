@@ -1,0 +1,183 @@
+.breadCrumb{
+	margin-top: 4px;
+
+	font-size: 22px;
+	color: #12437b;
+}
+
+.appPageIndividual{
+	width: 100%;
+	max-width: 100%;
+
+	padding-left: 200px;
+	padding-right: 200px;
+	padding-top: 40px;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "side content end";
+	grid-gap: 80px;
+
+	.sideContainterLeft{
+		width: 200px;
+
+		grid-area: side;
+	}
+
+	.logoContainer{
+		width: 200px;
+		height: 200px;
+
+		border-radius: 4px;
+		margin-bottom: 20px;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+		overflow: hidden;
+	}
+
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.pageLink{
+		cursor: pointer;
+
+		width: 200px;
+
+		padding: 8px;
+		//border: 3px #12437b solid;
+		border-radius: 4px;
+		margin-bottom: 40px;
+
+		font-size: 25px;
+		text-align: center;
+
+		background-color: white;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+		grid-area: content;
+		transition: all 0.3s ease;
+
+		a{
+			color: #12437b;
+			text-decoration: none;
+		}
+	}
+
+	.pageLink:hover{
+		background: linear-gradient(to bottom right, #12437b 0%, #64b3ff);
+		box-shadow: 0px 5px 12px rgba(0,0,0,0.3);
+
+		a{
+			color: white;
+		}
+	}
+
+	.pageLinkImg{
+		cursor: pointer;
+
+		width: 200px;
+		height: 70px;
+
+		padding: 0;
+		border: none;
+		border-radius: 10px;
+		margin-bottom: 20px;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+		background-color: transparent;
+
+		transition: all 0.3s ease;
+	}
+
+	.pageLinkImg:hover{
+		background-color: transparent;
+		box-shadow: 0px 5px 12px rgba(0,0,0,0.4);
+	}
+
+	.infoContainer{
+		position: relative;
+
+		max-width: 500px;
+
+		grid-area: content;
+
+		h1{
+			margin-bottom: 0;
+
+			font-family: 'Istok Web',sans-serif;
+			font-size: 40px;
+			font-weight: bold;
+
+			background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		h2{
+			margin-top: 5px;
+			margin-bottom: 15px;
+
+			font-size: 25px;
+
+			color: #12437b;
+		}
+
+		p{
+			font-size: 20px;
+
+			color: #107a9d;
+		}
+	}
+
+	.mapContainer{
+		width: 200px;
+		height: 200px;
+
+		border-radius: 4px;
+		margin-bottom: 20px;
+
+		background-color: white;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+		overflow: hidden;
+	}
+}
+
+.carousel-indicators .active{
+	margin: 1px;
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+
+	margin-left: 3px;
+	margin-right: 3px;
+
+	z-index: 2;
+}
+
+.carousel-indicators li{
+	width: 12px;
+	height: 12px;
+	border-radius: 10px;
+
+	margin-left: 3px;
+	margin-right: 3px;
+
+	z-index: 2;
+}
+
+.appCarousel-inner{
+	position: relative;
+	width: 100%;
+
+	min-height: 315px;
+	max-height: 315px;
+	border-radius: 4px;
+
+	overflow: hidden;
+}

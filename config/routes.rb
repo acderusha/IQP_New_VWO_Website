@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     get :organizations, :on => :collection
     get :applications, :on => :collection
     get :gondolas4all, :on => :collection
+    get :blindSquare, :on => :collection
 
   end
 end

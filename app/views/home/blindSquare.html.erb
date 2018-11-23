@@ -1,0 +1,74 @@
+<div class="appHeader">
+	<div class="appLogo">
+		<h1>Applications</h1>
+		<h2>Making it Simple</h2>
+		<div class="breadCrumb">
+			<a href="/home/applications">Applications</a>
+			/
+			<a href="/home/blindSqaure">BlindSquare</a>
+		</div>
+	</div>
+</div>
+
+<div class="appPageIndividual">
+	<div class="sideContainerLeft">
+		<div class="logoContainer">
+			<img alt="Blind Square logo" src="../images/applications/blindSquare/bsLogo.jpg">
+		</div>	
+
+		<div class="pageLink">
+			<a href="http://www.blindsquare.com">blindsquare.com</a>
+		</div>
+
+		<input id="appStore" type="image" name="appStore" alt="App Store" class="pageLinkImg" src="../images/applications/app_store.png" onclick="appStore()">
+			
+		</input>
+		<script type="text/javascript">
+			function appStore(){
+				window.location="https://itunes.apple.com/app/blindsquare/id500557255";
+			}
+		</script>
+	</div>
+
+	<div class="infoContainer">
+		<h1>BlindSquare</h1>
+		<h2>Pioneering accessible navigation - indoors and outdoors</h2>
+		<p>
+			Content goes here . . .
+		</p>
+
+		<div id="blindSquareCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		  <!-- Indicators -->
+		  <ul class="carousel-indicators">
+		    <li data-target="#blindSquareCarousel" data-slide-to="0" class="active"></li>
+		    <li data-target="#blindSquareCarousel" data-slide-to="1"></li>
+		    <li data-target="#blindSquareCarousel" data-slide-to="2"></li>
+		  </ul>
+		  
+		  <!-- The slideshow -->
+		  <div class="appCarousel-inner">
+		    <div class="carousel-item active">
+		      <iframe alt="Blind Square promo video" width="100%" height="315" src="https://www.youtube.com/embed/JqU_jM_vkqc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		    </div>
+		    <div class="carousel-item">
+				<iframe alt="Blind Square user interface video" width="100%" height="315" src="https://www.youtube.com/embed/tWn1oG9Mumk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</video>
+		    </div>
+		    <div class="carousel-item">
+		      <img src="../images/applications/blindSquare/blindSquare_multi.png" alt="Blind Square Logo" width="100%" height="315">
+		    </div>
+		  </div>
+		  
+		  <!-- Left and right controls -->
+		  <a class="carousel-control-prev" href="#blindSquareCarousel" data-slide="prev">
+		    <span class="carousel-control-prev-icon"></span>
+		  </a>
+		  <a class="carousel-control-next" href="#blindSquareCarousel" data-slide="next">
+		    <span class="carousel-control-next-icon"></span>
+		  </a>
+		</div>
+	</div>
+</div>
+
+<%= render :partial => "/layouts/footer" %>
