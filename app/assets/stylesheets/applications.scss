@@ -2,7 +2,7 @@ body{
 	background-color: #eef5f6;
 }
 
-.orgHeader {
+.appHeader {
 	min-height: 190px;
 	height: 25vh;
 
@@ -17,7 +17,7 @@ body{
 	z-index: 1;
 }
 
-.orgLogo{
+.appLogo{
 	text-align: left;
 
 	h1{
@@ -40,7 +40,8 @@ body{
 	}
 }
 
-.orgPage{
+
+.appSection{
 	width: 100%;
 	max-width: 100%;
 
@@ -48,11 +49,28 @@ body{
 	padding-right: 200px;
 	padding-top: 30px;
 
+	h1{
+		font-family: 'Istok Web',sans-serif;
+		font-size: 40px;
+
+		border-bottom: 4px #12437b solid;
+		border-radius: 4px;
+
+		background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+}
+
+.appPage{
+	width: 100%;
+	max-width: 100%;
+
 	position: relative;
 	display: grid;
 	grid-template-columns: auto auto auto;
 
-	.org{
+	.app{
 		cursor: pointer;
 		position: relative;
 		overflow: hidden;
@@ -86,7 +104,7 @@ body{
 			z-index: 0;
 		}
 
-		.orgText{
+		.appText{
 			height: 140px;
 			padding: 15px;
 			background: linear-gradient(to bottom right, #12437b 40.76%, #1d67ae);
@@ -103,7 +121,7 @@ body{
 		}
 	}
 
-	.org:hover{
+	.app:hover{
 		margin-top: 25px;
 		box-shadow: 0px 5px 15px rgba(0,0,0,0.7);
 	}
