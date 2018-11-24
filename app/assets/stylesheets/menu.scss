@@ -340,6 +340,11 @@ input:checked + .slider:before {
       position: relative;
 
       transition: all .2s ease;
+
+      a{
+        text-decoration: none;
+        color: #12437b;
+      }
     }
     .menuItem:hover{
       border-bottom: 2px #12437b solid;
