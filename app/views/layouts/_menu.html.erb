@@ -9,7 +9,7 @@
   </div>
 
   <div class="overlay-content">
-  	<a href="/home/main" onmouseover="playGoHome()">Home</a>
+  	<a href="/home" onmouseover="playGoHome()">Home</a>
     <a href="/home/map" onmouseover="playGoMap()">Map</a>
     <a href="#" onmouseover="playGoArrival()">Arriving to Venice</a>
     <a href="#" onmouseover="playGoTraveling()">Moving Around</a>
@@ -30,10 +30,10 @@
     <script type="text/javascript">
       $(function() {
        $(window).scroll(function () {
-          if ($(this).scrollTop() > 140) {
+          if ($(this).scrollTop() > 120) {
              $(headerBar).addClass('headerChangeColor')
           }
-          if ($(this).scrollTop() < 140) {
+          if ($(this).scrollTop() < 120) {
              $(headerBar).removeClass('headerChangeColor')
           }
        });
