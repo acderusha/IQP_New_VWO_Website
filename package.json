@@ -2,6 +2,7 @@
   "name": "IQP_New_Website",
   "private": true,
   "dependencies": {
+    "jquery-parallax.js": "^1.5.0",
     "leaflet-search": "^2.9.7"
   }
 }
