@@ -30,28 +30,40 @@ body {
 }
 
 .homeHeader {
-	min-height: 170px;
-	height: 20vh;
+	position: absolute;
 
-	position: relative;
-	padding-top: 20px;
-	padding-left: 200px;
-	padding-right: 200px;
+	width: 100%;
+	min-width: 1100px;
+	height: 78px;
+
+	top: 0px;
+	left: 0px;
+
+	margin-left: calc((100% - 1100px) / 2);
+	padding-right: calc((100% - 1100px) / 2);
 
 	background-color: white;
-	box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
 
 	z-index: 1;
 }
 
 .logo{
-	text-align: right;
+	width: 1100px;
+
+	text-align: left;
 
 	h1{
+		width: 500px;
+
+		top: 22px;
 		margin: 0;
 
+		position: absolute;
+		pointer-events: none;
+
+
 		font-family: 'Istok Web',sans-serif;
-		font-size: 60px;
+		font-size: 30px;
 		font-weight: bold;
 
 		background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
@@ -64,6 +76,52 @@ body {
 
 		font-family: 'Raleway', sans-serif;
 		font-size: 35px;
+	}
+}
+
+.menuNav{
+	width: 700px;
+	height: 20px;
+
+	top: 27px;
+	left: 335px;
+
+	position: absolute;
+
+	overflow-x: visible;
+
+	.menuContainer{
+		width: calc(100% - 0px);
+		height: calc(100% - 0px);
+
+		white-space: nowrap;
+
+		display: inline-block;
+
+		overflow: visible;
+
+		position: relative;
+
+		.menuItem{
+			cursor: pointer;
+
+			width: 100px;
+			height: 32px;
+
+			color: #12437b;
+
+			text-align: center;
+			font-family: 'Raleway', sans-serif;
+			font-size: 18px;
+
+			display: inline-block;
+
+			box-sizing: border-box;
+
+			overflow: visible;
+
+			position: relative;
+		}
 	}
 }
 

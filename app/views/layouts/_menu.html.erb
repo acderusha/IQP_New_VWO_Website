@@ -21,23 +21,13 @@
 </div>
 
 <div id="headerBar" class="header" style="left: 0px">
-    <div class="headerRight hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
+    <div class="headerLeft hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
       <div id="hamDiv1" class=hamDiv></div>
       <div id="hamDiv2" class=hamDiv></div>
       <div id="hamDiv3" class=hamDiv></div>
     </div>
 
     <script type="text/javascript">
-      $(function() {
-       $(window).scroll(function () {
-          if ($(this).scrollTop() > 120) {
-             $(headerBar).addClass('headerChangeColor')
-          }
-          if ($(this).scrollTop() < 120) {
-             $(headerBar).removeClass('headerChangeColor')
-          }
-       });
-    });
 
     function hoverOnMenu(){
         play("Menu Button to open Menu Screen.");
@@ -61,6 +51,41 @@
       div3.style.width = "30px";
     } 
   </script>
+
+  <div class="homeHeader">
+    <div class="logo">
+      <h1>Venice Without Obstacles</h1>
+    </div>
+
+    <nav class="menuNav">
+      <ul class="menuContainer">
+        <li class="menuItem">
+          Home
+        </li>
+        <li class="menuItem">
+          Map
+        </li>
+        <li class="menuItem">
+          Arrival
+        </li>
+        <li class="menuItem">
+          Exploring
+        </li>
+        <li class="menuItem">
+          Dining
+        </li>
+        <li class="menuItem">
+          Night
+        </li>
+        <li class="menuItem">
+          Apps
+        </li>
+        <li class="menuItem">
+          Organizations
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>
 
 <script>
