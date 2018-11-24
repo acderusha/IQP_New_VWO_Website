@@ -13,117 +13,6 @@ body {
 }
 
 /* -------------- Home CSS -------------- */
-.homeHeaderBtn {
-    height: 100%;
-
-    cursor: pointer;
-    padding: 11px 10px 10px 10px;
-    margin: 0px 10px 10px 20px;
-    font-size: 21px;
-    color: white;
-
-    text-shadow: 3px 3px 1px rgba(0, 0, 0, 1);
-
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-.homeHeader {
-	position: absolute;
-
-	width: 100%;
-	min-width: 1100px;
-	height: 78px;
-
-	top: 0px;
-	left: 0px;
-
-	margin-left: calc((100% - 1100px) / 2);
-	padding-right: calc((100% - 1100px) / 2);
-
-	background-color: white;
-
-	z-index: 1;
-}
-
-.logo{
-	width: 1100px;
-
-	text-align: left;
-
-	h1{
-		width: 500px;
-
-		top: 22px;
-		margin: 0;
-
-		position: absolute;
-		pointer-events: none;
-
-
-		font-family: 'Istok Web',sans-serif;
-		font-size: 30px;
-		font-weight: bold;
-
-		background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-	}
-	h2{
-		color: #12437b;
-		margin: 0;
-
-		font-family: 'Raleway', sans-serif;
-		font-size: 35px;
-	}
-}
-
-.menuNav{
-	width: 700px;
-	height: 20px;
-
-	top: 27px;
-	left: 335px;
-
-	position: absolute;
-
-	overflow-x: visible;
-
-	.menuContainer{
-		width: calc(100% - 0px);
-		height: calc(100% - 0px);
-
-		white-space: nowrap;
-
-		display: inline-block;
-
-		overflow: visible;
-
-		position: relative;
-
-		.menuItem{
-			cursor: pointer;
-
-			width: 100px;
-			height: 32px;
-
-			color: #12437b;
-
-			text-align: center;
-			font-family: 'Raleway', sans-serif;
-			font-size: 18px;
-
-			display: inline-block;
-
-			box-sizing: border-box;
-
-			overflow: visible;
-
-			position: relative;
-		}
-	}
-}
 
 .carosalContainer {
 	position: relative;
@@ -240,6 +129,78 @@ body {
 
     margin: 0;
     background-color: #fff;
+}
+
+.carousel-content{
+	height: 460px;
+	width: 380px;
+
+	padding: 25px;
+	padding-top: 40px;
+
+	top: 292px;
+	left: calc((100% - 1110px) / 2);
+
+	position: absolute;
+
+	background-color: #12437b;
+	opacity: 0.95;
+
+	box-sizing: border-box;
+	border-radius: 4px;
+
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
+
+	h1{
+		color: white;
+
+		margin: 0 auto;
+		margin-bottom: 15px;
+
+		font-family: 'Istok Web';
+		font-size: 40px;
+
+		opacity: 1;
+	}
+
+	h2{
+		color: white;
+
+		margin-bottom: 35px;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 29px;
+
+		opacity: 1;
+	}
+
+	.carousel-content-button{
+		width: 280px;
+		height: 70px;
+
+		border: 2px white solid;
+		margin: 0 auto;
+
+		position:relative;
+		margin-left: 26px;
+
+		background-color: transparent;
+
+		color: white;
+		font-family: 'Istok Web';
+		font-size: 30px;
+
+		border-radius: 4px;
+
+		transition: all .4s ease;
+
+		opacity: 1;
+
+	}
+	.carousel-content-button:hover{
+		margin-top: -3px;
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8), -2px -2px 8px rgba(0, 0, 0, 0.8);
+	}
 }
 
 .gradient {
