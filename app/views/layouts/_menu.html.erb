@@ -10,7 +10,7 @@
 
   <div class="overlay-content">
   	<a href="/home" onmouseover="playGoHome()">Home</a>
-    <a href="/home/map" onmouseover="playGoMap()">Map</a>
+    <a id="mapTab" href="/home/map" onmouseover="playGoMap()">Map</a>
     <a href="#" onmouseover="playGoArrival()">Arriving to Venice</a>
     <a href="#" onmouseover="playGoTraveling()">Moving Around</a>
     <a href="#" onmouseover="playGoDining()">Dining Out</a>
@@ -64,14 +64,33 @@
             Home
           </a>
         </li>
-        <li class="menuItem">
-          Map
+        <li class="menuItem" onmouseover="playGoMap()">
+          <a href="/home/map">
+            Map
+          </a>
+          <div id="mapDrop" class="dropdown-content">
+            <a class="dropItem" href="/home/map">Informative</a>
+            <a class="dropItem" href="/home/map">Interactive</a>
+          </div>
         </li>
-        <li class="menuItem">
-          Arrival
+        <li class="menuItem" onmouseover="playGoArrival()">
+          <a>
+            Arrival
+          </a>
+          <div id="arrivDrop" class="dropdown-content">
+            <a class="dropItem">Car</a>
+            <a class="dropItem">Plain</a>
+            <a class="dropItem">Train</a>
+          </div>
         </li>
-        <li class="menuItem">
-          Exploring
+        <li class="menuItem" onmouseover="playGoTraveling()">
+          <a>
+            Exploring
+          </a>
+          <div id="exploreDrop" class="dropdown-content">
+            <a class="dropItem">Boat</a>
+            <a class="dropItem">Foot</a>
+          </div>
         </li>
         <li class="menuItem">
           Dining
@@ -93,148 +112,3 @@
     </nav>
   </div>
 </div>
-
-<script>
-  let muteVar;
-  if (typeof(Storage) !== "undefined") {
-    // Store
-    if(localStorage.getItem("mute") !== "true" && localStorage.getItem("mute") !== "false"){
-      localStorage.setItem("mute", "true");
-    }
-
-    if(localStorage.getItem("mute") === "true"){
-      muteVar = true;
-    }
-    else{
-      muteVar = false;
-    }
-
-    console.log("muteVar Storage: " + muteVar);
-  } 
-  else {
-    alert("Sorry, your browser does not support Web Storage.");
-  }
-
-  setUpMuteButton();
-
-  /* ----------- Menu Display Functions --------- */
-
-	function openNav() {
-    var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to the Home, Arriving to Venice, Moving Around, Staying the Night, Dining Out, Applications, Organizations, and Map pages. A close button is located at the top-right hand side of the screen. A mute button is located at the top-left hand side of the screen to turn off and on all speech."
-    play(welcomeMenuText);
-
-	  document.getElementById("myNav").style.height = "100%";
-	}
-
-	function closeNav() {
-	  document.getElementById("myNav").style.height = "0%";
-	}
-
-
-  /* ------------ Speech Contol -------------- */
-
-  function play(textToPlay){
-    if(muteVar){
-      responsiveVoice.cancel();
-      responsiveVoice.speak(textToPlay,"UK English Male");
-    }
-    else{
-      responsiveVoice.cancel();
-    }
-  }
-
-  function playSlow(textToPlay){
-    if(muteVar){
-      responsiveVoice.cancel();
-      responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
-    }
-    else{
-      responsiveVoice.cancel();
-    }
-  }
-
-
-  function muteSpeech() {
-    if(muteVar){
-      localStorage.setItem("mute", "false");
-      responsiveVoice.cancel();
-
-      console.log("false");
-      muteVar = false;
-      mutebtn.checked = false;
-      responsiveVoice.speak("Speech Off","UK English Male");
-    }
-    else{
-      localStorage.setItem("mute", "true");
-      
-      console.log("true");
-      muteVar = true;
-      mutebtn.checked = true;
-      responsiveVoice.speak("Speech On","UK English Male");
-    }
-  }
-
-  function setUpMuteButton() {
-    var mutebtn = document.getElementById("mutebtn");
-    if(muteVar){
-      mutebtn.checked = true;
-    }
-    else{
-      mutebtn.checked = false;
-    }
-  }
-
-  /* ------------ End Speech Contol -------------- */
-
-  /* ------------ Speach Functions -------------- */
-
-  function playGoHome(){
-    var goHomeText = "Home Button. Click to go to the Home Page."
-    play(goHomeText);
-  }
-
-  function playGoArrival(){
-    var goArrivalText = "Arrival Button. Click to go to the Arriving to Venice page."
-    play(goArrivalText);
-  }
-
-  function playGoTraveling(){
-    var goTravelText = "TMoving Button. Click to go to the Moving Around page."
-    play(goTravelText);
-  }
-
-  function playGoNight(){
-    var goNightText = "Staying the Night Button. Click to go to the Staying the Night page."
-    play(goNightText);
-  }
-
-  function playGoDining(){
-    var goDiningText = "Dining Out Button. Click to go to the Dining Out page."
-    play(goDiningText);
-  }
-
-  function playGoApp(){
-    var goAppText = "Applications Button. Click to go to the Applications page."
-    play(goAppText);
-  }
-
-  function playGoOrg(){
-    var goOrgText = "Organizations Button. Click to go to the Organizations page."
-    play(goOrgText);
-  }
-
-  function playGoMap(){
-    var goMapText = "Map Button. Click to go to the Map page."
-    play(goMapText);
-  }
-
-  function playGoBack(){
-    var goBackText = "Close Button. Click to return to previous page."
-    play(goBackText);
-  }
-
-  function playMute(){
-    var muteText = "Speech Button. Click to turn off all speech.";
-    play(muteText);
-  }
-</script>

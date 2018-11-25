@@ -350,6 +350,56 @@ input:checked + .slider:before {
       border-bottom: 2px #12437b solid;
     }
   }
+
+  /*.dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+  }
+
+  .dropbtn:hover, .dropbtn:focus {
+      background-color: #3e8e41;
+  }
+
+  .dropdown {
+      float: right;
+      position: relative;
+      display: inline-block;
+  }*/
+
+  .dropdown-content {
+    width: 135px;
+
+    left: -18px;
+    top: 52px;
+
+    background-color: white;
+    box-shadow: 4px 5px 4px 0px rgba(0, 0, 0,.3), -4px 5px 4px 0px rgba(0, 0, 0,.3);
+
+    display: none;
+
+    position: absolute;
+
+    overflow: auto;
+  }
+
+  .dropdown-content a {
+      color: #12437b;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+  }
+
+  .dropItem:hover {
+    background-color: #f1f1f1;
+  }
+
+  .show {
+    display: block;
+  }
 }
 
 /* -------------- End Header Menu CSS -------------- */

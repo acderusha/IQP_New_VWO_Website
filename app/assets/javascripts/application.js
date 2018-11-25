@@ -18,7 +18,6 @@
 // my code down here
 //= require map
 //= require home
-//= require main
 //= require organizations
 //= require orgIndividual
 //= require applications
