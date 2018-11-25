@@ -3,18 +3,68 @@ body{
 }
 
 .orgHeader {
-	min-height: 190px;
-	height: 25vh;
+	height: 450px;
 
 	position: relative;
 	padding-top: 35px;
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: calc((100% - 1100px) / 2);
+	padding-right: calc((100% - 1100px) / 2);
 
-	background-color: white;
-	box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.3);
+	margin-top: 78px;
 
 	z-index: 1;
+}
+
+.parallax-window {
+    min-height: 700px;
+    background: transparent;
+}
+
+.window-content{
+	height: 200px;
+	min-width: calc(100% - 420px);
+
+    padding: 25px;
+    padding-top: 35px;
+
+    margin-left: 200px;
+
+    top: 501px;
+
+    position: absolute;
+
+    background-color: #12437b;
+    color: white;
+
+    opacity: 0.95;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
+
+    h1{
+		color: white;
+
+		margin: 0 auto;
+		margin-bottom: 15px;
+
+		font-family: 'Istok Web';
+		font-size: 60px;
+
+		opacity: 1;
+	}
+
+	h2{
+		color: white;
+
+		margin-bottom: 65px;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 40px;
+
+		opacity: 1;
+	}
+
 }
 
 .orgLogo{
@@ -46,7 +96,7 @@ body{
 
 	padding-left: 200px;
 	padding-right: 200px;
-	padding-top: 30px;
+	padding-top: 20px;
 
 	position: relative;
 	display: grid;

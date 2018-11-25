@@ -17,6 +17,53 @@ body{
 	z-index: 1;
 }
 
+.window-content{
+	height: 200px;
+	min-width: calc(100% - 420px);
+
+    padding: 25px;
+    padding-top: 35px;
+
+    margin-left: 200px;
+
+    top: 501px;
+
+    position: absolute;
+
+    background-color: #12437b;
+    color: white;
+
+    opacity: 0.95;
+
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
+
+    h1{
+		color: white;
+
+		margin: 0 auto;
+		margin-bottom: 15px;
+
+		font-family: 'Istok Web';
+		font-size: 60px;
+
+		opacity: 1;
+	}
+
+	h2{
+		color: white;
+
+		margin-bottom: 65px;
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 40px;
+
+		opacity: 1;
+	}
+
+}
+
 .appLogo{
 	text-align: left;
 
