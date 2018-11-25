@@ -2,7 +2,7 @@ body{
 	background-color: #eef5f6;
 }
 
-.mapHeader {
+.arrivHeader {
 	height: 450px;
 
 	position: relative;
@@ -67,7 +67,7 @@ body{
 
 }
 
-.mapLogo{
+.arrivLogo{
 	text-align: left;
 
 	h1{
@@ -90,35 +90,33 @@ body{
 	}
 }
 
-.mapPage{
+.arrivPage{
 	width: 100%;
 	max-width: 100%;
 	height: 600px;
 
-	padding-left: 200px;
-	padding-right: 200px;
+	padding-left: calc((100% - 1200px) / 2);
+	padding-right: calc((100% - 1100px) / 2);
 	padding-top: 40px;
 
 	position: relative;
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: auto auto auto;
 
-	.mapsContainer{
+	.arrivsContainer{
 		margin: auto;
-		margin-left: 15%;
-		margin-right: 15%;
 
 		display: grid; 
-		grid-template-columns: auto auto;
-		grid-gap: 20%;
+		grid-template-columns: auto auto auto;
+		grid-gap: 8%;
 	}
 
-	.map{
+	.arriv{
 		cursor: pointer;
 		position: relative;
 		overflow: hidden;
 
-		height: 500px;
+		height: 450px;
 		width: 320px;
 
 		margin-top: 40px;
@@ -147,7 +145,7 @@ body{
 			z-index: 0;
 		}
 
-		.mapText{
+		.arrivText{
 			height: 140px;
 			padding: 15px;
 			background: linear-gradient(to bottom right, #12437b 40.76%, #1d67ae);
@@ -156,6 +154,9 @@ body{
 			h3{
 				margin: 0;
 				margin-bottom: 5px;
+				margin-top: 0px;
+
+				font-size: 45px;
 			}
 
 			p{
@@ -164,7 +165,7 @@ body{
 		}
 	}
 
-	.map:hover{
+	.arriv:hover{
 		margin-top: 25px;
 		box-shadow: 0px 5px 15px rgba(0,0,0,0.7);
 	}

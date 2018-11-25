@@ -1,0 +1,1 @@
+$('.parallax-window').parallax({imageSrc: '../images/arrival/arrival_header.jpg'});

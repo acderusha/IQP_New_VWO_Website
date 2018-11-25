@@ -18,7 +18,7 @@
 // my code down here
 //= require maps
 //= require map
-//= require home
+//= require arrival
 //= require organizations
 //= require orgIndividual
 //= require applications
