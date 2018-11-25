@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :home do
     get :index, :on => :collection
     get :main, :on => :collection
+    get :maps, :on => :collection
     get :map, :on => :collection
     get :organizations, :on => :collection
     get :applications, :on => :collection
