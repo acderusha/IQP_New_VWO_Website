@@ -203,13 +203,116 @@ body {
 	}
 }
 
-.gradient {
-	grid-area: left;
-	background: #000;
-	background: linear-gradient(135deg, #1E88E5 0%, #fadee0 40%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$main",endColorstr="$second",GradientType=1);
-	height: 100%;
+.benefitsContainer{
 	width: 100%;
-	z-index: 1;
-	opacity: 0.2;
+	height: 380px;
+
+	padding-left: calc((100% - 1110px) / 2);
+	padding-right: calc((100% - 1110px) / 2);
+	padding-top: 50px;
+	padding-bottom: 50px; 
+
+	.paragraphContainer{
+		width: 55%;
+		max-height: 300px;
+
+		display: inline-block;
+
+		p{
+			color: #12437b;
+
+			font-family: 'Raleway', sans-serif;
+			font-size: 20px;
+		}
+	}
+
+	.imgRight{
+		border-radius: 4px;
+
+		float: right;
+
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), -2px -2px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	.imgLeft{
+		display: inline-block;
+		border-radius: 4px;
+
+		margin-right: 55px;
+
+		float: left;
+
+		box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3), -2px -2px 8px rgba(0, 0, 0, 0.3);
+	}
+
+	img{
+		display: inline-block;
+	}
+}
+
+.featuresContainer{
+	width: 100%;
+	height: 500px;
+
+	padding-left: calc((100% - 1110px) / 2);
+	padding-right: calc((100% - 1110px) / 2);
+	padding-top: 40px;
+	padding-bottom: 50px;
+
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 70px;
+
+	.featureContent{
+		width: 320px;
+		height: 400px;
+
+		padding: 15px;
+
+		text-align: center;
+
+		display: inline-block;
+
+		h1{
+			font-family: 'Istok Web',sans-serif;
+		    font-size: 60px;
+		    font-weight: bold;
+
+		    background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+		    -webkit-background-clip: text;
+		    -webkit-text-fill-color: transparent;
+		}
+
+		h2{
+			font-family: 'Raleway', sans-serif;
+		    font-size: 30px;
+		    font-weight: bold;
+
+		    margin: 0 auto;
+		    margin-top: 15px;
+		    margin-bottom: 50px;
+
+		    color: #12437b;
+		}
+
+		p{
+			color: #12437b;
+
+			font-family: 'Raleway', sans-serif;
+			font-size: 20px;
+		}
+
+		img{
+			max-width: 100%;
+		}
+	}
+}
+
+.trustContainer{
+	width: 100%;
+	height: 400px;
+
+	padding-left: 200px;
+	padding-right: 200px;
 }
