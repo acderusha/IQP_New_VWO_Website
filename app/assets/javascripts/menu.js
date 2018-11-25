@@ -1,4 +1,14 @@
 /* ----------------- Menu Drop Downs -------------- */
+function dropHome(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
+}
+
 function dropMap() {
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
@@ -13,7 +23,7 @@ function dropMap() {
 }
 
 function dropArriv() {
-	var mapDrop = document.getElementById("mapDrop");
+	  var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
 
@@ -36,6 +46,46 @@ function dropExplore() {
     if(!exploreDrop.classList.contains('show')){
     	exploreDrop.classList.add("show");
     }
+}
+
+function dropDining(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
+}
+
+function dropNight(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
+}
+
+function dropApp(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
+}
+
+function dropOrg(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -151,6 +201,8 @@ let muteVar;
   /* ------------ Speach Functions -------------- */
 
   function playGoHome(){
+    dropHome();
+
     var goHomeText = "Home Button. Click to go to the Home Page."
     play(goHomeText);
   }
@@ -170,21 +222,29 @@ let muteVar;
   }
 
   function playGoNight(){
+    dropNight();
+
     var goNightText = "Staying the Night Button. Click to go to the Staying the Night page."
     play(goNightText);
   }
 
   function playGoDining(){
+    dropDining();
+
     var goDiningText = "Dining Out Button. Click to go to the Dining Out page."
     play(goDiningText);
   }
 
   function playGoApp(){
+    dropApp();
+
     var goAppText = "Applications Button. Click to go to the Applications page."
     play(goAppText);
   }
 
   function playGoOrg(){
+    dropOrg();
+
     var goOrgText = "Organizations Button. Click to go to the Organizations page."
     play(goOrgText);
   }
