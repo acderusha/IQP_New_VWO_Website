@@ -21,7 +21,7 @@ body{
 }
 
 .window-content{
-	height: 200px;
+	height: 220px;
 	min-width: calc(100% - 420px);
 
     padding: 25px;
@@ -29,7 +29,7 @@ body{
 
     margin-left: 200px;
 
-    top: 501px;
+    top: 500px;
 
     position: absolute;
 
@@ -40,7 +40,7 @@ body{
 
     box-sizing: border-box;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.4), -2px -2px 5px rgba(0, 0, 0, 0.4);
 
     h1{
 		color: white;
@@ -96,7 +96,7 @@ body{
 
 	padding-left: 200px;
 	padding-right: 200px;
-	padding-top: 20px;
+	padding-top: 40px;
 
 	position: relative;
 	display: grid;
