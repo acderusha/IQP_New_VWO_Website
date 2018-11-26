@@ -21,6 +21,7 @@
 *= require index
 *= require arrival
 *= require explore
+*= require attractions
 *= require organizations
 *= require orgIndividual
 *= require applications

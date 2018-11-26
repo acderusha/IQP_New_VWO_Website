@@ -12,6 +12,8 @@ Rails.application.routes.draw do
 
     get :explore, :on => :collection
 
+    get :attractions, :on => :collection
+
     get :organizations, :on => :collection
     get :gondolas4all, :on => :collection
 
