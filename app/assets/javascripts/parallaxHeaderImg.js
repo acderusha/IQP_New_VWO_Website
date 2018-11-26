@@ -9,4 +9,5 @@ $('.parallax-window').parallax({imageSrc: '../images/arrival/arrival_header.jpg'
 								{imageSrc: '../images/maps/maps_header.jpg'},
 								{imageSrc: '../images/applications/app_header.jpg'},
 								{imageSrc: '../images/organizations/org_header.jpg'},
-								{imageSrc: '../images/explore/explore_header.jpg'});
+								{imageSrc: '../images/explore/explore_header.jpg'},
+								{imageSrc: '../images/explore/att_header.jpg'});
