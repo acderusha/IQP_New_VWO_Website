@@ -19,6 +19,8 @@
 *= require maps
 *= require map
 *= require index
+*= require arrival
+*= require explore
 *= require organizations
 *= require orgIndividual
 *= require applications

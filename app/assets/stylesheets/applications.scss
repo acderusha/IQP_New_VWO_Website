@@ -17,6 +17,11 @@ body{
 	z-index: 1;
 }
 
+.parallax-window {
+    height: 700px;
+    background: transparent;
+}
+
 .window-content{
 	height: 220px;
 	min-width: calc(100% - 420px);
