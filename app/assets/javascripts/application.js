@@ -22,5 +22,7 @@
 //= require organizations
 //= require orgIndividual
 //= require applications
+//= require parallax
+//= require parallax.min
 
 
