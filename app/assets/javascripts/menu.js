@@ -3,19 +3,23 @@ function dropHome(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 }
 
 function dropMap() {
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 
     if(!mapDrop.classList.contains('show')){
     	mapDrop.classList.add("show");
@@ -26,9 +30,11 @@ function dropArriv() {
 	  var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 
     if(!arrivDrop.classList.contains('show')){
     	arrivDrop.classList.add("show");
@@ -36,56 +42,69 @@ function dropArriv() {
 }
 
 function dropExplore() {
-	var mapDrop = document.getElementById("mapDrop");
+	 var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 
     if(!exploreDrop.classList.contains('show')){
     	exploreDrop.classList.add("show");
     }
 }
 
-function dropDining(){
+function dropAttract(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+
+    if(!attractDrop.classList.contains('show')){
+      attractDrop.classList.add("show");
+    }
 }
 
-function dropNight(){
+function dropHotel(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 }
 
 function dropApp(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 }
 
 function dropOrg(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
 
     mapDrop.classList.remove('show');
     arrivDrop.classList.remove('show');
     exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
 }
 
 // Close the dropdown if the user clicks outside of it
@@ -214,22 +233,22 @@ let muteVar;
     play(goArrivalText);
   }
 
-  function playGoTraveling(){
+  function playGoExplore(){
   	dropExplore();
 
     var goTravelText = "TMoving Button. Click to go to the Moving Around page."
     play(goTravelText);
   }
 
-  function playGoNight(){
-    dropNight();
+  function playGoHotel(){
+    dropHotel();
 
     var goNightText = "Staying the Night Button. Click to go to the Staying the Night page."
     play(goNightText);
   }
 
-  function playGoDining(){
-    dropDining();
+  function playGoAttract(){
+    dropAttract();
 
     var goDiningText = "Dining Out Button. Click to go to the Dining Out page."
     play(goDiningText);
