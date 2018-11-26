@@ -16,12 +16,8 @@
 
 
 // my code down here
-//= require maps
 //= require map
-//= require arrival
-//= require organizations
-//= require orgIndividual
-//= require applications
+//= require parallaxHeaderImg
 //= require parallax
 //= require parallax.min
 
