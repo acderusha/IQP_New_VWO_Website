@@ -21,6 +21,7 @@ Rails.application.routes.draw do
     get :sanitrans, :on => :collection
     get :salablu, :on => :collection
     get :blindwiki, :on => :collection
+    get :tooteko, :on => :collection
 
     get :applications, :on => :collection
     get :blindSquare, :on => :collection
