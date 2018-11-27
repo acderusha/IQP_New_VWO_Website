@@ -218,6 +218,31 @@
 	margin-top: 60px;
 }
 
+.carousel-item{
+
+	width: 100%;
+	max-height: 315px;
+	min-height: 315px;
+
+	img{
+		width: 100%;
+		max-height: 315px;
+		min-height: 315px;
+	}
+
+	iframe{
+		width: 100%;
+		max-height: 315px;
+		min-height: 315px;
+	}
+
+	video{
+		width: 100%;
+		max-height: 315px;
+		min-height: 315px;
+	}
+}
+
 .carousel-indicators .active{
 	margin: 1px;
 	width: 12px;
