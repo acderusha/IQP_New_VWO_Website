@@ -91,6 +91,8 @@
 
 	.pageLink{
 		cursor: pointer;
+		position: relative;
+		overflow: hidden;
 
 		width: 200px;
 
@@ -101,25 +103,23 @@
 		font-size: 25px;
 		text-align: center;
 
+		color: #12437b;
 		background-color: white;
 		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
 
 		grid-area: content;
 		transition: all 0.3s ease;
 
-		a{
-			color: #12437b;
-			text-decoration: none;
-		}
+		text-decoration: none;
+
+		display: block;
 	}
 
 	.pageLink:hover{
 		background: linear-gradient(to bottom right, #12437b 0%, #64b3ff);
 		box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
 
-		a{
-			color: white;
-		}
+		color: white;
 	}
 
 	.mediaContainer{
