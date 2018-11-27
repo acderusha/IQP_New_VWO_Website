@@ -186,6 +186,8 @@ let muteVar;
 
 
   function muteSpeech() {
+    var mutebtn = document.getElementById("mutebtn");
+
     if(muteVar){
       localStorage.setItem("mute", "false");
       responsiveVoice.cancel();
@@ -206,13 +208,15 @@ let muteVar;
   }
 
   function setUpMuteButton() {
-    var mutebtn = document.getElementById("mutebtn");
-    if(muteVar){
-      mutebtn.checked = true;
-    }
-    else{
-      mutebtn.checked = false;
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+      var mutebtn = document.getElementById("mutebtn");
+      if(muteVar){
+        mutebtn.checked = true;
+      }
+      else{
+        mutebtn.checked = false;
+      }
+    });
   }
 
   /* ------------ End Speech Contol -------------- */
