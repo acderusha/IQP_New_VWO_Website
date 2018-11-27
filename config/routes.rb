@@ -19,6 +19,7 @@ Rails.application.routes.draw do
     get :cittapertutti, :on => :collection
     get :villageforall, :on => :collection
     get :sanitrans, :on => :collection
+    get :salablu, :on => :collection
 
     get :applications, :on => :collection
     get :blindSquare, :on => :collection
