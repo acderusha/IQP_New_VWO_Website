@@ -19,14 +19,53 @@
 
 	display: grid;
 	grid-template-columns: auto 1fr;
-	grid-template-rows: auto auto;
-	grid-template-areas: "side content";
+	grid-template-rows: auto auto auto;
+	grid-template-areas: "side content end";
 	grid-gap: 90px;
 
 	.sideContainterLeft{
 		width: 200px;
 
 		grid-area: side;
+	}
+
+	.sideContainterRight{
+		width: 210px;
+
+		grid-area: end;
+	}
+
+	.contactContainer{
+		width: 100%;
+
+		padding: 10px;
+		padding-bottom: 5px;
+
+		border-radius: 4px;
+
+		background-color: white;
+		box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+
+		overflow: hidden;
+
+		h1{
+			margin-top: 4px;
+			margin-bottom: 5px;
+
+			font-family: 'Istok Web',sans-serif;
+			font-size: 25px;
+			font-weight: bold;
+
+			color: #12437b;
+		}
+
+		p{
+			margin-top: 5px;
+			margin-bottom: 5px;
+
+			font-size: 20px;
+			color: #12437b;
+		}
 	}
 
 	.logoContainer{
@@ -88,30 +127,29 @@
 		height: 50px;
 
 		margin-top: 15px;
-		margin-bottom: 45px;
+	}
 
-		.fa {
-		  width: 50px;
-		  height: 50px;
+	.fa {
+	  width: 50px;
+	  height: 50px;
 
-		  padding: 10px;
-		  margin: 5px 2px;
+	  padding: 10px;
+	  margin: 5px 2px;
 
-		  font-size: 30px;
+	  font-size: 30px;
 
-		  text-align: center;
-		  text-decoration: none;
+	  text-align: center;
+	  text-decoration: none;
 
-		  border-radius: 50%;
+	  border-radius: 50%;
 
-		  display: inline-block;
+	  display: inline-block;
 
-		  transition: all 0.3s ease;
-		}
+	  transition: all 0.3s ease;
+	}
 
-		.fa:hover{
-			box-shadow: -1px 1px 3px rgba(0,0,0,0.4);
-		}
+	.fa:hover{
+		box-shadow: -1px 1px 3px rgba(0,0,0,0.4);
 	}
 
 	.infoContainer{
@@ -154,6 +192,8 @@
 		height: 200px;
 
 		border-radius: 4px;
+
+		margin-top: 45px;
 		margin-bottom: 20px;
 
 		background-color: white;
