@@ -22,6 +22,7 @@ Rails.application.routes.draw do
     get :salablu, :on => :collection
     get :blindwiki, :on => :collection
     get :tooteko, :on => :collection
+    get :actv, :on => :collection
 
     get :applications, :on => :collection
     get :blindSquare, :on => :collection
