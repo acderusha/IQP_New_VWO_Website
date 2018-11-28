@@ -14742,134 +14742,6 @@ var bridges = [
 var bridgeLayer;
 
 
-
-/* ---------------------------- Screen Interaction Functions ------------------------ */
-function bridgeDisplay(){
-	var filterContainer = document.getElementById("filterContainer");
-	var filterHeader = document.getElementById("filterName");
-	var bridgeBtn = document.getElementById("bridgeBtn");
-	var hotelBtn = document.getElementById("hotelBtn");
-	var restBtn = document.getElementById("restBtn");
-	var churchBtn = document.getElementById("churchBtn");
-	var museumBtn = document.getElementById("museumBtn");
-
-	filterHeader.textContent = "Bridges";
-	bridgeBtn.style.borderBottom = "3px white solid";
-	hotelBtn.style.borderBottom = "";
-	restBtn.style.borderBottom = "";
-	churchBtn.style.borderBottom = "";
-	museumBtn.style.borderBottom = "";
-
-    bridgeBtn.style.backgroundColor = "#1b1b1b";
-    hotelBtn.style.backgroundColor = "";
-    restBtn.style.backgroundColor = "";
-    churchBtn.style.backgroundColor = "";
-    museumBtn.style.backgroundColor = "";
-
-	filterContainer.innerHTML = "";
-}
-
-function hotelDisplay(){
-	var filterContainer = document.getElementById("filterContainer");
-	var filterHeader = document.getElementById("filterName");
-	var bridgeBtn = document.getElementById("bridgeBtn");
-	var hotelBtn = document.getElementById("hotelBtn");
-	var restBtn = document.getElementById("restBtn");
-	var churchBtn = document.getElementById("churchBtn");
-	var museumBtn = document.getElementById("museumBtn");
-
-	filterHeader.textContent = "Hotels";
-	bridgeBtn.style.borderBottom = "";
-	hotelBtn.style.borderBottom = "3px white solid";
-	restBtn.style.borderBottom = "";
-	churchBtn.style.borderBottom = "";
-	museumBtn.style.borderBottom = "";
-
-    bridgeBtn.style.backgroundColor = "";
-    hotelBtn.style.backgroundColor = "#1b1b1b";
-    restBtn.style.backgroundColor = "";
-    churchBtn.style.backgroundColor = "";
-    museumBtn.style.backgroundColor = "";
-
-	filterContainer.innerHTML = "";
-}    
-
-function restDisplay(){
-	var filterContainer = document.getElementById("filterContainer");
-	var filterHeader = document.getElementById("filterName");
-	var bridgeBtn = document.getElementById("bridgeBtn");
-	var hotelBtn = document.getElementById("hotelBtn");
-	var restBtn = document.getElementById("restBtn");
-	var churchBtn = document.getElementById("churchBtn");
-	var museumBtn = document.getElementById("museumBtn");
-
-	filterHeader.textContent = "Restaurants";
-	bridgeBtn.style.borderBottom = "";
-	hotelBtn.style.borderBottom = "";
-	restBtn.style.borderBottom = "3px white solid";
-	churchBtn.style.borderBottom = "";
-	museumBtn.style.borderBottom = "";
-
-    bridgeBtn.style.backgroundColor = "";
-    hotelBtn.style.backgroundColor = "";
-    restBtn.style.backgroundColor = "#1b1b1b";
-    churchBtn.style.backgroundColor = "";
-    museumBtn.style.backgroundColor = "";
-
-	filterContainer.innerHTML = "";
-}
-
-function churchDisplay(){
-	var filterContainer = document.getElementById("filterContainer");
-	var filterHeader = document.getElementById("filterName");
-	var bridgeBtn = document.getElementById("bridgeBtn");
-	var hotelBtn = document.getElementById("hotelBtn");
-	var restBtn = document.getElementById("restBtn");
-	var churchBtn = document.getElementById("churchBtn");
-	var museumBtn = document.getElementById("museumBtn");
-
-	filterHeader.textContent = "Churches";
-	bridgeBtn.style.borderBottom = "";
-	hotelBtn.style.borderBottom = "";
-	restBtn.style.borderBottom = "";
-	churchBtn.style.borderBottom = "3px white solid";
-	museumBtn.style.borderBottom = "";
-
-    bridgeBtn.style.backgroundColor = "";
-    hotelBtn.style.backgroundColor = "";
-    restBtn.style.backgroundColor = "";
-    churchBtn.style.backgroundColor = "#1b1b1b";
-    museumBtn.style.backgroundColor = "";
-
-	filterContainer.innerHTML = "";
-}  
-
-function museumDisplay(){
-	var filterContainer = document.getElementById("filterContainer");
-	var filterHeader = document.getElementById("filterName");
-	var bridgeBtn = document.getElementById("bridgeBtn");
-	var hotelBtn = document.getElementById("hotelBtn");
-	var restBtn = document.getElementById("restBtn");
-	var churchBtn = document.getElementById("churchBtn");
-	var museumBtn = document.getElementById("museumBtn");
-
-	filterHeader.textContent = "Museums";
-	bridgeBtn.style.borderBottom = "";
-	hotelBtn.style.borderBottom = "";
-	restBtn.style.borderBottom = "";
-	churchBtn.style.borderBottom = "";
-	museumBtn.style.borderBottom = "3px white solid";
-
-    bridgeBtn.style.backgroundColor = "";
-    hotelBtn.style.backgroundColor = "";
-    restBtn.style.backgroundColor = "";
-    churchBtn.style.backgroundColor = "";
-    museumBtn.style.backgroundColor = "#1b1b1b";
-
-    filterContainer.innerHTML = "";
-}           	
-/* ---------------------------- EndScreen Interaction Functions ------------------------ */
-
 /* ---------------------------- Map Interaction Functions --------------------------- */
 
 // Style for bridges
@@ -15000,6 +14872,12 @@ function addMapElements() {
 /* -------------- GET Layer Data Functions ----------------- */
 function getLayers() {
     getBridges();
+
+    /*mymap.addControl( new LeafletSearch({
+        layer: bridgeLayer,
+        propertyName: 'name',
+        autoType: true
+    }) );*/
 }
 
 function getBridges() {
@@ -15072,6 +14950,7 @@ function addDescription(props){
     }
 
     if(name === "Ponte Dona"){
+
         var firstDiv = document.createElement("div");
         firstDiv.classList.add("carousel-item");
         firstDiv.classList.add("active");
@@ -15194,14 +15073,14 @@ function addDescription(props){
 
     if(open != "none" && tact === "none"){
         let tactopen = document.createElement("label");
-        tactopen.textContent = "Tactile Pavement near Canal Opening: None";
+        tactopen.textContent = "Tactile Pavement: None";
         tactopen.className = "descBoxItem";
         cautionDiv.appendChild(tactopen);
     }
 
     if(open != "none" && tact != "none"){
         let tactopen = document.createElement("label");
-        tactopen.textContent = "Tactile Pavement near Canal Opening: Installed";
+        tactopen.textContent = "Tactile Pavement: Yes";
         tactopen.className = "descBoxItem";
         accomDiv.appendChild(tactopen);
     }
