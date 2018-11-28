@@ -89,13 +89,13 @@
     top: 77px;
     left: 0px;
 
-    background-color: #3b3b3b;
+    background-color: #292649;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 
     width: 210px;
     height: 95%;
 
-    padding: 0px 0px 0px 5px;
+    padding: 0px 0px 0px 12px;
     border-top: gray 1px solid;
     border-radius: 1px;
 
@@ -124,14 +124,15 @@
 	width: 200px;
 	height: 60px;
 
-	font-family: 'Nunito Sans';
+	font-family: 'Istok Web';
 	color: white;
-	font-size: 21px;
-	background-color: #3b3b3b;
+	font-size: 22px;
+
+    background-color: #292649;
 
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 
-	padding: 15px 0px 0px 10px;
+	padding: 19px 0px 0px 10px;
 }
 
 .filterBoxFilterContainer {
@@ -162,7 +163,7 @@
     float: left;
     color: white;
     font-size: 21px;
-    font-family: 'Nunito Sans';
+    font-family: 'Istok Web';
 
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 
@@ -199,13 +200,11 @@
 }
 
 .descBox {
-    background: black;
+    background-color: #292649;
     width: 0px;
     height: 82vh;
 
     margin: 10px 0px 5px 0px;
-
-    box-shadow: 0px 4px 5px rgba(0,0,0,.3);
 
     float: right;
     overflow-y: auto;
@@ -215,14 +214,16 @@
 }
 
 .closeBtn {
-	height: 20px;
-	width: 20px;
+    cursor: pointer;
 
-    color: lightgray;
-    background-color: black;
+	height: 30px;
+	width: 40px;
+
+    color: white;
+
     float: right;
     border: none;
-    font-size: 18px;
+    font-size: 25px;
 
     overflow:visible;
     background:none !important;
@@ -231,17 +232,15 @@
 }
 
 .closeBtn:hover{
-    cursor: pointer;
     color: white;
+    font-size: 30px;
 
-	height: 25px;
-	width: 25px;
-    font-size: 22px
+    text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.5);
 }
 
 .descBoxHeader {
 	font-family: 'Istok Web';
-	color: lightgray; 
+	color: white; 
 	font-size: 27px;
 	margin: 28px 0 0 10px;
 
@@ -249,19 +248,46 @@
     box-sizing: border-box;
 }
 
+/* ---------------------- Carousel ------------------- */
+
+.mapCarousel-inner{
+    position: relative;
+    width: 100%;
+
+    min-height: 225px;
+    max-height: 225px;
+
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+
+    overflow: hidden;
+
+    .carousel-item{
+
+        img{
+            width: 100%;
+            min-height: 225px;
+            max-height: 225px;
+        }
+
+    }
+}
+
+
+/* --------------------------------------------------- */
+
 .descBoxItemMain {
     width: 90%;
     float: left;
 
     text-align: left;
 
-    color: lightgray;
+    color: white;
     font-size: 20px;
     font-family: 'Nunito Sans';
 
     margin: 10px 10px 3px 10px;
 
-    border-bottom: 1px lightgray solid;
+    border-bottom: 1px white solid;
 }
 
 .descBoxItem {
@@ -270,7 +296,7 @@
     width: 100%;
 
     text-align: left;
-    color: lightgray;
+    color: white;
     font-size: 17px;
     margin: 3px 10px 3px 10px;
 

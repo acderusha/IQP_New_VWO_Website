@@ -44,8 +44,7 @@
     </div>-->
     <div id="filterBox" class="filterBox">
         <div  id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseover="playFilter()">
-            Filter:
-            <span id="filterName" style="cursor: pointer;">Bridges</span>
+            <span id="filterName" style="cursor: pointer;">Filter: Bridges</span>
         </div>
         <div class="filterDivider"></div>
         <div id=filterContainer class="filterBoxFilterContainer">
@@ -242,7 +241,7 @@
                <div align="left" class="searchBarContainer">
                		<i class="fa fa-search"></i>
                   <input type="text"  class="searchBar" id="searchBar" placeholder="Search Bridge Name...">
-                  <i id="mic" class="fa">&#xf130;</i>
+                  <!--<i id="mic" class="fa">&#xf130;</i>-->
                </div>
                <table id="mapDes" class="mapDescTable">
                    <tr>
@@ -251,21 +250,42 @@
                        </th>
                        <th id="descBoxContainer" class="descBoxContainer" valign="top">
                           <div id="descBox" class="descBox" >
-                            <button id="close" class="closeBtn" onclick="closeDescBox()">
-                              <i class="fa fa-close"></i>
-                            </button>
-                              <script>
-                                    function closeDescBox() {
-                                      var container = document.getElementById("descBoxContainer");
-                                      var description = document.getElementById("descBox");
-                                      container.style.width = "0px";
-                                      description.style.width = "0px";
-                                      description.style.padding = "0px";
-                                    }
-                              </script>
-                              <div class="descBoxHeader">
-                                  Bridge Description
+
+                              <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" style="margin: -10px -10px 5px -10px">
+
+                                <!-- Indicators -->
+                                <!--<ul id="" class="carousel-indicators">
+                                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                                </ul>-->
+                                
+                                <!-- The slideshow -->
+                                <div id="mapCarousel-inner" class="mapCarousel-inner">
+                                  
+                                </div>
+                                
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                  <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                  <span class="carousel-control-next-icon"></span>
+                                </a>
                               </div>
+
+                              <div id="close" class="closeBtn" onclick="closeDescBox()">
+                                &#8594;
+                              </div>
+                                <script>
+                                      function closeDescBox() {
+                                        var container = document.getElementById("descBoxContainer");
+                                        var description = document.getElementById("descBox");
+                                        container.style.width = "0px";
+                                        description.style.width = "0px";
+                                        description.style.padding = "0px";
+                                      }
+                                </script>
+
                               <div class="descBoxItemMain">
                                   <i style="font-size:15px" class="fa">&#xf05a;</i>
                                   General Info

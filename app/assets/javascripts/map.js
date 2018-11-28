@@ -195,7 +195,7 @@ var bridges = [
         "name": "Ponte Briati",
         "district1": "Dorsoduro",
         "district2": "null",
-        "ramp": "nonw",
+        "ramp": "none",
         "railing": "one",
         "slip_stair": "none",
         "opening": "none",
@@ -3138,7 +3138,7 @@ var bridges = [
         "district1": "San Marco",
         "district2": "null",
         "ramp": "none",
-        "railing": "yes ",
+        "railing": "both",
         "slip_stair": "none",
         "opening": "none",
         "tactile": "none",
@@ -5215,7 +5215,7 @@ var bridges = [
         "name": "Ponte Colombo",
         "district1": "Santa Croce",
         "district2": "null",
-        "ramp": "na ",
+        "ramp": "none",
         "railing": "both",
         "slip_stair": "none",
         "opening": "none",
@@ -6122,7 +6122,7 @@ var bridges = [
         "district1": "Santa Croce",
         "district2": "null",
         "ramp": "none",
-        "railing": "Yes ",
+        "railing": "both",
         "slip_stair": "none",
         "opening": "one",
         "tactile": "none",
@@ -6902,7 +6902,7 @@ var bridges = [
         "district1": "Santa Croce",
         "district2": "null",
         "ramp": "none",
-        "railing": "Yes ",
+        "railing": "both",
         "slip_stair": "yes",
         "opening": "one",
         "tactile": "none",
@@ -6967,7 +6967,7 @@ var bridges = [
         "district1": "San Marco",
         "district2": "null",
         "ramp": "none",
-        "railing": "yes ",
+        "railing": "both",
         "slip_stair": "none",
         "opening": "one",
         "tactile": "none",
@@ -9449,7 +9449,7 @@ var bridges = [
         "district1": "San Marco",
         "district2": "null",
         "ramp": "none",
-        "railing": "yes ",
+        "railing": "one",
         "slip_stair": "none",
         "opening": "none",
         "tactile": "none",
@@ -13493,7 +13493,7 @@ var bridges = [
        "district1": "Cannaregio",
        "district2": "null",
        "ramp": "none",
-       "railing": "one",
+       "railing": "both",
        "slip_stair": "none",
        "opening": "both",
        "tactile": "none",
@@ -15063,6 +15063,48 @@ function addDescription(props){
     catch (e) {
         /* -------- Only here to suppress null pointer error ---------- */
     }
+
+    /* --------- determine the images that go into carousel ------------- */
+    var carousel = document.getElementById("mapCarousel-inner");
+
+    while (carousel.firstChild) {
+        carousel.removeChild(carousel.firstChild);
+    }
+
+    if(name === "Ponte Dona"){
+        var firstDiv = document.createElement("div");
+        firstDiv.classList.add("carousel-item");
+        firstDiv.classList.add("active");
+
+        var firstImg = document.createElement("img");
+        firstImg.src = "../images/bridges/Ponte_Dona/075.jpg"
+        firstImg.width = "100%";
+        firstImg.height = "150px";
+        firstDiv.appendChild(firstImg);
+
+        var secondDiv = document.createElement("div");
+        secondDiv.classList.add("carousel-item");
+
+        var secondImg = document.createElement("img");
+        secondImg.src = "../images/bridges/Ponte_Dona/076.jpg"
+        secondImg.width = "100%";
+        secondImg.height = "150px";
+        secondDiv.appendChild(secondImg);
+
+        var thirdDiv = document.createElement("div");
+        thirdDiv.classList.add("carousel-item");
+
+        var thirdImg = document.createElement("img");
+        thirdImg.src = "../images/bridges/Ponte_Dona/077.jpg"
+        thirdImg.width = "100%";
+        thirdImg.height = "150px";
+        thirdDiv.appendChild(thirdImg);
+
+        carousel.appendChild(firstDiv);
+        carousel.appendChild(secondDiv);
+        carousel.appendChild(thirdDiv)
+    }
+
 
     /* --------- if statements determining what info on bridge description -------- */
     var infoDiv = document.getElementById("infoDiv");
