@@ -107,6 +107,18 @@ function dropOrg(){
     attractDrop.classList.remove('show');
 }
 
+function dropAll(){
+    var mapDrop = document.getElementById("mapDrop");
+    var arrivDrop = document.getElementById("arrivDrop");
+    var exploreDrop = document.getElementById("exploreDrop");
+    var attractDrop = document.getElementById("attractDrop");
+
+    mapDrop.classList.remove('show');
+    arrivDrop.classList.remove('show');
+    exploreDrop.classList.remove('show');
+    attractDrop.classList.remove('show');
+}
+
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
