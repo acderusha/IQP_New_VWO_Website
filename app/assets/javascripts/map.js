@@ -14873,11 +14873,32 @@ function addMapElements() {
 function getLayers() {
     getBridges();
 
-    /*mymap.addControl( new LeafletSearch({
+    var fuse = new Fuse(bridges, {
+        keys: [
+            'properties.name'
+        ]
+    });
+
+    L.control.search({
         layer: bridgeLayer,
+        collapsed: false,
         propertyName: 'name',
-        autoType: true
-    }) );*/
+        filterData: function(text, records) {
+            var jsons = fuse.search(text),
+                ret = {}, key;
+            
+            for(var i in jsons) {
+                key = jsons[i].properties.name;
+                ret[ key ]= records[key];
+            }
+            console.log(jsons,ret);
+            return ret;
+        }
+    })
+    .on('search:locationfound', function(e) {
+        e.layer.openPopup();
+    })
+    .addTo(mymap);
 }
 
 function getBridges() {
