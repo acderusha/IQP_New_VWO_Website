@@ -23,7 +23,7 @@ function style(feature) {
 function isleStyle(feature) {
     return {
         fillColor: "red",
-        weight: 1,
+        weight: 0.5,
         opacity: 1,
         color: 'gray',
         fillOpacity: 0
