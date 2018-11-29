@@ -6142,7 +6142,7 @@ var isles =
 	} 
 }
 
-/* ----------------- Inner Venice + Other Small Islands -------------------- */
+/* ----------------- End Inner Venice + Other Small Islands -------------------- */
 ]
 };
 
