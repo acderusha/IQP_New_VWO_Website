@@ -298,9 +298,8 @@ input:checked + .slider:before {
 
 .menuNav{
   width: 700px;
-  height: 20px;
+  height: 78px;
 
-  top: 26px;
   left: 335px;
 
   position: absolute;
@@ -323,7 +322,10 @@ input:checked + .slider:before {
       cursor: pointer;
 
       width: 100px;
-      height: 32px;
+      height: 78px;
+
+      padding-top: 25px;
+      margin-bottom: 10px;
 
       color: #12437b;
 
@@ -374,7 +376,7 @@ input:checked + .slider:before {
     width: 135px;
 
     left: -18px;
-    top: 52px;
+    top: 78px;
 
     background-color: white;
     box-shadow: 4px 5px 4px 0px rgba(0, 0, 0,.3), -4px 5px 4px 0px rgba(0, 0, 0,.3);

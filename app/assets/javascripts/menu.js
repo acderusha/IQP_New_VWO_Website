@@ -107,7 +107,7 @@ function dropOrg(){
     attractDrop.classList.remove('show');
 }
 
-function dropAll(){
+function hideAll(){
     var mapDrop = document.getElementById("mapDrop");
     var arrivDrop = document.getElementById("arrivDrop");
     var exploreDrop = document.getElementById("exploreDrop");

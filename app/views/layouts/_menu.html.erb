@@ -64,7 +64,7 @@
             Home
           </a>
         </li>
-        <li class="menuItem" onmouseover="playGoMap()">
+        <li class="menuItem" onmouseover="playGoMap()" onmouseleave="hideAll()">
           <a href="/home/maps">
             Map
           </a>
@@ -73,7 +73,7 @@
             <a class="dropItem" href="/home/map">Interactive</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="playGoArrival()">
+        <li class="menuItem" onmouseover="playGoArrival()" onmouseleave="hideAll()">
           <a href="/home/arrival">
             Arrival
           </a>
@@ -84,7 +84,7 @@
             <a class="dropItem">Train</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="playGoExplore()">
+        <li class="menuItem" onmouseover="playGoExplore()" onmouseleave="hideAll()">
           <a href="/home/explore">
             Traveling
           </a>
@@ -93,11 +93,11 @@
             <a class="dropItem">Walking</a>
           </div>
         </li>
-        <li class="menuItem" style="width: 115px" onmouseover="playGoAttract()">
+        <li class="menuItem" style="width: 115px" onmouseover="playGoAttract()" onmouseleave="hideAll()">
           <a href="/home/attractions">
             Attractions
           </a>
-          <div id="attractDrop" class="dropdown-content" style="left: -10px">
+          <div id="attractDrop" class="dropdown-content" style="left: -10px" >
             <a class="dropItem">Restaurants</a>
             <a class="dropItem">Churches</a>
             <a class="dropItem">Museums</a>
