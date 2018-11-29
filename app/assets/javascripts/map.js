@@ -14873,6 +14873,7 @@ function addMapElements() {
 function getLayers() {
     getBridges();
 
+    /* ------------- Fuzzy Search Bar ----------- */
     var fuse = new Fuse(bridges, {
         keys: [
             'properties.name'
