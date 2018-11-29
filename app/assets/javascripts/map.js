@@ -37,7 +37,7 @@ function highlightFeature(e) {
     var layer = e.target;
 
     layer.setStyle({
-        weight: 5,
+        weight: 4,
         color: '#666',
         dashArray: '',
         fillOpacity: 1
@@ -52,6 +52,28 @@ function highlightFeature(e) {
 
 function resetHighlight(e) {
     bridgeLayer.resetStyle(e.target);
+    info.update();
+}
+
+function highlightFeatureIsland(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        weight: 2,
+        color: '#666',
+        dashArray: '',
+        fillOpacity: 0
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+
+    info.update(layer.feature.properties);
+}
+
+function resetHighlightIsland(e) {
+    islesLayer.resetStyle(e.target);
     info.update();
 }
 
@@ -92,6 +114,14 @@ function onEachFeature(feature, layer) {
     });
 }
 
+function onEachFeatureIsland(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureIsland,
+        mouseout: resetHighlightIsland,
+        dblclick: zoomToFeature
+    });
+}
+
 /* ------------------------  End Map Interaction Functions -------------------------- */
 
 /* ------------------------  Map Element Functions -------------------------- */
@@ -113,29 +143,49 @@ function addMapElements() {
     info.update = function (props) {
         try {
             var attrs = Object.keys(props);
-            var attribute;
-            var value;
+            var attributeBridge;
+            var attributeIsland;
 
-            attribute = attrs[2];
-            value = props[attribute];
+
+            attributeBridge = attrs[0];
+            attributeIsland = attrs[2];
+
         }
         /* --------- Always Goes Here ---------- */
         catch (e) {
             /* -------- Only here to suppress null pointer error ---------- */
         }
 
-        if(value != "null") {
-            this._div.style.letterSpacing = "0px";
-            this._div.innerHTML = '<h4>Bridge</h4>' + (props ?
-                '<b>' + props.name + '</b><br />' + '<b> District1: </b>' + props.district1 + '</b><br />' + '<b> District2: </b>' + props.district2
-                : 'Hover over a bridge');
+        /* --------- Feature Check ---------- */
+        //bridge
+        if(attributeBridge === "name"){
+
+            var dist2Bridge = attrs[2];
+            var value = props[dist2Bridge];
+
+
+            // check to see if brisge has 2 districts
+            if(value != "null") {
+                this._div.style.letterSpacing = "0px";
+                this._div.innerHTML = '<h4>General Info</h4>' + (props ?
+                    '<b>Bridge: </b>' + props.name + '</b><br />' + '<b> District1: </b>' + props.district1 + '</b><br />' + '<b> District2: </b>' + props.district2
+                    : 'Hover over a feature');
+            }
+            else{
+                this._div.style.letterSpacing = "0px";
+                this._div.innerHTML = '<h4>General Info</h4>' +  (props ?
+                    '<b>Bridge: </b>' + props.name + '</b><br />' + '<b> District: </b>' + props.district1
+                    : 'Hover over a feature');
+            }
         }
+        //island
         else{
-            this._div.style.letterSpacing = "0px";
-            this._div.innerHTML = '<h4>Bridge</h4>' +  (props ?
-                '<b>' + props.name + '</b><br />' + '<b> District: </b>' + props.district1
-                : 'Hover over a bridge');
+           this._div.style.letterSpacing = "0px";
+            this._div.innerHTML = '<h4>General Info</h4>' +  (props ?
+                '<b> Island: </b>' + props.Nome_Isola
+                : 'Hover over a feature'); 
         }
+
     };
 
     info.addTo(mymap);
@@ -163,8 +213,9 @@ function getBridges() {
 }
 
 function getIsles(){
-    islesLayer = L.geoJson(isles, {style: isleStyle});
+    islesLayer = L.geoJson(isles, {style: isleStyle, onEachFeature: onEachFeatureIsland});
     islesLayer.addTo(mymap);
+    islesLayer.bringToBack();
 }
 
 function setUpSearch(){
