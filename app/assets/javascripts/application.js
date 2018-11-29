@@ -21,4 +21,7 @@
 //= require parallax
 //= require parallax.min
 
+//= require bridges_geojson
+//= require isles_geojson
+
 
