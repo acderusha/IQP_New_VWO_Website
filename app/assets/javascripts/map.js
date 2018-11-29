@@ -22,12 +22,18 @@ function style(feature) {
 // Style for islands bridges
 function isleStyle(feature) {
     return {
-        fillColor: "red",
+        fillColor: getColor(feature.properties.Access_Han),
         weight: 0.5,
         opacity: 1,
         color: 'gray',
-        fillOpacity: 0
+        fillOpacity: 0.4
     };
+}
+
+function getColor(d) {
+    return d > 'yes' ? '#0000ff' :
+           d > 'no'  ? '#fb0000' :
+                      '#0000ff';
 }
 
 // Custom Info Control
@@ -66,7 +72,7 @@ function highlightFeatureIsland(e) {
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
+        //layer.bringToFront();
     }
 
     info.update(layer.feature.properties);
@@ -189,6 +195,32 @@ function addMapElements() {
     };
 
     info.addTo(mymap);
+
+    /* ------ End Custom Info Control ----------- */
+
+    /* ------ Custom Legend Control ----------- */
+
+    var legend = L.control({position: 'bottomright'});
+
+    legend.onAdd = function (map) {
+
+        var div = L.DomUtil.create('div', 'info legend'),
+            grades = ['no','yes'],
+            labels = ['Accessible','Not Accessible'];
+
+        // loop through our density intervals and generate a label with a colored square for each interval
+        for (var i = 0; i < grades.length; i++) {
+            div.innerHTML +=
+                '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+                labels[i] + '<br>';
+        }
+
+        return div;
+    };
+
+    legend.addTo(mymap);
+
+    /* ------ End Custom Legend Control ----------- */
 }
 
 /* ------------------------  End Map Element Functions -------------------------- */
@@ -197,6 +229,8 @@ function addMapElements() {
 function getLayers() {
     getIsles();
     getBridges();
+
+    orderLayers();
 
     setUpSearch();
 }
@@ -215,11 +249,16 @@ function getBridges() {
 function getIsles(){
     islesLayer = L.geoJson(isles, {style: isleStyle, onEachFeature: onEachFeatureIsland});
     islesLayer.addTo(mymap);
+}
+
+function orderLayers(){
+    bridgeLayer.bringToFront();
     islesLayer.bringToBack();
 }
 
+
+/* ------------- Fuzzy Search Bar ----------- */
 function setUpSearch(){
-    /* ------------- Fuzzy Search Bar ----------- */
     var fuse = new Fuse(bridges, {
         keys: [
             'properties.name'
