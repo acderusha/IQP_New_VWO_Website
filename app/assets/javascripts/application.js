@@ -23,5 +23,6 @@
 
 //= require bridges_geojson
 //= require isles_geojson
+//= require boatStop_geojson
 
 

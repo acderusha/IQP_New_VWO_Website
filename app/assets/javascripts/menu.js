@@ -198,6 +198,7 @@ let muteVar;
 
 
   function muteSpeech() {
+    var muteInput = document.getElementById("muteInput");
     var mutebtn = document.getElementById("mutebtn");
 
     if(muteVar){
@@ -206,7 +207,9 @@ let muteVar;
 
       console.log("false");
       muteVar = false;
-      mutebtn.checked = false;
+      muteInput.checked = false;
+      mutebtn.classList.remove("textColor");
+
       responsiveVoice.speak("Speech Off","UK English Male");
     }
     else{
@@ -214,19 +217,26 @@ let muteVar;
       
       console.log("true");
       muteVar = true;
-      mutebtn.checked = true;
+      muteInput.checked = true;
+      mutebtn.classList.add("textColor");
+      
       responsiveVoice.speak("Speech On","UK English Male");
     }
   }
 
   function setUpMuteButton() {
     document.addEventListener("DOMContentLoaded", function() {
+      var muteInput = document.getElementById("muteInput");
       var mutebtn = document.getElementById("mutebtn");
       if(muteVar){
-        mutebtn.checked = true;
+        muteInput.checked = true;
+
+        mutebtn.classList.add("textColor");
       }
       else{
-        mutebtn.checked = false;
+        muteInput.checked = false;
+
+        mutebtn.classList.remove("textColor");
       }
     });
   }

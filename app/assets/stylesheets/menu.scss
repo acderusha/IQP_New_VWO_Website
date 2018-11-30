@@ -43,9 +43,9 @@
 .overlay .closebtn {
 	cursor: pointer;
 
-    position: absolute;
-	top: 5px;
-	right: -10px;
+  position: absolute;
+	top: 15px;
+	left: -10px;
 	font-size: 30px;
 
 	padding: 5px 40px 5px 40px;
@@ -63,23 +63,23 @@
 }
 
 .mutebtn {
+
+  padding: 5px 40px 5px 40px;
+  margin: 10px;
+
+
+  font-size: 52px;
+  font-family: 'Istok Web';
+
 	text-decoration: none;
-	text-align: left;
+
 	vertical-align: middle;
 	color: #777;
-    display: block;
-    transition: 0.3s;
+  display: block;
 
-    position: absolute;
-	top: 0px;
-	left: -10px;
-	font-size: 35px;
-
-	padding: 5px 40px 5px 40px;
-	margin: 10px;
-	font-family: 'Istok Web';
+  transition: 0.3s;
 }
-.mutebtn:hover {
+.textColor {
 	background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -88,8 +88,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 60px;
-  height: 34px;
+  width: 108px;
+  height: 50px;
   vertical-align: middle;
 }
 
@@ -114,8 +114,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
+  height: 42px;
+  width: 42px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -132,9 +132,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(57px);
+  -ms-transform: translateX(57px);
+  transform: translateX(57px);
 }
 
 /* Rounded sliders */
@@ -382,10 +382,13 @@ input:checked + .slider:before {
     box-shadow: 4px 5px 4px 0px rgba(0, 0, 0,.3), -4px 5px 4px 0px rgba(0, 0, 0,.3);
 
     display: none;
+    //height: 0;
 
     position: absolute;
 
     overflow: auto;
+
+    transition: all 0.3s ease;
   }
 
   .dropdown-content a {
@@ -401,6 +404,7 @@ input:checked + .slider:before {
 
   .show {
     display: block;
+    //height: 50px;
   }
 }
 

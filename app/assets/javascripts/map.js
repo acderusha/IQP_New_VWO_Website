@@ -3,9 +3,13 @@ console.log("map loaded");
 /* --------------- Global Layer Vars ------------ */
 var bridgeLayer;
 var islesLayer;
+var boatLayer;
 
 
 /* ---------------------------- Map Interaction Functions --------------------------- */
+
+// Custom Info Control
+var info = L.control();
 
 // Style for bridges
 function style(feature) {
@@ -23,21 +27,41 @@ function style(feature) {
 function isleStyle(feature) {
     return {
         fillColor: getColor(feature.properties.Access_Han),
-        weight: 0.5,
-        opacity: 1,
+        weight: 1,
+        opacity: 2,
         color: 'gray',
-        fillOpacity: 0.4
+        fillOpacity: 0.5
     };
 }
 
 function getColor(d) {
     return d > 'yes' ? '#0000ff' :
-           d > 'no'  ? '#fb0000' :
-                      '#0000ff';
+           d > 'no'  ? '#993333' :
+                      '#336699';
 }
 
-// Custom Info Control
-var info = L.control();
+
+// Style for boat stops
+var geojsonMarkerOptions = {
+    radius: 8,
+    fillColor: "#9999CC",
+    color: "#000",
+    weight: 1,
+    opacity: 1,
+    fillOpacity: 0.8
+};
+
+function boatStyle(feature)  {
+    return {
+        radius: 6,
+        fillColor: "#9999CC",
+        color: "#000",
+        weight: 1,
+        opacity: 1,
+        fillOpacity: 0.8
+    };
+}
+
 
 function highlightFeature(e) {
     var layer = e.target;
@@ -83,6 +107,32 @@ function resetHighlightIsland(e) {
     info.update();
 }
 
+
+function highlightFeatureBoat(e) {
+    var layer = e.target;
+
+    layer.setStyle({
+        radius: 8,
+        fillColor: "#9999CC",
+        color: "#000",
+        weight: 2,
+        opacity: 1,
+        fillOpacity: 0.8
+    });
+
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        //layer.bringToFront();
+    }
+
+    info.update(layer.feature.properties);
+}
+
+function resetHighlightBoat(e) {
+    boatLayer.resetStyle(e.target);
+    info.update();
+}
+
+
 function describeFeature(e) {
     var layer = e.target;
 
@@ -93,22 +143,10 @@ function describeFeature(e) {
     description.style.padding = "10px";
 
     addDescription(layer.feature.properties);
-
-    //mymap.fitBounds(e.target.getBounds());
 }
 
 function zoomToFeature(e) {
     mymap.fitBounds(e.target.getBounds());
-
-    var layer = e.target;
-
-    var container = document.getElementById("descBoxContainer");
-    var description = document.getElementById("descBox");
-    container.style.display = "";
-    container.width = "300px";
-    description.style.display = "block";
-
-    addDescription(layer.feature.properties);
 }
 
 function onEachFeature(feature, layer) {
@@ -124,6 +162,14 @@ function onEachFeatureIsland(feature, layer) {
     layer.on({
         mouseover: highlightFeatureIsland,
         mouseout: resetHighlightIsland,
+        dblclick: zoomToFeature
+    });
+}
+
+function onEachFeatureBoat(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureBoat,
+        mouseout: resetHighlightBoat,
         dblclick: zoomToFeature
     });
 }
@@ -151,10 +197,12 @@ function addMapElements() {
             var attrs = Object.keys(props);
             var attributeBridge;
             var attributeIsland;
+            var attributeBoat;
 
 
             attributeBridge = attrs[0];
             attributeIsland = attrs[2];
+            attributeBoat = attrs[1];
 
         }
         /* --------- Always Goes Here ---------- */
@@ -184,11 +232,18 @@ function addMapElements() {
                     : 'Hover over a feature');
             }
         }
+        //boat stop
+        else if(attributeBoat === "name"){
+            this._div.style.letterSpacing = "0px";
+            this._div.innerHTML = '<h4>General Info</h4>' +  (props ?
+                '<b> Boat Stop: </b>' + props.name
+                : 'Hover over a feature'); 
+        }
         //island
         else{
            this._div.style.letterSpacing = "0px";
             this._div.innerHTML = '<h4>General Info</h4>' +  (props ?
-                '<b> Island: </b>' + props.Nome_Isola
+                '<b> Island: </b>' + props.name
                 : 'Hover over a feature'); 
         }
 
@@ -229,6 +284,7 @@ function addMapElements() {
 function getLayers() {
     getIsles();
     getBridges();
+    getBoatStops();
 
     orderLayers();
 
@@ -237,6 +293,7 @@ function getLayers() {
 
 function getBridges() {
     $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+        console.log("Data: ")
         console.log(data);
         //$( ".result" ).html( data );
         //alert( "Load was performed." );
@@ -251,6 +308,16 @@ function getIsles(){
     islesLayer.addTo(mymap);
 }
 
+function getBoatStops(){
+    boatLayer = L.geoJSON(boatStops, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, geojsonMarkerOptions);
+        },
+        onEachFeature: onEachFeatureBoat
+    });
+    boatLayer.addTo(mymap);
+}
+
 function orderLayers(){
     bridgeLayer.bringToFront();
     islesLayer.bringToBack();
@@ -259,14 +326,19 @@ function orderLayers(){
 
 /* ------------- Fuzzy Search Bar ----------- */
 function setUpSearch(){
-    var fuse = new Fuse(bridges, {
+    var layers = combineLayers();
+    console.log(layers);
+
+    var totalLayers = L.layerGroup([bridgeLayer, islesLayer, boatLayer]);
+
+    var fuse = new Fuse(layers, {
         keys: [
-            'properties.name'
+            'properties.name',
         ]
     });
 
     L.control.search({
-        layer: bridgeLayer,
+        layer: totalLayers,
         collapsed: false,
         propertyName: 'name',
         filterData: function(text, records) {
@@ -285,6 +357,30 @@ function setUpSearch(){
         e.layer.openPopup();
     })
     .addTo(mymap);
+}
+
+
+function combineLayers(){
+    var combineLayers = isles;
+
+    //console.log("Isles: ");
+    //console.log(isles);
+
+    //console.log("Bridges: ");
+    //console.log(bridges);
+
+    bridges.forEach(function (element){
+        combineLayers.push(element);
+    });
+
+    boatStops.forEach(function (element){
+        combineLayers.push(element);
+    });
+
+    //console.log("Total: ");
+    //console.log(combineLayers);
+
+    return combineLayers;
 }
 
 /* -------------- End GET Layer Data Functions ----------------- */
