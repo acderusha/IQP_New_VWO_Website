@@ -43,7 +43,7 @@ function getColor(d) {
 
 // Style for boat stops
 var geojsonMarkerOptions = {
-    radius: 8,
+    radius: 7,
     fillColor: "#9999CC",
     color: "#000",
     weight: 1,
@@ -53,7 +53,7 @@ var geojsonMarkerOptions = {
 
 function boatStyle(feature)  {
     return {
-        radius: 6,
+        radius: 7,
         fillColor: "#9999CC",
         color: "#000",
         weight: 1,
@@ -112,7 +112,7 @@ function highlightFeatureBoat(e) {
     var layer = e.target;
 
     layer.setStyle({
-        radius: 8,
+        radius: 7,
         fillColor: "#9999CC",
         color: "#000",
         weight: 2,
