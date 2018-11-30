@@ -188,7 +188,7 @@ function addMapElements() {
         else{
            this._div.style.letterSpacing = "0px";
             this._div.innerHTML = '<h4>General Info</h4>' +  (props ?
-                '<b> Island: </b>' + props.Nome_Isola
+                '<b> Island: </b>' + props.name
                 : 'Hover over a feature'); 
         }
 
@@ -261,17 +261,18 @@ function orderLayers(){
 /* ------------- Fuzzy Search Bar ----------- */
 function setUpSearch(){
     var layers = combineLayers();
+    console.log(layers);
 
-    var fuse = new Fuse(layers.features, {
+    var totalLayers = L.layerGroup([bridgeLayer, islesLayer]);
+
+    var fuse = new Fuse(layers, {
         keys: [
             'properties.name',
         ]
     });
 
-    var totalLayers = L.geoJson(layers);
-
     L.control.search({
-        layer: bridgeLayer,
+        layer: totalLayers,
         collapsed: false,
         propertyName: 'name',
         filterData: function(text, records) {
@@ -296,18 +297,18 @@ function setUpSearch(){
 function combineLayers(){
     var combineLayers = isles;
 
-    console.log("Isles: ");
-    console.log(combineLayers.features);
+    //console.log("Isles: ");
+    //console.log(isles);
 
-    console.log("Bridges: ");
-    console.log(bridges);
+    //console.log("Bridges: ");
+    //console.log(bridges);
 
     bridges.forEach(function (element){
-        combineLayers.features.push(element);
+        combineLayers.push(element);
     });
 
-    console.log("Total: ");
-    console.log(combineLayers.features);
+    //console.log("Total: ");
+    //console.log(combineLayers);
 
     return combineLayers;
 }

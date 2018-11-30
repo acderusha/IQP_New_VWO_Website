@@ -1,17 +1,4 @@
-var isles = 
-{
-
-"type": "FeatureCollection",
-"crs": { 
-	
-	"type": "name", 
-	
-	"properties": {
- 		"name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-  	} 
-},
-                                                                                
-"features": [
+var isles = [
 
 /* ----------------- Lido + Other Large Outer islands ------------------- */
 
@@ -20,7 +7,7 @@ var isles =
 	"properties": { 		
 		"Numero": 1009.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Ariano",
+		"name": "San Ariano",
 		"Insula_Num": 0.000000,
 		"Superficie": 25610.000000, 
 		"Perimetro": 2060.000000, 
@@ -50,7 +37,7 @@ var isles =
 	"properties": { 		
 		"Numero": 402.000000, 
 		"Codice": "GRAZ", 
-		"Nome_Isola": "S. Maria delle Grazie", 
+		"name": "S. Maria delle Grazie", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 58455.000000, 
 		"Perimetro": 1677.000000, 
@@ -80,7 +67,7 @@ var isles =
 	"properties": { 		
 		"Numero": 1001.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Santa Cristina", 
+		"name": "Santa Cristina", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 140818.000000, 
 		"Perimetro": 6016.000000, 
@@ -110,7 +97,7 @@ var isles =
 	"properties": { 		
 		"Numero": 501.000000, 
 		"Codice": "BORG", 
-		"Nome_Isola": "Borgognoni", 
+		"name": "Borgognoni", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 165768.000000, 
 		"Perimetro": 4246.000000, 
@@ -140,7 +127,7 @@ var isles =
 	"properties": { 
 		"Numero": 701.000000, 
 		"Codice": "PELE", 
-		"Nome_Isola": "Pellestrina", 
+		"name": "Pellestrina", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 2279529.000000, 
 		"Perimetro": 32785.000000, 
@@ -170,7 +157,7 @@ var isles =
 	"properties": { 
 		"Numero": 601.000000, 
 		"Codice": "LIDO", 
-		"Nome_Isola": "Lido di Venezia", 
+		"name": "Lido di Venezia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 6719446.000000, 
 		"Perimetro": 53806.000000, 
@@ -200,7 +187,7 @@ var isles =
 	"properties": { 
 		"Numero": 901.000000, 
 		"Codice": "ERAS", 
-		"Nome_Isola": "Sant'Erasmo", 
+		"name": "Sant'Erasmo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 3248826.000000, 
 		"Perimetro": 19143.000000, 
@@ -230,7 +217,7 @@ var isles =
 	"properties": { 		
 		"Numero": 1008.000000, 
 		"Codice": null, 
-		"Nome_Isola": 
+		"name": 
 		"La Cura", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 79072.000000, 
@@ -266,7 +253,7 @@ var isles =
 	"properties": { 		
 		"Numero": 1036.000000, 
 		"Codice": null, 
-		"Nome_Isola": 
+		"name": 
 		"Tessera", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 6279.000000, 
@@ -297,7 +284,7 @@ var isles =
 	"properties": { 
 		"Numero": 1035.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Francesco del Deserto", 
+		"name": "San Francesco del Deserto", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 36750.000000, 
 		"Perimetro": 1336.000000, 
@@ -327,7 +314,7 @@ var isles =
 	"properties": { 
 		"Numero": 1034.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Giacomo in Palude", 
+		"name": "Giacomo in Palude", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 12463.000000, 
 		"Perimetro": 451.000000, 
@@ -357,7 +344,7 @@ var isles =
 	"properties": { 
 		"Numero": 1033.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Madonna del Monte", 
+		"name": "Madonna del Monte", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 5127.000000, 
 		"Perimetro": 279.000000, 
@@ -387,7 +374,7 @@ var isles =
 	"properties": { 
 		"Numero": 1032.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Madonna del Monte", 
+		"name": "Madonna del Monte", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 579.000000, 
 		"Perimetro": 98.000000, 
@@ -417,7 +404,7 @@ var isles =
 	"properties": { 		
 		"Numero": 1031.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Buel del Lovo", 
+		"name": "Buel del Lovo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 6435.000000, 
 		"Perimetro": 413.000000, 
@@ -447,7 +434,7 @@ var isles =
 	"properties": { 		
 		"Numero": 403.000000, 
 		"Codice": "MATM", 
-		"Nome_Isola": "SS. Mattia e Margherita", 
+		"name": "SS. Mattia e Margherita", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 57930.000000, 
 		"Perimetro": 1088.000000, 
@@ -476,7 +463,7 @@ var isles =
 	"properties": { 		
 		"Numero": 406.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 29136.000000, 
 		"Perimetro": 844.000000, 
@@ -506,7 +493,7 @@ var isles =
 	"properties": { 		
 		"Numero": 404.000000, 
 		"Codice": "BORT", 
-		"Nome_Isola": "S. Bortolo", 
+		"name": "S. Bortolo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 171459.000000, 
 		"Perimetro": 3062.000000, 
@@ -537,7 +524,7 @@ var isles =
 	"properties": { 
 		"Numero": 405.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 20612.000000, 
 		"Perimetro": 1213.000000, 
@@ -567,7 +554,7 @@ var isles =
 	"properties": { 
 		"Numero": 407.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 12525.000000, 
 		"Perimetro": 952.000000, 
@@ -597,7 +584,7 @@ var isles =
 	"properties": { 
 		"Numero": 1030.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Giorgio in Alga", 
+		"name": "San Giorgio in Alga", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 12614.000000, 
 		"Perimetro": 544.000000, 
@@ -627,7 +614,7 @@ var isles =
 	"properties": { 
 		"Numero": 126.000000, 
 		"Codice": "MICH", 
-		"Nome_Isola": "S. Michele", 
+		"name": "S. Michele", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 159099.000000, 
 		"Perimetro": 2130.000000, 
@@ -657,7 +644,7 @@ var isles =
 	"properties": { 
 		"Numero": 804.000000, 
 		"Codice": "CERT", 
-		"Nome_Isola": "La Certosa", 
+		"name": "La Certosa", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 241384.000000, 
 		"Perimetro": 2416.000000, 
@@ -687,7 +674,7 @@ var isles =
 	"properties": { 
 		"Numero": 803.000000, 
 		"Codice": "VIGV", 
-		"Nome_Isola": "Vignole Vecchie", 
+		"name": "Vignole Vecchie", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 238876.000000, 
 		"Perimetro": 2131.000000, 
@@ -717,7 +704,7 @@ var isles =
 	"properties": { 
 		"Numero": 802.000000, 
 		"Codice": "ANDR", 
-		"Nome_Isola": "Sant'Andrea", 
+		"name": "Sant'Andrea", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 283413.000000, 
 		"Perimetro": 5000.000000, 
@@ -747,7 +734,7 @@ var isles =
 	"properties": { 
 		"Numero": 805.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 23178.000000, 
 		"Perimetro": 800.000000, 
@@ -777,7 +764,7 @@ var isles =
 	"properties": { 
 		"Numero": 801.000000, 
 		"Codice": "VIGN", 
-		"Nome_Isola": "Vignole Nuove", 
+		"name": "Vignole Nuove", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 144716.000000, 
 		"Perimetro": 2144.000000, 
@@ -807,7 +794,7 @@ var isles =
 	"properties": { 
 		"Numero": 1029.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Lazzaretto Vecchio", 
+		"name": "Lazzaretto Vecchio", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 25731.000000, 
 		"Perimetro": 843.000000, 
@@ -837,7 +824,7 @@ var isles =
 	"properties": { 
 		"Numero": 1028.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Lazzaro degli Armeni", 
+		"name": "San Lazzaro degli Armeni", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 32631.000000, 
 		"Perimetro": 861.000000, 
@@ -867,7 +854,7 @@ var isles =
 	"properties": { 
 		"Numero": 1027.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Servolo", 
+		"name": "San Servolo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 48314.000000, 
 		"Perimetro": 1122.000000, 
@@ -897,7 +884,7 @@ var isles =
 	"properties": { 
 		"Numero": 1026.000000, 
 		"Codice": null, 
-		"Nome_Isola": "La Grazie", 
+		"name": "La Grazie", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 38082.000000, 
 		"Perimetro": 773.000000, 
@@ -927,7 +914,7 @@ var isles =
 	"properties": { 
 		"Numero": 1025.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Clemente", 
+		"name": "San Clemente", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 67734.000000, 
 		"Perimetro": 1079.000000, 
@@ -957,7 +944,7 @@ var isles =
 	"properties": { 
 		"Numero": 1024.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Spirito", 
+		"name": "San Spirito", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 23760.000000, 
 		"Perimetro": 633.000000, 
@@ -987,7 +974,7 @@ var isles =
 	"properties": { 
 		"Numero": 1023.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Secondo", 
+		"name": "San Secondo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 12031.000000, 
 		"Perimetro": 484.000000, 
@@ -1017,7 +1004,7 @@ var isles =
 	"properties": { 
 		"Numero": 1021.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Carbonera", 
+		"name": "Carbonera", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 5851.000000, 
 		"Perimetro": 304.000000, 
@@ -1047,7 +1034,7 @@ var isles =
 	"properties": { 
 		"Numero": 1020.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Angelo della Polvere", 
+		"name": "San Angelo della Polvere", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 5229.000000, 
 		"Perimetro": 282.000000, 
@@ -1077,7 +1064,7 @@ var isles =
 	"properties": { 
 		"Numero": 1019.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ottagono Abbandonato", 
+		"name": "Ottagono Abbandonato", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 3018.000000, 
 		"Perimetro": 201.000000, 
@@ -1107,7 +1094,7 @@ var isles =
 	"properties": { 
 		"Numero": 1018.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ex Poveglia", 
+		"name": "Ex Poveglia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 4749.000000, 
 		"Perimetro": 276.000000, 
@@ -1137,7 +1124,7 @@ var isles =
 	"properties": { 
 		"Numero": 1017.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Poveglia", 
+		"name": "Poveglia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 34930.000000, 
 		"Perimetro": 871.000000, 
@@ -1167,7 +1154,7 @@ var isles =
 	"properties": { 
 		"Numero": 1016.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Poveglia", 
+		"name": "Poveglia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 37368.000000, 
 		"Perimetro": 842.000000, 
@@ -1197,7 +1184,7 @@ var isles =
 	"properties": { 
 		"Numero": 1015.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ottagono Poveglia", 
+		"name": "Ottagono Poveglia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 2636.000000, 
 		"Perimetro": 187.000000, 
@@ -1227,7 +1214,7 @@ var isles =
 	"properties": { 
 		"Numero": 1014.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Podo", 
+		"name": "Podo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 5695.000000, 
 		"Perimetro": 284.000000, 
@@ -1257,7 +1244,7 @@ var isles =
 	"properties": { 
 		"Numero": 1013.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ottagono Alberoni", 
+		"name": "Ottagono Alberoni", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 2513.000000, 
 		"Perimetro": 183.000000, 
@@ -1287,7 +1274,7 @@ var isles =
 	"properties": { 
 		"Numero": 1012.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ottagono San Pietro", 
+		"name": "Ottagono San Pietro", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 3317.000000, 
 		"Perimetro": 211.000000, 
@@ -1317,7 +1304,7 @@ var isles =
 	"properties": { 
 		"Numero": 1011.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Ottagono Ca'Roman", 
+		"name": "Ottagono Ca'Roman", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 2018.000000, 
 		"Perimetro": 164.000000, 
@@ -1347,7 +1334,7 @@ var isles =
 	"properties": { 
 		"Numero": 1010.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Sacca Sessola", 
+		"name": "Sacca Sessola", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 156943.000000, 
 		"Perimetro": 1973.000000, 
@@ -1377,7 +1364,7 @@ var isles =
 	"properties": { 
 		"Numero": 1006.000000, 
 		"Codice": null, 
-		"Nome_Isola": "San Giorgio in Alga", 
+		"name": "San Giorgio in Alga", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 2457.000000, 
 		"Perimetro": 272.000000, 
@@ -1407,7 +1394,7 @@ var isles =
 	"properties": { 
 		"Numero": 1005.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Fisolo", 
+		"name": "Fisolo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 250.000000, 
 		"Perimetro": 72.000000, 
@@ -1437,7 +1424,7 @@ var isles =
 	"properties": { 
 		"Numero": 1003.000000, 
 		"Codice": null, 
-		"Nome_Isola": "La Salina", 
+		"name": "La Salina", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 4287.000000, 
 		"Perimetro": 320.000000, 
@@ -1467,7 +1454,7 @@ var isles =
 	"properties": { 
 		"Numero": 1002.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Crevan", 
+		"name": "Crevan", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 7204.000000, 
 		"Perimetro": 674.000000, 
@@ -1497,7 +1484,7 @@ var isles =
 	"properties": { 
 		"Numero": 301.000000, 
 		"Codice": "MAUB", 
-		"Nome_Isola": "S. Maurizio", 
+		"name": "S. Maurizio", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 68491.000000, 
 		"Perimetro": 1608.000000, 
@@ -1527,7 +1514,7 @@ var isles =
 	"properties": { 
 		"Numero": 302.000000, 
 		"Codice": "MARB", 
-		"Nome_Isola": "S. Martino", 
+		"name": "S. Martino", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 95590.000000, 
 		"Perimetro": 1470.000000, 
@@ -1557,7 +1544,7 @@ var isles =
 	"properties": { 
 		"Numero": 303.000000, 
 		"Codice": "TERR", 
-		"Nome_Isola": "Terranova", 
+		"name": "Terranova", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 23536.000000, 
 		"Perimetro": 1213.000000, 
@@ -1587,7 +1574,7 @@ var isles =
 	"properties": { 
 		"Numero": 304.000000, 
 		"Codice": "GIUD", 
-		"Nome_Isola": "Giudecca", 
+		"name": "Giudecca", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 24395.000000, 
 		"Perimetro": 983.000000, 
@@ -1617,7 +1604,7 @@ var isles =
 	"properties": { 
 		"Numero": 401.000000, 
 		"Codice": "MARI", 
-		"Nome_Isola": "S. Maria di Valverde", 
+		"name": "S. Maria di Valverde", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 167826.000000, 
 		"Perimetro": 2639.000000, 
@@ -1647,7 +1634,7 @@ var isles =
 	"properties": { 
 		"Numero": 504.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 26111.000000, 
 		"Perimetro": 874.000000, 
@@ -1677,7 +1664,7 @@ var isles =
 	"properties": { 
 		"Numero": 503.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 35691.000000, 
 		"Perimetro": 989.000000, 
@@ -1707,7 +1694,7 @@ var isles =
 	"properties": { 
 		"Numero": 502.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 4199.000000, 
 		"Perimetro": 429.000000, 
@@ -1737,7 +1724,7 @@ var isles =
 	"properties": { 
 		"Numero": 508.000000, 
 		"Codice": "GIOV", 
-		"Nome_Isola": "S. Giovanni Evangelista", 
+		"name": "S. Giovanni Evangelista", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 47790.000000, 
 		"Perimetro": 936.000000, 
@@ -1767,7 +1754,7 @@ var isles =
 	"properties": { 
 		"Numero": 509.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 22000.000000, 
 		"Perimetro": 622.000000, 
@@ -1797,7 +1784,7 @@ var isles =
 	"properties": { 
 		"Numero": 507.000000, 
 		"Codice": "ANDT", 
-		"Nome_Isola": "S. Andrea", 
+		"name": "S. Andrea", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 19083.000000, 
 		"Perimetro": 851.000000, 
@@ -1827,7 +1814,7 @@ var isles =
 	"properties": { 
 		"Numero": 506.000000, 
 		"Codice": "ANTO", 
-		"Nome_Isola": "S. Antonio", 
+		"name": "S. Antonio", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 59365.000000, 
 		"Perimetro": 1612.000000, 
@@ -1857,7 +1844,7 @@ var isles =
 	"properties": { 
 		"Numero": 505.000000, 
 		"Codice": "FOSC", 
-		"Nome_Isola": "S. Fosca", 
+		"name": "S. Fosca", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 48811.000000, 
 		"Perimetro": 1223.000000, 
@@ -1887,7 +1874,7 @@ var isles =
 	"properties": { 
 		"Numero": 201.000000, 
 		"Codice": "MATM", 
-		"Nome_Isola": "Sacca S. Mattia", 
+		"name": "Sacca S. Mattia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 307246.000000, 
 		"Perimetro": 3760.000000, 
@@ -1917,7 +1904,7 @@ var isles =
 	"properties": { 
 		"Numero": 202.000000, 
 		"Codice": "CONV", 
-		"Nome_Isola": "Del Convento", 
+		"name": "Del Convento", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 104389.000000, 
 		"Perimetro": 1378.000000, 
@@ -1947,7 +1934,7 @@ var isles =
 	"properties": { 
 		"Numero": 204.000000, 
 		"Codice": "NAVA", 
-		"Nome_Isola": "Navagero", 
+		"name": "Navagero", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 80332.000000, 
 		"Perimetro": 1729.000000, 
@@ -1977,7 +1964,7 @@ var isles =
 	"properties": { 
 		"Numero": 205.000000, 
 		"Codice": "SERE", 
-		"Nome_Isola": "Sacca Serenella", 
+		"name": "Sacca Serenella", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 99352.000000, 
 		"Perimetro": 1999.000000, 
@@ -2007,7 +1994,7 @@ var isles =
 	"properties": { 
 		"Numero": 206.000000, 
 		"Codice": "PIEM", 
-		"Nome_Isola": "S. Pietro", 
+		"name": "S. Pietro", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 178620.000000, 
 		"Perimetro": 1961.000000, 
@@ -2037,7 +2024,7 @@ var isles =
 	"properties": { 
 		"Numero": 207.000000, 
 		"Codice": "STEM", 
-		"Nome_Isola": "S. Stefano", 
+		"name": "S. Stefano", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 101703.000000, 
 		"Perimetro": 1592.000000, 
@@ -2067,7 +2054,7 @@ var isles =
 	"properties": { 
 		"Numero": 203.000000, 
 		"Codice": "DONA", 
-		"Nome_Isola": "S. Donato", 
+		"name": "S. Donato", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 294825.000000, 
 		"Perimetro": 3218.000000, 
@@ -2097,7 +2084,7 @@ var isles =
 	"properties": { 
 		"Numero": 602.000000, 
 		"Codice": "TIRO", 
-		"Nome_Isola": "di Via Tiro", 
+		"name": "di Via Tiro", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 95635.000000, 
 		"Perimetro": 1427.000000, 
@@ -2127,7 +2114,7 @@ var isles =
 	"properties": { 
 		"Numero": 603.000000, 
 		"Codice": "PART", 
-		"Nome_Isola": "di Via O. Partecipazio", 
+		"name": "di Via O. Partecipazio", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 66806.000000, 
 		"Perimetro": 1026.000000, 
@@ -2157,7 +2144,7 @@ var isles =
 	"properties": { 
 		"Numero": 604.000000, 
 		"Codice": "BRIN", 
-		"Nome_Isola": "di Via M. Bragadin", 
+		"name": "di Via M. Bragadin", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 43587.000000, 
 		"Perimetro": 906.000000, 
@@ -2187,7 +2174,7 @@ var isles =
 	"properties": { 
 		"Numero": 605.000000, 
 		"Codice": "MARO", 
-		"Nome_Isola": "di Via L. Marcello", 
+		"name": "di Via L. Marcello", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 153666.000000, 
 		"Perimetro": 1568.000000, 
@@ -2217,7 +2204,7 @@ var isles =
 	"properties": { 
 		"Numero": 606.000000, 
 		"Codice": "CAND", 
-		"Nome_Isola": "di Via Candia", 
+		"name": "di Via Candia", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 95755.000000, 
 		"Perimetro": 1311.000000, 
@@ -2247,7 +2234,7 @@ var isles =
 	"properties": { 
 		"Numero": 609.000000, 
 		"Codice": "FORT", 
-		"Nome_Isola": "Ex Forte", 
+		"name": "Ex Forte", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 48135.000000, 
 		"Perimetro": 977.000000, 
@@ -2277,7 +2264,7 @@ var isles =
 	"properties": { 
 		"Numero": 607.000000, 
 		"Codice": "IPAT", 
-		"Nome_Isola": "di Via T. Ipato", 
+		"name": "di Via T. Ipato", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 87102.000000, 
 		"Perimetro": 2105.000000, 
@@ -2307,7 +2294,7 @@ var isles =
 	"properties": { 
 		"Numero": 608.000000, 
 		"Codice": "MALA", 
-		"Nome_Isola": "Malamocco", 
+		"name": "Malamocco", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 64072.000000, 
 		"Perimetro": 1008.000000, 
@@ -2337,7 +2324,7 @@ var isles =
 	"properties": { 
 		"Numero": 902.000000, 
 		"Codice": null, 
-		"Nome_Isola": null, 
+		"name": null, 
 		"Insula_Num": 0.000000, 
 		"Superficie": 3248826.000000, 
 		"Perimetro": 19143.000000, 
@@ -2367,7 +2354,7 @@ var isles =
 	"properties": { 
 		"Numero": 122.000000, 
 		"Codice": "TRON", 
-		"Nome_Isola": "Tronchetto", 
+		"name": "Tronchetto", 
 		"Insula_Num": 39.000000, 
 		"Superficie": 187554.000000, 
 		"Perimetro": 2272.000000, 
@@ -2397,7 +2384,7 @@ var isles =
 	"properties": { 
 		"Numero": 121.000000, 
 		"Codice": "PORT", 
-		"Nome_Isola": "Stazione Marittima", 
+		"name": "Stazione Marittima", 
 		"Insula_Num": 39.000000, 
 		"Superficie": 428156.000000, 
 		"Perimetro": 4886.000000, 
@@ -2427,7 +2414,7 @@ var isles =
 	"properties": { 
 		"Numero": 1.000000, 
 		"Codice": "ALVI", 
-		"Nome_Isola": "Sant'Alvise", 
+		"name": "Sant'Alvise", 
 		"Insula_Num": 14.000000, 
 		"Superficie": 65808.000000, 
 		"Perimetro": 1191.000000, 
@@ -2457,7 +2444,7 @@ var isles =
 	"properties": { 
 		"Numero": 2.000000, 
 		"Codice": "ORTO", 
-		"Nome_Isola": "Madonna dell'Orto", 
+		"name": "Madonna dell'Orto", 
 		"Insula_Num": 14.000000, 
 		"Superficie": 62300.000000, 
 		"Perimetro": 1117.000000, 
@@ -2487,7 +2474,7 @@ var isles =
 	"properties": { 
 		"Numero": 3.000000, 
 		"Codice": "SENS", 
-		"Nome_Isola": "Sensa", 
+		"name": "Sensa", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 32816.000000, 
 		"Perimetro": 1080.000000, 
@@ -2517,7 +2504,7 @@ var isles =
 	"properties": { 
 		"Numero": 4.000000, 
 		"Codice": "BRAZ", 
-		"Nome_Isola": "Brazzo", 
+		"name": "Brazzo", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 12197.000000, 
 		"Perimetro": 485.000000, 
@@ -2547,7 +2534,7 @@ var isles =
 	"properties": { 
 		"Numero": 5.000000, 
 		"Codice": "MORI", 
-		"Nome_Isola": "Mori", 
+		"name": "Mori", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 12044.000000, 
 		"Perimetro": 489.000000, 
@@ -2577,7 +2564,7 @@ var isles =
 	"properties": { 
 		"Numero": 6.000000, 
 		"Codice": "VALV", 
-		"Nome_Isola": "S. Maria di Valverde Maggiore", 
+		"name": "S. Maria di Valverde Maggiore", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 15651.000000, 
 		"Perimetro": 528.000000, 
@@ -2607,7 +2594,7 @@ var isles =
 	"properties": { 
 		"Numero": 11.000000, 
 		"Codice": "GHET", 
-		"Nome_Isola": "Ghetto", 
+		"name": "Ghetto", 
 		"Insula_Num": 7.000000, 
 		"Superficie": 6465.000000, 
 		"Perimetro": 324.000000, 
@@ -2637,7 +2624,7 @@ var isles =
 	"properties": { 
 		"Numero": 7.000000, 
 		"Codice": "GIRO", 
-		"Nome_Isola": "San Girolamo", 
+		"name": "San Girolamo", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 44437.000000, 
 		"Perimetro": 1093.000000, 
@@ -2667,7 +2654,7 @@ var isles =
 	"properties": { 
 		"Numero": 8.000000, 
 		"Codice": "ORME", 
-		"Nome_Isola": "Ormesini", 
+		"name": "Ormesini", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 23312.000000, 
 		"Perimetro": 759.000000, 
@@ -2697,7 +2684,7 @@ var isles =
 	"properties": { 
 		"Numero": 10.000000, 
 		"Codice": "CHIO", 
-		"Nome_Isola": "Chiovere San Girolamo", 
+		"name": "Chiovere San Girolamo", 
 		"Insula_Num": 7.000000, 
 		"Superficie": 30401.000000, 
 		"Perimetro": 898.000000, 
@@ -2727,7 +2714,7 @@ var isles =
 	"properties": { 
 		"Numero": 15.000000, 
 		"Codice": "LEON", 
-		"Nome_Isola": "San Leonardo", 
+		"name": "San Leonardo", 
 		"Insula_Num": 28.000000, 
 		"Superficie": 167560.000000, 
 		"Perimetro": 2619.000000, 
@@ -2757,7 +2744,7 @@ var isles =
 	"properties": { 
 		"Numero": 19.000000, 
 		"Codice": "MACE", 
-		"Nome_Isola": "Macello", 
+		"name": "Macello", 
 		"Insula_Num": 28.000000, 
 		"Superficie": 52156.000000, 
 		"Perimetro": 925.000000, 
@@ -2787,7 +2774,7 @@ var isles =
 	"properties": { 
 		"Numero": 123.000000, 
 		"Codice": "GIOB", 
-		"Nome_Isola": "San Giobbe", 
+		"name": "San Giobbe", 
 		"Insula_Num": 28.000000, 
 		"Superficie": 39332.000000, 
 		"Perimetro": 846.000000, 
@@ -2817,7 +2804,7 @@ var isles =
 	"properties": { 
 		"Numero": 20.000000, 
 		"Codice": "GERE", 
-		"Nome_Isola": "San Geremia", 
+		"name": "San Geremia", 
 		"Insula_Num": 28.000000, 
 		"Superficie": 248558.000000, 
 		"Perimetro": 2825.000000, 
@@ -2847,7 +2834,7 @@ var isles =
 	"properties": { 
 		"Numero": 9.000000, 
 		"Codice": "MISE", 
-		"Nome_Isola": "Misericordia", 
+		"name": "Misericordia", 
 		"Insula_Num": 40.000000, 
 		"Superficie": 30224.000000, 
 		"Perimetro": 1016.000000, 
@@ -2877,7 +2864,7 @@ var isles =
 	"properties": { 
 		"Numero": 12.000000, 
 		"Codice": "SERV", 
-		"Nome_Isola": "Servi", 
+		"name": "Servi", 
 		"Insula_Num": 13.000000, 
 		"Superficie": 13263.000000, 
 		"Perimetro": 481.000000, 
@@ -2907,7 +2894,7 @@ var isles =
 	"properties": { 
 		"Numero": 13.000000, 
 		"Codice": "MARZ", 
-		"Nome_Isola": "San Marziale", 
+		"name": "San Marziale", 
 		"Insula_Num": 13.000000, 
 		"Superficie": 6412.000000, 
 		"Perimetro": 439.000000, 
@@ -2937,7 +2924,7 @@ var isles =
 	"properties": { 
 		"Numero": 14.000000, 
 		"Codice": "VEND", 
-		"Nome_Isola": "Ca'Vendramin", 
+		"name": "Ca'Vendramin", 
 		"Insula_Num": 13.000000, 
 		"Superficie": 7682.000000, 
 		"Perimetro": 429.000000, 
@@ -2967,7 +2954,7 @@ var isles =
 	"properties": { 
 		"Numero": 16.000000, 
 		"Codice": "MADD", 
-		"Nome_Isola": "Maddalena", 
+		"name": "Maddalena", 
 		"Insula_Num": 13.000000, 
 		"Superficie": 28546.000000, 
 		"Perimetro": 750.000000, 
@@ -2997,7 +2984,7 @@ var isles =
 	"properties": { 
 		"Numero": 102.000000, 
 		"Codice": "PIER", 
-		"Nome_Isola": "San Piero", 
+		"name": "San Piero", 
 		"Insula_Num": 37.000000, 
 		"Superficie": 59835.000000, 
 		"Perimetro": 1039.000000, 
@@ -3027,7 +3014,7 @@ var isles =
 	"properties": { 
 		"Numero": 105.000000, 
 		"Codice": "ELEN", 
-		"Nome_Isola": "Sant'Elena", 
+		"name": "Sant'Elena", 
 		"Insula_Num": 38.000000, 
 		"Superficie": 224780.000000, 
 		"Perimetro": 2666.000000, 
@@ -3057,7 +3044,7 @@ var isles =
 	"properties": { 
 		"Numero": 106.000000, 
 		"Codice": "STAD", 
-		"Nome_Isola": "Stadio Sant'Elena", 
+		"name": "Stadio Sant'Elena", 
 		"Insula_Num": 38.000000, 
 		"Superficie": 101075.000000, 
 		"Perimetro": 1641.000000, 
@@ -3087,7 +3074,7 @@ var isles =
 	"properties": { 
 		"Numero": 104.000000, 
 		"Codice": "ISEP", 
-		"Nome_Isola": "San Isepo", 
+		"name": "San Isepo", 
 		"Insula_Num": 9.000000, 
 		"Superficie": 85575.000000, 
 		"Perimetro": 1303.000000, 
@@ -3117,7 +3104,7 @@ var isles =
 	"properties": { 
 		"Numero": 68.000000, 
 		"Codice": "BACI", 
-		"Nome_Isola": "Bacini Arsenale", 
+		"name": "Bacini Arsenale", 
 		"Insula_Num": 6.000000, 
 		"Superficie": 224209.000000, 
 		"Perimetro": 3166.000000, 
@@ -3147,7 +3134,7 @@ var isles =
 	"properties": { 
 		"Numero": 101.000000, 
 		"Codice": "RUGA", 
-		"Nome_Isola": "Campo Ruga", 
+		"name": "Campo Ruga", 
 		"Insula_Num": 9.000000, 
 		"Superficie": 20684.000000, 
 		"Perimetro": 723.000000, 
@@ -3177,7 +3164,7 @@ var isles =
 	"properties": { 
 		"Numero": 100.000000, 
 		"Codice": "DANI", 
-		"Nome_Isola": "San Daniel", 
+		"name": "San Daniel", 
 		"Insula_Num": 9.000000, 
 		"Superficie": 24944.000000, 
 		"Perimetro": 875.000000, 
@@ -3207,7 +3194,7 @@ var isles =
 	"properties": { 
 		"Numero": 99.000000, 
 		"Codice": "ARSE", 
-		"Nome_Isola": "Arsenale", 
+		"name": "Arsenale", 
 		"Insula_Num": 6.000000, 
 		"Superficie": 122001.000000, 
 		"Perimetro": 2675.000000, 
@@ -3237,7 +3224,7 @@ var isles =
 	"properties": { 
 		"Numero": 103.000000, 
 		"Codice": "ANA", 
-		"Nome_Isola": "Sant'Ana", 
+		"name": "Sant'Ana", 
 		"Insula_Num": 9.000000, 
 		"Superficie": 141624.000000, 
 		"Perimetro": 1780.000000, 
@@ -3267,7 +3254,7 @@ var isles =
 	"properties": { 
 		"Numero": 67.000000, 
 		"Codice": "VIGN", 
-		"Nome_Isola": "San Francesco de la Vigna", 
+		"name": "San Francesco de la Vigna", 
 		"Insula_Num": 6.000000, 
 		"Superficie": 87345.000000, 
 		"Perimetro": 2198.000000, 
@@ -3297,7 +3284,7 @@ var isles =
 	"properties": { 
 		"Numero": 98.000000, 
 		"Codice": "MRTN", 
-		"Nome_Isola": "San Martin", 
+		"name": "San Martin", 
 		"Insula_Num": 24.000000, 
 		"Superficie": 23276.000000, 
 		"Perimetro": 686.000000, 
@@ -3327,7 +3314,7 @@ var isles =
 	"properties": { 
 		"Numero": 97.000000, 
 		"Codice": "TERN", 
-		"Nome_Isola": "Santa Ternita", 
+		"name": "Santa Ternita", 
 		"Insula_Num": 5.000000, 
 		"Superficie": 23351.000000, 
 		"Perimetro": 691.000000, 
@@ -3357,7 +3344,7 @@ var isles =
 	"properties": { 
 		"Numero": 96.000000, 
 		"Codice": "BRAG", 
-		"Nome_Isola": "Bragora", 
+		"name": "Bragora", 
 		"Insula_Num": 24.000000, 
 		"Superficie": 90559.000000, 
 		"Perimetro": 1528.000000, 
@@ -3387,7 +3374,7 @@ var isles =
 	"properties": { 
 		"Numero": 66.000000, 
 		"Codice": "ZANI", 
-		"Nome_Isola": "San Zanipolo", 
+		"name": "San Zanipolo", 
 		"Insula_Num": 25.000000, 
 		"Superficie": 111677.000000, 
 		"Perimetro": 1394.000000, 
@@ -3417,7 +3404,7 @@ var isles =
 	"properties": { 
 		"Numero": 38.000000, 
 		"Codice": "MART", 
-		"Nome_Isola": "Santa Marta", 
+		"name": "Santa Marta", 
 		"Insula_Num": 39.000000, 
 		"Superficie": 206877.000000, 
 		"Perimetro": 2160.000000, 
@@ -3447,7 +3434,7 @@ var isles =
 	"properties": { 
 		"Numero": 46.000000, 
 		"Codice": "SEBA", 
-		"Nome_Isola": "San Sebastiano", 
+		"name": "San Sebastiano", 
 		"Insula_Num": 39.000000, 
 		"Superficie": 58956.000000, 
 		"Perimetro": 1106.000000, 
@@ -3477,7 +3464,7 @@ var isles =
 	"properties": { 
 		"Numero": 75.000000, 
 		"Codice": "LATE", 
-		"Nome_Isola": "San Zuane Laterano", 
+		"name": "San Zuane Laterano", 
 		"Insula_Num": 4.000000, 
 		"Superficie": 5878.000000, 
 		"Perimetro": 418.000000, 
@@ -3507,7 +3494,7 @@ var isles =
 	"properties": { 
 		"Numero": 95.000000, 
 		"Codice": "LORE", 
-		"Nome_Isola": "San Lorenzo", 
+		"name": "San Lorenzo", 
 		"Insula_Num": 24.000000, 
 		"Superficie": 42913.000000, 
 		"Perimetro": 1081.000000, 
@@ -3537,7 +3524,7 @@ var isles =
 	"properties": { 
 		"Numero": 76.000000, 
 		"Codice": "SEVE", 
-		"Nome_Isola": "San Severo", 
+		"name": "San Severo", 
 		"Insula_Num": 4.000000, 
 		"Superficie": 23452.000000, 
 		"Perimetro": 693.000000, 
@@ -3567,7 +3554,7 @@ var isles =
 	"properties": { 
 		"Numero": 94.000000, 
 		"Codice": "ZACC", 
-		"Nome_Isola": "San Zaccaria", 
+		"name": "San Zaccaria", 
 		"Insula_Num": 4.000000, 
 		"Superficie": 32113.000000, 
 		"Perimetro": 731.000000, 
@@ -3597,7 +3584,7 @@ var isles =
 	"properties": { 
 		"Numero": 74.000000, 
 		"Codice": "FORM", 
-		"Nome_Isola": "Santa Maria Formosa", 
+		"name": "Santa Maria Formosa", 
 		"Insula_Num": 3.000000, 
 		"Superficie": 23929.000000, 
 		"Perimetro": 640.000000, 
@@ -3627,7 +3614,7 @@ var isles =
 	"properties": { 
 		"Numero": 79.000000, 
 		"Codice": "QUER", 
-		"Nome_Isola": "Querini Stampalia", 
+		"name": "Querini Stampalia", 
 		"Insula_Num": 4.000000, 
 		"Superficie": 20380.000000, 
 		"Perimetro": 622.000000, 
@@ -3657,7 +3644,7 @@ var isles =
 	"properties": { 
 		"Numero": 17.000000, 
 		"Codice": "FOSC", 
-		"Nome_Isola": "Santa Fosca", 
+		"name": "Santa Fosca", 
 		"Insula_Num": 13.000000, 
 		"Superficie": 14397.000000, 
 		"Perimetro": 596.000000, 
@@ -3687,7 +3674,7 @@ var isles =
 	"properties": { 
 		"Numero": 18.000000, 
 		"Codice": "FELI", 
-		"Nome_Isola": "San Felice", 
+		"name": "San Felice", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 13699.000000, 
 		"Perimetro": 639.000000, 
@@ -3717,7 +3704,7 @@ var isles =
 	"properties": { 
 		"Numero": 57.000000, 
 		"Codice": "GESU", 
-		"Nome_Isola": "Gesuiti", 
+		"name": "Gesuiti", 
 		"Insula_Num": 2.000000, 
 		"Superficie": 49864.000000, 
 		"Perimetro": 936.000000, 
@@ -3747,7 +3734,7 @@ var isles =
 	"properties": { 
 		"Numero": 58.000000, 
 		"Codice": "RACC", 
-		"Nome_Isola": "Racchetta", 
+		"name": "Racchetta", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 7033.000000, 
 		"Perimetro": 393.000000, 
@@ -3777,7 +3764,7 @@ var isles =
 	"properties": { 
 		"Numero": 59.000000, 
 		"Codice": "ANDR", 
-		"Nome_Isola": "Sant'Andrea Maggiore", 
+		"name": "Sant'Andrea Maggiore", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 7026.000000, 
 		"Perimetro": 342.000000, 
@@ -3807,7 +3794,7 @@ var isles =
 	"properties": { 
 		"Numero": 62.000000, 
 		"Codice": "CORR", 
-		"Nome_Isola": "Corrente", 
+		"name": "Corrente", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 6034.000000, 
 		"Perimetro": 311.000000, 
@@ -3837,7 +3824,7 @@ var isles =
 	"properties": { 
 		"Numero": 63.000000, 
 		"Codice": "2POZ", 
-		"Nome_Isola": "Do Pozzi", 
+		"name": "Do Pozzi", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 3336.000000, 
 		"Perimetro": 250.000000, 
@@ -3867,7 +3854,7 @@ var isles =
 	"properties": { 
 		"Numero": 60.000000, 
 		"Codice": "SART", 
-		"Nome_Isola": "Sartori", 
+		"name": "Sartori", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 8165.000000, 
 		"Perimetro": 430.000000, 
@@ -3897,7 +3884,7 @@ var isles =
 	"properties": { 
 		"Numero": 64.000000, 
 		"Codice": "APOS", 
-		"Nome_Isola": "Santi Apostoli", 
+		"name": "Santi Apostoli", 
 		"Insula_Num": 12.000000, 
 		"Superficie": 76525.000000, 
 		"Perimetro": 1320.000000, 
@@ -3927,7 +3914,7 @@ var isles =
 	"properties": { 
 		"Numero": 61.000000, 
 		"Codice": "BIRI", 
-		"Nome_Isola": "Biri", 
+		"name": "Biri", 
 		"Insula_Num": 2.000000, 
 		"Superficie": 49132.000000, 
 		"Perimetro": 1026.000000, 
@@ -3957,7 +3944,7 @@ var isles =
 	"properties": { 
 		"Numero": 65.000000, 
 		"Codice": "PANA", 
-		"Nome_Isola": "Panada", 
+		"name": "Panada", 
 		"Insula_Num": 2.000000, 
 		"Superficie": 30348.000000, 
 		"Perimetro": 976.000000, 
@@ -3987,7 +3974,7 @@ var isles =
 	"properties": { 
 		"Numero": 69.000000, 
 		"Codice": "CANC", 
-		"Nome_Isola": "San Cancian", 
+		"name": "San Cancian", 
 		"Insula_Num": 36.000000, 
 		"Superficie": 27473.000000, 
 		"Perimetro": 841.000000, 
@@ -4017,7 +4004,7 @@ var isles =
 	"properties": { 
 		"Numero": 70.000000, 
 		"Codice": "MIRA", 
-		"Nome_Isola": "S.M. dei Miracoli", 
+		"name": "S.M. dei Miracoli", 
 		"Insula_Num": 36.000000, 
 		"Superficie": 5620.000000, 
 		"Perimetro": 318.000000, 
@@ -4047,7 +4034,7 @@ var isles =
 	"properties": { 
 		"Numero": 71.000000, 
 		"Codice": "GRIS", 
-		"Nome_Isola": "San Zuane Grisostomo", 
+		"name": "San Zuane Grisostomo", 
 		"Insula_Num": 36.000000, 
 		"Superficie": 15751.000000, 
 		"Perimetro": 543.000000, 
@@ -4077,7 +4064,7 @@ var isles =
 	"properties": { 
 		"Numero": 72.000000, 
 		"Codice": "MARI", 
-		"Nome_Isola": "Santa Marina", 
+		"name": "Santa Marina", 
 		"Insula_Num": 3.000000, 
 		"Superficie": 14411.000000, 
 		"Perimetro": 517.000000, 
@@ -4107,7 +4094,7 @@ var isles =
 	"properties": { 
 		"Numero": 73.000000, 
 		"Codice": "BORG", 
-		"Nome_Isola": "Borgoloco", 
+		"name": "Borgoloco", 
 		"Insula_Num": 3.000000, 
 		"Superficie": 5457.000000, 
 		"Perimetro": 314.000000, 
@@ -4137,7 +4124,7 @@ var isles =
 	"properties": { 
 		"Numero": 78.000000, 
 		"Codice": "FAVA", 
-		"Nome_Isola": "Santa Maria della Fava", 
+		"name": "Santa Maria della Fava", 
 		"Insula_Num": 3.000000, 
 		"Superficie": 34049.000000, 
 		"Perimetro": 822.000000, 
@@ -4167,7 +4154,7 @@ var isles =
 	"properties": { 
 		"Numero": 93.000000, 
 		"Codice": "FILI", 
-		"Nome_Isola": "San Filippo e Giacomo", 
+		"name": "San Filippo e Giacomo", 
 		"Insula_Num": 4.000000, 
 		"Superficie": 34188.000000, 
 		"Perimetro": 892.000000, 
@@ -4197,7 +4184,7 @@ var isles =
 	"properties": { 
 		"Numero": 77.000000, 
 		"Codice": "BORT", 
-		"Nome_Isola": "San Bortolomio", 
+		"name": "San Bortolomio", 
 		"Insula_Num": 36.000000, 
 		"Superficie": 38311.000000, 
 		"Perimetro": 842.000000, 
@@ -4227,7 +4214,7 @@ var isles =
 	"properties": { 
 		"Numero": 90.000000, 
 		"Codice": "REAL", 
-		"Nome_Isola": "Giardinetti Reali", 
+		"name": "Giardinetti Reali", 
 		"Insula_Num": 10.000000, 
 		"Superficie": 6913.000000, 
 		"Perimetro": 362.000000, 
@@ -4257,7 +4244,7 @@ var isles =
 	"properties": { 
 		"Numero": 91.000000, 
 		"Codice": "GALL", 
-		"Nome_Isola": "San Gallo", 
+		"name": "San Gallo", 
 		"Insula_Num": 10.000000, 
 		"Superficie": 18613.000000, 
 		"Perimetro": 538.000000, 
@@ -4287,7 +4274,7 @@ var isles =
 	"properties": { 
 		"Numero": 92.000000, 
 		"Codice": "MARC", 
-		"Nome_Isola": "San Marco", 
+		"name": "San Marco", 
 		"Insula_Num": 10.000000, 
 		"Superficie": 114709.000000, 
 		"Perimetro": 2066.000000, 
@@ -4317,7 +4304,7 @@ var isles =
 	"properties": { 
 		"Numero": 80.000000, 
 		"Codice": "LUCA", 
-		"Nome_Isola": "San Luca", 
+		"name": "San Luca", 
 		"Insula_Num": 35.000000, 
 		"Superficie": 47964.000000, 
 		"Perimetro": 943.000000, 
@@ -4347,7 +4334,7 @@ var isles =
 	"properties": { 
 		"Numero": 83.000000, 
 		"Codice": "STEF", 
-		"Nome_Isola": "Santo Stefano", 
+		"name": "Santo Stefano", 
 		"Insula_Num": 11.000000, 
 		"Superficie": 80004.000000, 
 		"Perimetro": 1695.000000, 
@@ -4377,7 +4364,7 @@ var isles =
 	"properties": { 
 		"Numero": 84.000000, 
 		"Codice": "DUCA", 
-		"Nome_Isola": "Duca", 
+		"name": "Duca", 
 		"Insula_Num": 11.000000, 
 		"Superficie": 7742.000000, 
 		"Perimetro": 409.000000, 
@@ -4407,7 +4394,7 @@ var isles =
 	"properties": { 
 		"Numero": 82.000000, 
 		"Codice": "GARZ", 
-		"Nome_Isola": "Ca'Garzoni", 
+		"name": "Ca'Garzoni", 
 		"Insula_Num": 11.000000, 
 		"Superficie": 8205.000000, 
 		"Perimetro": 431.000000, 
@@ -4437,7 +4424,7 @@ var isles =
 	"properties": { 
 		"Numero": 81.000000, 
 		"Codice": "ANZO", 
-		"Nome_Isola": "Sant'Anzolo", 
+		"name": "Sant'Anzolo", 
 		"Insula_Num": 35.000000, 
 		"Superficie": 41420.000000, 
 		"Perimetro": 1098.000000, 
@@ -4467,7 +4454,7 @@ var isles =
 	"properties": { 
 		"Numero": 88.000000, 
 		"Codice": "FANT", 
-		"Nome_Isola": "San Fantin", 
+		"name": "San Fantin", 
 		"Insula_Num": 1.000000, 
 		"Superficie": 16836.000000, 
 		"Perimetro": 509.000000, 
@@ -4497,7 +4484,7 @@ var isles =
 	"properties": { 
 		"Numero": 85.000000, 
 		"Codice": "MAUR", 
-		"Nome_Isola": "San Maurizio Maggiore", 
+		"name": "San Maurizio Maggiore", 
 		"Insula_Num": 11.000000, 
 		"Superficie": 20796.000000, 
 		"Perimetro": 702.000000, 
@@ -4527,7 +4514,7 @@ var isles =
 	"properties": { 
 		"Numero": 86.000000, 
 		"Codice": "DUOD", 
-		"Nome_Isola": "Ca'Duodo", 
+		"name": "Ca'Duodo", 
 		"Insula_Num": 1.000000, 
 		"Superficie": 6504.000000, 
 		"Perimetro": 600.000000, 
@@ -4557,7 +4544,7 @@ var isles =
 	"properties": { 
 		"Numero": 87.000000, 
 		"Codice": "ZOBE", 
-		"Nome_Isola": "Santa Maria Zobenigo", 
+		"name": "Santa Maria Zobenigo", 
 		"Insula_Num": 1.000000, 
 		"Superficie": 12317.000000, 
 		"Perimetro": 510.000000, 
@@ -4587,7 +4574,7 @@ var isles =
 	"properties": { 
 		"Numero": 89.000000, 
 		"Codice": "MOIS", 
-		"Nome_Isola": "San MoisÈ", 
+		"name": "San MoisÈ", 
 		"Insula_Num": 1.000000, 
 		"Superficie": 29297.000000, 
 		"Perimetro": 711.000000, 
@@ -4617,7 +4604,7 @@ var isles =
 	"properties": { 
 		"Numero": 56.000000, 
 		"Codice": "SALU", 
-		"Nome_Isola": "Salute", 
+		"name": "Salute", 
 		"Insula_Num": 20.000000, 
 		"Superficie": 19543.000000, 
 		"Perimetro": 668.000000, 
@@ -4647,7 +4634,7 @@ var isles =
 	"properties": { 
 		"Numero": 55.000000, 
 		"Codice": "GREG", 
-		"Nome_Isola": "San Gregorio", 
+		"name": "San Gregorio", 
 		"Insula_Num": 20.000000, 
 		"Superficie": 32340.000000, 
 		"Perimetro": 767.000000, 
@@ -4677,7 +4664,7 @@ var isles =
 	"properties": { 
 		"Numero": 54.000000, 
 		"Codice": "SPIR", 
-		"Nome_Isola": "Spirito Santo", 
+		"name": "Spirito Santo", 
 		"Insula_Num": 20.000000, 
 		"Superficie": 42875.000000, 
 		"Perimetro": 940.000000, 
@@ -4707,7 +4694,7 @@ var isles =
 	"properties": { 
 		"Numero": 53.000000, 
 		"Codice": "SVIO", 
-		"Nome_Isola": "San Vio", 
+		"name": "San Vio", 
 		"Insula_Num": 20.000000, 
 		"Superficie": 25018.000000, 
 		"Perimetro": 894.000000, 
@@ -4737,7 +4724,7 @@ var isles =
 	"properties": { 
 		"Numero": 52.000000, 
 		"Codice": "ACCA", 
-		"Nome_Isola": "Accademia", 
+		"name": "Accademia", 
 		"Insula_Num": 20.000000, 
 		"Superficie": 69954.000000, 
 		"Perimetro": 1187.000000, 
@@ -4767,7 +4754,7 @@ var isles =
 	"properties": { 
 		"Numero": 51.000000, 
 		"Codice": "TROV", 
-		"Nome_Isola": "San Trovaso", 
+		"name": "San Trovaso", 
 		"Insula_Num": 19.000000, 
 		"Superficie": 33465.000000, 
 		"Perimetro": 842.000000, 
@@ -4797,7 +4784,7 @@ var isles =
 	"properties": { 
 		"Numero": 50.000000, 
 		"Codice": "CERC", 
-		"Nome_Isola": "Cerchieri", 
+		"name": "Cerchieri", 
 		"Insula_Num": 19.000000, 
 		"Superficie": 8920.000000, 
 		"Perimetro": 430.000000, 
@@ -4827,7 +4814,7 @@ var isles =
 	"properties": { 
 		"Numero": 47.000000, 
 		"Codice": "CARM", 
-		"Nome_Isola": "Carmini", 
+		"name": "Carmini", 
 		"Insula_Num": 19.000000, 
 		"Superficie": 133218.000000, 
 		"Perimetro": 2770.000000, 
@@ -4857,7 +4844,7 @@ var isles =
 	"properties": { 
 		"Numero": 48.000000, 
 		"Codice": "BARN", 
-		"Nome_Isola": "San Barnaba", 
+		"name": "San Barnaba", 
 		"Insula_Num": 19.000000, 
 		"Superficie": 31750.000000, 
 		"Perimetro": 985.000000, 
@@ -4887,7 +4874,7 @@ var isles =
 	"properties": { 
 		"Numero": 49.000000, 
 		"Codice": "ROMI", 
-		"Nome_Isola": "Romite", 
+		"name": "Romite", 
 		"Insula_Num": 19.000000, 
 		"Superficie": 21152.000000, 
 		"Perimetro": 620.000000, 
@@ -4917,7 +4904,7 @@ var isles =
 	"properties": { 
 		"Numero": 45.000000, 
 		"Codice": "NICO", 
-		"Nome_Isola": "San NicolÚ dei Mendicoli", 
+		"name": "San NicolÚ dei Mendicoli", 
 		"Insula_Num": 18.000000, 
 		"Superficie": 60626.000000, 
 		"Perimetro": 1311.000000, 
@@ -4947,7 +4934,7 @@ var isles =
 	"properties": { 
 		"Numero": 36.000000, 
 		"Codice": "ROMA", 
-		"Nome_Isola": "Piazzale Roma", 
+		"name": "Piazzale Roma", 
 		"Insula_Num": 17.000000, 
 		"Superficie": 95629.000000, 
 		"Perimetro": 1497.000000, 
@@ -4977,7 +4964,7 @@ var isles =
 	"properties": { 
 		"Numero": 39.000000, 
 		"Codice": "MAGG", 
-		"Nome_Isola": "Santa Maria Maggiore", 
+		"name": "Santa Maria Maggiore", 
 		"Insula_Num": 17.000000, 
 		"Superficie": 41848.000000, 
 		"Perimetro": 969.000000, 
@@ -5007,7 +4994,7 @@ var isles =
 	"properties": { 
 		"Numero": 44.000000, 
 		"Codice": "CERE", 
-		"Nome_Isola": "Cereri", 
+		"name": "Cereri", 
 		"Insula_Num": 18.000000, 
 		"Superficie": 14593.000000, 
 		"Perimetro": 593.000000, 
@@ -5037,7 +5024,7 @@ var isles =
 	"properties": { 
 		"Numero": 42.000000, 
 		"Codice": "RIZZ", 
-		"Nome_Isola": "Ca'Rizzi", 
+		"name": "Ca'Rizzi", 
 		"Insula_Num": 17.000000, 
 		"Superficie": 8982.000000, 
 		"Perimetro": 448.000000, 
@@ -5067,7 +5054,7 @@ var isles =
 	"properties": { 
 		"Numero": 40.000000, 
 		"Codice": "MALC", 
-		"Nome_Isola": "Malcanton", 
+		"name": "Malcanton", 
 		"Insula_Num": 18.000000, 
 		"Superficie": 20501.000000, 
 		"Perimetro": 657.000000, 
@@ -5097,7 +5084,7 @@ var isles =
 	"properties": { 
 		"Numero": 37.000000, 
 		"Codice": "PAPA", 
-		"Nome_Isola": "Giardini Papadopoli", 
+		"name": "Giardini Papadopoli", 
 		"Insula_Num": 32.000000, 
 		"Superficie": 18251.000000, 
 		"Perimetro": 588.000000, 
@@ -5127,7 +5114,7 @@ var isles =
 	"properties": { 
 		"Numero": 33.000000, 
 		"Codice": "TOLE", 
-		"Nome_Isola": "Tolentini", 
+		"name": "Tolentini", 
 		"Insula_Num": 32.000000, 
 		"Superficie": 105251.000000, 
 		"Perimetro": 1946.000000, 
@@ -5157,7 +5144,7 @@ var isles =
 	"properties": { 
 		"Numero": 41.000000, 
 		"Codice": "PANT", 
-		"Nome_Isola": "San Pantalon", 
+		"name": "San Pantalon", 
 		"Insula_Num": 33.000000, 
 		"Superficie": 26009.000000, 
 		"Perimetro": 686.000000, 
@@ -5187,7 +5174,7 @@ var isles =
 	"properties": { 
 		"Numero": 34.000000, 
 		"Codice": "FRAR", 
-		"Nome_Isola": "Frari", 
+		"name": "Frari", 
 		"Insula_Num": 8.000000, 
 		"Superficie": 99909.000000, 
 		"Perimetro": 1601.000000, 
@@ -5217,7 +5204,7 @@ var isles =
 	"properties": { 
 		"Numero": 35.000000, 
 		"Codice": "NOMB", 
-		"Nome_Isola": "Nomboli", 
+		"name": "Nomboli", 
 		"Insula_Num": 8.000000, 
 		"Superficie": 23949.000000, 
 		"Perimetro": 823.000000, 
@@ -5247,7 +5234,7 @@ var isles =
 	"properties": { 
 		"Numero": 21.000000, 
 		"Codice": "ZAND", 
-		"Nome_Isola": "San Zan Degol‡", 
+		"name": "San Zan Degol‡", 
 		"Insula_Num": 30.000000, 
 		"Superficie": 69272.000000, 
 		"Perimetro": 1156.000000, 
@@ -5277,7 +5264,7 @@ var isles =
 	"properties": { 
 		"Numero": 22.000000, 
 		"Codice": "ORIO", 
-		"Nome_Isola": "San Giacomo da l'Orio", 
+		"name": "San Giacomo da l'Orio", 
 		"Insula_Num": 31.000000, 
 		"Superficie": 35858.000000, 
 		"Perimetro": 934.000000, 
@@ -5307,7 +5294,7 @@ var isles =
 	"properties": { 
 		"Numero": 23.000000, 
 		"Codice": "MEGI", 
-		"Nome_Isola": "Megio", 
+		"name": "Megio", 
 		"Insula_Num": 15.000000, 
 		"Superficie": 7130.000000, 
 		"Perimetro": 410.000000, 
@@ -5337,7 +5324,7 @@ var isles =
 	"properties": { 
 		"Numero": 24.000000, 
 		"Codice": "STAE", 
-		"Nome_Isola": "San Stae", 
+		"name": "San Stae", 
 		"Insula_Num": 15.000000, 
 		"Superficie": 21608.000000, 
 		"Perimetro": 716.000000, 
@@ -5367,7 +5354,7 @@ var isles =
 	"properties": { 
 		"Numero": 25.000000, 
 		"Codice": "MOCE", 
-		"Nome_Isola": "Ca'Mocenigo", 
+		"name": "Ca'Mocenigo", 
 		"Insula_Num": 15.000000, 
 		"Superficie": 9467.000000, 
 		"Perimetro": 628.000000, 
@@ -5397,7 +5384,7 @@ var isles =
 	"properties": { 
 		"Numero": 26.000000, 
 		"Codice": "MATE", 
-		"Nome_Isola": "S.M. Mater Domini", 
+		"name": "S.M. Mater Domini", 
 		"Insula_Num": 15.000000, 
 		"Superficie": 13696.000000, 
 		"Perimetro": 672.000000, 
@@ -5427,7 +5414,7 @@ var isles =
 	"properties": { 
 		"Numero": 27.000000, 
 		"Codice": "2TOR", 
-		"Nome_Isola": "Do Torri", 
+		"name": "Do Torri", 
 		"Insula_Num": 16.000000, 
 		"Superficie": 19231.000000, 
 		"Perimetro": 757.000000, 
@@ -5457,7 +5444,7 @@ var isles =
 	"properties": { 
 		"Numero": 30.000000, 
 		"Codice": "BOLD", 
-		"Nome_Isola": "San Boldo", 
+		"name": "San Boldo", 
 		"Insula_Num": 8.000000, 
 		"Superficie": 16693.000000, 
 		"Perimetro": 573.000000, 
@@ -5487,7 +5474,7 @@ var isles =
 	"properties": { 
 		"Numero": 31.000000, 
 		"Codice": "POLO", 
-		"Nome_Isola": "San Polo", 
+		"name": "San Polo", 
 		"Insula_Num": 8.000000, 
 		"Superficie": 33599.000000, 
 		"Perimetro": 1060.000000, 
@@ -5517,7 +5504,7 @@ var isles =
 	"properties": { 
 		"Numero": 29.000000, 
 		"Codice": "SILV", 
-		"Nome_Isola": "San Silvestro", 
+		"name": "San Silvestro", 
 		"Insula_Num": 26.000000, 
 		"Superficie": 73083.000000, 
 		"Perimetro": 1131.000000, 
@@ -5547,7 +5534,7 @@ var isles =
 	"properties": { 
 		"Numero": 32.000000, 
 		"Codice": "MELO", 
-		"Nome_Isola": "Meloni", 
+		"name": "Meloni", 
 		"Insula_Num": 16.000000, 
 		"Superficie": 11333.000000, 
 		"Perimetro": 449.000000, 
@@ -5577,7 +5564,7 @@ var isles =
 	"properties": { 
 		"Numero": 28.000000, 
 		"Codice": "CASS", 
-		"Nome_Isola": "San Cassian", 
+		"name": "San Cassian", 
 		"Insula_Num": 16.000000, 
 		"Superficie": 32153.000000, 
 		"Perimetro": 854.000000, 
@@ -5607,7 +5594,7 @@ var isles =
 	"properties": { 
 		"Numero": 43.000000, 
 		"Codice": "RAGU", 
-		"Nome_Isola": "Ragusei", 
+		"name": "Ragusei", 
 		"Insula_Num": 18.000000, 
 		"Superficie": 37224.000000, 
 		"Perimetro": 990.000000, 
@@ -5637,7 +5624,7 @@ var isles =
 	"properties": { 
 		"Numero": 107.000000, 
 		"Codice": "FISO", 
-		"Nome_Isola": "Sacca Fisola", 
+		"name": "Sacca Fisola", 
 		"Insula_Num": 21.000000, 
 		"Superficie": 105837.000000, 
 		"Perimetro": 1371.000000, 
@@ -5667,7 +5654,7 @@ var isles =
 	"properties": { 
 		"Numero": 108.000000, 
 		"Codice": "AMAV", 
-		"Nome_Isola": "AMAV", 
+		"name": "AMAV", 
 		"Insula_Num": 21.000000, 
 		"Superficie": 20920.000000, 
 		"Perimetro": 753.000000, 
@@ -5697,7 +5684,7 @@ var isles =
 	"properties": { 
 		"Numero": 109.000000, 
 		"Codice": "PISC", 
-		"Nome_Isola": "Piscina Comunale", 
+		"name": "Piscina Comunale", 
 		"Insula_Num": 21.000000, 
 		"Superficie": 13886.000000, 
 		"Perimetro": 480.000000, 
@@ -5727,7 +5714,7 @@ var isles =
 	"properties": { 
 		"Numero": 110.000000, 
 		"Codice": "SACB", 
-		"Nome_Isola": "Sacca San Biagio", 
+		"name": "Sacca San Biagio", 
 		"Insula_Num": 21.000000, 
 		"Superficie": 7721.000000, 
 		"Perimetro": 411.000000, 
@@ -5757,7 +5744,7 @@ var isles =
 	"properties": { 
 		"Numero": 111.000000, 
 		"Codice": "STUC", 
-		"Nome_Isola": "Molino Stucky", 
+		"name": "Molino Stucky", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 42102.000000, 
 		"Perimetro": 992.000000, 
@@ -5787,7 +5774,7 @@ var isles =
 	"properties": { 
 		"Numero": 112.000000, 
 		"Codice": "BIAG", 
-		"Nome_Isola": "San Biagio", 
+		"name": "San Biagio", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 37897.000000, 
 		"Perimetro": 819.000000, 
@@ -5817,7 +5804,7 @@ var isles =
 	"properties": { 
 		"Numero": 113.000000, 
 		"Codice": "CONV", 
-		"Nome_Isola": "Convertite", 
+		"name": "Convertite", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 57758.000000, 
 		"Perimetro": 984.000000, 
@@ -5847,7 +5834,7 @@ var isles =
 	"properties": { 
 		"Numero": 114.000000, 
 		"Codice": "EUFE", 
-		"Nome_Isola": "Sant'Eufemia", 
+		"name": "Sant'Eufemia", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 89585.000000, 
 		"Perimetro": 1426.000000, 
@@ -5877,7 +5864,7 @@ var isles =
 	"properties": { 
 		"Numero": 115.000000, 
 		"Codice": "PALA", 
-		"Nome_Isola": "Palada", 
+		"name": "Palada", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 22066.000000, 
 		"Perimetro": 639.000000, 
@@ -5907,7 +5894,7 @@ var isles =
 	"properties": { 
 		"Numero": 116.000000, 
 		"Codice": "JUNG", 
-		"Nome_Isola": "Junghans", 
+		"name": "Junghans", 
 		"Insula_Num": 22.000000, 
 		"Superficie": 26400.000000, 
 		"Perimetro": 689.000000, 
@@ -5937,7 +5924,7 @@ var isles =
 	"properties": { 
 		"Numero": 117.000000, 
 		"Codice": "REDE", 
-		"Nome_Isola": "Redentore", 
+		"name": "Redentore", 
 		"Insula_Num": 23.000000, 
 		"Superficie": 100296.000000, 
 		"Perimetro": 1368.000000, 
@@ -5967,7 +5954,7 @@ var isles =
 	"properties": { 
 		"Numero": 118.000000, 
 		"Codice": "ZITT", 
-		"Nome_Isola": "Zittelle", 
+		"name": "Zittelle", 
 		"Insula_Num": 23.000000, 
 		"Superficie": 207774.000000, 
 		"Perimetro": 2095.000000, 
@@ -5997,7 +5984,7 @@ var isles =
 	"properties": { 
 		"Numero": 120.000000, 
 		"Codice": "INCE", 
-		"Nome_Isola": "Inceneritore", 
+		"name": "Inceneritore", 
 		"Insula_Num": 21.000000, 
 		"Superficie": 37948.000000, 
 		"Perimetro": 911.000000, 
@@ -6027,7 +6014,7 @@ var isles =
 	"properties": { 
 		"Numero": 119.000000, 
 		"Codice": "GIOR", 
-		"Nome_Isola": "San Giorgio", 
+		"name": "San Giorgio", 
 		"Insula_Num": 23.000000, 
 		"Superficie": 98183.000000, 
 		"Perimetro": 1539.000000, 
@@ -6057,7 +6044,7 @@ var isles =
 	"properties": { 
 		"Numero": 1022.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Campalto", 
+		"name": "Campalto", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 29156.000000, 
 		"Perimetro": 747.000000, 
@@ -6087,7 +6074,7 @@ var isles =
 	"properties": { 
 		"Numero": 1004.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Trezze", 
+		"name": "Trezze", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 5169.000000, 
 		"Perimetro": 285.000000, 
@@ -6117,7 +6104,7 @@ var isles =
 	"properties": { 
 		"Numero": 1007.000000, 
 		"Codice": null, 
-		"Nome_Isola": "Lazzaretto Nuovo", 
+		"name": "Lazzaretto Nuovo", 
 		"Insula_Num": 0.000000, 
 		"Superficie": 106894.000000, 
 		"Perimetro": 1477.000000, 
@@ -6143,6 +6130,5 @@ var isles =
 }
 
 /* ----------------- End Inner Venice + Other Small Islands -------------------- */
-]
-};
+];
 
