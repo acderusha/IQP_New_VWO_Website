@@ -1,22 +1,23 @@
 <div id="myNav" alt="Open Menu Button" class="overlay">
-    <i class="fa fa-close closebtn" onclick="closeNav()" onmousemove="playGoBack()"></i>
-  <div class="mutebtn">
-    Speech
-    <label class="switch" onmousemove="playMute()">
-      <input id="mutebtn" type="checkbox" checked onclick="muteSpeech()">
-      <span class="slider round"></span>
-    </label>
-  </div>
+  <i class="fa fa-close closebtn" onclick="closeNav()" onmousemove="playGoBack()"></i>
 
   <div class="overlay-content">
-  	<a href="/home" onmouseover="playGoHome()">Home</a>
+    <div id="mutebtn" class="mutebtn">
+      Speech
+      <label class="switch" onmousemove="playMute()">
+        <input id="muteInput" type="checkbox" checked onclick="muteSpeech()">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+  	<!--<a href="/home" onmouseover="playGoHome()">Home</a>
     <a id="mapTab" href="/home/maps" onmouseover="playGoMap()">Map</a>
     <a href="/home/arrival" onmouseover="playGoArrival()">Arriving to Venice</a>
     <a href="#" onmouseover="playGoTraveling()">Moving Around</a>
     <a href="#" onmouseover="playGoDining()">Dining Out</a>
     <a href="#" onmouseover="playGoNight()">Staying the Night</a>
     <a href="/home/applications" onmouseover="playGoApp()">Applications</a>
-    <a href="/home/organizations" onmouseover="playGoOrg()">Organizations</a>
+    <a href="/home/organizations" onmouseover="playGoOrg()">Organizations</a>-->
   </div>
 </div>
 
