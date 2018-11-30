@@ -237,6 +237,7 @@ function getLayers() {
 
 function getBridges() {
     $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+        console.log("Data: ")
         console.log(data);
         //$( ".result" ).html( data );
         //alert( "Load was performed." );
@@ -259,11 +260,15 @@ function orderLayers(){
 
 /* ------------- Fuzzy Search Bar ----------- */
 function setUpSearch(){
-    var fuse = new Fuse(bridges, {
+    var layers = combineLayers();
+
+    var fuse = new Fuse(layers.features, {
         keys: [
-            'properties.name'
+            'properties.name',
         ]
     });
+
+    var totalLayers = L.geoJson(layers);
 
     L.control.search({
         layer: bridgeLayer,
@@ -285,6 +290,26 @@ function setUpSearch(){
         e.layer.openPopup();
     })
     .addTo(mymap);
+}
+
+
+function combineLayers(){
+    var combineLayers = isles;
+
+    console.log("Isles: ");
+    console.log(combineLayers.features);
+
+    console.log("Bridges: ");
+    console.log(bridges);
+
+    bridges.forEach(function (element){
+        combineLayers.features.push(element);
+    });
+
+    console.log("Total: ");
+    console.log(combineLayers.features);
+
+    return combineLayers;
 }
 
 /* -------------- End GET Layer Data Functions ----------------- */
