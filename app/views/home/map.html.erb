@@ -6,11 +6,11 @@
 
   <div id="filterBoxItemHeader" class="filterBoxItemHeader">
       <div class="dropbtn" onclick="dropSelection()">
-        <h2 id="headerText">Ponte</h2> 
+        <h2 id="headerText">Ponti</h2> 
         <span class="icon">&#x2195;</span>
       </div>
       <div id="selector" class="dropdown-content">
-        <a onclick="bridgeSelect()">Ponte</a>
+        <a onclick="bridgeSelect()">Ponti</a>
         <a onclick="islandSelect()">Isles</a>
       </div>
   </div>
@@ -28,7 +28,7 @@
     function bridgeSelect(){
       var headerText = document.getElementById("headerText");
       var selection = document.getElementById("selector");
-      headerText.innerText = "Ponte";
+      headerText.innerText = "Ponti";
       selection.style.display = "none";
 
       editContentBridge();
@@ -268,7 +268,7 @@
           </div>
           <div class="filterBoxItem">
             <input type="radio" name="islesFilter" class="filterCheck" id="bothFilter">
-            <p class="filterBoxItem">Boat</p>
+            <p class="filterBoxItem">Total</p>
           </div>
         </h3>
       </div>
