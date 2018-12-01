@@ -6,8 +6,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-            		"name": "Sacca Fisola DX",
-            		"location": "30100 Venice, Metropolitan City of Venice" 
+                    "name": "Sacca Fisola DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -19,8 +19,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Sacca Fisola SX",
-		            "location": "30100 Venice, Metropolitan City of Venice" 
+                    "name": "Sacca Fisola SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -31,8 +31,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giudecca Hilton",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giudecca Hilton",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -44,8 +44,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giudecca Palanca SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giudecca Palanca SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -57,8 +57,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giudecca Palanca DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giudecca Palanca DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -70,8 +70,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Redentore",
-		            "location": "Fondamenta Croce, 30133 Venezia VE"
+                    "name": "Redentore",
+                    "location": "Fondamenta Croce, 30133 Venezia VE"
             },
             "type" : "Feature"
     },
@@ -83,8 +83,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Zitelle",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Zitelle",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -96,8 +96,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S. Giorgio",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S. Giorgio",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -110,8 +110,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Spirito Santo",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Spirito Santo",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -123,8 +123,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Zattere Gesuati",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Zattere Gesuati",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -136,8 +136,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Zattere DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Zattere DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -149,8 +149,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Zattere SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Zattere SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -162,8 +162,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S. Basilio",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S. Basilio",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -175,8 +175,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S. Marta",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S. Marta",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -189,8 +189,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Venezia",
-		            "location": "Stazione Marittima -Magazzino 123, 30135 Venezia VE"
+                    "name": "Venezia",
+                    "location": "Stazione Marittima -Magazzino 123, 30135 Venezia VE"
             },
             "type" : "Feature"
     },
@@ -202,8 +202,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Crociere",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Crociere",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -215,8 +215,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Tronchetto 'B' SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Tronchetto 'B' SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -228,8 +228,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Tronchetto 'B' DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Tronchetto 'B' DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -241,8 +241,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Tronchetto (Mercato)",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Tronchetto (Mercato)",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -254,8 +254,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (S.Andrea) B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (S.Andrea) B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -267,8 +267,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (Scomenzera) C",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (Scomenzera) C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -280,8 +280,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (Parisi) D",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (Parisi) D",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -293,8 +293,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (Parisi) D",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (Parisi) D",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -306,8 +306,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (S. Chiara) F",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (S. Chiara) F",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -319,8 +319,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "P.le Roma (S. Chiara) G",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "P.le Roma (S. Chiara) G",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -332,8 +332,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ferrovia",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ferrovia",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -345,8 +345,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ferrovia C",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ferrovia C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -357,8 +357,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ferrovia B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ferrovia B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -370,8 +370,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ferrovia B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ferrovia B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -384,8 +384,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ferrovia (Scalzi) B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ferrovia (Scalzi) B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },   
@@ -396,8 +396,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Alvise",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Alvise",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -411,8 +411,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Madonna dell’Orto",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Madonna dell’Orto",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -425,8 +425,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Fondamente Nove A",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Fondamente Nove A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -439,8 +439,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Fondamente Nove B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Fondamente Nove B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -452,8 +452,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Fondamente Nove C",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Fondamente Nove C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -466,8 +466,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Fondamente Nove D",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Fondamente Nove D",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -479,8 +479,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ospedale",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ospedale",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -493,8 +493,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Celestia",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Celestia",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -507,8 +507,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Bacini-Arsenale Nord",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Bacini-Arsenale Nord",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -521,8 +521,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Pietro di Castello",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Pietro di Castello",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -535,8 +535,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Elena DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Elena DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -549,8 +549,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Elena SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Elena SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -563,8 +563,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Elena M/N Ponente",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Elena M/N Ponente",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -577,8 +577,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giardini Biennale DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giardini Biennale DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -591,8 +591,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giardini Biennale SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giardini Biennale SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -605,8 +605,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giardini DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giardini DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -619,8 +619,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Giardini SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Giardini SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -633,8 +633,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Arsenale",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Arsenale",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -647,8 +647,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Zaccaria A",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Zaccaria A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -661,8 +661,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Zaccaria (M.V.E.) B",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Zaccaria (M.V.E.) B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -675,8 +675,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Zaccaria C",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Zaccaria C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -689,8 +689,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "San Zaccaria (Jolanda) D",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "San Zaccaria (Jolanda) D",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -703,8 +703,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "San Zaccaria (Danieli) E",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "San Zaccaria (Danieli) E",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -717,8 +717,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Zaccaria (Danieli) F",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Zaccaria (Danieli) F",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -731,8 +731,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Marco (Giardinetti) DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Marco (Giardinetti) DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -745,8 +745,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Marco",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Marco",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -759,8 +759,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Marco (Vallaresso) DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Marco (Vallaresso) DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -773,8 +773,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Marco (Vallaresso) SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Marco (Vallaresso) SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -787,8 +787,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Salute",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Salute",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -801,8 +801,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Accademia SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Accademia SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -815,8 +815,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Accademia DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Accademia DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -829,8 +829,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ca’ Rezzonico",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ca’ Rezzonico",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -843,8 +843,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Samuele",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Samuele",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -857,8 +857,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Toma’ SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Toma’ SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -871,8 +871,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Toma’ DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Toma’ DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -885,8 +885,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S.Silvestro",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S.Silvestro",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -899,8 +899,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Rialto A",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Rialto A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -913,8 +913,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Via Canal Grande Rialto",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Via Canal Grande Rialto",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -926,8 +926,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Rialto",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Rialto",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -940,8 +940,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Rialto Mercato",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Rialto Mercato",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -953,8 +953,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Ca' d'Oro",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Ca' d'Oro",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
     },
@@ -967,8 +967,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "San Stae",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "San Stae",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 },
@@ -981,8 +981,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S. Marcuola-Casino' DX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S. Marcuola-Casino' DX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 },
@@ -994,8 +994,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "S. Marcuola-Casino' SX",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "S. Marcuola-Casino' SX",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 },
@@ -1007,8 +1007,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Riva de Biasio",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Riva de Biasio",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 },
@@ -1021,8 +1021,8 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Guglie",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Guglie",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 },
@@ -1034,10 +1034,161 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-		            "name": "Crea",
-		            "location": "30100 Venice, Metropolitan City of Venice"
+                    "name": "Crea",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+            "geometry" : {
+                    "coordinates" : [ 12.348941, 45.451116 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Colonna A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+            "geometry" : {
+                    "coordinates" : [ 12.348583, 45.451137 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Colonna C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+            "geometry" : {
+                    "coordinates" : [ 12.349205, 45.451128 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Colonna",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+            "geometry" : {
+                    "coordinates" : [ 12.354282, 45.452726 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Faro",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.356586, 45.454706 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Navagero",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.355438, 45.456118 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Museo",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.351926, 45.456127 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Da Mula",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.351211, 45.457455 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Venier",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.347473, 45.454845 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Murano Serenella",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.415232, 45.487692 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Burano A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.416754, 45.487574 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Burano DX per Treporti",
+                    "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
 }
 
 ];
+
