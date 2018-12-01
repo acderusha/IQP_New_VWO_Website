@@ -2,7 +2,7 @@
 #mapid {
     /* Fix height adjustment for later */
     height: 89.6vh;
-    z-index: 0;
+    width: 100%;
 
     border-style: solid;
     border-width: 1px;
@@ -13,19 +13,19 @@
 
 
 .mapTable {
-    width: 100%;
+    width: calc(100% - 210px);
     height: 100%;
 
     position: fixed;
     top: 78px;
+    left: 210px;
 
-    z-index: -1;
+    z-index: 0;
 }
 
 .mapDescTable {
     width: calc(100%-200px);
     height: 100%;
-    margin-left: 210px;
 
     transition: .3s ease;
 
@@ -63,6 +63,8 @@
     background-color: #292649;
 
     display: inline-block;
+
+    z-index: 2;
 
     h2{
         margin: 0 auto;
