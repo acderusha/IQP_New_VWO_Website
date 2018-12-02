@@ -4,7 +4,7 @@
 
 <div style="padding-top: 78px">
 
-  <div id="filterBoxItemHeader" class="filterBoxItemHeader">
+  <div id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseleave="closeSelector()">
       <div class="dropbtn" onclick="dropSelection()">
         <h2 id="headerText">Ponti</h2> 
         <span class="icon">&#x2195;</span>
@@ -23,6 +23,11 @@
       else{
         selection.style.display = "block";
       }
+    }
+
+    function closeSelector(){
+      var selection = document.getElementById("selector");
+      selection.style.display = "none";
     }
 
     function bridgeSelect(){
