@@ -5,6 +5,10 @@ var bridgeLayer;
 var islesLayer;
 var boatLayer;
 
+var islesWalkLayer;
+var islesBoatLayer;
+var islesTotalLayer;
+
 
 /* ---------------------------- Map Interaction Functions --------------------------- */
 
@@ -26,7 +30,7 @@ function style(feature) {
 // Style for islands bridges
 function isleStyleNone(feature) {
     return {
-        //fillColor: getColor(feature.properties.Access_Han),
+        fillColor: 'getColor(feature.properties.Access_Han)',
         weight: 0.4,
         opacity: 2,
         color: 'gray',
@@ -100,9 +104,9 @@ function highlightFeatureIsland(e) {
 
     layer.setStyle({
         weight: 2,
-        color: 'gray',
+        color: '#666',
         dashArray: '',
-        fillOpacity: 0.1
+        fillOpacity: 0
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -114,6 +118,11 @@ function highlightFeatureIsland(e) {
 
 function resetHighlightIsland(e) {
     islesLayer.resetStyle(e.target);
+    info.update();
+}
+
+function resetHighlightIslandWalk(e) {
+    islesWalkLayer.resetStyle(e.target);
     info.update();
 }
 
@@ -176,11 +185,19 @@ function onEachFeatureIsland(feature, layer) {
     });
 }
 
+function onEachFeatureIslandWalk(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureIsland,
+        mouseout: resetHighlightIslandWalk,
+        dblclick: zoomToFeature
+    });
+}
+
 function onEachFeatureBoat(feature, layer) {
     layer.on({
         mouseover: highlightFeatureBoat,
         mouseout: resetHighlightBoat,
-        dblclick: zoomToFeature
+        //dblclick: zoomToFeature
     });
 }
 
@@ -274,7 +291,11 @@ function getLayers() {
     getBridges();
     getBoatStops();
 
+    getIslesWalk();
+
     orderLayers();
+
+    setUpSearch();
 }
 
 function getBridges() {
@@ -294,6 +315,10 @@ function getIsles(){
     islesLayer.addTo(mymap);
 }
 
+function getIslesWalk(){
+    islesWalkLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIslandWalk});
+}
+
 function getBoatStops(){
     boatLayer = L.geoJSON(boatStops, {
         pointToLayer: function (feature, latlng) {
@@ -306,6 +331,7 @@ function getBoatStops(){
 
 function orderLayers(){
     bridgeLayer.bringToFront();
+    boatLayer.bringToFront();
     islesLayer.bringToBack();
 }
 
@@ -389,18 +415,15 @@ function setUpLegend(){
 
     if(noLegend.checked){
 
-        //remove legend
+        //check to see if lengend exists before removing
         if (legend instanceof L.Control) { 
+
+            //remove legend
             removeLegend();
-            mymap.removeLayer(islesLayer);
-            islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
-            islesLayer.addTo(mymap);
+
+            //remove accessibility overlay layer
+            mymap.removeLayer(islesWalkLayer);
         }
-        
-        //setup islands
-        //mymap.removeLayer(islesLayer);
-        //islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
-        //islesLayer.addTo(mymap);
     }
     else if(walkLegend.checked){
 
@@ -426,14 +449,12 @@ function setUpLegend(){
         if (!legend instanceof L.Control) { 
             removeLegend();
         }
-
+        
         mymap.addControl(legend);
 
 
-        //setup islands
-        mymap.removeLayer(islesLayer);
-        islesLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIsland});
-        islesLayer.addTo(mymap);
+        // add accessibility overlay layer
+        islesWalkLayer.addTo(mymap);
 
     }
     else if(boatLegend.checked){
@@ -1040,7 +1061,7 @@ function filterPrivate() {
 
 /* ------------------- Page Traversal Functions -------------- */
 function goHome(){
-	window.location.href = "/home";
+    window.location.href = "/home";
 }
 
 /* ------------------- End Page Traversal Functions -------------- */
