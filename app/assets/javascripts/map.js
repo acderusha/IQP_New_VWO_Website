@@ -392,6 +392,9 @@ function setUpLegend(){
         //remove legend
         if (legend instanceof L.Control) { 
             removeLegend();
+            mymap.removeLayer(islesLayer);
+            islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+            islesLayer.addTo(mymap);
         }
         
         //setup islands
@@ -428,9 +431,9 @@ function setUpLegend(){
 
 
         //setup islands
-        //mymap.removeLayer(islesLayer);
-        //islesLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIsland});
-        //islesLayer.addTo(mymap);
+        mymap.removeLayer(islesLayer);
+        islesLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIsland});
+        islesLayer.addTo(mymap);
 
     }
     else if(boatLegend.checked){
