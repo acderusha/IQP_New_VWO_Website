@@ -449,12 +449,13 @@ function setUpLegend(){
         if (!legend instanceof L.Control) { 
             removeLegend();
         }
-        
+
         mymap.addControl(legend);
 
 
         // add accessibility overlay layer
         islesWalkLayer.addTo(mymap);
+        orderLayers();
 
     }
     else if(boatLegend.checked){
