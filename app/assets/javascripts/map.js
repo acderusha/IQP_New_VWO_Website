@@ -24,10 +24,20 @@ function style(feature) {
 }
 
 // Style for islands bridges
-function isleStyle(feature) {
+function isleStyleNone(feature) {
+    return {
+        //fillColor: getColor(feature.properties.Access_Han),
+        weight: 0.4,
+        opacity: 2,
+        color: 'gray',
+        fillOpacity: 0
+    };
+}
+
+function isleStyleWalk(feature) {
     return {
         fillColor: getColor(feature.properties.Access_Han),
-        weight: 1,
+        weight: 0.5,
         opacity: 2,
         color: 'gray',
         fillOpacity: 0.5
@@ -90,9 +100,9 @@ function highlightFeatureIsland(e) {
 
     layer.setStyle({
         weight: 2,
-        color: '#666',
+        color: 'gray',
         dashArray: '',
-        fillOpacity: 0
+        fillOpacity: 0.1
     });
 
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -253,29 +263,7 @@ function addMapElements() {
 
     /* ------ End Custom Info Control ----------- */
 
-    /* ------ Custom Legend Control ----------- */
-
-    var legend = L.control({position: 'bottomright'});
-
-    legend.onAdd = function (map) {
-
-        var div = L.DomUtil.create('div', 'info legend'),
-            grades = ['no','yes'],
-            labels = ['Accessible','Not Accessible'];
-
-        // loop through our density intervals and generate a label with a colored square for each interval
-        for (var i = 0; i < grades.length; i++) {
-            div.innerHTML +=
-                '<i style="background:' + getColor(grades[i]) + '"></i> ' +
-                labels[i] + '<br>';
-        }
-
-        return div;
-    };
-
-    legend.addTo(mymap);
-
-    /* ------ End Custom Legend Control ----------- */
+    setUpLegend();
 }
 
 /* ------------------------  End Map Element Functions -------------------------- */
@@ -287,8 +275,6 @@ function getLayers() {
     getBoatStops();
 
     orderLayers();
-
-    setUpSearch();
 }
 
 function getBridges() {
@@ -304,7 +290,7 @@ function getBridges() {
 }
 
 function getIsles(){
-    islesLayer = L.geoJson(isles, {style: isleStyle, onEachFeature: onEachFeatureIsland});
+    islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
     islesLayer.addTo(mymap);
 }
 
@@ -384,6 +370,82 @@ function combineLayers(){
 }
 
 /* -------------- End GET Layer Data Functions ----------------- */
+
+/* ------ Custom Legend Control ----------- */
+var legend = L.control({position: 'bottomright'});
+
+function removeLegend(){
+    mymap.removeControl(legend);
+}
+
+function setUpLegend(){
+
+    var noLegend = document.getElementById("noLegend");
+    var walkLegend = document.getElementById("walkLegend");
+    var boatLegend = document.getElementById("boatLegend");
+    var totalLegend = document.getElementById("totalLegend");
+
+    console.log(legend instanceof L.Control) 
+
+    if(noLegend.checked){
+
+        //remove legend
+        if (legend instanceof L.Control) { 
+            removeLegend();
+        }
+        
+        //setup islands
+        //mymap.removeLayer(islesLayer);
+        //islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+        //islesLayer.addTo(mymap);
+    }
+    else if(walkLegend.checked){
+
+        //setup legend
+        legend.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = ['no','yes'],
+                labels = ['Accessible','Not Accessible'];
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+                    labels[i] + '<br>';
+            }
+
+            mymap.legend = this;
+
+            return div;
+        };
+
+        if (!legend instanceof L.Control) { 
+            removeLegend();
+        }
+
+        mymap.addControl(legend);
+
+
+        //setup islands
+        //mymap.removeLayer(islesLayer);
+        //islesLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIsland});
+        //islesLayer.addTo(mymap);
+
+    }
+    else if(boatLegend.checked){
+
+        
+
+    }
+    else if(totalLegend.checked){
+
+        
+
+    }
+}
+
+/* ------ End Custom Legend Control ----------- */
 
 
 function addDescription(props){
@@ -605,343 +667,6 @@ function editContentBridge(){
     var islesFilter = document.getElementById("filterBoxIslands");
     islesFilter.style.height = "0px"; 
 
-    /*var filterContainer = document.getElementById("filterContainer");
-
-    var rampFilterBox = document.createElement("div");
-    rampFilterBox.classList.add("filterCaptionBox");
-
-    var rampCaption = document.createElement("h3");
-    rampCaption.innerHTML = "Ramps";
-    rampCaption.classList.add("caption");
-    rampFilterBox.appendChild(rampCaption);
-
-    var checkContianer1 = document.createElement("div");
-    checkContianer1.classList.add("filterBoxItem");
-    checkContianer1.id = "perm"
-    rampCaption.appendChild(checkContianer1);
-
-    var check1 = document.createElement("input");
-    check1.type = "checkbox";
-    check1.classList.add("filterCheck");
-    check1.id = "rampPerCheck";
-    check1.checked = true;
-    checkContianer1.appendChild(check1);
-
-    var checkLabel1 = document.createElement("p");
-    checkLabel1.innerHTML = "Permanent";
-    checkLabel1.classList.add("filterBoxItem");
-    checkContianer1.appendChild(checkLabel1);
-
-    var checkContianer2 = document.createElement("div");
-    checkContianer2.classList.add("filterBoxItem");
-    checkContianer2.id = "temp"
-    rampCaption.appendChild(checkContianer2);
-
-    var check2 = document.createElement("input");
-    check2.type = "checkbox";
-    check2.classList.add("filterCheck");
-    check2.id = "rampTempCheck";
-    check2.checked = true;
-    checkContianer2.appendChild(check2);
-
-    var checkLabel2 = document.createElement("p");
-    checkLabel2.innerHTML = "Temporary";
-    checkLabel2.classList.add("filterBoxItem");
-    checkContianer2.appendChild(checkLabel2);
-
-    var checkContianer3 = document.createElement("div");
-    checkContianer3.classList.add("filterBoxItem");
-    checkContianer3.id = "ramp_none"
-    rampCaption.appendChild(checkContianer3);
-
-    var check3 = document.createElement("input");
-    check3.type = "checkbox";
-    check3.classList.add("filterCheck");
-    check3.id = "rampNoneCheck";
-    check3.checked = true;
-    checkContianer3.appendChild(check3);
-
-    var checkLabel3 = document.createElement("p");
-    checkLabel3.innerHTML = "None";
-    checkLabel3.classList.add("filterBoxItem");
-    checkContianer3.appendChild(checkLabel3);
-
-    
-
-    var railFilterBox = document.createElement("div");
-    railFilterBox.classList.add("filterCaptionBox");
-
-    var railCaption = document.createElement("h3");
-    railCaption.innerHTML = "Railing";
-    railCaption.classList.add("caption");
-    railFilterBox.appendChild(railCaption);
-
-    var checkContianer4 = document.createElement("div");
-    checkContianer4.classList.add("filterBoxItem");
-    checkContianer4.id = "both"
-    railCaption.appendChild(checkContianer4);
-
-    var check4 = document.createElement("input");
-    check4.type = "checkbox";
-    check4.classList.add("filterCheck");
-    check4.id = "railBothCheck";
-    check4.checked = true;
-    checkContianer4.appendChild(check4);
-
-    var checkLabel4 = document.createElement("p");
-    checkLabel4.innerHTML = "Both Sides";
-    checkLabel4.classList.add("filterBoxItem");
-    checkContianer4.appendChild(checkLabel4);
-
-    var checkContianer5 = document.createElement("div");
-    checkContianer5.classList.add("filterBoxItem");
-    checkContianer5.id = "one"
-    railCaption.appendChild(checkContianer5);
-
-    var check5 = document.createElement("input");
-    check5.type = "checkbox";
-    check5.classList.add("filterCheck");
-    check5.id = "railOneCheck";
-    check5.checked = true;
-    checkContianer5.appendChild(check5);
-
-    var checkLabel5 = document.createElement("p");
-    checkLabel5.innerHTML = "One Side";
-    checkLabel5.classList.add("filterBoxItem");
-    checkContianer5.appendChild(checkLabel5);
-
-    var checkContianer6 = document.createElement("div");
-    checkContianer6.classList.add("filterBoxItem");
-    checkContianer6.id = "rail_none"
-    railCaption.appendChild(checkContianer6);
-
-    var check6 = document.createElement("input");
-    check6.type = "checkbox";
-    check6.classList.add("filterCheck");
-    check6.id = "railNoneCheck";
-    check6.checked = true;
-    checkContianer6.appendChild(check6);
-
-    var checkLabel6 = document.createElement("p");
-    checkLabel6.innerHTML = "None";
-    checkLabel6.classList.add("filterBoxItem");
-    checkContianer6.appendChild(checkLabel6);
-
-
-
-    var slipFilterBox = document.createElement("div");
-    slipFilterBox.classList.add("filterCaptionBox");
-
-    var slipCaption = document.createElement("h3");
-    slipCaption.innerHTML = "Railing";
-    slipCaption.classList.add("caption");
-    slipFilterBox.appendChild(slipCaption);
-
-    var checkContianer7 = document.createElement("div");
-    checkContianer7.classList.add("filterBoxItem");
-    checkContianer7.id = "installSlip"
-    slipCaption.appendChild(checkContianer7);
-
-    var check7 = document.createElement("input");
-    check7.type = "checkbox";
-    check7.classList.add("filterCheck");
-    check7.id = "slipInstallCheck";
-    check7.checked = true;
-    checkContianer7.appendChild(check7);
-
-    var checkLabel7 = document.createElement("p");
-    checkLabel7.innerHTML = "Edging";
-    checkLabel7.classList.add("filterBoxItem");
-    checkContianer7.appendChild(checkLabel7);
-
-    var checkContianer8 = document.createElement("div");
-    checkContianer8.classList.add("filterBoxItem");
-    checkContianer8.id = "noneSlip"
-    slipCaption.appendChild(checkContianer8);
-
-    var check8 = document.createElement("input");
-    check8.type = "checkbox";
-    check8.classList.add("filterCheck");
-    check8.id = "slipNoneCheck";
-    check8.checked = true;
-    checkContianer8.appendChild(check8);
-
-    var checkLabel8 = document.createElement("p");
-    checkLabel8.innerHTML = "No Edging";
-    checkLabel8.classList.add("filterBoxItem");
-    checkContianer8.appendChild(checkLabel8);
-
-
-
-
-    var openFilterBox = document.createElement("div");
-    openFilterBox.classList.add("filterCaptionBox");
-
-    var openCaption = document.createElement("h3");
-    openCaption.innerHTML = "Canal Opening";
-    openCaption.classList.add("caption");
-    openFilterBox.appendChild(openCaption);
-
-    var checkContianer9 = document.createElement("div");
-    checkContianer9.classList.add("filterBoxItem");
-    checkContianer9.id = "openBoth"
-    openCaption.appendChild(checkContianer9);
-
-    var check9 = document.createElement("input");
-    check9.type = "checkbox";
-    check9.classList.add("filterCheck");
-    check9.id = "openBothCheck";
-    check9.checked = true;
-    checkContianer9.appendChild(check9);
-
-    var checkLabel9 = document.createElement("p");
-    checkLabel9.innerHTML = "Both Sides";
-    checkLabel9.classList.add("filterBoxItem");
-    checkContianer9.appendChild(checkLabel9);
-
-    var checkContianer10 = document.createElement("div");
-    checkContianer10.classList.add("filterBoxItem");
-    checkContianer10.id = "openOne"
-    openCaption.appendChild(checkContianer10);
-
-    var check10 = document.createElement("input");
-    check10.type = "checkbox";
-    check10.classList.add("filterCheck");
-    check10.id = "openOneCheck";
-    check10.checked = true;
-    checkContianer10.appendChild(check10);
-
-    var checkLabel10 = document.createElement("p");
-    checkLabel10.innerHTML = "One Side";
-    checkLabel10.classList.add("filterBoxItem");
-    checkContianer10.appendChild(checkLabel10);
-
-    var checkContianer11 = document.createElement("div");
-    checkContianer11.classList.add("filterBoxItem");
-    checkContianer11.id = "openNone"
-    openCaption.appendChild(checkContianer11);
-
-    var check11 = document.createElement("input");
-    check11.type = "checkbox";
-    check11.classList.add("filterCheck");
-    check11.id = "openNoneCheck";
-    check11.checked = true;
-    checkContianer11.appendChild(check11);
-
-    var checkLabel11 = document.createElement("p");
-    checkLabel11.innerHTML = "None";
-    checkLabel11.classList.add("filterBoxItem");
-    checkContianer11.appendChild(checkLabel11);
-
-
-
-    var tactFilterBox = document.createElement("div");
-    tactFilterBox.classList.add("filterCaptionBox");
-
-    var tactCaption = document.createElement("h3");
-    tactCaption.innerHTML = "Tactile Pavement";
-    tactCaption.classList.add("caption");
-    tactFilterBox.appendChild(tactCaption);
-
-    var checkContianer12 = document.createElement("div");
-    checkContianer12.classList.add("filterBoxItem");
-    checkContianer12.id = "installTact"
-    tactCaption.appendChild(checkContianer12);
-
-    var check12 = document.createElement("input");
-    check12.type = "checkbox";
-    check12.classList.add("filterCheck");
-    check12.id = "tactInstallCheck";
-    check12.checked = true;
-    checkContianer12.appendChild(check12);
-
-    var checkLabel12 = document.createElement("p");
-    checkLabel12.innerHTML = "Tactile";
-    checkLabel12.classList.add("filterBoxItem");
-    checkContianer12.appendChild(checkLabel12);
-
-    var checkContianer13 = document.createElement("div");
-    checkContianer13.classList.add("filterBoxItem");
-    checkContianer13.id = "noneTact"
-    tactCaption.appendChild(checkContianer13);
-
-    var check13 = document.createElement("input");
-    check13.type = "checkbox";
-    check13.classList.add("filterCheck");
-    check13.id = "tactNoneCheck";
-    check13.checked = true;
-    checkContianer13.appendChild(check13);
-
-    var checkLabel13 = document.createElement("p");
-    checkLabel13.innerHTML = "No Tactile";
-    checkLabel13.classList.add("filterBoxItem");
-    checkContianer13.appendChild(checkLabel13);
-
-
-
-
-    var propFilterBox = document.createElement("div");
-    propFilterBox.classList.add("filterCaptionBox");
-
-    var propCaption = document.createElement("h3");
-    propCaption.innerHTML = "Property";
-    propCaption.classList.add("caption");
-    propFilterBox.appendChild(propCaption);
-
-    var checkContianer14 = document.createElement("div");
-    checkContianer14.classList.add("filterBoxItem");
-    checkContianer14.id = "pub"
-    propCaption.appendChild(checkContianer14);
-
-    var check14 = document.createElement("input");
-    check14.type = "checkbox";
-    check14.classList.add("filterCheck");
-    check14.id = "pubCheck";
-    check14.checked = true;
-    checkContianer14.appendChild(check14);
-
-    var checkLabel14 = document.createElement("p");
-    checkLabel14.innerHTML = "Public";
-    checkLabel14.classList.add("filterBoxItem");
-    checkContianer14.appendChild(checkLabel14);
-
-    var checkContianer15 = document.createElement("div");
-    checkContianer15.classList.add("filterBoxItem");
-    checkContianer15.id = "priv"
-    propCaption.appendChild(checkContianer15);
-
-    var check15 = document.createElement("input");
-    check15.type = "checkbox";
-    check15.classList.add("filterCheck");
-    check15.id = "privCheck";
-    check15.checked = true;
-    checkContianer15.appendChild(check15);
-
-    var checkLabel15 = document.createElement("p");
-    checkLabel15.innerHTML = "Private";
-    checkLabel15.classList.add("filterBoxItem");
-    checkContianer15.appendChild(checkLabel15);
-
-
-    filterContainer.appendChild(rampFilterBox);
-    filterContainer.appendChild(railFilterBox);
-    filterContainer.appendChild(slipFilterBox);
-    filterContainer.appendChild(openFilterBox);
-    filterContainer.appendChild(tactFilterBox);
-    filterContainer.appendChild(propFilterBox);
-
-    var br1 = document.createElement("br");
-    var br2 = document.createElement("br");
-    var br3 = document.createElement("br");
-    var br4 = document.createElement("br");
-    var br5 = document.createElement("br");
-    var br6 = document.createElement("br");
-    filterContainer.appendChild(br1);
-    filterContainer.appendChild(br2);
-    filterContainer.appendChild(br3);
-    filterContainer.appendChild(br4);
-    filterContainer.appendChild(br5);
-    filterContainer.appendChild(br6);*/
 }
 
 

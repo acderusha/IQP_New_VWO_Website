@@ -254,20 +254,20 @@
       <div class="filterCaptionBox">
         <h3 class="caption">
           Accessbilitiy
-          <div class="filterBoxItem">
-            <input type="radio" name="islesFilter" checked class="filterCheck" id="noFilter">
+          <div class="filterBoxItem" onclick="setUpLegend()">
+            <input id="noLegend" type="radio" name="islesFilter" checked class="filterCheck" id="noFilter">
             <p class="filterBoxItem">None</p>
           </div>
-          <div class="filterBoxItem" id="temp">
-            <input type="radio" name="islesFilter" class="filterCheck" id="walkFilter">
+          <div class="filterBoxItem" onclick="setUpLegend()">
+            <input id="walkLegend" type="radio" name="islesFilter" class="filterCheck" id="walkFilter">
             <p class="filterBoxItem">Walking</p>
           </div>
-          <div class="filterBoxItem">
-            <input type="radio" name="islesFilter" class="filterCheck" id="boatFilter">
+          <div class="filterBoxItem" onclick="setUpLegend()">
+            <input id="boatLegend" type="radio" name="islesFilter" class="filterCheck" id="boatFilter">
             <p class="filterBoxItem">Boat</p>
           </div>
-          <div class="filterBoxItem">
-            <input type="radio" name="islesFilter" class="filterCheck" id="bothFilter">
+          <div class="filterBoxItem" onclick="setUpLegend()">
+            <input id="totalLegend" type="radio" name="islesFilter" class="filterCheck" id="bothFilter">
             <p class="filterBoxItem">Total</p>
           </div>
         </h3>
