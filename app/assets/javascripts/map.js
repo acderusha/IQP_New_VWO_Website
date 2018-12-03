@@ -30,7 +30,7 @@ function style(feature) {
 // Style for islands bridges
 function isleStyleNone(feature) {
     return {
-        fillColor: 'getColor(feature.properties.Access_Han)',
+        fillColor: getColorWalk(feature.properties.Access_type),
         weight: 0.4,
         opacity: 2,
         color: 'gray',
@@ -40,7 +40,7 @@ function isleStyleNone(feature) {
 
 function isleStyleWalk(feature) {
     return {
-        fillColor: getColor(feature.properties.Access_Han),
+        fillColor: getColorWalk(feature.properties.Access_type),
         weight: 0.5,
         opacity: 2,
         color: 'gray',
@@ -48,10 +48,10 @@ function isleStyleWalk(feature) {
     };
 }
 
-function getColor(d) {
-    return d > 'yes' ? '#0000ff' :
-           d > 'no'  ? '#993333' :
-                      '#336699';
+function getColorWalk(d) {
+    return d === 'walk'  ? '#6e8b3d' :
+           d === 'both'  ? '#6e8b3d' :
+                      '#dcdcdc';
 }
 
 
@@ -431,13 +431,13 @@ function setUpLegend(){
         legend.onAdd = function (map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = ['no','yes'],
-                labels = ['Accessible','Not Accessible'];
+                grades = ['walk','boat'],
+                labels = ['Waling Accessible','Walking Not Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades.length; i++) {
                 div.innerHTML +=
-                    '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+                    '<i style="background:' + getColorWalk(grades[i]) + '"></i> ' +
                     labels[i] + '<br>';
             }
 
