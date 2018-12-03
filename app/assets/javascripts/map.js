@@ -466,7 +466,39 @@ function combineLayers(){
 /* -------------- End GET Layer Data Functions ----------------- */
 
 /* ------ Custom Legend Control ----------- */
+
 var legend = L.control({position: 'bottomright'});
+
+function setUpLegendNone(){
+    var noLegend = document.getElementById("noLegend");
+    noLegend.checked = true;
+
+    setUpLegend();
+}
+
+function setUpLegendWalk(){
+    var walkLegend = document.getElementById("walkLegend");
+    walkLegend.checked = true;
+
+    setUpLegend();
+}
+
+function setUpLegendBoat(){
+    var boatLegend = document.getElementById("boatLegend");
+    boatLegend.checked = true;
+
+    setUpLegend();
+}
+
+function setUpLegendTotal(){
+    var totalLegend = document.getElementById("totalLegend");
+    totalLegend.checked = true;
+
+    setUpLegend();
+}
+
+
+
 
 function removeLegend(){
     mymap.removeControl(legend);
