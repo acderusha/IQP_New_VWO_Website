@@ -87,7 +87,6 @@ function getColorTotal(d) {
                       '#dcdcdc';
 }
 
-
 // Style for boat stops
 var geojsonMarkerOptions = {
     radius: 7,
