@@ -30,7 +30,7 @@ function style(feature) {
 // Style for islands bridges
 function isleStyleNone(feature) {
     return {
-        fillColor: 'getColor(feature.properties.Access_Han)',
+        fillColor: getColorWalk(feature.properties.Access_type),
         weight: 0.4,
         opacity: 2,
         color: 'gray',
@@ -40,20 +40,52 @@ function isleStyleNone(feature) {
 
 function isleStyleWalk(feature) {
     return {
-        fillColor: getColor(feature.properties.Access_Han),
+        fillColor: getColorWalk(feature.properties.Access_type),
         weight: 0.5,
         opacity: 2,
         color: 'gray',
-        fillOpacity: 0.5
+        fillOpacity: 0.6
     };
 }
 
-function getColor(d) {
-    return d > 'yes' ? '#0000ff' :
-           d > 'no'  ? '#993333' :
-                      '#336699';
+function isleStyleBoat(feature) {
+    return {
+        fillColor: getColorBoat(feature.properties.Access_type),
+        weight: 0.5,
+        opacity: 2,
+        color: 'gray',
+        fillOpacity: 0.6
+    };
 }
 
+function isleStyleTotal(feature) {
+    return {
+        fillColor: getColorTotal(feature.properties.Access_type),
+        weight: 0.5,
+        opacity: 2,
+        color: 'gray',
+        fillOpacity: 0.6
+    };
+}
+
+function getColorWalk(d) {
+    return d === 'walk'  ? '#6e8b3d' :
+           d === 'both'  ? '#6e8b3d' :
+                      '#dcdcdc';
+}
+
+function getColorBoat(d) {
+    return d === 'boat'  ? '#104e8b' :
+           d === 'both'  ? '#104e8b' :
+                      '#dcdcdc';
+}
+
+function getColorTotal(d) {
+    return d === 'boat'  ? '#104e8b' :
+           d === 'walk'  ? '#6e8b3d' :
+           d === 'both'  ? '#ffff00' :
+                      '#dcdcdc';
+}
 
 // Style for boat stops
 var geojsonMarkerOptions = {
@@ -126,6 +158,16 @@ function resetHighlightIslandWalk(e) {
     info.update();
 }
 
+function resetHighlightIslandBoat(e) {
+    islesBoatLayer.resetStyle(e.target);
+    info.update();
+}
+
+function resetHighlightIslandTotal(e) {
+    islesTotalLayer.resetStyle(e.target);
+    info.update();
+}
+
 
 function highlightFeatureBoat(e) {
     var layer = e.target;
@@ -189,6 +231,22 @@ function onEachFeatureIslandWalk(feature, layer) {
     layer.on({
         mouseover: highlightFeatureIsland,
         mouseout: resetHighlightIslandWalk,
+        dblclick: zoomToFeature
+    });
+}
+
+function onEachFeatureIslandBoat(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureIsland,
+        mouseout: resetHighlightIslandBoat,
+        dblclick: zoomToFeature
+    });
+}
+
+function onEachFeatureIslandTotal(feature, layer) {
+    layer.on({
+        mouseover: highlightFeatureIsland,
+        mouseout: resetHighlightIslandTotal,
         dblclick: zoomToFeature
     });
 }
@@ -292,6 +350,8 @@ function getLayers() {
     getBoatStops();
 
     getIslesWalk();
+    getIslesBoat();
+    getIslesTotal();
 
     orderLayers();
 
@@ -317,6 +377,14 @@ function getIsles(){
 
 function getIslesWalk(){
     islesWalkLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIslandWalk});
+}
+
+function getIslesBoat(){
+    islesBoatLayer = L.geoJson(isles, {style: isleStyleBoat, onEachFeature: onEachFeatureIslandBoat});
+}
+
+function getIslesTotal(){
+    islesTotalLayer = L.geoJson(isles, {style: isleStyleTotal, onEachFeature: onEachFeatureIslandTotal});
 }
 
 function getBoatStops(){
@@ -423,21 +491,27 @@ function setUpLegend(){
 
             //remove accessibility overlay layer
             mymap.removeLayer(islesWalkLayer);
+            mymap.removeLayer(islesBoatLayer);
+            mymap.removeLayer(islesTotalLayer);
         }
     }
     else if(walkLegend.checked){
+
+        //remove existing layers
+        mymap.removeLayer(islesBoatLayer);
+        mymap.removeLayer(islesTotalLayer);
 
         //setup legend
         legend.onAdd = function (map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = ['no','yes'],
-                labels = ['Accessible','Not Accessible'];
+                grades = ['walk','boat'],
+                labels = ['Waling Accessible','Walking Not Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades.length; i++) {
                 div.innerHTML +=
-                    '<i style="background:' + getColor(grades[i]) + '"></i> ' +
+                    '<i style="background:' + getColorWalk(grades[i]) + '"></i> ' +
                     labels[i] + '<br>';
             }
 
@@ -460,12 +534,76 @@ function setUpLegend(){
     }
     else if(boatLegend.checked){
 
-        
+        //remove existing layers
+        mymap.removeLayer(islesWalkLayer);
+        mymap.removeLayer(islesTotalLayer);
+
+        //setup legend
+        legend.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = ['boat','walk'],
+                labels = ['Boat Accessible','Boat Not Accessible'];
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColorBoat(grades[i]) + '"></i> ' +
+                    labels[i] + '<br>';
+            }
+
+            mymap.legend = this;
+
+            return div;
+        };
+
+        if (!legend instanceof L.Control) { 
+            removeLegend();
+        }
+
+        mymap.addControl(legend);
+
+
+        // add accessibility overlay layer
+        islesBoatLayer.addTo(mymap);
+        orderLayers();
 
     }
     else if(totalLegend.checked){
 
-        
+        //remove existing layers
+        mymap.removeLayer(islesBoatLayer);
+        mymap.removeLayer(islesWalkLayer);
+
+        //setup legend
+        legend.onAdd = function (map) {
+
+            var div = L.DomUtil.create('div', 'info legend'),
+                grades = ['both','boat', 'walk','none'],
+                labels = ['Totally Accessible','Boat Accessible','Walking Accessible', 'Not Accessible'];
+
+            // loop through our density intervals and generate a label with a colored square for each interval
+            for (var i = 0; i < grades.length; i++) {
+                div.innerHTML +=
+                    '<i style="background:' + getColorTotal(grades[i]) + '"></i> ' +
+                    labels[i] + '<br>';
+            }
+
+            mymap.legend = this;
+
+            return div;
+        };
+
+        if (!legend instanceof L.Control) { 
+            removeLegend();
+        }
+
+        mymap.addControl(legend);
+
+
+        // add accessibility overlay layer
+        islesTotalLayer.addTo(mymap);
+        orderLayers();
 
     }
 }
