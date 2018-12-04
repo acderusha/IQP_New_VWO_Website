@@ -3313,7 +3313,7 @@ var isles = [
         "Ownership": null,
         "pop_den_01": 1418.021164,
         "pop_den_91": 1672.117442,
-     "Access_type": "both"
+     "Access_type": "walk"
     },
     "geometry": {
         "type": "Polygon",

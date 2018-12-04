@@ -9,51 +9,13 @@
         <span class="slider round"></span>
       </label>
     </div>
-
-  	<!--<a href="/home" onmouseover="playGoHome()">Home</a>
-    <a id="mapTab" href="/home/maps" onmouseover="playGoMap()">Map</a>
-    <a href="/home/arrival" onmouseover="playGoArrival()">Arriving to Venice</a>
-    <a href="#" onmouseover="playGoTraveling()">Moving Around</a>
-    <a href="#" onmouseover="playGoDining()">Dining Out</a>
-    <a href="#" onmouseover="playGoNight()">Staying the Night</a>
-    <a href="/home/applications" onmouseover="playGoApp()">Applications</a>
-    <a href="/home/organizations" onmouseover="playGoOrg()">Organizations</a>-->
   </div>
 </div>
 
 <div id="headerBar" class="header" style="left: 0px">
-    <div class="headerLeft hamDivContainer" onmouseover="hoverOnMenu()" onmouseleave="hoverOffMenu()" onclick="openNav()">
-      <!--<div id="hamDiv1" class=hamDiv></div>
-      <div id="hamDiv2" class=hamDiv></div>
-      <div id="hamDiv3" class=hamDiv></div>-->
+    <div class="headerLeft hamDivContainer" onmouseover="hoverOnMenu()" onclick="openNav()">
       <i class="fas fa-cog"></i>
     </div>
-
-    <script type="text/javascript">
-
-    function hoverOnMenu(){
-        play("Menu Button to open Menu Screen.");
-
-      var div1 = document.getElementById("hamDiv1");
-      var div2 = document.getElementById("hamDiv2");
-      var div3 = document.getElementById("hamDiv3");
-
-      div1.style.width = "40px";
-      div2.style.width = "35px";
-      div3.style.width = "30px";
-       }
-
-    function hoverOffMenu(){
-      var div1 = document.getElementById("hamDiv1");
-      var div2 = document.getElementById("hamDiv2");
-      var div3 = document.getElementById("hamDiv3");
-
-      div1.style.width = "30px";
-      div2.style.width = "30px";
-      div3.style.width = "30px";
-    } 
-  </script>
-
   <div class="homeHeader">
     <div class="logo">
       <h1>Venice Without Obstacles</h1>
@@ -66,14 +28,8 @@
             Home
           </a>
         </li>
-        <li class="menuItem" onmouseover="playGoMap()" onmouseleave="hideAll()">
-          <a href="/home/maps">
-            Map
-          </a>
-          <div id="mapDrop" class="dropdown-content">
-            <a class="dropItem" href="/home/map">Informative</a>
-            <a class="dropItem" href="/home/map">Interactive</a>
-          </div>
+        <li class="menuItem" onmouseover="playGoHotel()">
+          Hotels
         </li>
         <li class="menuItem" onmouseover="playGoArrival()" onmouseleave="hideAll()">
           <a href="/home/arrival">
@@ -84,6 +40,15 @@
             <a class="dropItem">Car</a>
             <a class="dropItem">Plane</a>
             <a class="dropItem">Train</a>
+          </div>
+        </li>
+        <li class="menuItem" onmouseover="playGoMap()" onmouseleave="hideAll()">
+          <a href="/home/maps">
+            Map
+          </a>
+          <div id="mapDrop" class="dropdown-content">
+            <a class="dropItem" href="/home/map">Informative</a>
+            <a class="dropItem" href="/home/map">Interactive</a>
           </div>
         </li>
         <li class="menuItem" onmouseover="playGoExplore()" onmouseleave="hideAll()">
@@ -105,9 +70,6 @@
             <a class="dropItem">Museums</a>
             <a class="dropItem" href="/home/attractions">More . . . </a>
           </div>
-        </li>
-        <li class="menuItem" onmouseover="playGoHotel()">
-          Hotels
         </li>
         <li class="menuItem" onmouseover="playGoApp()">
           <a href="/home/applications">

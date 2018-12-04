@@ -59,10 +59,12 @@ footer {
 
 	a {
 		color: white;
+		transition: all 0.4s ease;
 	}
 
 	.aFooter{
 		color: white;
+		transition: all 0.4s ease;
 	}
 	.aFooter:hover, .aFooter:focus {
 		text-decoration: none;
