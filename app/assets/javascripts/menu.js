@@ -166,7 +166,7 @@ let muteVar;
     var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to the Home, Arriving to Venice, Moving Around, Staying the Night, Dining Out, Applications, Organizations, and Map pages. A close button is located at the top-right hand side of the screen. A mute button is located at the top-left hand side of the screen to turn off and on all speech."
     play(welcomeMenuText);
 
-	  document.getElementById("myNav").style.height = "100%";
+	  document.getElementById("myNav").style.height = "78px";
 	}
 
 	function closeNav() {

@@ -7,7 +7,7 @@
     z-index: 4;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom right, #fff 60%, #cee7ff);
+    background: white;
     overflow-x: hidden;
     overflow: hidden;
     transition: 0.5s;
@@ -15,9 +15,9 @@
 
 .overlay-content {
     position: relative;
-    top: 15%;
     width: 100%;
-    text-align: center;
+
+    margin-left: calc((100% - 1100px) / 2);
 
     font-family: 'Istok Web';
 }
@@ -43,32 +43,35 @@
 .overlay .closebtn {
 	cursor: pointer;
 
+  width: 60px;
+  height: 100%;
+
   position: absolute;
 	top: 15px;
-	left: -10px;
-	font-size: 30px;
+	left: -14px;
+	font-size: 40px;
 
 	padding: 5px 40px 5px 40px;
 
 	transition: .2s ease;
 
 	color: #777;
+
+  z-index: 3;
 }
 .closebtn:hover, .closebtn:focus{
-	font-size: 45px;
 
 	background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-.mutebtn {
+.overlay-speech {
+  position: absolute;
 
-  padding: 5px 40px 5px 40px;
-  margin: 10px;
+  top: 17px;
 
-
-  font-size: 52px;
+  font-size: 30px;
   font-family: 'Istok Web';
 
 	text-decoration: none;
@@ -88,8 +91,8 @@
 .switch {
   position: relative;
   display: inline-block;
-  width: 108px;
-  height: 50px;
+  width: 75px;
+  height: 35px;
   vertical-align: middle;
 }
 
@@ -114,8 +117,8 @@
 .slider:before {
   position: absolute;
   content: "";
-  height: 42px;
-  width: 42px;
+  height: 27px;
+  width: 27px;
   left: 4px;
   bottom: 4px;
   background-color: white;
@@ -132,9 +135,9 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(57px);
-  -ms-transform: translateX(57px);
-  transform: translateX(57px);
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
 }
 
 /* Rounded sliders */

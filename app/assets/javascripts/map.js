@@ -359,18 +359,45 @@ function getLayers() {
 }
 
 function getBridges() {
-    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
-        console.log("Data: ")
-        console.log(data);
-        //$( ".result" ).html( data );
-        //alert( "Load was performed." );
-    });
+    /*$.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+        var ckBridges = [];
+
+        //console.log("Data: ")
+        //console.log(data);
+
+        var i;
+        for(i = 0; i < data.length; i++){
+            //console.log(data[i].content.geojson);
+
+            ckBridges.push(data[i].content.geojson);
+        }
+
+        bridgeLayer = L.geoJson(ckBridges, {style: style, onEachFeature: onEachFeature});
+        bridgeLayer.addTo(mymap);
+    });*/
 
     bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature});
     bridgeLayer.addTo(mymap);
 }
 
 function getIsles(){
+    /*$.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
+        var ckIsles = [];
+
+        //console.log("Data: ")
+        //console.log(data);
+
+        var i;
+        for(i = 0; i < data.length; i++){
+            //console.log(data[i].content.geojson);
+
+            ckIsles.push(data[i].content.geojson);
+        }
+
+        islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+        islesLayer.addTo(mymap);
+    });*/
+
     islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
     islesLayer.addTo(mymap);
 }
