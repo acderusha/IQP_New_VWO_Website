@@ -36,8 +36,8 @@
     font-weight: 900;
 
     background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
 }
 
 .overlay .closebtn {
@@ -47,9 +47,9 @@
   height: 100%;
 
   position: absolute;
-	top: 15px;
-	left: -14px;
-	font-size: 40px;
+	top: 17px;
+  left: -7px;
+	font-size: 30px;
 
 	padding: 5px 40px 5px 40px;
 
@@ -60,6 +60,10 @@
   z-index: 3;
 }
 .closebtn:hover, .closebtn:focus{
+
+  top: 13px;
+  left: -11px;
+  font-size: 38px;
 
 	background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
 	-webkit-background-clip: text;
@@ -149,15 +153,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-}
-
 /* -------------- End OverLay Menu CSS -------------- */
 
 /* -------------- Header Menu CSS -------------- */
@@ -201,6 +196,25 @@ input:checked + .slider:before {
 
 .headerLeft {
     float: left;
+
+    i{
+      font-size: 30px;
+      margin-top: 1px;
+      margin-left: 5px;
+
+      color: #777;
+
+      transition: all 0.3s ease;
+    }
+    i:hover{
+      font-size: 38px;
+      margin-top: -2px;
+      margin-left: 1px;
+
+      background: linear-gradient(175deg, #12437b 28.99%, #15a1cf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 }
 
 .headerCenter {
@@ -261,6 +275,7 @@ input:checked + .slider:before {
 
   margin-left: calc((100% - 1100px) / 2);
   padding-right: calc((100% - 1100px) / 2);
+  margin-right: 10px;
 
   background-color: white;
 
@@ -355,25 +370,6 @@ input:checked + .slider:before {
       border-bottom: 2px #12437b solid;
     }
   }
-
-  /*.dropbtn {
-      background-color: #4CAF50;
-      color: white;
-      padding: 16px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-  }
-
-  .dropbtn:hover, .dropbtn:focus {
-      background-color: #3e8e41;
-  }
-
-  .dropdown {
-      float: right;
-      position: relative;
-      display: inline-block;
-  }*/
 
   .dropdown-content {
     width: 135px;

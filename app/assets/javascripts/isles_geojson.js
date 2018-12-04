@@ -3375,7 +3375,7 @@ var isles = [
         "Ownership": null,
         "pop_den_01": 8483.599519,
         "pop_den_91": 10292.518175,
-     "Access_type": "none"
+     "Access_type": "boat"
     },
     "geometry": {
         "type": "Polygon",
@@ -4987,7 +4987,7 @@ var isles = [
         "Ownership": null,
         "pop_den_01": 11154.648771,
         "pop_den_91": 13714.362923,
-     "Access_type": "none"
+     "Access_type": "boat"
     },
     "geometry": {
         "type": "Polygon",
