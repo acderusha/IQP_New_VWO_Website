@@ -263,12 +263,17 @@ function onEachFeatureBoat(feature, layer) {
 
 /* ------------------------  Map Element Functions -------------------------- */
 function addMapElements() {
-
-    /* ------ GET Layer Data ------------ */
+    setUpInfo();
     getLayers();
+    setUpLegend();
+}
 
+/* ------------------------  End Map Element Functions -------------------------- */
 
-    /* ------ Custom Info Control ----------- */
+/* -------------- Setup Info Box Function ------------------ */
+
+function setUpInfo(){
+        /* ------ Custom Info Control ----------- */
 
     info.onAdd = function (map) {
         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -335,31 +340,18 @@ function addMapElements() {
     };
 
     info.addTo(mymap);
-
-    /* ------ End Custom Info Control ----------- */
-
-    setUpLegend();
 }
 
-/* ------------------------  End Map Element Functions -------------------------- */
+/* -------------- End Setup Info Box Function ------------------ */
+
 
 /* -------------- GET Layer Data Functions ----------------- */
 function getLayers() {
-    getIsles();
     getBridges();
-    getBoatStops();
-
-    getIslesWalk();
-    getIslesBoat();
-    getIslesTotal();
-
-    orderLayers();
-
-    setUpSearch();
 }
 
 function getBridges() {
-    /*$.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
         var ckBridges = [];
 
         //console.log("Data: ")
@@ -374,14 +366,42 @@ function getBridges() {
 
         bridgeLayer = L.geoJson(ckBridges, {style: style, onEachFeature: onEachFeature});
         bridgeLayer.addTo(mymap);
-    });*/
 
-    bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature});
-    bridgeLayer.addTo(mymap);
+        getBoatStops(ckBridges);
+    });
+
+    //bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature});
+    //bridgeLayer.addTo(mymap);
 }
 
-function getIsles(){
-    /*$.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
+function getBoatStops(ckBridges){
+    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=boat%20stops%202018", function( data ) {
+        var ckBoats = [];
+
+        //console.log("Data: ")
+        //console.log(data);
+
+        var i;
+        for(i = 0; i < data.length; i++){
+            //console.log(data[i].content.geojson);
+
+            ckBoats.push(data[i].content.geojson);
+        }
+
+        boatLayer = L.geoJSON(ckBoats, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, geojsonMarkerOptions);
+            },
+            onEachFeature: onEachFeatureBoat
+        });
+        boatLayer.addTo(mymap);
+
+        getIsles(ckBridges, ckBoats);
+    });
+}
+
+function getIsles(ckBridges, ckBoats){
+    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
         var ckIsles = [];
 
         //console.log("Data: ")
@@ -394,34 +414,20 @@ function getIsles(){
             ckIsles.push(data[i].content.geojson);
         }
 
-        islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+        //console.log(ckIsles);
+        islesLayer = L.geoJson(ckIsles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+        islesWalkLayer = L.geoJson(ckIsles, {style: isleStyleWalk, onEachFeature: onEachFeatureIslandWalk});
+        islesBoatLayer = L.geoJson(ckIsles, {style: isleStyleBoat, onEachFeature: onEachFeatureIslandBoat});
+        islesTotalLayer = L.geoJson(ckIsles, {style: isleStyleTotal, onEachFeature: onEachFeatureIslandTotal});
+
         islesLayer.addTo(mymap);
-    });*/
+        islesLayer.bringToBack();
 
-    islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
-    islesLayer.addTo(mymap);
-}
-
-function getIslesWalk(){
-    islesWalkLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIslandWalk});
-}
-
-function getIslesBoat(){
-    islesBoatLayer = L.geoJson(isles, {style: isleStyleBoat, onEachFeature: onEachFeatureIslandBoat});
-}
-
-function getIslesTotal(){
-    islesTotalLayer = L.geoJson(isles, {style: isleStyleTotal, onEachFeature: onEachFeatureIslandTotal});
-}
-
-function getBoatStops(){
-    boatLayer = L.geoJSON(boatStops, {
-        pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, geojsonMarkerOptions);
-        },
-        onEachFeature: onEachFeatureBoat
+        setUpSearch(ckBridges, ckBoats, ckIsles);
     });
-    boatLayer.addTo(mymap);
+
+    //islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+    //islesLayer.addTo(mymap);
 }
 
 function orderLayers(){
@@ -432,9 +438,11 @@ function orderLayers(){
 
 
 /* ------------- Fuzzy Search Bar ----------- */
-function setUpSearch(){
-    var layers = combineLayers();
-    console.log(layers);
+function setUpSearch(ckBridges, ckBoats, ckIsles){
+    console.log("Search");
+
+    var layers = combineLayers(ckBridges, ckBoats, ckIsles);
+    //console.log(layers);
 
     var totalLayers = L.layerGroup([bridgeLayer, islesLayer, boatLayer]);
 
@@ -456,7 +464,7 @@ function setUpSearch(){
                 key = jsons[i].properties.name;
                 ret[ key ]= records[key];
             }
-            console.log(jsons,ret);
+            //console.log(jsons,ret);
             return ret;
         }
     })
@@ -464,30 +472,39 @@ function setUpSearch(){
         e.layer.openPopup();
     })
     .addTo(mymap);
+
+    removeLoader();
 }
 
 
-function combineLayers(){
-    var combineLayers = isles;
+function combineLayers(ckBridges, ckBoats, ckIsles){
+    var combineLayers = ckIsles;
 
-    //console.log("Isles: ");
-    //console.log(isles);
+    console.log("Isles: ");
+    console.log(ckIsles);
 
-    //console.log("Bridges: ");
-    //console.log(bridges);
+    console.log("Bridges: ");
+    console.log(ckBridges);
 
-    bridges.forEach(function (element){
+    ckBridges.forEach(function (element){
         combineLayers.push(element);
     });
 
-    boatStops.forEach(function (element){
+    ckBoats.forEach(function (element){
         combineLayers.push(element);
     });
 
-    //console.log("Total: ");
-    //console.log(combineLayers);
+    console.log("Total: ");
+    console.log(combineLayers);
+
+
 
     return combineLayers;
+}
+
+function removeLoader(){
+    var loaderDiv = document.getElementById("loaderDiv");
+    loaderDiv.style.display = "none";
 }
 
 /* -------------- End GET Layer Data Functions ----------------- */
@@ -524,9 +541,6 @@ function setUpLegendTotal(){
     setUpLegend();
 }
 
-
-
-
 function removeLegend(){
     mymap.removeControl(legend);
 }
@@ -538,7 +552,7 @@ function setUpLegend(){
     var boatLegend = document.getElementById("boatLegend");
     var totalLegend = document.getElementById("totalLegend");
 
-    console.log(legend instanceof L.Control) 
+    //console.log(legend instanceof L.Control) 
 
     if(noLegend.checked){
 

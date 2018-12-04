@@ -2,7 +2,10 @@
   playMapIntro();
 </script>
 
-<div style="padding-top: 78px">
+<div style="padding-top: 78px; position: relative;">
+  <div id="loaderDiv" class="loaderDiv">
+    <div id="loader" class="loader"></div>
+  </div>
 
   <div id="filterBoxItemHeader" class="filterBoxItemHeader" onmouseleave="closeSelector()">
       <div class="dropbtn" onclick="dropSelection()">
@@ -292,7 +295,7 @@
                <table id="mapDes" class="mapDescTable">
                    <tr>
                        <th width="1500px" valign="top">
-                           <div id="mapid"></div>
+                          <div id="mapid"></div>
                        </th>
                        <th id="descBoxContainer" class="descBoxContainer" valign="top">
                           <div id="descBox" class="descBox" >
