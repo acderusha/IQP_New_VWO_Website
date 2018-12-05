@@ -288,12 +288,12 @@ var boatStops = [
 
 {
             "geometry" : {
-                    "coordinates" : [ 12.318253, 45.439425 ],
+                    "coordinates" : [ 12.318483, 45.439374 ],
                     "type" : "Point"
             },
             "properties" : {
                     "type" : "Boat Stop",
-                    "name": "P.le Roma (Parisi) D",
+                    "name": "P.le Roma (Parisi) E",
                     "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
