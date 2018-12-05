@@ -24,7 +24,14 @@ var isles = [
         "Ownership": "City of Venice",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null,
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -55,7 +62,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -86,7 +100,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -117,7 +138,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -148,7 +176,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },     
     "geometry": {
         "type": "MultiPolygon",
@@ -179,7 +214,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -210,7 +252,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -241,7 +290,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "MultiPolygon",
@@ -274,7 +330,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -305,7 +368,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -336,7 +406,14 @@ var isles = [
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -367,7 +444,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
- "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -398,7 +482,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -429,7 +520,14 @@ var isles = [
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -460,7 +558,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     }, "geometry": {
         "type": "Polygon",
         "coordinates": [ [ [ 12.404971128676696, 45.48695625319079, 43.694255572452327 ], [ 12.40395848981227, 45.486584769197279, 43.695417948125275 ], [ 12.403086410015481, 45.48628469011156, 43.696443552935449 ], [ 12.402829436460459, 45.486163560319788, 43.696699970083792 ], [ 12.402616022713714, 45.486242581624168, 43.697161748275498 ], [ 12.402631597141244, 45.486300893226861, 43.697216887831637 ], [ 12.401821881804731, 45.48669393091933, 43.699100216461964 ], [ 12.401514846892377, 45.486871974942375, 43.699855528092975 ], [ 12.401462467791998, 45.48690264135621, 43.699984841552514 ], [ 12.4013886288511, 45.486968547654968, 43.700198736434885 ], [ 12.401246842931835, 45.487027327633385, 43.700515171030858 ], [ 12.401085586442477, 45.487068925018164, 43.700839954164536 ], [ 12.40084917154512, 45.487163798675006, 43.701363504943259 ], [ 12.400578462755862, 45.487263200827634, 43.701950371937045 ], [ 12.400258909647363, 45.48738749895422, 43.702653190800476 ], [ 12.399890458337454, 45.487524092005231, 43.703454615675589 ], [ 12.399862557016768, 45.487552525243878, 43.703540645627122 ], [ 12.399854120287525, 45.487582211713942, 43.703596181504636 ], [ 12.39986673333248, 45.487617687309083, 43.703624937191634 ], [ 12.399962134244513, 45.487803271278267, 43.703726515212047 ], [ 12.399993846919484, 45.487870860318708, 43.703768496110584 ], [ 12.399991656853455, 45.488076630808273, 43.704060036252528 ], [ 12.400021320531671, 45.488207080230715, 43.704193310427279 ], [ 12.400111869748345, 45.488388053786906, 43.704296091796067 ], [ 12.4002038941985, 45.48859659956581, 43.704434814316812 ], [ 12.400310714120073, 45.48892850637165, 43.704721161341894 ], [ 12.400342687040034, 45.488974412248183, 43.704732122990755 ], [ 12.400391118388324, 45.489002063728009, 43.704690176538932 ], [ 12.400449619361284, 45.489001235802832, 43.704591675266506 ], [ 12.400543836581136, 45.488997081210677, 43.704429097722191 ], [ 12.400669229404013, 45.488971317343818, 43.704184484821731 ], [ 12.401038650315751, 45.488887211406457, 43.703452572986386 ], [ 12.401289845183996, 45.488794653687329, 43.702905799948589 ], [ 12.401390809363441, 45.488763113254208, 43.702693979062524 ], [ 12.401529174125391, 45.488726034225358, 43.702412294767562 ], [ 12.401813171535814, 45.488594803739666, 43.70175763745015 ], [ 12.401969942791791, 45.488517734931627, 43.701389978471148 ], [ 12.402069637312085, 45.48844953672419, 43.701129579461565 ], [ 12.402158558715165, 45.488335645438752, 43.700823682786627 ], [ 12.402275016260145, 45.488228770292153, 43.700481906644058 ], [ 12.402520284367229, 45.488069928109766, 43.69985437546638 ], [ 12.402629888634582, 45.48799043539487, 43.699562268916537 ], [ 12.402781859619408, 45.487909836423967, 43.699198437323666 ], [ 12.402812977967725, 45.487877965816551, 43.699102659228693 ], [ 12.402815232779721, 45.48781744994448, 43.699015067612059 ], [ 12.402873530104586, 45.487839385077194, 43.698948780816302 ], [ 12.402959776978616, 45.487822627769752, 43.698782541121616 ], [ 12.403190272924963, 45.487670557795546, 43.698189867425228 ], [ 12.403601179221106, 45.487517010380778, 43.697296573357711 ], [ 12.403719011389022, 45.487428344158403, 43.696978869650074 ], [ 12.403835053663942, 45.487360246149883, 43.696692629289515 ], [ 12.403966770644946, 45.487339122244023, 43.696445339432209 ], [ 12.40418278729852, 45.487338993912743, 43.696087438377965 ], [ 12.404348479362611, 45.487334031278564, 43.695806212251007 ], [ 12.404438097898268, 45.487303580147476, 43.695615849545632 ], [ 12.404542795537397, 45.48723432355991, 43.695347099078909 ], [ 12.404706663341809, 45.487099095024959, 43.694889668839771 ], [ 12.404814061242719, 45.487067517807375, 43.694668490439945 ], [ 12.404918601430342, 45.48701085670514, 43.694417569419087 ], [ 12.404971128676696, 45.48695625319079, 43.694255572452327 ] ] ]
@@ -490,7 +595,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -521,7 +633,14 @@ var isles = [
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -548,12 +667,19 @@ var isles = [
         "Access_Han": null,
         "Latitude": 45.491110,
         "Longtitude": 12.408931,
- "sum_pop_01": null,
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -579,12 +705,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.490550,
-        "Longtitude": 12.399387, "sum_pop_01": null,
+        "Longtitude": 12.399387, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -610,12 +744,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.424811,
-        "Longtitude": 12.292237, "sum_pop_01": null,
+        "Longtitude": 12.292237, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -641,12 +783,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.446839,
-        "Longtitude": 12.346997, "sum_pop_01": null,
+        "Longtitude": 12.346997, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -672,12 +822,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.434152,
-        "Longtitude": 12.373664, "sum_pop_01": null,
+        "Longtitude": 12.373664, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -703,12 +861,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.440260,
-        "Longtitude": 12.375924, "sum_pop_01": null,
+        "Longtitude": 12.375924, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -734,12 +900,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.441030,
-        "Longtitude": 12.381508, "sum_pop_01": null,
+        "Longtitude": 12.381508, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -765,12 +939,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.434746,
-        "Longtitude": 12.381147, "sum_pop_01": null,
+        "Longtitude": 12.381147, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -796,12 +978,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.444905,
-        "Longtitude": 12.380057, "sum_pop_01": null,
+        "Longtitude": 12.380057, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -827,12 +1017,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.406247,
-        "Longtitude": 12.359461, "sum_pop_01": null,
+        "Longtitude": 12.359461, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -858,12 +1056,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.412253,
-        "Longtitude": 12.361384, "sum_pop_01": null,
+        "Longtitude": 12.361384, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -889,12 +1095,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.418597,
-        "Longtitude": 12.357352, "sum_pop_01": null,
+        "Longtitude": 12.357352, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Province of Venice",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -920,12 +1134,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.419099,
-        "Longtitude": 12.339541, "sum_pop_01": null,
+        "Longtitude": 12.339541, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Region of the Veneto",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -951,12 +1173,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.410901,
-        "Longtitude": 12.335484, "sum_pop_01": null,
+        "Longtitude": 12.335484, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -982,12 +1212,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.400291,
-        "Longtitude": 12.334026, "sum_pop_01": null,
+        "Longtitude": 12.334026, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,    
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1013,12 +1251,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.451198,
-        "Longtitude": 12.307614, "sum_pop_01": null,
+        "Longtitude": 12.307614, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1044,12 +1290,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.481134,
-        "Longtitude": 12.352442, "sum_pop_01": null,
+        "Longtitude": 12.352442, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1075,12 +1329,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.408688,
-        "Longtitude": 12.283227, "sum_pop_01": null,
+        "Longtitude": 12.283227, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1106,12 +1368,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.363563,
-        "Longtitude": 12.321735, "sum_pop_01": null,
+        "Longtitude": 12.321735, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1137,12 +1407,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.363034,
-        "Longtitude": 12.290926, "sum_pop_01": null,
+        "Longtitude": 12.290926, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1168,12 +1446,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.382823,
-        "Longtitude": 12.330978, "sum_pop_01": null,
+        "Longtitude": 12.330978, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1199,12 +1485,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.381503,
-        "Longtitude": 12.331421, "sum_pop_01": null,
+        "Longtitude": 12.331421, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1230,12 +1524,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.380396,
-        "Longtitude": 12.331652, "sum_pop_01": null,
+        "Longtitude": 12.331652, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1261,12 +1563,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.374841,
-        "Longtitude": 12.292624, "sum_pop_01": null,
+        "Longtitude": 12.292624, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1292,12 +1602,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.347990,
-        "Longtitude": 12.306944, "sum_pop_01": null,
+        "Longtitude": 12.306944, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1323,12 +1641,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.332878,
-        "Longtitude": 12.306343, "sum_pop_01": null,
+        "Longtitude": 12.306343, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1354,12 +1680,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.243436,
-        "Longtitude": 12.284010, "sum_pop_01": null,
+        "Longtitude": 12.284010, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1385,12 +1719,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.405536,
-        "Longtitude": 12.320640, "sum_pop_01": null,
+        "Longtitude": 12.320640, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1416,12 +1758,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.423253,
-        "Longtitude": 12.293560, "sum_pop_01": null,
+        "Longtitude": 12.293560, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1447,12 +1797,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.342757,
-        "Longtitude": 12.295628, "sum_pop_01": null,
+        "Longtitude": 12.295628, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1478,12 +1836,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.503357,
-        "Longtitude": 12.461482, "sum_pop_01": null,
+        "Longtitude": 12.461482, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1509,12 +1875,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.477583,
-        "Longtitude": 12.433679, "sum_pop_01": null,
+        "Longtitude": 12.433679, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Private",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1540,12 +1914,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.486458,
-        "Longtitude": 12.415328, "sum_pop_01": null,
+        "Longtitude": 12.415328, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1571,12 +1953,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.485248,
-        "Longtitude": 12.418340, "sum_pop_01": null,
+        "Longtitude": 12.418340, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1602,12 +1992,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.485228,
-        "Longtitude": 12.420594, "sum_pop_01": null,
+        "Longtitude": 12.420594, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1633,12 +2031,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.484240,
-        "Longtitude": 12.416276, "sum_pop_01": null,
+        "Longtitude": 12.416276, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1664,12 +2070,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.486661,
-        "Longtitude": 12.409286, "sum_pop_01": null,
+        "Longtitude": 12.409286, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1695,12 +2109,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.500102,
-        "Longtitude": 12.424167, "sum_pop_01": null,
+        "Longtitude": 12.424167, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1726,12 +2148,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.499715,
-        "Longtitude": 12.419371, "sum_pop_01": null,
+        "Longtitude": 12.419371, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1757,12 +2187,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.498346,
-        "Longtitude": 12.413611, "sum_pop_01": null,
+        "Longtitude": 12.413611, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1788,12 +2226,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.494778,
-        "Longtitude": 12.414366, "sum_pop_01": null,
+        "Longtitude": 12.414366, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1819,12 +2265,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.494748,
-        "Longtitude": 12.416559, "sum_pop_01": null,
+        "Longtitude": 12.416559, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1850,12 +2304,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.496706,
-        "Longtitude": 12.418331, "sum_pop_01": null,
+        "Longtitude": 12.418331, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1881,12 +2343,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.496403,
-        "Longtitude": 12.422043, "sum_pop_01": null,
+        "Longtitude": 12.422043, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1912,12 +2382,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.497591,
-        "Longtitude": 12.418155, "sum_pop_01": null,
+        "Longtitude": 12.418155, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1943,12 +2421,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.462779,
-        "Longtitude": 12.351152, "sum_pop_01": null,
+        "Longtitude": 12.351152, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -1974,12 +2460,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.459779,
-        "Longtitude": 12.357308, "sum_pop_01": null,
+        "Longtitude": 12.357308, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2005,12 +2499,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.456520,
-        "Longtitude": 12.358525, "sum_pop_01": null,
+        "Longtitude": 12.358525, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2036,12 +2538,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.455982,
-        "Longtitude": 12.345689, "sum_pop_01": null,
+        "Longtitude": 12.345689, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2067,12 +2577,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.454358,
-        "Longtitude": 12.349890, "sum_pop_01": null,
+        "Longtitude": 12.349890, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2098,12 +2616,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.453709,
-        "Longtitude": 12.353435, "sum_pop_01": null,
+        "Longtitude": 12.353435, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2129,12 +2655,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.458629,
-        "Longtitude": 12.352038, "sum_pop_01": null,
+        "Longtitude": 12.352038, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2160,12 +2694,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.419290,
-        "Longtitude": 12.375455, "sum_pop_01": null,
+        "Longtitude": 12.375455, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2191,12 +2733,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.414660,
-        "Longtitude": 12.368096, "sum_pop_01": null,
+        "Longtitude": 12.368096, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2222,12 +2772,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.412969,
-        "Longtitude": 12.367518, "sum_pop_01": null,
+        "Longtitude": 12.367518, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2253,12 +2811,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.410140,
-        "Longtitude": 12.366242, "sum_pop_01": null,
+        "Longtitude": 12.366242, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2284,12 +2850,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.406648,
-        "Longtitude": 12.364468, "sum_pop_01": null,
+        "Longtitude": 12.364468, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2315,12 +2889,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.371675,
-        "Longtitude": 12.341928, "sum_pop_01": null,
+        "Longtitude": 12.341928, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2346,12 +2928,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.373288,
-        "Longtitude": 12.338976, "sum_pop_01": null,
+        "Longtitude": 12.338976, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2377,12 +2967,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.372122,
-        "Longtitude": 12.338494, "sum_pop_01": null,
+        "Longtitude": 12.338494, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2408,12 +3006,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": null,
         "Latitude": 45.448472,
-        "Longtitude": 12.396138, "sum_pop_01": null,
+        "Longtitude": 12.396138, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2439,12 +3045,20 @@ var isles = [
         "Avg_Age": 0.000000,
         "Access_Han": "yes",
         "Latitude": 45.441524,
-        "Longtitude": 12.306420, "sum_pop_01": 0,
+        "Longtitude": 12.306420, 
+        "sum_pop_01": 0,
         "sum_pop_91": 0,
         "Ownership": null,
         "pop_den_01": 0.000000,
         "pop_den_91": 0.000000,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2470,12 +3084,20 @@ var isles = [
         "Avg_Age": 35.750000,
         "Access_Han": "yes",
         "Latitude": 45.437706,
-        "Longtitude": 12.310575, "sum_pop_01": 52,
+        "Longtitude": 12.310575, 
+        "sum_pop_01": 52,
         "sum_pop_91": 117,
         "Ownership": null,
         "pop_den_01": 121.451060,
         "pop_den_91": 273.264885,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2501,12 +3123,20 @@ var isles = [
         "Avg_Age": 50.039000,
         "Access_Han": "yes",
         "Latitude": 45.448163,
-        "Longtitude": 12.327812, "sum_pop_01": 423,
+        "Longtitude": 12.327812, 
+        "sum_pop_01": 423,
         "sum_pop_91": 466,
         "Ownership": null,
         "pop_den_01": 6427.789934,
         "pop_den_91": 7081.205932,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2532,12 +3162,20 @@ var isles = [
         "Avg_Age": 55.379000,
         "Access_Han": "yes",
         "Latitude": 45.446664,
-        "Longtitude": 12.332765, "sum_pop_01": 439,
+        "Longtitude": 12.332765, 
+        "sum_pop_01": 439,
         "sum_pop_91": 471,
         "Ownership": null,
         "pop_den_01": 7046.548957,
         "pop_den_91": 7560.192616,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2563,12 +3201,20 @@ var isles = [
         "Avg_Age": 49.444000,
         "Access_Han": "no",
         "Latitude": 45.447174,
-        "Longtitude": 12.327027, "sum_pop_01": 676,
+        "Longtitude": 12.327027, 
+        "sum_pop_01": 676,
         "sum_pop_91": 730,
         "Ownership": null,
         "pop_den_01": 20599.707459,
         "pop_den_91": 22245.246221,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2594,12 +3240,20 @@ var isles = [
         "Avg_Age": 47.390000,
         "Access_Han": "no",
         "Latitude": 45.446091,
-        "Longtitude": 12.330738, "sum_pop_01": 223,
+        "Longtitude": 12.330738, 
+        "sum_pop_01": 223,
         "sum_pop_91": 256,
         "Ownership": null,
         "pop_den_01": 18283.184389,
         "pop_den_91": 20988.767729,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2626,12 +3280,20 @@ var isles = [
         "Avg_Age": 49.301000,
         "Access_Han": "no",
         "Latitude": 45.445401,
-        "Longtitude": 12.332802, "sum_pop_01": 281,
+        "Longtitude": 12.332802, 
+        "sum_pop_01": 281,
         "sum_pop_91": 346,
         "Ownership": null,
         "pop_den_01": 23331.119229,
         "pop_den_91": 28727.997343,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2657,12 +3319,20 @@ var isles = [
         "Avg_Age": 45.164000,
         "Access_Han": "no",
         "Latitude": 45.444425,
-        "Longtitude": 12.334682, "sum_pop_01": 111,
+        "Longtitude": 12.334682, 
+        "sum_pop_01": 111,
         "sum_pop_91": 125,
         "Ownership": null,
         "pop_den_01": 7092.198581,
         "pop_den_91": 7986.710114,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2688,12 +3358,20 @@ var isles = [
         "Avg_Age": 46.674000,
         "Access_Han": "no",
         "Latitude": 45.445353,
-        "Longtitude": 12.326893, "sum_pop_01": 111,
+        "Longtitude": 12.326893, 
+        "sum_pop_01": 111,
         "sum_pop_91": 163,
         "Ownership": null,
         "pop_den_01": 17169.373549,
         "pop_den_91": 25212.683681,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2719,12 +3397,20 @@ var isles = [
         "Avg_Age": 47.031000,
         "Access_Han": "no",
         "Latitude": 45.447185,
-        "Longtitude": 12.324054, "sum_pop_01": 742,
+        "Longtitude": 12.324054, 
+        "sum_pop_01": 742,
         "sum_pop_91": 860,
         "Ownership": null,
         "pop_den_01": 16697.796880,
         "pop_den_91": 19353.241667,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2750,12 +3436,20 @@ var isles = [
         "Avg_Age": 46.965000,
         "Access_Han": "no",
         "Latitude": 45.445912,
-        "Longtitude": 12.328324, "sum_pop_01": 707,
+        "Longtitude": 12.328324, 
+        "sum_pop_01": 707,
         "sum_pop_91": 790,
         "Ownership": null,
         "pop_den_01": 30327.728208,
         "pop_den_91": 33888.126286,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2781,12 +3475,20 @@ var isles = [
         "Avg_Age": 50.872000,
         "Access_Han": "no",
         "Latitude": 45.446190,
-        "Longtitude": 12.323742, "sum_pop_01": 746,
+        "Longtitude": 12.323742, 
+        "sum_pop_01": 746,
         "sum_pop_91": 850,
         "Ownership": null,
         "pop_den_01": 24538.666491,
         "pop_den_91": 27959.606591,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2812,12 +3514,20 @@ var isles = [
         "Avg_Age": 49.535000,
         "Access_Han": "yes",
         "Latitude": 45.444940,
-        "Longtitude": 12.325107, "sum_pop_01": 3603,
+        "Longtitude": 12.325107, 
+        "sum_pop_01": 3603,
         "sum_pop_91": 4294,
         "Ownership": null,
         "pop_den_01": 21502.745285,
         "pop_den_91": 25626.641203,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2843,12 +3553,20 @@ var isles = [
         "Avg_Age": 51.250000,
         "Access_Han": "yes",
         "Latitude": 45.445321,
-        "Longtitude": 12.318345, "sum_pop_01": 466,
+        "Longtitude": 12.318345, 
+        "sum_pop_01": 466,
         "sum_pop_91": 551,
         "Ownership": null,
         "pop_den_01": 8934.734259,
         "pop_den_91": 10564.460464,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2874,12 +3592,20 @@ var isles = [
         "Avg_Age": 51.743000,
         "Access_Han": "yes",
         "Latitude": 45.444170,
-        "Longtitude": 12.319895, "sum_pop_01": 450,
+        "Longtitude": 12.319895, 
+        "sum_pop_01": 450,
         "sum_pop_91": 538,
         "Ownership": null,
         "pop_den_01": 11441.065798,
         "pop_den_91": 13678.429777,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2905,12 +3631,20 @@ var isles = [
         "Avg_Age": 49.672000,
         "Access_Han": "yes",
         "Latitude": 45.442433,
-        "Longtitude": 12.320750, "sum_pop_01": 1470,
+        "Longtitude": 12.320750, 
+        "sum_pop_01": 1470,
         "sum_pop_91": 1612,
         "Ownership": null,
         "pop_den_01": 5914.112601,
         "pop_den_91": 6485.407832,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2936,12 +3670,20 @@ var isles = [
         "Avg_Age": 49.396000,
         "Access_Han": "no",
         "Latitude": 45.444534,
-        "Longtitude": 12.332504, "sum_pop_01": 520,
+        "Longtitude": 12.332504, 
+        "sum_pop_01": 520,
         "sum_pop_91": 565,
         "Ownership": null,
         "pop_den_01": 17204.870301,
         "pop_den_91": 18693.753308,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2967,12 +3709,20 @@ var isles = [
         "Avg_Age": 53.611000,
         "Access_Han": "no",
         "Latitude": 45.444259,
-        "Longtitude": 12.331180, "sum_pop_01": 18,
+        "Longtitude": 12.331180, 
+        "sum_pop_01": 18,
         "sum_pop_91": 25,
         "Ownership": null,
         "pop_den_01": 1357.159014,
         "pop_den_91": 1884.943075,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -2998,12 +3748,20 @@ var isles = [
         "Avg_Age": 55.534000,
         "Access_Han": "no",
         "Latitude": 45.443598,
-        "Longtitude": 12.333141, "sum_pop_01": 120,
+        "Longtitude": 12.333141, 
+        "sum_pop_01": 120,
         "sum_pop_91": 154,
         "Ownership": null,
         "pop_den_01": 18714.909544,
         "pop_den_91": 24017.467248,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3029,12 +3787,20 @@ var isles = [
         "Avg_Age": 49.060000,
         "Access_Han": "no",
         "Latitude": 45.443261,
-        "Longtitude": 12.332770, "sum_pop_01": 133,
+        "Longtitude": 12.332770, 
+        "sum_pop_01": 133,
         "sum_pop_91": 135,
         "Ownership": null,
         "pop_den_01": 17313.199687,
         "pop_den_91": 17573.548555,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3060,12 +3826,20 @@ var isles = [
         "Avg_Age": 47.954000,
         "Access_Han": "no",
         "Latitude": 45.443004,
-        "Longtitude": 12.330536, "sum_pop_01": 518,
+        "Longtitude": 12.330536, 
+        "sum_pop_01": 518,
         "sum_pop_91": 590,
         "Ownership": null,
         "pop_den_01": 18146.150073,
         "pop_den_91": 20668.394871,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3091,12 +3865,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.433903,
-        "Longtitude": 12.359920, "sum_pop_01": 551,
+        "Longtitude": 12.359920, 
+        "sum_pop_01": 551,
         "sum_pop_91": 682,
         "Ownership": null,
         "pop_den_01": 9208.657140,
         "pop_den_91": 11398.011197,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3122,12 +3904,20 @@ var isles = [
         "Avg_Age": 50.023000,
         "Access_Han": "yes",
         "Latitude": 45.428661,
-        "Longtitude": 12.361295, "sum_pop_01": 2121,
+        "Longtitude": 12.361295, 
+        "sum_pop_01": 2121,
         "sum_pop_91": 2381,
         "Ownership": null,
         "pop_den_01": 9435.892873,
         "pop_den_91": 10592.579410,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3153,12 +3943,20 @@ var isles = [
         "Avg_Age": 71.250000,
         "Access_Han": "yes",
         "Latitude": 45.426949,
-        "Longtitude": 12.364920, "sum_pop_01": 12,
+        "Longtitude": 12.364920, 
+        "sum_pop_01": 12,
         "sum_pop_91": 42,
         "Ownership": null,
         "pop_den_01": 118.723720,
         "pop_den_91": 415.533020,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3184,12 +3982,20 @@ var isles = [
         "Avg_Age": 48.619000,
         "Access_Han": "yes",
         "Latitude": 45.429370,
-        "Longtitude": 12.357634, "sum_pop_01": 381,
+        "Longtitude": 12.357634, 
+        "sum_pop_01": 381,
         "sum_pop_91": 502,
         "Ownership": null,
         "pop_den_01": 4452.234882,
         "pop_den_91": 5866.199240,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3215,12 +4021,20 @@ var isles = [
         "Avg_Age": 36.585000,
         "Access_Han": "yes",
         "Latitude": 45.438255,
-        "Longtitude": 12.358133, "sum_pop_01": 11,
+        "Longtitude": 12.358133, 
+        "sum_pop_01": 11,
         "sum_pop_91": 63,
         "Ownership": null,
         "pop_den_01": 49.061367,
         "pop_den_91": 280.987828,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3246,12 +4060,20 @@ var isles = [
         "Avg_Age": 49.519000,
         "Access_Han": "yes",
         "Latitude": 45.433776,
-        "Longtitude": 12.357429, "sum_pop_01": 572,
+        "Longtitude": 12.357429, 
+        "sum_pop_01": 572,
         "sum_pop_91": 697,
         "Ownership": null,
         "pop_den_01": 27654.225488,
         "pop_den_91": 33697.543995,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3277,12 +4099,20 @@ var isles = [
         "Avg_Age": 44.479000,
         "Access_Han": "no",
         "Latitude": 45.434020,
-        "Longtitude": 12.356369, "sum_pop_01": 358,
+        "Longtitude": 12.356369, 
+        "sum_pop_01": 358,
         "sum_pop_91": 353,
         "Ownership": null,
         "pop_den_01": 14352.148813,
         "pop_den_91": 14151.699807,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3308,12 +4138,20 @@ var isles = [
         "Avg_Age": 45.742000,
         "Access_Han": "no",
         "Latitude": 45.434273,
-        "Longtitude": 12.353678, "sum_pop_01": 173,
+        "Longtitude": 12.353678, 
+        "sum_pop_01": 173,
         "sum_pop_91": 204,
         "Ownership": null,
         "pop_den_01": 1418.021164,
         "pop_den_91": 1672.117442,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3339,12 +4177,20 @@ var isles = [
         "Avg_Age": 47.158000,
         "Access_Han": "yes",
         "Latitude": 45.431757,
-        "Longtitude": 12.354855, "sum_pop_01": 3137,
+        "Longtitude": 12.354855, 
+        "sum_pop_01": 3137,
         "sum_pop_91": 3520,
         "Ownership": null,
         "pop_den_01": 22150.200530,
         "pop_den_91": 24854.544427,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3370,12 +4216,20 @@ var isles = [
         "Avg_Age": 48.498000,
         "Access_Han": "yes",
         "Latitude": 45.437931,
-        "Longtitude": 12.348774, "sum_pop_01": 741,
+        "Longtitude": 12.348774, 
+        "sum_pop_01": 741,
         "sum_pop_91": 899,
         "Ownership": null,
         "pop_den_01": 8483.599519,
         "pop_den_91": 10292.518175,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3401,12 +4255,20 @@ var isles = [
         "Avg_Age": 53.850000,
         "Access_Han": "yes",
         "Latitude": 45.433808,
-        "Longtitude": 12.349181, "sum_pop_01": 514,
+        "Longtitude": 12.349181, 
+        "sum_pop_01": 514,
         "sum_pop_91": 601,
         "Ownership": null,
         "pop_den_01": 22082.832101,
         "pop_den_91": 25820.587729,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3432,12 +4294,20 @@ var isles = [
         "Avg_Age": 48.411000,
         "Access_Han": "no",
         "Latitude": 45.436035,
-        "Longtitude": 12.348763, "sum_pop_01": 683,
+        "Longtitude": 12.348763, 
+        "sum_pop_01": 683,
         "sum_pop_91": 801,
         "Ownership": null,
         "pop_den_01": 29249.282685,
         "pop_den_91": 34302.599460,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3463,12 +4333,20 @@ var isles = [
         "Avg_Age": 48.756000,
         "Access_Han": "no",
         "Latitude": 45.435617,
-        "Longtitude": 12.347135, "sum_pop_01": 1964,
+        "Longtitude": 12.347135, 
+        "sum_pop_01": 1964,
         "sum_pop_91": 2350,
         "Ownership": null,
         "pop_den_01": 21687.518634,
         "pop_den_91": 25949.933192,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3494,12 +4372,20 @@ var isles = [
         "Avg_Age": 48.563000,
         "Access_Han": "yes",
         "Latitude": 45.439583,
-        "Longtitude": 12.343530, "sum_pop_01": 1311,
+        "Longtitude": 12.343530, 
+        "sum_pop_01": 1311,
         "sum_pop_91": 1429,
         "Ownership": null,
         "pop_den_01": 11739.212192,
         "pop_den_91": 12795.830833,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3525,12 +4411,20 @@ var isles = [
         "Avg_Age": 51.259000,
         "Access_Han": "yes",
         "Latitude": 45.433562,
-        "Longtitude": 12.313711, "sum_pop_01": 1185,
+        "Longtitude": 12.313711, 
+        "sum_pop_01": 1185,
         "sum_pop_91": 1572,
         "Ownership": null,
         "pop_den_01": 5728.041300,
         "pop_den_91": 7598.718079,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3556,12 +4450,20 @@ var isles = [
         "Avg_Age": 48.975000,
         "Access_Han": "yes",
         "Latitude": 45.431731,
-        "Longtitude": 12.318426, "sum_pop_01": 247,
+        "Longtitude": 12.318426, 
+        "sum_pop_01": 247,
         "sum_pop_91": 270,
         "Ownership": null,
         "pop_den_01": 4189.565099,
         "pop_den_91": 4579.686546,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3587,12 +4489,20 @@ var isles = [
         "Avg_Age": 49.921000,
         "Access_Han": "no",
         "Latitude": 45.437931,
-        "Longtitude": 12.343551, "sum_pop_01": 102,
+        "Longtitude": 12.343551, 
+        "sum_pop_01": 102,
         "sum_pop_91": 111,
         "Ownership": null,
         "pop_den_01": 17352.841102,
         "pop_den_91": 18883.974140,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3618,12 +4528,20 @@ var isles = [
         "Avg_Age": 54.914000,
         "Access_Han": "yes",
         "Latitude": 45.435899,
-        "Longtitude": 12.345109, "sum_pop_01": 603,
+        "Longtitude": 12.345109, 
+        "sum_pop_01": 603,
         "sum_pop_91": 713,
         "Ownership": null,
         "pop_den_01": 14051.685969,
         "pop_den_91": 16615.011767,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3649,12 +4567,20 @@ var isles = [
         "Avg_Age": 48.180000,
         "Access_Han": "no",
         "Latitude": 45.436844,
-        "Longtitude": 12.343519, "sum_pop_01": 419,
+        "Longtitude": 12.343519, 
+        "sum_pop_01": 419,
         "sum_pop_91": 489,
         "Ownership": null,
         "pop_den_01": 17866.280061,
         "pop_den_91": 20851.100119,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3680,12 +4606,20 @@ var isles = [
         "Avg_Age": 46.597000,
         "Access_Han": "yes",
         "Latitude": 45.434662,
-        "Longtitude": 12.343332, "sum_pop_01": 173,
+        "Longtitude": 12.343332, 
+        "sum_pop_01": 173,
         "sum_pop_91": 287,
         "Ownership": null,
         "pop_den_01": 5387.226357,
         "pop_den_91": 8937.190546,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3711,12 +4645,20 @@ var isles = [
         "Avg_Age": 47.539000,
         "Access_Han": "no",
         "Latitude": 45.437582,
-        "Longtitude": 12.341371, "sum_pop_01": 423,
+        "Longtitude": 12.341371, 
+        "sum_pop_01": 423,
         "sum_pop_91": 514,
         "Ownership": null,
         "pop_den_01": 17677.295332,
         "pop_den_91": 21480.212294,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3742,12 +4684,20 @@ var isles = [
         "Avg_Age": 48.348000,
         "Access_Han": "no",
         "Latitude": 45.436346,
-        "Longtitude": 12.342174, "sum_pop_01": 431,
+        "Longtitude": 12.342174, 
+        "sum_pop_01": 431,
         "sum_pop_91": 494,
         "Ownership": null,
         "pop_den_01": 21148.184494,
         "pop_den_91": 24239.450441,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3773,12 +4723,20 @@ var isles = [
         "Avg_Age": 44.574000,
         "Access_Han": "no",
         "Latitude": 45.442533,
-        "Longtitude": 12.332195, "sum_pop_01": 183,
+        "Longtitude": 12.332195, 
+        "sum_pop_01": 183,
         "sum_pop_91": 192,
         "Ownership": null,
         "pop_den_01": 12710.981454,
         "pop_den_91": 13336.111689,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3804,12 +4762,20 @@ var isles = [
         "Avg_Age": 48.459000,
         "Access_Han": "yes",
         "Latitude": 45.442130,
-        "Longtitude": 12.333492, "sum_pop_01": 202,
+        "Longtitude": 12.333492, 
+        "sum_pop_01": 202,
         "sum_pop_91": 205,
         "Ownership": null,
         "pop_den_01": 14745.601868,
         "pop_den_91": 14964.595955,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3835,12 +4801,20 @@ var isles = [
         "Avg_Age": 47.154000,
         "Access_Han": "yes",
         "Latitude": 45.443690,
-        "Longtitude": 12.337624, "sum_pop_01": 539,
+        "Longtitude": 12.337624, 
+        "sum_pop_01": 539,
         "sum_pop_91": 631,
         "Ownership": null,
         "pop_den_01": 10809.401572,
         "pop_den_91": 12654.420022,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3866,12 +4840,20 @@ var isles = [
         "Avg_Age": 48.008000,
         "Access_Han": "no",
         "Latitude": 45.442815,
-        "Longtitude": 12.335157, "sum_pop_01": 138,
+        "Longtitude": 12.335157, 
+        "sum_pop_01": 138,
         "sum_pop_91": 127,
         "Ownership": null,
         "pop_den_01": 19621.783022,
         "pop_den_91": 18057.727854,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3897,12 +4879,20 @@ var isles = [
         "Avg_Age": 48.177000,
         "Access_Han": "no",
         "Latitude": 45.442750,
-        "Longtitude": 12.336369, "sum_pop_01": 127,
+        "Longtitude": 12.336369, 
+        "sum_pop_01": 127,
         "sum_pop_91": 149,
         "Ownership": null,
         "pop_den_01": 18075.718758,
         "pop_den_91": 21206.945630,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3928,12 +4918,20 @@ var isles = [
         "Avg_Age": 49.086000,
         "Access_Han": "no",
         "Latitude": 45.442202,
-        "Longtitude": 12.335590, "sum_pop_01": 246,
+        "Longtitude": 12.335590, 
+        "sum_pop_01": 246,
         "sum_pop_91": 284,
         "Ownership": null,
         "pop_den_01": 40768.975803,
         "pop_den_91": 47066.622472,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3959,12 +4957,20 @@ var isles = [
         "Avg_Age": 51.938000,
         "Access_Han": "no",
         "Latitude": 45.441958,
-        "Longtitude": 12.336312, "sum_pop_01": 54,
+        "Longtitude": 12.336312, 
+        "sum_pop_01": 54,
         "sum_pop_91": 73,
         "Ownership": null,
         "pop_den_01": 16187.050359,
         "pop_den_91": 21882.494004,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -3990,12 +4996,20 @@ var isles = [
         "Avg_Age": 48.954000,
         "Access_Han": "no",
         "Latitude": 45.442385,
-        "Longtitude": 12.338014, "sum_pop_01": 202,
+        "Longtitude": 12.338014, 
+        "sum_pop_01": 202,
         "sum_pop_91": 264,
         "Ownership": null,
         "pop_den_01": 24739.742804,
         "pop_den_91": 32333.129210,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4021,12 +5035,20 @@ var isles = [
         "Avg_Age": 47.623000,
         "Access_Han": "yes",
         "Latitude": 45.441142,
-        "Longtitude": 12.336173, "sum_pop_01": 1497,
+        "Longtitude": 12.336173, 
+        "sum_pop_01": 1497,
         "sum_pop_91": 1677,
         "Ownership": null,
         "pop_den_01": 19562.234563,
         "pop_den_91": 21914.407056,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4052,12 +5074,20 @@ var isles = [
         "Avg_Age": 47.813000,
         "Access_Han": "yes",
         "Latitude": 45.441700,
-        "Longtitude": 12.340121, "sum_pop_01": 1476,
+        "Longtitude": 12.340121, 
+        "sum_pop_01": 1476,
         "sum_pop_91": 1559,
         "Ownership": null,
         "pop_den_01": 30041.520801,
         "pop_den_91": 31730.847512,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4083,12 +5113,20 @@ var isles = [
         "Avg_Age": 48.169000,
         "Access_Han": "no",
         "Latitude": 45.440431,
-        "Longtitude": 12.341048, "sum_pop_01": 753,
+        "Longtitude": 12.341048, 
+        "sum_pop_01": 753,
         "sum_pop_91": 863,
         "Ownership": null,
         "pop_den_01": 24812.178726,
         "pop_den_91": 28436.799789,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4114,12 +5152,20 @@ var isles = [
         "Avg_Age": 49.894000,
         "Access_Han": "no",
         "Latitude": 45.439853,
-        "Longtitude": 12.338017, "sum_pop_01": 577,
+        "Longtitude": 12.338017, 
+        "sum_pop_01": 577,
         "sum_pop_91": 687,
         "Ownership": null,
         "pop_den_01": 21002.438758,
         "pop_den_91": 25006.369890,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4145,12 +5191,20 @@ var isles = [
         "Avg_Age": 50.805000,
         "Access_Han": "no",
         "Latitude": 45.439218,
-        "Longtitude": 12.339401, "sum_pop_01": 83,
+        "Longtitude": 12.339401, 
+        "sum_pop_01": 83,
         "sum_pop_91": 72,
         "Ownership": null,
         "pop_den_01": 14768.683274,
         "pop_den_91": 12811.387900,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4176,12 +5230,20 @@ var isles = [
         "Avg_Age": 45.280000,
         "Access_Han": "no",
         "Latitude": 45.438969,
-        "Longtitude": 12.337210, "sum_pop_01": 278,
+        "Longtitude": 12.337210, 
+        "sum_pop_01": 278,
         "sum_pop_91": 319,
         "Ownership": null,
         "pop_den_01": 17649.673036,
         "pop_den_91": 20252.682369,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4207,12 +5269,20 @@ var isles = [
         "Avg_Age": 48.648000,
         "Access_Han": "no",
         "Latitude": 45.438304,
-        "Longtitude": 12.339027, "sum_pop_01": 333,
+        "Longtitude": 12.339027, 
+        "sum_pop_01": 333,
         "sum_pop_91": 416,
         "Ownership": null,
         "pop_den_01": 23107.348553,
         "pop_den_91": 28866.837832,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4238,12 +5308,20 @@ var isles = [
         "Avg_Age": 45.137000,
         "Access_Han": "no",
         "Latitude": 45.438106,
-        "Longtitude": 12.340232, "sum_pop_01": 70,
+        "Longtitude": 12.340232, 
+        "sum_pop_01": 70,
         "sum_pop_91": 82,
         "Ownership": null,
         "pop_den_01": 12827.560930,
         "pop_den_91": 15026.571376,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4269,12 +5347,20 @@ var isles = [
         "Avg_Age": 48.808000,
         "Access_Han": "no",
         "Latitude": 45.436999,
-        "Longtitude": 12.339105, "sum_pop_01": 859,
+        "Longtitude": 12.339105, 
+        "sum_pop_01": 859,
         "sum_pop_91": 960,
         "Ownership": null,
         "pop_den_01": 25228.347381,
         "pop_den_91": 28194.660636,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4300,12 +5386,20 @@ var isles = [
         "Avg_Age": 49.851000,
         "Access_Han": "yes",
         "Latitude": 45.434945,
-        "Longtitude": 12.341406, "sum_pop_01": 404,
+        "Longtitude": 12.341406, 
+        "sum_pop_01": 404,
         "sum_pop_91": 535,
         "Ownership": null,
         "pop_den_01": 11817.011817,
         "pop_den_91": 15648.765648,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4331,12 +5425,20 @@ var isles = [
         "Avg_Age": 46.602000,
         "Access_Han": "yes",
         "Latitude": 45.437166,
-        "Longtitude": 12.336744, "sum_pop_01": 556,
+        "Longtitude": 12.336744, 
+        "sum_pop_01": 556,
         "sum_pop_91": 651,
         "Ownership": null,
         "pop_den_01": 14512.803111,
         "pop_den_91": 16992.508678,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4362,12 +5464,20 @@ var isles = [
         "Avg_Age": 37.206000,
         "Access_Han": "yes",
         "Latitude": 45.432941,
-        "Longtitude": 12.338208, "sum_pop_01": 21,
+        "Longtitude": 12.338208, 
+        "sum_pop_01": 21,
         "sum_pop_91": 20,
         "Ownership": null,
         "pop_den_01": 3037.754954,
         "pop_den_91": 2893.099957,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4393,12 +5503,20 @@ var isles = [
         "Avg_Age": 49.605000,
         "Access_Han": "no",
         "Latitude": 45.435003,
-        "Longtitude": 12.337222, "sum_pop_01": 360,
+        "Longtitude": 12.337222, 
+        "sum_pop_01": 360,
         "sum_pop_91": 426,
         "Ownership": null,
         "pop_den_01": 19341.320582,
         "pop_den_91": 22887.229355,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4424,12 +5542,20 @@ var isles = [
         "Avg_Age": 48.002000,
         "Access_Han": "yes",
         "Latitude": 45.434192,
-        "Longtitude": 12.338053, "sum_pop_01": 697,
+        "Longtitude": 12.338053, 
+        "sum_pop_01": 697,
         "sum_pop_91": 803,
         "Ownership": null,
         "pop_den_01": 6076.245107,
         "pop_den_91": 7000.322555,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4455,12 +5581,20 @@ var isles = [
         "Avg_Age": 49.669000,
         "Access_Han": "yes",
         "Latitude": 45.435814,
-        "Longtitude": 12.334915, "sum_pop_01": 384,
+        "Longtitude": 12.334915, 
+        "sum_pop_01": 384,
         "sum_pop_91": 507,
         "Ownership": null,
         "pop_den_01": 8006.004503,
         "pop_den_91": 10570.427820,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4486,12 +5620,20 @@ var isles = [
         "Avg_Age": 49.247000,
         "Access_Han": "yes",
         "Latitude": 45.433619,
-        "Longtitude": 12.329575, "sum_pop_01": 919,
+        "Longtitude": 12.329575, 
+        "sum_pop_01": 919,
         "sum_pop_91": 1136,
         "Ownership": null,
         "pop_den_01": 11486.925653,
         "pop_den_91": 14199.290035,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4517,12 +5659,20 @@ var isles = [
         "Avg_Age": 46.446000,
         "Access_Han": "no",
         "Latitude": 45.432615,
-        "Longtitude": 12.329026, "sum_pop_01": 79,
+        "Longtitude": 12.329026, 
+        "sum_pop_01": 79,
         "sum_pop_91": 103,
         "Ownership": null,
         "pop_den_01": 10204.081632,
         "pop_den_91": 13304.055799,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4548,12 +5698,20 @@ var isles = [
         "Avg_Age": 47.477000,
         "Access_Han": "yes",
         "Latitude": 45.435090,
-        "Longtitude": 12.330727, "sum_pop_01": 107,
+        "Longtitude": 12.330727, 
+        "sum_pop_01": 107,
         "sum_pop_91": 113,
         "Ownership": null,
         "pop_den_01": 13040.828762,
         "pop_den_91": 13772.090188,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4579,12 +5737,20 @@ var isles = [
         "Avg_Age": 47.053000,
         "Access_Han": "yes",
         "Latitude": 45.434929,
-        "Longtitude": 12.332492, "sum_pop_01": 575,
+        "Longtitude": 12.332492, 
+        "sum_pop_01": 575,
         "sum_pop_91": 677,
         "Ownership": null,
         "pop_den_01": 13882.182520,
         "pop_den_91": 16344.760985,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4610,12 +5776,20 @@ var isles = [
         "Avg_Age": 49.475000,
         "Access_Han": "no",
         "Latitude": 45.433890,
-        "Longtitude": 12.333890, "sum_pop_01": 158,
+        "Longtitude": 12.333890, 
+        "sum_pop_01": 158,
         "sum_pop_91": 195,
         "Ownership": null,
         "pop_den_01": 9384.651936,
         "pop_den_91": 11582.323592,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4641,12 +5815,20 @@ var isles = [
         "Avg_Age": 49.816000,
         "Access_Han": "no",
         "Latitude": 45.432460,
-        "Longtitude": 12.331544, "sum_pop_01": 253,
+        "Longtitude": 12.331544, 
+        "sum_pop_01": 253,
         "sum_pop_91": 296,
         "Ownership": null,
         "pop_den_01": 12165.801115,
         "pop_den_91": 14233.506443,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4672,12 +5854,20 @@ var isles = [
         "Avg_Age": 52.519000,
         "Access_Han": "no",
         "Latitude": 45.432690,
-        "Longtitude": 12.332388, "sum_pop_01": 109,
+        "Longtitude": 12.332388, 
+        "sum_pop_01": 109,
         "sum_pop_91": 122,
         "Ownership": null,
         "pop_den_01": 16758.917589,
         "pop_den_91": 18757.687576,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4703,12 +5893,20 @@ var isles = [
         "Avg_Age": 52.799000,
         "Access_Han": "yes",
         "Latitude": 45.432322,
-        "Longtitude": 12.333023, "sum_pop_01": 96,
+        "Longtitude": 12.333023, 
+        "sum_pop_01": 96,
         "sum_pop_91": 98,
         "Ownership": null,
         "pop_den_01": 7794.105707,
         "pop_den_91": 7956.482910,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4734,12 +5932,20 @@ var isles = [
         "Avg_Age": 52.260000,
         "Access_Han": "no",
         "Latitude": 45.432573,
-        "Longtitude": 12.334596, "sum_pop_01": 148,
+        "Longtitude": 12.334596, 
+        "sum_pop_01": 148,
         "sum_pop_91": 214,
         "Ownership": null,
         "pop_den_01": 5051.711779,
         "pop_den_91": 7304.502167,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4765,12 +5971,20 @@ var isles = [
         "Avg_Age": 43.929000,
         "Access_Han": "yes",
         "Latitude": 45.430537,
-        "Longtitude": 12.335329, "sum_pop_01": 2,
+        "Longtitude": 12.335329, 
+        "sum_pop_01": 2,
         "sum_pop_91": 16,
         "Ownership": null,
         "pop_den_01": 102.338433,
         "pop_den_91": 818.707466,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4796,12 +6010,20 @@ var isles = [
         "Avg_Age": 50.922000,
         "Access_Han": "no",
         "Latitude": 45.429894,
-        "Longtitude": 12.333566, "sum_pop_01": 231,
+        "Longtitude": 12.333566, 
+        "sum_pop_01": 231,
         "sum_pop_91": 284,
         "Ownership": null,
         "pop_den_01": 7142.857143,
         "pop_den_91": 8781.694496,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4827,12 +6049,20 @@ var isles = [
         "Avg_Age": 51.736000,
         "Access_Han": "yes",
         "Latitude": 45.429379,
-        "Longtitude": 12.331502, "sum_pop_01": 514,
+        "Longtitude": 12.331502, 
+        "sum_pop_01": 514,
         "sum_pop_91": 637,
         "Ownership": null,
         "pop_den_01": 11988.338192,
         "pop_den_91": 14857.142857,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4858,12 +6088,20 @@ var isles = [
         "Avg_Age": 49.857000,
         "Access_Han": "no",
         "Latitude": 45.430051,
-        "Longtitude": 12.330290, "sum_pop_01": 204,
+        "Longtitude": 12.330290, 
+        "sum_pop_01": 204,
         "sum_pop_91": 217,
         "Ownership": null,
         "pop_den_01": 8154.129027,
         "pop_den_91": 8673.754896,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4889,12 +6127,20 @@ var isles = [
         "Avg_Age": 49.052000,
         "Access_Han": "yes",
         "Latitude": 45.430454,
-        "Longtitude": 12.327885, "sum_pop_01": 425,
+        "Longtitude": 12.327885, 
+        "sum_pop_01": 425,
         "sum_pop_91": 558,
         "Ownership": null,
         "pop_den_01": 6075.420991,
         "pop_den_91": 7976.670383,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4920,12 +6166,20 @@ var isles = [
         "Avg_Age": 50.620000,
         "Access_Han": "no",
         "Latitude": 45.431397,
-        "Longtitude": 12.325676, "sum_pop_01": 310,
+        "Longtitude": 12.325676, 
+        "sum_pop_01": 310,
         "sum_pop_91": 372,
         "Ownership": null,
         "pop_den_01": 9263.409532,
         "pop_den_91": 11116.091438,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4951,12 +6205,20 @@ var isles = [
         "Avg_Age": 53.694000,
         "Access_Han": "no",
         "Latitude": 45.432531,
-        "Longtitude": 12.326340, "sum_pop_01": 135,
+        "Longtitude": 12.326340, 
+        "sum_pop_01": 135,
         "sum_pop_91": 158,
         "Ownership": null,
         "pop_den_01": 15134.529147,
         "pop_den_91": 17713.004484,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -4982,12 +6244,20 @@ var isles = [
         "Avg_Age": 50.045000,
         "Access_Han": "yes",
         "Latitude": 45.432828,
-        "Longtitude": 12.323277, "sum_pop_01": 1486,
+        "Longtitude": 12.323277, 
+        "sum_pop_01": 1486,
         "sum_pop_91": 1827,
         "Ownership": null,
         "pop_den_01": 11154.648771,
         "pop_den_91": 13714.362923,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5013,12 +6283,20 @@ var isles = [
         "Avg_Age": 48.960000,
         "Access_Han": "yes",
         "Latitude": 45.432709,
-        "Longtitude": 12.324099, "sum_pop_01": 520,
+        "Longtitude": 12.324099, 
+        "sum_pop_01": 520,
         "sum_pop_91": 649,
         "Ownership": null,
         "pop_den_01": 16377.952755,
         "pop_den_91": 20440.944881,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5044,12 +6322,20 @@ var isles = [
         "Avg_Age": 50.985000,
         "Access_Han": "yes",
         "Latitude": 45.431584,
-        "Longtitude": 12.323539, "sum_pop_01": 106,
+        "Longtitude": 12.323539, 
+        "sum_pop_01": 106,
         "sum_pop_91": 124,
         "Ownership": null,
         "pop_den_01": 5011.346445,
         "pop_den_91": 5862.329803,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5075,12 +6361,20 @@ var isles = [
         "Avg_Age": 50.761000,
         "Access_Han": "no",
         "Latitude": 45.433526,
-        "Longtitude": 12.318236, "sum_pop_01": 761,
+        "Longtitude": 12.318236, 
+        "sum_pop_01": 761,
         "sum_pop_91": 945,
         "Ownership": null,
         "pop_den_01": 12552.370270,
         "pop_den_91": 15587.371754,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5106,12 +6400,20 @@ var isles = [
         "Avg_Age": 47.422000,
         "Access_Han": "yes",
         "Latitude": 45.437896,
-        "Longtitude": 12.317422, "sum_pop_01": 97,
+        "Longtitude": 12.317422, 
+        "sum_pop_01": 97,
         "sum_pop_91": 121,
         "Ownership": null,
         "pop_den_01": 1014.336655,
         "pop_den_91": 1265.306549,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5137,12 +6439,20 @@ var isles = [
         "Avg_Age": 47.261000,
         "Access_Han": "no",
         "Latitude": 45.435967,
-        "Longtitude": 12.317957, "sum_pop_01": 395,
+        "Longtitude": 12.317957, 
+        "sum_pop_01": 395,
         "sum_pop_91": 465,
         "Ownership": null,
         "pop_den_01": 9438.921812,
         "pop_den_91": 11111.642133,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5168,12 +6478,20 @@ var isles = [
         "Avg_Age": 49.557000,
         "Access_Han": "no",
         "Latitude": 45.434890,
-        "Longtitude": 12.318939, "sum_pop_01": 395,
+        "Longtitude": 12.318939, 
+        "sum_pop_01": 395,
         "sum_pop_91": 483,
         "Ownership": null,
         "pop_den_01": 27067.772219,
         "pop_den_91": 33098.060714,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5199,12 +6517,20 @@ var isles = [
         "Avg_Age": 48.938000,
         "Access_Han": "no",
         "Latitude": 45.435556,
-        "Longtitude": 12.319233, "sum_pop_01": 125,
+        "Longtitude": 12.319233, 
+        "sum_pop_01": 125,
         "sum_pop_91": 156,
         "Ownership": null,
         "pop_den_01": 13916.722333,
         "pop_den_91": 17368.069472,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5230,12 +6556,20 @@ var isles = [
         "Avg_Age": 51.019000,
         "Access_Han": "no",
         "Latitude": 45.436317,
-        "Longtitude": 12.321703, "sum_pop_01": 226,
+        "Longtitude": 12.321703, 
+        "sum_pop_01": 226,
         "sum_pop_91": 238,
         "Ownership": null,
         "pop_den_01": 11023.852495,
         "pop_den_91": 11609.189795,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5261,12 +6595,20 @@ var isles = [
         "Avg_Age": 44.412000,
         "Access_Han": "no",
         "Latitude": 45.438119,
-        "Longtitude": 12.320677, "sum_pop_01": 64,
+        "Longtitude": 12.320677, 
+        "sum_pop_01": 64,
         "sum_pop_91": 75,
         "Ownership": null,
         "pop_den_01": 3506.657169,
         "pop_den_91": 4109.363870,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5292,12 +6634,20 @@ var isles = [
         "Avg_Age": 49.010000,
         "Access_Han": "no",
         "Latitude": 45.438563,
-        "Longtitude": 12.323040, "sum_pop_01": 1664,
+        "Longtitude": 12.323040, 
+        "sum_pop_01": 1664,
         "sum_pop_91": 1908,
         "Ownership": null,
         "pop_den_01": 15809.826034,
         "pop_den_91": 18128.093794,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5323,12 +6673,20 @@ var isles = [
         "Avg_Age": 45.811000,
         "Access_Han": "no",
         "Latitude": 45.435499,
-        "Longtitude": 12.325683, "sum_pop_01": 321,
+        "Longtitude": 12.325683, 
+        "sum_pop_01": 321,
         "sum_pop_91": 398,
         "Ownership": null,
         "pop_den_01": 12341.881656,
         "pop_den_91": 15302.395324,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5354,12 +6712,20 @@ var isles = [
         "Avg_Age": 48.265000,
         "Access_Han": "yes",
         "Latitude": 45.437364,
-        "Longtitude": 12.325836, "sum_pop_01": 1379,
+        "Longtitude": 12.325836, 
+        "sum_pop_01": 1379,
         "sum_pop_91": 1584,
         "Ownership": null,
         "pop_den_01": 13802.560329,
         "pop_den_91": 15854.427529,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5385,12 +6751,20 @@ var isles = [
         "Avg_Age": 49.955000,
         "Access_Han": "no",
         "Latitude": 45.436744,
-        "Longtitude": 12.328398, "sum_pop_01": 513,
+        "Longtitude": 12.328398, 
+        "sum_pop_01": 513,
         "sum_pop_91": 624,
         "Ownership": null,
         "pop_den_01": 21420.518602,
         "pop_den_91": 26055.367656,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5416,12 +6790,20 @@ var isles = [
         "Avg_Age": 50.000000,
         "Access_Han": "yes",
         "Latitude": 45.440638,
-        "Longtitude": 12.325764, "sum_pop_01": 1306,
+        "Longtitude": 12.325764, 
+        "sum_pop_01": 1306,
         "sum_pop_91": 1565,
         "Ownership": null,
         "pop_den_01": 18853.216306,
         "pop_den_91": 22592.100704,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5447,12 +6829,20 @@ var isles = [
         "Avg_Age": 47.358000,
         "Access_Han": "no",
         "Latitude": 45.440693,
-        "Longtitude": 12.327910, "sum_pop_01": 622,
+        "Longtitude": 12.327910, 
+        "sum_pop_01": 622,
         "sum_pop_91": 733,
         "Ownership": null,
         "pop_den_01": 17346.198895,
         "pop_den_91": 20441.742428,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5478,12 +6868,20 @@ var isles = [
         "Avg_Age": 47.373000,
         "Access_Han": "no",
         "Latitude": 45.441402,
-        "Longtitude": 12.329047, "sum_pop_01": 136,
+        "Longtitude": 12.329047, 
+        "sum_pop_01": 136,
         "sum_pop_91": 139,
         "Ownership": null,
         "pop_den_01": 19074.333800,
         "pop_den_91": 19495.091164,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5509,12 +6907,20 @@ var isles = [
         "Avg_Age": 49.566000,
         "Access_Han": "yes",
         "Latitude": 45.440886,
-        "Longtitude": 12.329731, "sum_pop_01": 469,
+        "Longtitude": 12.329731, 
+        "sum_pop_01": 469,
         "sum_pop_91": 571,
         "Ownership": null,
         "pop_den_01": 21704.924102,
         "pop_den_91": 26425.398000,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5540,12 +6946,20 @@ var isles = [
         "Avg_Age": 50.088000,
         "Access_Han": "no",
         "Latitude": 45.440454,
-        "Longtitude": 12.330302, "sum_pop_01": 215,
+        "Longtitude": 12.330302, 
+        "sum_pop_01": 215,
         "sum_pop_91": 239,
         "Ownership": null,
         "pop_den_01": 22710.467941,
         "pop_den_91": 25245.589944,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5571,12 +6985,20 @@ var isles = [
         "Avg_Age": 48.982000,
         "Access_Han": "no",
         "Latitude": 45.439975,
-        "Longtitude": 12.330539, "sum_pop_01": 311,
+        "Longtitude": 12.330539, 
+        "sum_pop_01": 311,
         "sum_pop_91": 365,
         "Ownership": null,
         "pop_den_01": 22707.359813,
         "pop_den_91": 26650.116822,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5602,12 +7024,20 @@ var isles = [
         "Avg_Age": 47.581000,
         "Access_Han": "no",
         "Latitude": 45.439727,
-        "Longtitude": 12.331257, "sum_pop_01": 439,
+        "Longtitude": 12.331257, 
+        "sum_pop_01": 439,
         "sum_pop_91": 508,
         "Ownership": null,
         "pop_den_01": 22827.726067,
         "pop_den_91": 26415.683011,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5633,12 +7063,20 @@ var isles = [
         "Avg_Age": 50.041000,
         "Access_Han": "no",
         "Latitude": 45.438864,
-        "Longtitude": 12.328708, "sum_pop_01": 405,
+        "Longtitude": 12.328708, 
+        "sum_pop_01": 405,
         "sum_pop_91": 472,
         "Ownership": null,
         "pop_den_01": 24261.666566,
         "pop_den_91": 28275.324986,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5664,12 +7102,20 @@ var isles = [
         "Avg_Age": 45.615000,
         "Access_Han": "no",
         "Latitude": 45.437385,
-        "Longtitude": 12.329833, "sum_pop_01": 485,
+        "Longtitude": 12.329833, 
+        "sum_pop_01": 485,
         "sum_pop_91": 531,
         "Ownership": null,
         "pop_den_01": 14434.953421,
         "pop_den_91": 15804.041786,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5695,12 +7141,20 @@ var isles = [
         "Avg_Age": 47.746000,
         "Access_Han": "yes",
         "Latitude": 45.438285,
-        "Longtitude": 12.333719, "sum_pop_01": 1439,
+        "Longtitude": 12.333719, 
+        "sum_pop_01": 1439,
         "sum_pop_91": 1738,
         "Ownership": null,
         "pop_den_01": 19689.941573,
         "pop_den_91": 23781.180301,     
-"Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5726,12 +7180,20 @@ var isles = [
         "Avg_Age": 44.985000,
         "Access_Han": "yes",
         "Latitude": 45.437068,
-        "Longtitude": 12.331381, "sum_pop_01": 286,
+        "Longtitude": 12.331381, 
+        "sum_pop_01": 286,
         "sum_pop_91": 333,
         "Ownership": null,
         "pop_den_01": 25236.036354,
         "pop_den_91": 29383.217153,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5757,12 +7219,20 @@ var isles = [
         "Avg_Age": 47.965000,
         "Access_Han": "no",
         "Latitude": 45.439210,
-        "Longtitude": 12.332107, "sum_pop_01": 843,
+        "Longtitude": 12.332107, 
+        "sum_pop_01": 843,
         "sum_pop_91": 1041,
         "Ownership": null,
         "pop_den_01": 26218.393307,
         "pop_den_91": 32376.450097,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5788,12 +7258,20 @@ var isles = [
         "Avg_Age": 47.884000,
         "Access_Han": "no",
         "Latitude": 45.434899,
-        "Longtitude": 12.321592, "sum_pop_01": 370,
+        "Longtitude": 12.321592, 
+        "sum_pop_01": 370,
         "sum_pop_91": 456,
         "Ownership": null,
         "pop_den_01": 9939.823770,
         "pop_den_91": 12250.161186,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5819,12 +7297,20 @@ var isles = [
         "Avg_Age": 51.618000,
         "Access_Han": "yes",
         "Latitude": 45.427680,
-        "Longtitude": 12.315078, "sum_pop_01": 1749,
+        "Longtitude": 12.315078, 
+        "sum_pop_01": 1749,
         "sum_pop_91": 1965,
         "Ownership": null,
         "pop_den_01": 16525.411718,
         "pop_den_91": 18566.285892,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5850,12 +7336,20 @@ var isles = [
         "Avg_Age": 0.000000,
         "Access_Han": "yes",
         "Latitude": 45.425767,
-        "Longtitude": 12.312107, "sum_pop_01": 0,
+        "Longtitude": 12.312107, 
+        "sum_pop_01": 0,
         "sum_pop_91": 0,
         "Ownership": null,
         "pop_den_01": 0.000000,
         "pop_den_91": 0.000000,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5881,12 +7375,20 @@ var isles = [
         "Avg_Age": 0.000000,
         "Access_Han": "yes",
         "Latitude": 45.425929,
-        "Longtitude": 12.313759, "sum_pop_01": 0,
+        "Longtitude": 12.313759, 
+        "sum_pop_01": 0,
         "sum_pop_91": 0,
         "Ownership": null,
         "pop_den_01": 0.000000,
         "pop_den_91": 0.000000,
-     "Access_type": "walk"
+        "Access_type": "walk",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5912,12 +7414,20 @@ var isles = [
         "Avg_Age": 0.000000,
         "Access_Han": "yes",
         "Latitude": 45.425980,
-        "Longtitude": 12.315241, "sum_pop_01": 0,
+        "Longtitude": 12.315241, 
+        "sum_pop_01": 0,
         "sum_pop_91": 0,
         "Ownership": null,
         "pop_den_01": 0.000000,
         "pop_den_91": 0.000000,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5943,12 +7453,20 @@ var isles = [
         "Avg_Age": 52.287000,
         "Access_Han": "yes",
         "Latitude": 45.426998,
-        "Longtitude": 12.318912, "sum_pop_01": 224,
+        "Longtitude": 12.318912, 
+        "sum_pop_01": 224,
         "sum_pop_91": 288,
         "Ownership": null,
         "pop_den_01": 5320.412332,
         "pop_den_91": 6840.530141,
-     "Access_type": "both"
+        "Access_type": "both",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -5974,12 +7492,20 @@ var isles = [
         "Avg_Age": 49.379000,
         "Access_Han": "no",
         "Latitude": 45.427112,
-        "Longtitude": 12.321629, "sum_pop_01": 326,
+        "Longtitude": 12.321629, 
+        "sum_pop_01": 326,
         "sum_pop_91": 268,
         "Ownership": null,
         "pop_den_01": 8602.264031,
         "pop_den_91": 7071.799879,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6005,12 +7531,20 @@ var isles = [
         "Avg_Age": 48.514000,
         "Access_Han": "no",
         "Latitude": 45.425407,
-        "Longtitude": 12.320932, "sum_pop_01": 456,
+        "Longtitude": 12.320932, 
+        "sum_pop_01": 456,
         "sum_pop_91": 489,
         "Ownership": null,
         "pop_den_01": 7895.010215,
         "pop_den_91": 8466.359638,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6036,12 +7570,20 @@ var isles = [
         "Avg_Age": 44.092000,
         "Access_Han": "yes",
         "Latitude": 45.425293,
-        "Longtitude": 12.324361, "sum_pop_01": 861,
+        "Longtitude": 12.324361, 
+        "sum_pop_01": 861,
         "sum_pop_91": 830,
         "Ownership": null,
         "pop_den_01": 9610.983982,
         "pop_den_91": 9264.943908,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6067,12 +7609,20 @@ var isles = [
         "Avg_Age": 49.276000,
         "Access_Han": "yes",
         "Latitude": 45.425513,
-        "Longtitude": 12.327599, "sum_pop_01": 343,
+        "Longtitude": 12.327599, 
+        "sum_pop_01": 343,
         "sum_pop_91": 417,
         "Ownership": null,
         "pop_den_01": 15544.276262,
         "pop_den_91": 18897.851898,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6098,12 +7648,20 @@ var isles = [
         "Avg_Age": 40.307000,
         "Access_Han": "no",
         "Latitude": 45.424132,
-        "Longtitude": 12.326689, "sum_pop_01": 68,
+        "Longtitude": 12.326689, 
+        "sum_pop_01": 68,
         "sum_pop_91": 39,
         "Ownership": null,
         "pop_den_01": 2575.757576,
         "pop_den_91": 1477.272727,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6129,12 +7687,20 @@ var isles = [
         "Avg_Age": 47.029000,
         "Access_Han": "yes",
         "Latitude": 45.424359,
-        "Longtitude": 12.330992, "sum_pop_01": 733,
+        "Longtitude": 12.330992, 
+        "sum_pop_01": 733,
         "sum_pop_91": 913,
         "Ownership": null,
         "pop_den_01": 7308.367233,
         "pop_den_91": 9103.054957,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6160,12 +7726,20 @@ var isles = [
         "Avg_Age": 49.199000,
         "Access_Han": "yes",
         "Latitude": 45.425191,
-        "Longtitude": 12.337782, "sum_pop_01": 1672,
+        "Longtitude": 12.337782, 
+        "sum_pop_01": 1672,
         "sum_pop_91": 1694,
         "Ownership": null,
         "pop_den_01": 8047.205136,
         "pop_den_91": 8153.089414,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6191,12 +7765,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.426843,
-        "Longtitude": 12.309497, "sum_pop_01": null,
+        "Longtitude": 12.309497, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": null,
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": "none"
+        "Access_type": "none",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6222,12 +7804,20 @@ var isles = [
         "Avg_Age": 72.500000,
         "Access_Han": "yes",
         "Latitude": 45.428024,
-        "Longtitude": 12.344211, "sum_pop_01": 11,
+        "Longtitude": 12.344211, 
+        "sum_pop_01": 11,
         "sum_pop_91": 13,
         "Ownership": null,
         "pop_den_01": 112.035688,
         "pop_den_91": 132.405814,
-     "Access_type": "boat"
+        "Access_type": "boat",
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6253,12 +7843,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.461592,
-        "Longtitude": 12.318526, "sum_pop_01": null,
+        "Longtitude": 12.318526, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "City of Venice",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6284,12 +7882,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "no",
         "Latitude": 45.438103,
-        "Longtitude": 12.297895, "sum_pop_01": null,
+        "Longtitude": 12.297895, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "Nation of Italy",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
@@ -6315,12 +7921,20 @@ var isles = [
         "Avg_Age": null,
         "Access_Han": "yes",
         "Latitude": 45.456309,
-        "Longtitude": 12.386553, "sum_pop_01": null,
+        "Longtitude": 12.386553, 
+        "sum_pop_01": null,
         "sum_pop_91": null,
         "Ownership": "City of Venice",
         "pop_den_01": null,
         "pop_den_91": null,
-     "Access_type": null
+        "Access_type": null,
+
+        "Vap_Access": null,
+        "Vap_Stops": null,
+        "Moto_Access": null,
+        "Moto_Stops": null,
+        "Bridge_Access": null,
+        "Access_Bridges": null
     },
     "geometry": {
         "type": "Polygon",
