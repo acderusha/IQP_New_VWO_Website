@@ -162,14 +162,14 @@ let muteVar;
 
   /* ----------- Menu Display Functions --------- */
 
-	function openNav() {
-    var welcomeMenuText = "Welcome to the Menu Screen! Here, you go to the Home, Arriving to Venice, Moving Around, Staying the Night, Dining Out, Applications, Organizations, and Map pages. A close button is located at the top-right hand side of the screen. A mute button is located at the top-left hand side of the screen to turn off and on all speech."
-    play(welcomeMenuText);
+	function openSettings() {
+    var settingsText = "The settings menu contains an on and off speech switch.";
+    play(settingsText);
 
 	  document.getElementById("myNav").style.height = "78px";
 	}
 
-	function closeNav() {
+	function closeSettings() {
 	  document.getElementById("myNav").style.height = "0%";
 	}
 
@@ -255,21 +255,21 @@ let muteVar;
   function playGoArrival(){
   	dropArriv();
 
-    var goArrivalText = "Arrival Button. Click to go to the Arriving to Venice page."
+    var goArrivalText = "Arrival Button. Click to go to the Arrival page."
     play(goArrivalText);
   }
 
   function playGoExplore(){
   	dropExplore();
 
-    var goTravelText = "TMoving Button. Click to go to the Moving Around page."
+    var goTravelText = "Travel Button. Click to go to the Travel page."
     play(goTravelText);
   }
 
   function playGoHotel(){
     dropHotel();
 
-    var goNightText = "Staying the Night Button. Click to go to the Staying the Night page."
+    var goNightText = "Hotels Button. Click to go to the Hotels page."
     play(goNightText);
   }
 
@@ -283,7 +283,7 @@ let muteVar;
   function playGoApp(){
     dropApp();
 
-    var goAppText = "Applications Button. Click to go to the Applications page."
+    var goAppText = "Apps Button. Click to go to the Apps page."
     play(goAppText);
   }
 
@@ -302,8 +302,13 @@ let muteVar;
   }
 
   function playGoBack(){
-    var goBackText = "Close Button. Click to return to previous page."
+    var goBackText = "Close Settings Button. Click to return the Navigation Menu."
     play(goBackText);
+  }
+
+  function playGoSettings(){
+    var goSettingsText = "Settings Button. Click to open the Settings Menu."
+    play(goSettingsText);
   }
 
   function playMute(){

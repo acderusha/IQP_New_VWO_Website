@@ -44,7 +44,7 @@ function isleStyleWalk(feature) {
         weight: 0.5,
         opacity: 2,
         color: 'gray',
-        fillOpacity: 0.6
+        fillOpacity: 0.7
     };
 }
 
@@ -54,7 +54,7 @@ function isleStyleBoat(feature) {
         weight: 0.5,
         opacity: 2,
         color: 'gray',
-        fillOpacity: 0.6
+        fillOpacity: 0.7
     };
 }
 
@@ -64,26 +64,26 @@ function isleStyleTotal(feature) {
         weight: 0.5,
         opacity: 2,
         color: 'gray',
-        fillOpacity: 0.6
+        fillOpacity: 0.7
     };
 }
 
 function getColorWalk(d) {
-    return d === 'walk'  ? '#6e8b3d' :
-           d === 'both'  ? '#6e8b3d' :
+    return d === 'walk'  ? '#33FF00' :
+           d === 'both'  ? '#33FF00' :
                       '#dcdcdc';
 }
 
 function getColorBoat(d) {
-    return d === 'boat'  ? '#104e8b' :
-           d === 'both'  ? '#104e8b' :
+    return d === 'boat'  ? '#9933CC' :
+           d === 'both'  ? '#9933CC' :
                       '#dcdcdc';
 }
 
 function getColorTotal(d) {
-    return d === 'boat'  ? '#104e8b' :
-           d === 'walk'  ? '#6e8b3d' :
-           d === 'both'  ? '#ffff00' :
+    return d === 'boat'  ? '#9933CC' :
+           d === 'walk'  ? '#33FF00' :
+           d === 'both'  ? '#CC6600' :
                       '#dcdcdc';
 }
 
