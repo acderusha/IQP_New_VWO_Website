@@ -351,7 +351,7 @@ function getLayers() {
 }
 
 function getBridges() {
-    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
         var ckBridges = [];
 
         //console.log("Data: ")
@@ -375,7 +375,7 @@ function getBridges() {
 }
 
 function getBoatStops(ckBridges){
-    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=boat%20stops%202018", function( data ) {
+    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=boat%20stops%202018", function( data ) {
         var ckBoats = [];
 
         //console.log("Data: ")
@@ -401,7 +401,7 @@ function getBoatStops(ckBridges){
 }
 
 function getIsles(ckBridges, ckBoats){
-    $.get( "http://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
+    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
         var ckIsles = [];
 
         //console.log("Data: ")
