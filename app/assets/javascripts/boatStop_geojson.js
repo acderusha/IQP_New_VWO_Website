@@ -1188,6 +1188,384 @@ var boatStops = [
                     "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.345987, 45.448667 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Cimitero",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.409526, 45.488094 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Mazzorbo",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.412232, 45.495081 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Torcello",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.420203, 45.468382 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Punta Vela",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.410088, 45.459414 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Chiesa",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.410088, 45.459414 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Chiesa",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.388577, 45.454628 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Capannone",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.386859, 45.454970 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lazzaretto Nuovo",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.376271, 45.443718 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Vignole",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.367462, 45.430476 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Vignole",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.367468, 45.430472 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Certosa",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.355346, 45.419625 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "San Servolo",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.359923, 45.412109 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "San Lazzaro",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.378479, 45.426131 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido San Nicolo Ferry",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.368975, 45.418138 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido Santa Maria Elisabetta A",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.368707, 45.417976 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido Santa Maria Elisabetta B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.368230, 45.417678 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido Santa Maria Elisabetta C",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.367720, 45.417467 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido Santa Maria Elisabetta D",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.367511, 45.417347 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Lido Santa Maria Elisabetta E",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.309016, 45.341525 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Alberoni (Faro Rocchetta)",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.316943, 45.332724 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "San Maria del Mare",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.299912, 45.262768 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Pellestrina (Cimitero)",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.293969, 45.243603 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Caroman",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.447111, 45.471534 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Treporti",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.424678, 45.447611 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Punta Sabbioni",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.424399, 45.446972 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Punta Sabbioni N/T",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
+                    "coordinates" : [ 12.258729, 45.418369 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Fusina",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
 }
 
 ];

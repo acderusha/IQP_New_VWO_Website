@@ -273,7 +273,7 @@ function addMapElements() {
 /* -------------- Setup Info Box Function ------------------ */
 
 function setUpInfo(){
-        /* ------ Custom Info Control ----------- */
+    /* ------ Custom Info Control ----------- */
 
     info.onAdd = function (map) {
         this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
@@ -351,7 +351,7 @@ function getLayers() {
 }
 
 function getBridges() {
-    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
+    /*$.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=bridges%202018", function( data ) {
         var ckBridges = [];
 
         //console.log("Data: ")
@@ -368,14 +368,16 @@ function getBridges() {
         bridgeLayer.addTo(mymap);
 
         getBoatStops(ckBridges);
-    });
+    });*/
 
-    //bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature});
-    //bridgeLayer.addTo(mymap);
+    var ckBridges = [];
+    bridgeLayer = L.geoJson(bridges, {style: style, onEachFeature: onEachFeature});
+    bridgeLayer.addTo(mymap);
+    getBoatStops(ckBridges);
 }
 
 function getBoatStops(ckBridges){
-    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=boat%20stops%202018", function( data ) {
+    /*$.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=boat%20stops%202018", function( data ) {
         var ckBoats = [];
 
         //console.log("Data: ")
@@ -397,11 +399,22 @@ function getBoatStops(ckBridges){
         boatLayer.addTo(mymap);
 
         getIsles(ckBridges, ckBoats);
-    });
+    });*/
+
+    var ckBoats = [];
+    var ckBridges = [];
+    boatLayer = L.geoJSON(boatStops, {
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, geojsonMarkerOptions);
+            },
+            onEachFeature: onEachFeatureBoat
+        });
+    boatLayer.addTo(mymap);
+    getIsles(ckBridges, ckBoats)
 }
 
 function getIsles(ckBridges, ckBoats){
-    $.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
+    /*$.get( "https://ckdata2.herokuapp.com/api/v1/dataset.json?group_name=2018%20islands", function( data ) {
         var ckIsles = [];
 
         //console.log("Data: ")
@@ -424,10 +437,16 @@ function getIsles(ckBridges, ckBoats){
         islesLayer.bringToBack();
 
         setUpSearch(ckBridges, ckBoats, ckIsles);
-    });
+    });*/
 
-    //islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
-    //islesLayer.addTo(mymap);
+    islesLayer = L.geoJson(isles, {style: isleStyleNone, onEachFeature: onEachFeatureIsland});
+    islesWalkLayer = L.geoJson(isles, {style: isleStyleWalk, onEachFeature: onEachFeatureIslandWalk});
+    islesBoatLayer = L.geoJson(isles, {style: isleStyleBoat, onEachFeature: onEachFeatureIslandBoat});
+    islesTotalLayer = L.geoJson(isles, {style: isleStyleTotal, onEachFeature: onEachFeatureIslandTotal});
+    islesLayer.addTo(mymap);
+    islesLayer.bringToBack();
+
+    setUpSearch(bridges, boatStops, isles);
 }
 
 function orderLayers(){
