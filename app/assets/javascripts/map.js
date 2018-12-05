@@ -75,13 +75,13 @@ function getColorWalk(d) {
 }
 
 function getColorBoat(d) {
-    return d === 'boat'  ? '#9933CC' :
-           d === 'both'  ? '#9933CC' :
+    return d === 'boat'  ? '#003333' :
+           d === 'both'  ? '#003333' :
                       '#dcdcdc';
 }
 
 function getColorTotal(d) {
-    return d === 'boat'  ? '#9933CC' :
+    return d === 'boat'  ? '#003333' :
            d === 'walk'  ? '#33FF00' :
            d === 'both'  ? '#CC6600' :
                       '#dcdcdc';
