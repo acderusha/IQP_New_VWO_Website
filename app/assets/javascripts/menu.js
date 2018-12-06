@@ -262,7 +262,7 @@ let muteVar;
   function playGoExplore(){
   	dropExplore();
 
-    var goTravelText = "Travel Button. Click to go to the Travel page."
+    var goTravelText = "Traveling Button. Click to go to the Traveling page."
     play(goTravelText);
   }
 
@@ -276,7 +276,7 @@ let muteVar;
   function playGoAttract(){
     dropAttract();
 
-    var goDiningText = "Dining Out Button. Click to go to the Dining Out page."
+    var goDiningText = "Attractions Button. Click to go to the Attractions page."
     play(goDiningText);
   }
 
