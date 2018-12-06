@@ -15736,5 +15736,272 @@ var bridges = [
 [12.417640277731195,45.49778487636727]
        ]]
    }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Cipro",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.376230347761723,45.41811984911124],
+[12.376349100457123,45.41806588024772],
+[12.376357365618095,45.4180626503102],
+[12.37632352384723,45.41802191408029],
+[12.376316547091516,45.4180246336437],
+[12.376198994237267,45.41807773008117],
+[12.376192969191177,45.41808038151226],
+[12.376224642730595,45.418122417901714],
+[12.376230347761723,45.41811984911124]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Zeno",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.373483992540114,45.417904966341695],
+[12.37365228853587,45.41803267340664],
+[12.373687947440699,45.418009194595285],
+[12.373521126431395,45.41788377143227],
+[12.373483992540114,45.417904966341695]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Pisani",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "none",
+       "railing": "both",
+       "slip_stair": "yes",
+       "opening": "none",
+       "tactile": "none",
+       "private": "yes"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.368155812575955,45.41582321239873],
+[12.368205146428865,45.415915966512344],
+[12.368229994877453,45.4159119494719],
+[12.368181520759403,45.41582110512302],
+[12.368155812575955,45.41582321239873]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Lepanto",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "none",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "both",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.369875731301263,45.41373946008194],
+[12.369979725850932,45.41373996585348],
+[12.36998089426336,45.41372388331671],
+[12.369876357564083,45.4137259749679],
+[12.369875731301263,45.41373946008194]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Bragadin",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "none",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "yes"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.369827382433375,45.41313077685658],
+[12.369812210376084,45.413098928392884],
+[12.36968411095379,45.41313413588952],
+[12.36970133237075,45.4131627016979],
+[12.369827382433375,45.41313077685658]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Contarini",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "none",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.36816206752171,45.411604299837606],
+[12.368269826915187,45.41158266470768],
+[12.368265692904798,45.411562770079115],
+[12.368155117121796,45.41158605022305],
+[12.36816206752171,45.411604299837606]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Corinto",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.362139468170824,45.40603785581413],
+[12.362172976256902,45.40602882034449],
+[12.36208779036174,45.40588267682722],
+[12.362055844508381,45.405892108357115],
+[12.362139468170824,45.40603785581413]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Anafesto",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.360504434439655,45.403834016955365],
+[12.360537473801328,45.4038237111684],
+[12.36045196976412,45.40370716806308],
+[12.36041953686132,45.40371802782941],
+[12.360504434439655,45.403834016955365]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte di via Diedo",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.358928708002322,45.40167832440448],
+[12.358961695580167,45.4016668479113],
+[12.358872289078482,45.40154148358762],
+[12.358837908619776,45.40155571774204],
+[12.358928708002322,45.40167832440448]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte Unknown",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "both",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.340016, 45.374630],
+[12.339844, 45.374528],
+[12.339871, 45.374506],
+[12.340064, 45.374600]
+       ]]
+   }
+},
+{
+   "type": "Feature",
+   "properties": {
+       "name": "Ponte del Borgo di Malamocco",    
+       "district1": "Lido",
+       "district2": "null",
+       "ramp": "permanent",
+       "railing": "none",
+       "slip_stair": "none",
+       "opening": "none",
+       "tactile": "none",
+       "private": "no"
+   },
+   "geometry": {
+       "type": "Polygon",
+       "coordinates": [[   
+[12.340802083976692,45.372573792068295],
+[12.340978897223177,45.37259186001802],
+[12.3409846733826,45.37255401561619],
+[12.34081544722449,45.372533604469886],
+[12.340802083976692,45.372573792068295]
+       ]]
+   }
 }
 ];
