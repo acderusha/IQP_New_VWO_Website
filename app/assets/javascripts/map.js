@@ -60,7 +60,7 @@ function isleStyleBoat(feature) {
 
 function isleStyleTotal(feature) {
     return {
-        fillColor: getColorTotal(feature.properties.Access_type),
+        fillColor: getColorTotal(feature.properties.Perm_Bri_Access,feature.properties.Temp_Bri_Access,feature.properties.Vap_Access,feature.properties.Moto_Access,feature.properties.Ali_Access),
         weight: 0.5,
         opacity: 2,
         color: 'gray',
@@ -80,10 +80,10 @@ function getColorBoat(Vap_Access, Moto_Access, Ali_Access) {
                       '#dcdcdc';
 }
 
-function getColorTotal(d) {
-    return d === 'boat'  ? '#003333' :
-           d === 'walk'  ? '#33FF00' :
-           d === 'both'  ? '#CC6600' :
+function getColorTotal(Perm_Bri_Access, Temp_Bri_Access, Vap_Access, Moto_Access, Ali_Access) {
+    return (Perm_Bri_Access || Temp_Bri_Access) && (Vap_Access || Moto_Access || Ali_Access)  ? '#990099' :
+           (Vap_Access || Moto_Access || Ali_Access)  ? '#FF0099' :
+           (Perm_Bri_Access || Temp_Bri_Access)  ? '#FF66CC' :
                       '#dcdcdc';
 }
 
@@ -599,7 +599,7 @@ function setUpLegend(){
             var div = L.DomUtil.create('div', 'info legend'),
                 grades1 = [true,false,false],
                 grades2 = [false,true,false],
-                labels = ['Permanent Ramp Accessible','Temporary Ramp Accessible','Not Walking Accessible'];
+                labels = ['Permanent Ramp','Temporary Ramp','Not Walking Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades1.length; i++) {
@@ -674,13 +674,17 @@ function setUpLegend(){
         legend.onAdd = function (map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = ['both','boat', 'walk','none'],
-                labels = ['Totally Accessible','Boat Accessible','Walking Accessible', 'Not Accessible'];
+                grades1 = [true, false, true, false],
+                grades2 = [true, false, true, false],
+                grades3 = [true, true, false, false],
+                grades4 = [true, true, false, false],
+                grades5 = [true, true, false, false],
+                labels = ['Bridge and Boat Accessible','Boat Accessible','Bridge Accessible', 'Not Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
-            for (var i = 0; i < grades.length; i++) {
+            for (var i = 0; i < grades1.length; i++) {
                 div.innerHTML +=
-                    '<i style="background:' + getColorTotal(grades[i]) + '"></i> ' +
+                    '<i style="background:' + getColorTotal(grades1[i],grades2[i],grades3[i],grades4[i],grades5[i]) + '"></i> ' +
                     labels[i] + '<br>';
             }
 
