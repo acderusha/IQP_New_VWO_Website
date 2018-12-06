@@ -409,7 +409,7 @@ function getBoatStops(ckBridges){
             },
             onEachFeature: onEachFeatureBoat
         });
-    boatLayer.addTo(mymap);
+    //boatLayer.addTo(mymap);
     getIsles(ckBridges, ckBoats)
 }
 
@@ -444,10 +444,9 @@ function getIsles(ckBridges, ckBoats){
     islesBoatLayer = L.geoJson(isles, {style: isleStyleBoat, onEachFeature: onEachFeatureIslandBoat});
     islesTotalLayer = L.geoJson(isles, {style: isleStyleTotal, onEachFeature: onEachFeatureIslandTotal});
     islesLayer.addTo(mymap);
-    islesLayer.bringToBack();
+    islesLayer.bringToBack(islesLayer);
 
-    setUpSearch(bridges, boatStops, isles);
-}
+    setUpSearch(bridges, boatStops, isles);}
 
 function orderLayers(){
     bridgeLayer.bringToFront();
@@ -515,8 +514,6 @@ function combineLayers(ckBridges, ckBoats, ckIsles){
 
     console.log("Total: ");
     console.log(combineLayers);
-
-
 
     return combineLayers;
 }
@@ -708,6 +705,32 @@ function setUpLegend(){
 }
 
 /* ------ End Custom Legend Control ----------- */
+
+/* ------ Boat Stop Control Functions --------- */
+
+function showStopsText(){
+    var showStopsText = document.getElementById("showStops");
+    showStopsText.checked = true;
+
+    showStops();
+}
+
+function showStops(){
+    boatLayer.addTo(mymap);
+}
+
+function hideStopsText(){
+    var hideStopsText = document.getElementById("hideStops");
+    hideStopsText.checked = true;
+
+    hideStops();
+}
+
+function hideStops(){
+    mymap.removeLayer(boatLayer);
+}
+
+/* ------ End Boat Stop Control Functions --------- */
 
 
 function addDescription(props){
@@ -926,15 +949,31 @@ function addDescription(props){
 /* ------------------ Filter Display Functions ------------ */
 
 function editContentBridge(){
+    var bridgeFilter = document.getElementById("filterBox");
     var islesFilter = document.getElementById("filterBoxIslands");
-    islesFilter.style.height = "0px"; 
-
+    var boatFilter = document.getElementById("filterBoxStops");
+    bridgeFilter.style.height = "89.6vh";
+    islesFilter.style.height = "0px";
+    boatFilter.style.height = "0px"; 
 }
 
 
 function editContentIsland(){
+    var bridgeFilter = document.getElementById("filterBox");
     var islesFilter = document.getElementById("filterBoxIslands");
+    var boatFilter = document.getElementById("filterBoxStops");
+    bridgeFilter.style.height = "0px";
     islesFilter.style.height = "89.6vh"; 
+    boatFilter.style.height = "0px";
+}
+
+function editContentStops(){
+    var bridgeFilter = document.getElementById("filterBox");
+    var islesFilter = document.getElementById("filterBoxIslands");
+    var boatFilter = document.getElementById("filterBoxStops");
+    bridgeFilter.style.height = "0px";
+    islesFilter.style.height = "0px"; 
+    boatFilter.style.height = "89.6vh";
 }
 
 
