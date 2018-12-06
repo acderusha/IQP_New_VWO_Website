@@ -15514,7 +15514,7 @@ var bridges = [
 {
    "type": "Feature",
    "properties": {
-       "name": "Ponte Unknown 1",    
+       "name": "Ponte Burano Unknown 1",    
        "district1": "Burano",
        "district2": "Mazzorbo",
        "ramp": "permanent",
@@ -15539,7 +15539,7 @@ var bridges = [
 {
    "type": "Feature",
    "properties": {
-       "name": "Ponte Unknown 2",    
+       "name": "Ponte Burano Unknown 2",    
        "district1": "Burano",
        "district2": "Mazzorbo",
        "ramp": "permanent",
@@ -15562,7 +15562,7 @@ var bridges = [
 {
    "type": "Feature",
    "properties": {
-       "name": "Ponte Unknown 3",    
+       "name": "Ponte Burano Unknown 3",    
        "district1": "Burano",
        "district2": "Mazzorbo",
        "ramp": "permanent",
@@ -15960,7 +15960,7 @@ var bridges = [
 {
    "type": "Feature",
    "properties": {
-       "name": "Ponte Unknown",    
+       "name": "Ponte Lido Unknown",    
        "district1": "Lido",
        "district2": "null",
        "ramp": "permanent",

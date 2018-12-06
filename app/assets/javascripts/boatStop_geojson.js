@@ -31,7 +31,7 @@ var boatStops = [
             },
             "properties" : {
                     "type" : "Boat Stop",
-                    "name": "Giudecca Hilton",
+                    "name": "Giudecca Stucky",
                     "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"
@@ -157,7 +157,7 @@ var boatStops = [
 
 {
             "geometry" : {
-                    "coordinates" : [ 12.320859, 45.430667 ],
+                    "coordinates" : [ 12.320838, 45.430536 ],
                     "type" : "Point"
             },
             "properties" : {
@@ -844,6 +844,18 @@ var boatStops = [
             },
             "type" : "Feature"
     },
+{
+            "geometry" : {
+                    "coordinates" : [ 12.330325, 45.431044 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "San Vio",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+    },
 
 {
             "geometry" : {
@@ -1236,12 +1248,26 @@ var boatStops = [
 {
 
             "geometry" : {
+                    "coordinates" : [ 12.416218, 45.487612 ],
+                    "type" : "Point"
+            },
+            "properties" : {
+                    "type" : "Boat Stop",
+                    "name": "Burano B",
+                    "location": "30100 Venice, Metropolitan City of Venice"
+            },
+            "type" : "Feature"
+},
+
+{
+
+            "geometry" : {
                     "coordinates" : [ 12.416754, 45.487574 ],
                     "type" : "Point"
             },
             "properties" : {
                     "type" : "Boat Stop",
-                    "name": "Burano DX per Treporti",
+                    "name": "Burano C",
                     "location": "30100 Venice, Metropolitan City of Venice"
             },
             "type" : "Feature"

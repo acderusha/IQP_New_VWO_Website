@@ -30,7 +30,7 @@ function style(feature) {
 // Style for islands bridges
 function isleStyleNone(feature) {
     return {
-        fillColor: getColorWalk(feature.properties.Access_type),
+        fillColor: getColorWalk(feature.properties.Perm_Bri_Access,feature.properties.Temp_Bri_Access),
         weight: 0.4,
         opacity: 2,
         color: 'gray',
@@ -40,7 +40,7 @@ function isleStyleNone(feature) {
 
 function isleStyleWalk(feature) {
     return {
-        fillColor: getColorWalk(feature.properties.Access_type),
+        fillColor: getColorWalk(feature.properties.Perm_Bri_Access,feature.properties.Temp_Bri_Access),
         weight: 0.5,
         opacity: 2,
         color: 'gray',
@@ -50,7 +50,7 @@ function isleStyleWalk(feature) {
 
 function isleStyleBoat(feature) {
     return {
-        fillColor: getColorBoat(feature.properties.Access_type),
+        fillColor: getColorBoat(feature.properties.Vap_Access,feature.properties.Moto_Access,feature.properties.Ali_Access),
         weight: 0.5,
         opacity: 2,
         color: 'gray',
@@ -68,15 +68,15 @@ function isleStyleTotal(feature) {
     };
 }
 
-function getColorWalk(d) {
-    return d === 'walk'  ? '#33FF00' :
-           d === 'both'  ? '#33FF00' :
+function getColorWalk(Perm_Bri_Access, Temp_Bri_Access) {
+    return Perm_Bri_Access  ? '#47815c' :
+           Temp_Bri_Access  ? '#33FF00' :
                       '#dcdcdc';
 }
 
-function getColorBoat(d) {
-    return d === 'boat'  ? '#003333' :
-           d === 'both'  ? '#003333' :
+function getColorBoat(Vap_Access, Moto_Access, Ali_Access) {
+    return Vap_Access  ? '#0004fd' :
+           (Moto_Access || Ali_Access)  ? '#3594ff' :
                       '#dcdcdc';
 }
 
@@ -597,13 +597,14 @@ function setUpLegend(){
         legend.onAdd = function (map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = ['walk','boat'],
-                labels = ['Waling Accessible','Walking Not Accessible'];
+                grades1 = [true,false,false],
+                grades2 = [false,true,false],
+                labels = ['Permanent Ramp Accessible','Temporary Ramp Accessible','Not Walking Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
-            for (var i = 0; i < grades.length; i++) {
+            for (var i = 0; i < grades1.length; i++) {
                 div.innerHTML +=
-                    '<i style="background:' + getColorWalk(grades[i]) + '"></i> ' +
+                    '<i style="background:' + getColorWalk(grades1[i],grades2[i]) + '"></i> ' +
                     labels[i] + '<br>';
             }
 
@@ -634,13 +635,15 @@ function setUpLegend(){
         legend.onAdd = function (map) {
 
             var div = L.DomUtil.create('div', 'info legend'),
-                grades = ['boat','walk'],
-                labels = ['Boat Accessible','Boat Not Accessible'];
+                grades1 = [true,false,false]
+                grades2 = [false,true,false],
+                grades3 = [false,true,false],
+                labels = ['Vaporetto Accessible','Motoscafo Accessible','Not Boat Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
-            for (var i = 0; i < grades.length; i++) {
+            for (var i = 0; i < grades1.length; i++) {
                 div.innerHTML +=
-                    '<i style="background:' + getColorBoat(grades[i]) + '"></i> ' +
+                    '<i style="background:' + getColorBoat(grades1[i],grades2[i],grades3[i]) + '"></i> ' +
                     labels[i] + '<br>';
             }
 
