@@ -1,7 +1,7 @@
 /* -------------- Map CSS ----------------- */
 #mapid {
     /* Fix height adjustment for later */
-    height: 89.6vh;
+    height: calc(100vh - 78px);
     width: 100%;
 
     border-style: solid;
