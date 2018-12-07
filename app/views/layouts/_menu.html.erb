@@ -4,9 +4,9 @@
   <div class="overlay-content">
     <div id="mutebtn" class="overlay-speech">
       Speech
-      <label class="switch" onmousemove="playMute()">
+      <label class="switch">
         <input id="muteInput" type="checkbox" checked onclick="muteSpeech()">
-        <span class="slider round"></span>
+        <span class="slider round" onmousemove="playMute()"></span>
       </label>
     </div>
   </div>
@@ -17,67 +17,67 @@
       <i class="fas fa-cog" onmouseover="playGoSettings()"></i>
     </div>
   <div class="homeHeader">
-    <a href="/home" class="logo">
+    <a id="logo" href="/home" class="logo" onmouseover="playLogo()">
       Venice Without Obstacles
     </a>
 
     <nav class="menuNav">
       <ul class="menuContainer">
         <li class="menuItem"  onmouseover="playGoHome()">
-          <a href="/home">
+          <a id="homeBtn" href="/home">
             Home
           </a>
         </li>
-        <li class="menuItem" onmouseover="playGoHotel()">
+        <li id="hotelsBtn" class="menuItem" onmouseover="playGoHotel()">
           Hotels
         </li>
-        <li class="menuItem" onmouseover="playGoArrival()" onmouseleave="hideAll()">
-          <a href="/home/arrival">
+        <li class="menuItem" onmouseleave="hideAll()">
+          <a id="arrivalBtn" class="aNav" onmouseover="playGoArrival()" href="/home/arrival">
             Arrival
           </a>
           <div id="arrivDrop" class="dropdown-content">
-            <a class="dropItem">Boat</a>
-            <a class="dropItem">Car</a>
-            <a class="dropItem">Plane</a>
-            <a class="dropItem">Train</a>
+            <a id="arrivBoat" class="dropItem" onmouseover="playGoArrivalBoat()">Boat</a>
+            <a id="arrivCar" class="dropItem" onmouseover="playGoArrivalCar()">Car</a>
+            <a id="arrivPlane" class="dropItem" onmouseover="playGoArrivalPlane()">Plane</a>
+            <a id="arrivTrain" class="dropItem" onmouseover="playGoArrivalTrain()">Train</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="playGoMap()" onmouseleave="hideAll()">
-          <a href="/home/maps">
+        <li class="menuItem" onmouseleave="hideAll()">
+          <a id="mapBtn" class="aNav" onmouseover="playGoMap()" href="/home/maps">
             Map
           </a>
           <div id="mapDrop" class="dropdown-content">
-            <a class="dropItem" href="/home/map">Informative</a>
-            <a class="dropItem" href="/home/map">Interactive</a>
+            <a id="mapInformBtn" class="dropItem" href="/home/map" onmouseover="playGoMapInformative()">Informative</a>
+            <a id="mapInterBtn" class="dropItem" href="/home/map" onmouseover="playGoMapInteractive()">Interactive</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="playGoExplore()" onmouseleave="hideAll()">
-          <a href="/home/explore">
+        <li class="menuItem" onmouseleave="hideAll()">
+          <a id="travelBtn" class="aNav" onmouseover="playGoExplore()" href="/home/explore">
             Traveling
           </a>
           <div id="exploreDrop" class="dropdown-content">
-            <a class="dropItem">Boat</a>
-            <a class="dropItem">Walking</a>
+            <a id="travelBoatBtn" class="dropItem" onmouseover="playGoExploreBoat()">Boat</a>
+            <a id="travelWalkBtn" class="dropItem" onmouseover="playGoExploreWalk()">Walking</a>
           </div>
         </li>
-        <li class="menuItem" style="width: 115px" onmouseover="playGoAttract()" onmouseleave="hideAll()">
-          <a href="/home/attractions">
+        <li class="menuItem" style="width: 115px" onmouseleave="hideAll()">
+          <a id="attractBtn" class="aNav" onmouseover="playGoAttract()" href="/home/attractions">
             Attractions
           </a>
           <div id="attractDrop" class="dropdown-content" style="left: -10px" >
-            <a class="dropItem">Restaurants</a>
-            <a class="dropItem">Churches</a>
-            <a class="dropItem">Museums</a>
-            <a class="dropItem" href="/home/attractions">More . . . </a>
+            <a id="attractRestBtn" class="dropItem" onmouseover="playGoAttractRest()">Restaurants</a>
+            <a id="attractChurBtn" class="dropItem" onmouseover="playGoAttractChur()">Churches</a>
+            <a id="attractMusBtn" class="dropItem" onmouseover="playGoAttractMus()">Museums</a>
+            <a id="attractMoreBtn" class="dropItem" onmouseover="playGoAttractMore()"href="/home/attractions">More . . . </a>
           </div>
         </li>
         <li class="menuItem" onmouseover="playGoApp()">
-          <a href="/home/applications">
+          <a id="appsBtn" href="/home/applications">
             Apps
           </a>
         </li>
         <li class="menuItem" style="width: 125px" onmouseover="playGoOrg()">
-          <a href="/home/organizations">
+          <a id="orgBtn" href="/home/organizations">
             Organizations
           </a>
         </li>

@@ -163,7 +163,7 @@ let muteVar;
   /* ----------- Menu Display Functions --------- */
 
 	function openSettings() {
-    var settingsText = "The settings menu contains an on and off speech switch.";
+    var settingsText = "The settings menu contains an on and off speech switch located to the right.";
     play(settingsText);
 
 	  document.getElementById("myNav").style.height = "78px";
@@ -177,6 +177,8 @@ let muteVar;
   /* ------------ Speech Contol -------------- */
 
   function play(textToPlay){
+    responsiveVoice.cancel();
+
     if(muteVar){
       responsiveVoice.cancel();
       responsiveVoice.speak(textToPlay,"UK English Male");
@@ -187,6 +189,8 @@ let muteVar;
   }
 
   function playSlow(textToPlay){
+    responsiveVoice.cancel();
+
     if(muteVar){
       responsiveVoice.cancel();
       responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
@@ -244,61 +248,198 @@ let muteVar;
   /* ------------ End Speech Contol -------------- */
 
   /* ------------ Speach Functions -------------- */
+  function removeSpacing(text){
+    text = text.trim();
+
+    return text;
+  }
+
+
+  function playLogo(){
+    var logo = document.getElementById("logo");
+    var logoText = logo.textContent.trim() + " logo";
+
+    play(logoText);
+  }
 
   function playGoHome(){
     dropHome();
 
-    var goHomeText = "Home Button. Click to go to the Home Page."
+    var homeBtn = document.getElementById("homeBtn");
+    var homeBtnText = removeSpacing(homeBtn.textContent);
+
+    var goHomeText = homeBtnText  + "Button. Click to go to the " + homeBtnText + " Page."
     play(goHomeText);
   }
 
   function playGoArrival(){
   	dropArriv();
 
-    var goArrivalText = "Arrival Button. Click to go to the Arrival page."
+    var arrivalBtn = document.getElementById("arrivalBtn");
+    var arrivalBtnText = removeSpacing(arrivalBtn.textContent);
+
+    var goArrivalText = arrivalBtnText + " Button. Click to go to the " + arrivalBtnText +" page. Drop down included."
     play(goArrivalText);
+  }
+
+  function playGoArrivalBoat(){
+    var arrivBoat = document.getElementById("arrivBoat");
+    var arrivBoatText = removeSpacing(arrivBoat.textContent);
+
+    var goArrivBoatText = arrivBoatText + " Button. Click to go to the Arrival by " + arrivBoatText +" page."
+    play(goArrivBoatText);
+  }
+
+  function playGoArrivalCar(){
+    var arrivCar = document.getElementById("arrivCar");
+    var arrivCarText = removeSpacing(arrivCar.textContent);
+
+    var goArrivCarText = arrivCarText + " Button. Click to go to the Arrival by " + arrivCarText +" page."
+    play(goArrivCarText);
+  }
+
+  function playGoArrivalPlane(){
+    var arrivPlane = document.getElementById("arrivPlane");
+    var arrivPlaneText = removeSpacing(arrivPlane.textContent);
+
+    var goArrivPlaneText = arrivPlaneText + " Button. Click to go to the Arrival by " + arrivPlaneText +" page."
+    play(goArrivPlaneText);
+  }
+
+  function playGoArrivalTrain(){
+    var arrivTrain = document.getElementById("arrivTrain");
+    var arrivTrainText = removeSpacing(arrivTrain.textContent);
+
+    var goArrivTrainText = arrivTrainText + " Button. Click to go to the Arrival by " + arrivTrainText +" page."
+    play(goArrivTrainText);
   }
 
   function playGoExplore(){
   	dropExplore();
 
-    var goTravelText = "Traveling Button. Click to go to the Traveling page."
+    var travelBtn = document.getElementById("travelBtn");
+    var travelBtnText = removeSpacing(travelBtn.textContent);
+
+    var goTravelText = travelBtnText + " Button. Click to go to the " + travelBtnText + " page. Drop down included."
     play(goTravelText);
+  }
+
+  function playGoExploreBoat(){
+    var travelBoatBtn = document.getElementById("travelBoatBtn");
+    var travelBoatBtnText = removeSpacing(travelBoatBtn.textContent);
+
+    var goTravelBoatText = travelBoatBtnText + " Button. Click to go to the Traveling by " + travelBoatBtnText + " page."
+    play(goTravelBoatText);
+  }
+
+  function playGoExploreWalk(){
+    var travelWalkBtn = document.getElementById("travelWalkBtn");
+    var travelWalkBtnText = removeSpacing(travelWalkBtn.textContent);
+
+    var goTravelWalkText = travelWalkBtnText + " Button. Click to go to the Traveling by " + travelWalkBtnText + " page."
+    play(goTravelWalkText);
   }
 
   function playGoHotel(){
     dropHotel();
 
-    var goNightText = "Hotels Button. Click to go to the Hotels page."
+    var hotelsBtn = document.getElementById("hotelsBtn");
+    var hotelsBtnText = removeSpacing(hotelsBtn.textContent);
+
+    var goNightText = hotelsBtnText + " Button. Click to go to the " + hotelsBtnText +" page."
     play(goNightText);
   }
 
   function playGoAttract(){
     dropAttract();
 
-    var goDiningText = "Attractions Button. Click to go to the Attractions page."
-    play(goDiningText);
+    var attractBtn = document.getElementById("attractBtn");
+    var attractBtnText = removeSpacing(attractBtn.textContent);
+
+    var goAttractText = attractBtnText + " Button. Click to go to the " + attractBtnText + " page. Drop down included."
+    play(goAttractText);
+  }
+
+  function playGoAttractRest(){
+    var attractRestBtn = document.getElementById("attractRestBtn");
+    var attractRestBtnText = removeSpacing(attractRestBtn.textContent);
+
+    var goAttractRestText = attractRestBtnText + " Button. Click to go to the " + attractRestBtnText + " page."
+    play(goAttractRestText);
+  }
+
+  function playGoAttractChur(){
+    var attractChurBtn = document.getElementById("attractChurBtn");
+    var attractChurBtnText = removeSpacing(attractChurBtn.textContent);
+
+    var goAttractChurText = attractChurBtnText + " Button. Click to go to the " + attractChurBtnText + " page."
+    play(goAttractChurText);
+  }
+
+  function playGoAttractMus(){
+    var attractMusBtn = document.getElementById("attractMusBtn");
+    var attractMusBtnText = removeSpacing(attractMusBtn.textContent);
+
+    var goAttractMusText = attractMusBtnText + " Button. Click to go to the " + attractMusBtnText + " page."
+    play(goAttractMusText);
+  }
+
+  function playGoAttractMore(){
+    var attractMoreBtn = document.getElementById("attractMoreBtn");
+    var attractMoreBtnText = removeSpacing(attractMoreBtn.textContent);
+
+    var goAttractMoreText = attractMoreBtnText + " Button. Click to go to the " + attractMoreBtnText + " page."
+    play(goAttractMoreText);
   }
 
   function playGoApp(){
     dropApp();
 
-    var goAppText = "Apps Button. Click to go to the Apps page."
+    var appsBtn = document.getElementById("appsBtn");
+    var appsBtnText = removeSpacing(appsBtn.textContent);
+
+    var goAppText = appsBtnText + " Button. Click to go to the " + appsBtnText + " page."
     play(goAppText);
   }
 
   function playGoOrg(){
     dropOrg();
 
-    var goOrgText = "Organizations Button. Click to go to the Organizations page."
+    var orgBtn = document.getElementById("orgBtn");
+    var orgBtnText = removeSpacing(orgBtn.textContent);
+
+    var goOrgText = orgBtnText + " Button. Click to go to the " + orgBtnText +" page."
     play(goOrgText);
   }
 
   function playGoMap(){
     dropMap();
 
-    var goMapText = "Map Button. Click to go to the Map page."
+    var mapBtn = document.getElementById("mapBtn");
+    var mapBtnText = removeSpacing(mapBtn.textContent);    
+
+    var goMapText = mapBtnText + " Button. Click to go to the " + mapBtnText + " page. Drop down included."
     play(goMapText);
+  }
+
+  function playGoMapInformative(){
+    dropMap();
+
+    var mapInformBtn = document.getElementById("mapInformBtn");
+    var mapInformBtnText = removeSpacing(mapInformBtn.textContent);    
+
+    var goMapInformBtnText = mapInformBtnText + " Button. Click to go to the " + mapInformBtnText + " Map page."
+    play(goMapInformBtnText);
+  }
+
+  function playGoMapInteractive(){
+    dropMap();
+
+    var mapInterBtn = document.getElementById("mapInterBtn");
+    var mapInterBtnText = removeSpacing(mapInterBtn.textContent);    
+
+    var goMapInterBtnText = mapInterBtnText + " Button. Click to go to the " + mapInterBtnText + " Map page. Warning, this page has limited speech directions."
+    play(goMapInterBtnText);
   }
 
   function playGoBack(){

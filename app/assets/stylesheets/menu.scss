@@ -332,7 +332,6 @@ input:checked + .slider:before {
       height: 78px;
 
       padding-top: 25px;
-      margin-bottom: 10px;
 
       color: #12437b;
 
@@ -353,6 +352,13 @@ input:checked + .slider:before {
       a{
         text-decoration: none;
         color: #12437b;
+      }
+
+      .aNav{
+        text-decoration: none;
+        color: #12437b;
+        padding-top: 27px;
+        padding-bottom: 29px;
       }
     }
     .menuItem:hover{
