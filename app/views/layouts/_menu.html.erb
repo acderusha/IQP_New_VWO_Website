@@ -31,7 +31,7 @@
         <li id="hotelsBtn" class="menuItem" onmouseover="playGoHotel()">
           Hotels
         </li>
-        <li class="menuItem" onmouseleave="hideAll()">
+        <li class="menuItem" onmouseover="dropArriv();" onmouseleave="hideAll()">
           <a id="arrivalBtn" class="aNav" onmouseover="playGoArrival()" href="/home/arrival">
             Arrival
           </a>
@@ -42,7 +42,7 @@
             <a id="arrivTrain" class="dropItem" onmouseover="playGoArrivalTrain()">Train</a>
           </div>
         </li>
-        <li class="menuItem" onmouseleave="hideAll()">
+        <li class="menuItem" onmouseover="dropMap();" onmouseleave="hideAll()">
           <a id="mapBtn" class="aNav" onmouseover="playGoMap()" href="/home/maps">
             Map
           </a>
@@ -51,7 +51,7 @@
             <a id="mapInterBtn" class="dropItem" href="/home/map" onmouseover="playGoMapInteractive()">Interactive</a>
           </div>
         </li>
-        <li class="menuItem" onmouseleave="hideAll()">
+        <li class="menuItem" onmouseover="dropExplore();" onmouseleave="hideAll()">
           <a id="travelBtn" class="aNav" onmouseover="playGoExplore()" href="/home/explore">
             Traveling
           </a>
@@ -60,7 +60,7 @@
             <a id="travelWalkBtn" class="dropItem" onmouseover="playGoExploreWalk()">Walking</a>
           </div>
         </li>
-        <li class="menuItem" style="width: 115px" onmouseleave="hideAll()">
+        <li class="menuItem" style="width: 115px" onmouseover="dropAttract();" onmouseleave="hideAll()">
           <a id="attractBtn" class="aNav" onmouseover="playGoAttract()" href="/home/attractions">
             Attractions
           </a>

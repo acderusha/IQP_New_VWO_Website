@@ -139,320 +139,333 @@ window.onclick = function(event) {
 
 
 let muteVar;
-  if (typeof(Storage) !== "undefined") {
-    // Store
-    if(localStorage.getItem("mute") !== "true" && localStorage.getItem("mute") !== "false"){
-      localStorage.setItem("mute", "true");
-    }
-
-    if(localStorage.getItem("mute") === "true"){
-      muteVar = true;
-    }
-    else{
-      muteVar = false;
-    }
-
-    console.log("muteVar Storage: " + muteVar);
-  } 
-  else {
-    alert("Sorry, your browser does not support Web Storage.");
+if (typeof(Storage) !== "undefined") {
+  // Store
+  if(localStorage.getItem("mute") !== "true" && localStorage.getItem("mute") !== "false"){
+    localStorage.setItem("mute", "true");
   }
 
-  setUpMuteButton();
+  if(localStorage.getItem("mute") === "true"){
+    muteVar = true;
+  }
+  else{
+    muteVar = false;
+  }
 
-  /* ----------- Menu Display Functions --------- */
+  console.log("muteVar Storage: " + muteVar);
+} 
+else {
+  alert("Sorry, your browser does not support Web Storage.");
+}
 
-	function openSettings() {
-    var settingsText = "The settings menu contains an on and off speech switch located to the right.";
-    play(settingsText);
+setUpMuteButton();
 
-	  document.getElementById("myNav").style.height = "78px";
-	}
+/* ----------- Menu Display Functions --------- */
 
-	function closeSettings() {
-	  document.getElementById("myNav").style.height = "0%";
-	}
+function openSettings() {
+  var settingsText = "The settings menu contains an on and off speech switch located to the right.";
+  play(settingsText);
+
+  document.getElementById("myNav").style.height = "78px";
+}
+
+function closeSettings() {
+  document.getElementById("myNav").style.height = "0%";
+}
 
 
-  /* ------------ Speech Contol -------------- */
+/* ------------ Speech Contol -------------- */
 
-  function play(textToPlay){
+function play(textToPlay){
+  responsiveVoice.cancel();
+
+  if(muteVar){
+    responsiveVoice.cancel();
+    responsiveVoice.speak(textToPlay,"UK English Male");
+  }
+  else{
+    responsiveVoice.cancel();
+  }
+}
+
+function playLong(textToPlay){
+
+  if(muteVar){
+    responsiveVoice.speak(textToPlay,"UK English Male");
+  }
+  else{
+    responsiveVoice.cancel();
+  }
+}
+
+function playSlow(textToPlay){
+  responsiveVoice.cancel();
+
+  if(muteVar){
+    responsiveVoice.cancel();
+    responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
+  }
+  else{
+    responsiveVoice.cancel();
+  }
+}
+
+
+function muteSpeech() {
+  var muteInput = document.getElementById("muteInput");
+  var mutebtn = document.getElementById("mutebtn");
+
+  if(muteVar){
+    localStorage.setItem("mute", "false");
     responsiveVoice.cancel();
 
-    if(muteVar){
-      responsiveVoice.cancel();
-      responsiveVoice.speak(textToPlay,"UK English Male");
-    }
-    else{
-      responsiveVoice.cancel();
-    }
+    console.log("false");
+    muteVar = false;
+    muteInput.checked = false;
+    mutebtn.classList.remove("textColor");
+
+    responsiveVoice.speak("Speech Off","UK English Male");
   }
-
-  function playSlow(textToPlay){
-    responsiveVoice.cancel();
-
-    if(muteVar){
-      responsiveVoice.cancel();
-      responsiveVoice.speak(textToPlay,"UK English Male", {rate: .86});
-    }
-    else{
-      responsiveVoice.cancel();
-    }
+  else{
+    localStorage.setItem("mute", "true");
+    
+    console.log("true");
+    muteVar = true;
+    muteInput.checked = true;
+    mutebtn.classList.add("textColor");
+    
+    responsiveVoice.speak("Speech On","UK English Male");
   }
+}
 
-
-  function muteSpeech() {
+function setUpMuteButton() {
+  document.addEventListener("DOMContentLoaded", function() {
     var muteInput = document.getElementById("muteInput");
     var mutebtn = document.getElementById("mutebtn");
-
     if(muteVar){
-      localStorage.setItem("mute", "false");
-      responsiveVoice.cancel();
+      muteInput.checked = true;
 
-      console.log("false");
-      muteVar = false;
-      muteInput.checked = false;
-      mutebtn.classList.remove("textColor");
-
-      responsiveVoice.speak("Speech Off","UK English Male");
+      mutebtn.classList.add("textColor");
     }
     else{
-      localStorage.setItem("mute", "true");
-      
-      console.log("true");
-      muteVar = true;
-      muteInput.checked = true;
-      mutebtn.classList.add("textColor");
-      
-      responsiveVoice.speak("Speech On","UK English Male");
+      muteInput.checked = false;
+
+      mutebtn.classList.remove("textColor");
     }
-  }
+  });
+}
 
-  function setUpMuteButton() {
-    document.addEventListener("DOMContentLoaded", function() {
-      var muteInput = document.getElementById("muteInput");
-      var mutebtn = document.getElementById("mutebtn");
-      if(muteVar){
-        muteInput.checked = true;
-
-        mutebtn.classList.add("textColor");
-      }
-      else{
-        muteInput.checked = false;
-
-        mutebtn.classList.remove("textColor");
-      }
-    });
-  }
-
-  /* ------------ End Speech Contol -------------- */
-
-  /* ------------ Speach Functions -------------- */
-  function removeSpacing(text){
-    text = text.trim();
-
-    return text;
-  }
+/* ------------ End Speech Contol -------------- */
 
 
-  function playLogo(){
-    var logo = document.getElementById("logo");
-    var logoText = logo.textContent.trim() + " logo";
+function removeSpacing(text){
+  text = text.trim();
 
-    play(logoText);
-  }
+  return text;
+}
 
-  function playGoHome(){
-    dropHome();
+/* ------------ Menu Speach Functions -------------- */
 
-    var homeBtn = document.getElementById("homeBtn");
-    var homeBtnText = removeSpacing(homeBtn.textContent);
+function playLogo(){
+  var logo = document.getElementById("logo");
+  var logoText = logo.textContent.trim() + " logo";
 
-    var goHomeText = homeBtnText  + "Button. Click to go to the " + homeBtnText + " Page."
-    play(goHomeText);
-  }
+  play(logoText);
+}
 
-  function playGoArrival(){
-  	dropArriv();
+function playGoHome(){
+  dropHome();
 
-    var arrivalBtn = document.getElementById("arrivalBtn");
-    var arrivalBtnText = removeSpacing(arrivalBtn.textContent);
+  var homeBtn = document.getElementById("homeBtn");
+  var homeBtnText = removeSpacing(homeBtn.textContent);
 
-    var goArrivalText = arrivalBtnText + " Button. Click to go to the " + arrivalBtnText +" page. Drop down included."
-    play(goArrivalText);
-  }
+  var goHomeText = homeBtnText  + "Button. Click to go to the " + homeBtnText + " Page.";
+  play(goHomeText);
+}
 
-  function playGoArrivalBoat(){
-    var arrivBoat = document.getElementById("arrivBoat");
-    var arrivBoatText = removeSpacing(arrivBoat.textContent);
+function playGoArrival(){
+	dropArriv();
 
-    var goArrivBoatText = arrivBoatText + " Button. Click to go to the Arrival by " + arrivBoatText +" page."
-    play(goArrivBoatText);
-  }
+  var arrivalBtn = document.getElementById("arrivalBtn");
+  var arrivalBtnText = removeSpacing(arrivalBtn.textContent);
 
-  function playGoArrivalCar(){
-    var arrivCar = document.getElementById("arrivCar");
-    var arrivCarText = removeSpacing(arrivCar.textContent);
+  var goArrivalText = arrivalBtnText + " Button. Click to go to the " + arrivalBtnText +" page. Drop down included.";
+  play(goArrivalText);
+}
 
-    var goArrivCarText = arrivCarText + " Button. Click to go to the Arrival by " + arrivCarText +" page."
-    play(goArrivCarText);
-  }
+function playGoArrivalBoat(){
+  var arrivBoat = document.getElementById("arrivBoat");
+  var arrivBoatText = removeSpacing(arrivBoat.textContent);
 
-  function playGoArrivalPlane(){
-    var arrivPlane = document.getElementById("arrivPlane");
-    var arrivPlaneText = removeSpacing(arrivPlane.textContent);
+  var goArrivBoatText = arrivBoatText + " Button. Click to go to the Arrival by " + arrivBoatText +" page.";
+  play(goArrivBoatText);
+}
 
-    var goArrivPlaneText = arrivPlaneText + " Button. Click to go to the Arrival by " + arrivPlaneText +" page."
-    play(goArrivPlaneText);
-  }
+function playGoArrivalCar(){
+  var arrivCar = document.getElementById("arrivCar");
+  var arrivCarText = removeSpacing(arrivCar.textContent);
 
-  function playGoArrivalTrain(){
-    var arrivTrain = document.getElementById("arrivTrain");
-    var arrivTrainText = removeSpacing(arrivTrain.textContent);
+  var goArrivCarText = arrivCarText + " Button. Click to go to the Arrival by " + arrivCarText +" page.";
+  play(goArrivCarText);
+}
 
-    var goArrivTrainText = arrivTrainText + " Button. Click to go to the Arrival by " + arrivTrainText +" page."
-    play(goArrivTrainText);
-  }
+function playGoArrivalPlane(){
+  var arrivPlane = document.getElementById("arrivPlane");
+  var arrivPlaneText = removeSpacing(arrivPlane.textContent);
 
-  function playGoExplore(){
-  	dropExplore();
+  var goArrivPlaneText = arrivPlaneText + " Button. Click to go to the Arrival by " + arrivPlaneText +" page.";
+  play(goArrivPlaneText);
+}
 
-    var travelBtn = document.getElementById("travelBtn");
-    var travelBtnText = removeSpacing(travelBtn.textContent);
+function playGoArrivalTrain(){
+  var arrivTrain = document.getElementById("arrivTrain");
+  var arrivTrainText = removeSpacing(arrivTrain.textContent);
 
-    var goTravelText = travelBtnText + " Button. Click to go to the " + travelBtnText + " page. Drop down included."
-    play(goTravelText);
-  }
+  var goArrivTrainText = arrivTrainText + " Button. Click to go to the Arrival by " + arrivTrainText +" page.";
+  play(goArrivTrainText);
+}
 
-  function playGoExploreBoat(){
-    var travelBoatBtn = document.getElementById("travelBoatBtn");
-    var travelBoatBtnText = removeSpacing(travelBoatBtn.textContent);
+function playGoExplore(){
+	dropExplore();
 
-    var goTravelBoatText = travelBoatBtnText + " Button. Click to go to the Traveling by " + travelBoatBtnText + " page."
-    play(goTravelBoatText);
-  }
+  var travelBtn = document.getElementById("travelBtn");
+  var travelBtnText = removeSpacing(travelBtn.textContent);
 
-  function playGoExploreWalk(){
-    var travelWalkBtn = document.getElementById("travelWalkBtn");
-    var travelWalkBtnText = removeSpacing(travelWalkBtn.textContent);
+  var goTravelText = travelBtnText + " Button. Click to go to the " + travelBtnText + " page. Drop down included.";
+  play(goTravelText);
+}
 
-    var goTravelWalkText = travelWalkBtnText + " Button. Click to go to the Traveling by " + travelWalkBtnText + " page."
-    play(goTravelWalkText);
-  }
+function playGoExploreBoat(){
+  var travelBoatBtn = document.getElementById("travelBoatBtn");
+  var travelBoatBtnText = removeSpacing(travelBoatBtn.textContent);
 
-  function playGoHotel(){
-    dropHotel();
+  var goTravelBoatText = travelBoatBtnText + " Button. Click to go to the Traveling by " + travelBoatBtnText + " page.";
+  play(goTravelBoatText);
+}
 
-    var hotelsBtn = document.getElementById("hotelsBtn");
-    var hotelsBtnText = removeSpacing(hotelsBtn.textContent);
+function playGoExploreWalk(){
+  var travelWalkBtn = document.getElementById("travelWalkBtn");
+  var travelWalkBtnText = removeSpacing(travelWalkBtn.textContent);
 
-    var goNightText = hotelsBtnText + " Button. Click to go to the " + hotelsBtnText +" page."
-    play(goNightText);
-  }
+  var goTravelWalkText = travelWalkBtnText + " Button. Click to go to the Traveling by " + travelWalkBtnText + " page.";
+  play(goTravelWalkText);
+}
 
-  function playGoAttract(){
-    dropAttract();
+function playGoHotel(){
+  dropHotel();
 
-    var attractBtn = document.getElementById("attractBtn");
-    var attractBtnText = removeSpacing(attractBtn.textContent);
+  var hotelsBtn = document.getElementById("hotelsBtn");
+  var hotelsBtnText = removeSpacing(hotelsBtn.textContent);
 
-    var goAttractText = attractBtnText + " Button. Click to go to the " + attractBtnText + " page. Drop down included."
-    play(goAttractText);
-  }
+  var goNightText = hotelsBtnText + " Button. Click to go to the " + hotelsBtnText +" page.";
+  play(goNightText);
+}
 
-  function playGoAttractRest(){
-    var attractRestBtn = document.getElementById("attractRestBtn");
-    var attractRestBtnText = removeSpacing(attractRestBtn.textContent);
+function playGoAttract(){
+  dropAttract();
 
-    var goAttractRestText = attractRestBtnText + " Button. Click to go to the " + attractRestBtnText + " page."
-    play(goAttractRestText);
-  }
+  var attractBtn = document.getElementById("attractBtn");
+  var attractBtnText = removeSpacing(attractBtn.textContent);
 
-  function playGoAttractChur(){
-    var attractChurBtn = document.getElementById("attractChurBtn");
-    var attractChurBtnText = removeSpacing(attractChurBtn.textContent);
+  var goAttractText = attractBtnText + " Button. Click to go to the " + attractBtnText + " page. Drop down included.";
+  play(goAttractText);
+}
 
-    var goAttractChurText = attractChurBtnText + " Button. Click to go to the " + attractChurBtnText + " page."
-    play(goAttractChurText);
-  }
+function playGoAttractRest(){
+  var attractRestBtn = document.getElementById("attractRestBtn");
+  var attractRestBtnText = removeSpacing(attractRestBtn.textContent);
 
-  function playGoAttractMus(){
-    var attractMusBtn = document.getElementById("attractMusBtn");
-    var attractMusBtnText = removeSpacing(attractMusBtn.textContent);
+  var goAttractRestText = attractRestBtnText + " Button. Click to go to the " + attractRestBtnText + " page.";
+  play(goAttractRestText);
+}
 
-    var goAttractMusText = attractMusBtnText + " Button. Click to go to the " + attractMusBtnText + " page."
-    play(goAttractMusText);
-  }
+function playGoAttractChur(){
+  var attractChurBtn = document.getElementById("attractChurBtn");
+  var attractChurBtnText = removeSpacing(attractChurBtn.textContent);
 
-  function playGoAttractMore(){
-    var attractMoreBtn = document.getElementById("attractMoreBtn");
-    var attractMoreBtnText = removeSpacing(attractMoreBtn.textContent);
+  var goAttractChurText = attractChurBtnText + " Button. Click to go to the " + attractChurBtnText + " page.";
+  play(goAttractChurText);
+}
 
-    var goAttractMoreText = attractMoreBtnText + " Button. Click to go to the " + attractMoreBtnText + " page."
-    play(goAttractMoreText);
-  }
+function playGoAttractMus(){
+  var attractMusBtn = document.getElementById("attractMusBtn");
+  var attractMusBtnText = removeSpacing(attractMusBtn.textContent);
 
-  function playGoApp(){
-    dropApp();
+  var goAttractMusText = attractMusBtnText + " Button. Click to go to the " + attractMusBtnText + " page.";
+  play(goAttractMusText);
+}
 
-    var appsBtn = document.getElementById("appsBtn");
-    var appsBtnText = removeSpacing(appsBtn.textContent);
+function playGoAttractMore(){
+  var attractMoreBtn = document.getElementById("attractMoreBtn");
+  var attractMoreBtnText = removeSpacing(attractMoreBtn.textContent);
 
-    var goAppText = appsBtnText + " Button. Click to go to the " + appsBtnText + " page."
-    play(goAppText);
-  }
+  var goAttractMoreText = attractMoreBtnText + " Button. Click to go to the " + attractMoreBtnText + " page.";
+  play(goAttractMoreText);
+}
 
-  function playGoOrg(){
-    dropOrg();
+function playGoApp(){
+  dropApp();
 
-    var orgBtn = document.getElementById("orgBtn");
-    var orgBtnText = removeSpacing(orgBtn.textContent);
+  var appsBtn = document.getElementById("appsBtn");
+  var appsBtnText = removeSpacing(appsBtn.textContent);
 
-    var goOrgText = orgBtnText + " Button. Click to go to the " + orgBtnText +" page."
-    play(goOrgText);
-  }
+  var goAppText = appsBtnText + " Button. Click to go to the " + appsBtnText + " page.";
+  play(goAppText);
+}
 
-  function playGoMap(){
-    dropMap();
+function playGoOrg(){
+  dropOrg();
 
-    var mapBtn = document.getElementById("mapBtn");
-    var mapBtnText = removeSpacing(mapBtn.textContent);    
+  var orgBtn = document.getElementById("orgBtn");
+  var orgBtnText = removeSpacing(orgBtn.textContent);
 
-    var goMapText = mapBtnText + " Button. Click to go to the " + mapBtnText + " page. Drop down included."
-    play(goMapText);
-  }
+  var goOrgText = orgBtnText + " Button. Click to go to the " + orgBtnText +" page.";
+  play(goOrgText);
+}
 
-  function playGoMapInformative(){
-    dropMap();
+function playGoMap(){
+  dropMap();
 
-    var mapInformBtn = document.getElementById("mapInformBtn");
-    var mapInformBtnText = removeSpacing(mapInformBtn.textContent);    
+  var mapBtn = document.getElementById("mapBtn");
+  var mapBtnText = removeSpacing(mapBtn.textContent);    
 
-    var goMapInformBtnText = mapInformBtnText + " Button. Click to go to the " + mapInformBtnText + " Map page."
-    play(goMapInformBtnText);
-  }
+  var goMapText = mapBtnText + " Button. Click to go to the " + mapBtnText + " page. Drop down included.";
+  play(goMapText);
+}
 
-  function playGoMapInteractive(){
-    dropMap();
+function playGoMapInformative(){
+  dropMap();
 
-    var mapInterBtn = document.getElementById("mapInterBtn");
-    var mapInterBtnText = removeSpacing(mapInterBtn.textContent);    
+  var mapInformBtn = document.getElementById("mapInformBtn");
+  var mapInformBtnText = removeSpacing(mapInformBtn.textContent);    
 
-    var goMapInterBtnText = mapInterBtnText + " Button. Click to go to the " + mapInterBtnText + " Map page. Warning, this page has limited speech directions."
-    play(goMapInterBtnText);
-  }
+  var goMapInformBtnText = mapInformBtnText + " Button. Click to go to the " + mapInformBtnText + " Map page.";
+  play(goMapInformBtnText);
+}
 
-  function playGoBack(){
-    var goBackText = "Close Settings Button. Click to return the Navigation Menu."
-    play(goBackText);
-  }
+function playGoMapInteractive(){
+  dropMap();
 
-  function playGoSettings(){
-    var goSettingsText = "Settings Button. Click to open the Settings Menu."
-    play(goSettingsText);
-  }
+  var mapInterBtn = document.getElementById("mapInterBtn");
+  var mapInterBtnText = removeSpacing(mapInterBtn.textContent);    
 
-  function playMute(){
-    var muteText = "Speech Button. Click to turn off all speech.";
-    play(muteText);
-  }
+  var goMapInterBtnText = mapInterBtnText + " Button. Click to go to the " + mapInterBtnText + " Map page.";
+  play(goMapInterBtnText);
+}
+
+function playGoBack(){
+  var goBackText = "Close Settings Button. Click to return the Navigation Menu.";
+  play(goBackText);
+}
+
+function playGoSettings(){
+  var goSettingsText = "Settings Button. Click to open the Settings Menu.";
+  play(goSettingsText);
+}
+
+function playMute(){
+  var muteText = "Speech Button. Click to turn off all speech.";
+  play(muteText);
+}
+
+/* ------------ End Menu Speach Functions -------------- */

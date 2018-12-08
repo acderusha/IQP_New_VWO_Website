@@ -16,6 +16,7 @@
 
 
 // my code down here
+//= require index
 //= require map
 //= require parallaxHeaderImg
 //= require parallax
