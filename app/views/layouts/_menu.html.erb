@@ -23,16 +23,16 @@
 
     <nav class="menuNav">
       <ul class="menuContainer">
-        <li class="menuItem"  onmouseover="playGoHome()">
+        <li class="menuItem"  onmouseenter="playGoHome()" onclick="goHome()">
           <a id="homeBtn" href="/home">
             Home
           </a>
         </li>
-        <li id="hotelsBtn" class="menuItem" onmouseover="playGoHotel()">
+        <li id="hotelsBtn" class="menuItem" onmouseenter="playGoHotel()">
           Hotels
         </li>
-        <li class="menuItem" onmouseover="dropArriv();" onmouseleave="hideAll()">
-          <a id="arrivalBtn" class="aNav" onmouseover="playGoArrival()" href="/home/arrival">
+        <li class="menuItem" onmouseenter="playGoArrival()" onmouseleave="hideAll()" onclick="goArrival()">
+          <a id="arrivalBtn" class="aNav" href="/home/arrival">
             Arrival
           </a>
           <div id="arrivDrop" class="dropdown-content">
@@ -42,8 +42,8 @@
             <a id="arrivTrain" class="dropItem" onmouseover="playGoArrivalTrain()">Train</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="dropMap();" onmouseleave="hideAll()">
-          <a id="mapBtn" class="aNav" onmouseover="playGoMap()" href="/home/maps">
+        <li class="menuItem" onmouseenter="playGoMap()" onmouseleave="hideAll()" onclick="goMap()">
+          <a id="mapBtn" class="aNav" href="/home/maps">
             Map
           </a>
           <div id="mapDrop" class="dropdown-content">
@@ -51,8 +51,8 @@
             <a id="mapInterBtn" class="dropItem" href="/home/map" onmouseover="playGoMapInteractive()">Interactive</a>
           </div>
         </li>
-        <li class="menuItem" onmouseover="dropExplore();" onmouseleave="hideAll()">
-          <a id="travelBtn" class="aNav" onmouseover="playGoExplore()" href="/home/explore">
+        <li class="menuItem" onmouseover="playGoTravel()" onmouseleave="hideAll()" onclick="goTravel()">
+          <a id="travelBtn" class="aNav" href="/home/explore">
             Traveling
           </a>
           <div id="exploreDrop" class="dropdown-content">
@@ -60,8 +60,8 @@
             <a id="travelWalkBtn" class="dropItem" onmouseover="playGoExploreWalk()">Walking</a>
           </div>
         </li>
-        <li class="menuItem" style="width: 115px" onmouseover="dropAttract();" onmouseleave="hideAll()">
-          <a id="attractBtn" class="aNav" onmouseover="playGoAttract()" href="/home/attractions">
+        <li class="menuItem" style="width: 115px" onmouseenter="playGoAttract()" onmouseleave="hideAll()" onclick="goAttract()">
+          <a id="attractBtn" class="aNav" href="/home/attractions">
             Attractions
           </a>
           <div id="attractDrop" class="dropdown-content" style="left: -10px" >
@@ -72,12 +72,12 @@
           </div>
         </li>
         <li class="menuItem" onmouseover="playGoApp()">
-          <a id="appsBtn" href="/home/applications">
+          <a id="appsBtn" class="aNav" href="/home/applications">
             Apps
           </a>
         </li>
-        <li class="menuItem" style="width: 125px" onmouseover="playGoOrg()">
-          <a id="orgBtn" href="/home/organizations">
+        <li class="menuItem" style="width: 125px" onmouseenter="playGoOrg()" onclick="goOrg()">
+          <a id="orgBtn" class="aNav" href="/home/organizations">
             Organizations
           </a>
         </li>
@@ -85,3 +85,7 @@
     </nav>
   </div>
 </div>
+
+<script type="text/javascript">
+  //setUpTabMenuOrder();
+</script>

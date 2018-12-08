@@ -174,6 +174,12 @@ function closeSettings() {
 }
 
 
+/* ------------ Tab Menu Order ------------- */
+function setUpTabHomeOrder(){
+
+}
+
+
 /* ------------ Speech Contol -------------- */
 
 function play(textToPlay){
@@ -273,6 +279,10 @@ function playLogo(){
   play(logoText);
 }
 
+function goHome(){
+  window.location.href = "/home";
+}
+
 function playGoHome(){
   dropHome();
 
@@ -281,6 +291,11 @@ function playGoHome(){
 
   var goHomeText = homeBtnText  + "Button. Click to go to the " + homeBtnText + " Page.";
   play(goHomeText);
+}
+
+function goArrival(){
+  dropArriv();
+  window.location.href = "/home/arrival";
 }
 
 function playGoArrival(){
@@ -325,7 +340,12 @@ function playGoArrivalTrain(){
   play(goArrivTrainText);
 }
 
-function playGoExplore(){
+function goTravel(){
+  dropExplore();
+  window.location.href = "/home/explore";
+}
+
+function playGoTravel(){
 	dropExplore();
 
   var travelBtn = document.getElementById("travelBtn");
@@ -359,6 +379,11 @@ function playGoHotel(){
 
   var goNightText = hotelsBtnText + " Button. Click to go to the " + hotelsBtnText +" page.";
   play(goNightText);
+}
+
+function goAttract(){
+  dropExplore();
+  window.location.href = "/home/attractions";
 }
 
 function playGoAttract(){
@@ -403,6 +428,11 @@ function playGoAttractMore(){
   play(goAttractMoreText);
 }
 
+function goApp(){
+  dropExplore();
+  window.location.href = "/home/applications";
+}
+
 function playGoApp(){
   dropApp();
 
@@ -413,6 +443,11 @@ function playGoApp(){
   play(goAppText);
 }
 
+function goOrg(){
+  dropExplore();
+  window.location.href = "/home/organizations";
+}
+
 function playGoOrg(){
   dropOrg();
 
@@ -421,6 +456,10 @@ function playGoOrg(){
 
   var goOrgText = orgBtnText + " Button. Click to go to the " + orgBtnText +" page.";
   play(goOrgText);
+}
+
+function goMap(){
+  window.location.href = "/home/maps"
 }
 
 function playGoMap(){

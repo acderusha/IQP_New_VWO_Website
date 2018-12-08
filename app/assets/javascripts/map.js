@@ -596,7 +596,7 @@ function setUpLegend(){
             var div = L.DomUtil.create('div', 'info legend'),
                 grades1 = [true,false,false],
                 grades2 = [false,true,false],
-                labels = ['Permanent Ramp','Temporary Ramp','Not Walking Accessible'];
+                labels = ['Permanent Ramp','Temporary Ramp','Not Bridge Accessible'];
 
             // loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades1.length; i++) {
@@ -1350,7 +1350,7 @@ function playMapIntro(){
     "The map is in the center of the page. At the top-center and top-right of the page, there are layer selection tabs. Each layer has their own set of properties that can be used to filter groups of elements." + 
     "Each group can be filtered based on it's properties listed on the left hand side of the page; filtering an element removes it from the map. " + 
     "The menu button at the top-right of the page will take you to the menu page where you can travel to other pages.";
-    playSlow(welcomeMap);
+    //playSlow(welcomeMap);
 }
 
 
