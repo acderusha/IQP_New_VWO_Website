@@ -382,7 +382,7 @@ function playGoHotel(){
 }
 
 function goAttract(){
-  dropExplore();
+  dropAttract();
   window.location.href = "/home/attractions";
 }
 
