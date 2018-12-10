@@ -125,7 +125,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -305,7 +305,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Capannone"],
         "Moto_Lines": ["Request"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -397,7 +397,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -442,7 +442,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -532,7 +532,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -577,7 +577,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -667,7 +667,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -711,7 +711,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -756,7 +756,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -848,7 +848,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -940,7 +940,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Cimitero"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -986,7 +986,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Certosa"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1032,7 +1032,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1124,7 +1124,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1170,7 +1170,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Vignole"],
         "Moto_Lines": ["Request"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1216,7 +1216,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1308,7 +1308,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1354,7 +1354,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1446,7 +1446,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1538,7 +1538,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1630,7 +1630,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1722,7 +1722,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1814,7 +1814,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1906,7 +1906,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -1952,7 +1952,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2044,7 +2044,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2182,7 +2182,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2504,7 +2504,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2596,7 +2596,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2734,7 +2734,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2826,7 +2826,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -2964,7 +2964,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Murano Navagero"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3010,7 +3010,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Murano Serenella"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3056,7 +3056,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Murano Da Mula","Murano Colonna A","Murano Colonna B","Murano Colonna C"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3102,7 +3102,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Murano Faro"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3424,7 +3424,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3608,7 +3608,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3654,7 +3654,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3700,7 +3700,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["S.Alvise"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3746,7 +3746,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Madonna Orto"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3885,7 +3885,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -3931,7 +3931,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4023,7 +4023,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4115,7 +4115,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4161,7 +4161,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Guglie", "Tre Archi"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4253,7 +4253,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Crea"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4391,7 +4391,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4483,7 +4483,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4575,7 +4575,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["S.Pietro di Castello"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4759,7 +4759,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Bacini-Arsenale Nord"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -4897,7 +4897,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte de l'Arsenal","Ponte de la Veneta Marina"]
@@ -4943,7 +4943,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte de la Veneta Marina","Ponte S. Domenego"]
@@ -4989,7 +4989,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Celestia"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5035,7 +5035,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Arsenale"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte de la Ca' de Dio","Ponte de l'Arsenal"]
@@ -5127,7 +5127,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte del S. Sepolcro","Ponte de la Ca' de Dio"]
@@ -5173,7 +5173,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Ospedale"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2","22"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5219,7 +5219,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["S. Marta"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2","6"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte Molin della Stazione Marittima"]
@@ -5311,7 +5311,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5403,7 +5403,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5449,7 +5449,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["S.Zaccaria C","S. Zaccaria (Jolanda) D","S.Zaccaria (Danieli) F"],
         "Moto_Lines": ["4.1","5.1","5.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte del Vin","Ponte de la Pieta"]
@@ -5541,7 +5541,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5633,7 +5633,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5679,7 +5679,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5725,7 +5725,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5909,7 +5909,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -5955,7 +5955,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6001,7 +6001,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Fondamente Nove B", "Fondamente Nove C","Fondamente Nove D"],
         "Moto_Lines": ["4.1","4.2","5.1","5.2","22"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6093,7 +6093,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6185,7 +6185,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6277,7 +6277,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6415,7 +6415,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6599,7 +6599,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6691,7 +6691,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6737,7 +6737,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6783,7 +6783,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6875,7 +6875,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -6967,7 +6967,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -7059,7 +7059,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte de la Salute"]
@@ -7105,7 +7105,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte Ca'Bala","Ponte de la Salute"]
@@ -7151,7 +7151,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Spirito Santo"],
         "Moto_Lines": ["6"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte agli Incurabili","Ponte Ca'Bala"]
@@ -7197,7 +7197,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte de la Calcina","Ponte agli Incurabili"]
@@ -7243,7 +7243,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Zattere Gesuati","Zattere DX","Zattere SX"],
         "Moto_Lines": ["5.1","5.2","6"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": true,
         "Access_Temp_Bri": ["Ponte Longo","Ponte de la Calcina"]
@@ -7335,7 +7335,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -7565,7 +7565,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["P.le Roma (S.Andrea) A","P.le Roma (S.Andrea) B"],
         "Moto_Lines": ["4.1","4,2","5.1","5.2","6"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -7657,7 +7657,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -7749,7 +7749,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -7887,7 +7887,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8025,7 +8025,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Riva de Biasio"],
         "Moto_Lines": ["5.1","5.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8117,7 +8117,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8163,7 +8163,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": null,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8255,7 +8255,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8347,7 +8347,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8485,7 +8485,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -8945,7 +8945,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Giudecca Palanca SX","Giudecca Palanca DX"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -9083,7 +9083,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Redentore"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -9129,7 +9129,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["Zitelle"],
         "Moto_Lines": ["4.1","4.2"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -9221,7 +9221,7 @@ var islesFuture = [
         "Moto_Access": true,
         "Moto_Stops": ["S. Giorgio"],
         "Moto_Lines": ["Request"],
-        "Perm_Bri_Access": true,
+        "Perm_Bri_Access": false,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -9267,7 +9267,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
@@ -9359,7 +9359,7 @@ var islesFuture = [
         "Moto_Access": null,
         "Moto_Stops": null,
         "Moto_Lines": null,
-        "Perm_Bri_Access": null,
+        "Perm_Bri_Access": true,
         "Access_Perm_Bri": null,
         "Temp_Bri_Access": null,
         "Access_Temp_Bri": null
